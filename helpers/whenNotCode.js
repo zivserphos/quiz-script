@@ -11,7 +11,16 @@ const whenNotCode = (question) => {
     query,
     code,
     answers,
+    correctAns: correctAns(question),
   };
+};
+
+const correctAns = (question) => {
+  const options = question.split("?")[1].split("- [");
+  // if (!options[1]) console.log(options);
+  // for (let i = 1; i < 5; i++) {
+  //   // if (options[i].startsWith("x")) return i;
+  // }
 };
 
 module.exports = whenNotCode;

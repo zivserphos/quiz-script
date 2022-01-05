@@ -3,7 +3,7 @@ const fs = require("fs");
 const whenCode = require("./helpers/whenCode");
 const whenNotCode = require("./helpers/whenNotCode");
 
-const a = fs.readFileSync("./React.txt").toString().split("####");
+const a = fs.readFileSync("./mongo.txt").toString().split("####");
 
 const questionsWithCode = [];
 const questionsWithOutCode = [];
@@ -48,4 +48,4 @@ questions.map((question) => {
 });
 console.log(validQuestions.length);
 
-fs.writeFileSync("./TestReact.json", JSON.stringify(validQuestions));
+fs.writeFileSync("./mongo.json", JSON.stringify(validQuestions));
