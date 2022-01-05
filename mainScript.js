@@ -4,6 +4,7 @@ const whenCode = require("./helpers/whenCode");
 const whenNotCode = require("./helpers/whenNotCode");
 const genQuery = require("./genQuery");
 const genAns = require("./genAns");
+const genCode = require("./genCode");
 
 const a = fs.readFileSync("./css.txt").toString().split("###");
 
@@ -11,21 +12,26 @@ const questionsWithCode = [];
 const questionsWithOutCode = [];
 
 a.map((question, i) => {
-  if (genAns(question) === 9) console.log(i);
-  // if (i === 92 || i === 99) console.log(question);
-  // console.log(question.split("\r\n").slice(1).join("\r\n"));
-  if (i === 0) {
-    i++;
-    return;
-  }
-  const query = question.split("?")[0];
-  let code = question.split("```")[1];
-  let answers = question.split("```")[2];
-  if (code) {
-    questionsWithCode.push(whenCode(question));
-  } else {
-    questionsWithOutCode.push(whenNotCode(question));
-  }
+  const query = genQuery(question);
+  const code = genCode(question);
+  const { options, correctAns } = genAns(question);
+  // if (options.length === 0) console.log(question);
+  // if (options.length === 0) console.log(question);
+  // if (genAns(question) === 9) console.log(i);
+  // // if (i === 92 || i === 99) console.log(question);
+  // // console.log(question.split("\r\n").slice(1).join("\r\n"));
+  // if (i === 0) {
+  //   i++;
+  //   return;
+  // }
+  // const query = question.split("?")[0];
+  // let code = question.split("```")[1];
+  // let answers = question.split("```")[2];
+  // if (code) {
+  //   questionsWithCode.push(whenCode(question));
+  // } else {
+  //   questionsWithOutCode.push(whenNotCode(question));
+  // }
 });
 
 const questions = [...questionsWithOutCode, ...questionsWithCode];
