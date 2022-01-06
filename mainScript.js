@@ -11,7 +11,7 @@ filesToConvert.map((fileName) => {
     .toString()
     .split("###");
 
-  const questions = file.slice(1).map((question, i) => {
+  const questions = file.slice(1).map((question) => {
     const query = genQuery(question);
     const code = genCode(question);
     const { options, correctAns } = genAns(question);
