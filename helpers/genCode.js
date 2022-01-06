@@ -5,7 +5,7 @@ const genCode = (question, i) => {
   if (splittedCode.length === 3) {
     return question.split("```")[1].split("\r\n").join("").includes("[x]")
       ? null
-      : question.split("```")[1].split("\r\n").join("");
+      : question.split("```")[1];
   }
   if (splittedCode.length === 5) {
     return question.split("```").slice(1, 4).join("").includes("[x]")

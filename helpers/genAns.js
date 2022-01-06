@@ -1,10 +1,11 @@
-const correctAnswer = require("./helpers/correctAns");
+const correctAnswer = require("./correctAns");
 
 const genAns = (question) => {
   let options;
   let correctAns;
   if (question.split("```").length === 1) {
-    const answers = question.split("\r\n").slice(1).join("\r\n");
+    let answers = question.split("\r\n").slice(1).join("\r\n");
+    if (!answers) answers = question.split("\n").slice(1).join("\n");
     correctAns = correctAnswer(answers);
     options = genOptions(question);
   }
@@ -36,6 +37,18 @@ const genAns = (question) => {
     correctAns = correctAnswer(answers);
     options = genOptions(question);
   }
+  if (!options || !options[options.length - 1]) {
+    return { options, correctAns };
+  }
+  if (options[options.length - 1].includes("[Ref")) {
+    options[options.length - 1] = options[options.length - 1].split("[Ref")[0];
+  }
+
+  if (options[options.length - 1].includes("Source:")) {
+    options[options.length - 1] =
+      options[options.length - 1].split(/\[?Source/)[0];
+  }
+
   return { options, correctAns };
 };
 
@@ -45,7 +58,6 @@ const genOptions = (question) => {
     .slice(1)
     .join("\r\n")
     .split(/- \[ ?x?\]/)
-    .map((option) => option.split("\r\n").join(""))
     .slice(1);
 
   if (options.length === 0) {
@@ -54,7 +66,6 @@ const genOptions = (question) => {
       .slice(1)
       .join("\r\n")
       .split(/\[?x?\]/)
-      .map((option) => option.split("\r\n").join(""))
       .slice(1);
   }
   return options;
