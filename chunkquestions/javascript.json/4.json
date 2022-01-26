@@ -1,1 +1,272 @@
-[{"query":" Q76. What is the result in the console of running this code?","code":"javascript\r\nfunction logThis() {\r\n  console.log(this);\r\n}\r\nlogThis();\r\n","options":[" function\r\n"," undefined\r\n"," Function.prototype\r\n"," window\r\n\r\n"],"correctAns":4},{"query":" Q77. Which class-based component is equivalent to this function component?","code":"javascript\r\nconst Greeting = ({ name }) => <h1>Hello {name}!</h1>;\r\n","options":[" `class Greeting extends React.Component { render() { return <h1>Hello {this.props.name}!</h1>; } }`\r\n"," `class Greeting extends React.Component { constructor() { return <h1>Hello {this.props.name}!</h1>; } }`\r\n"," `class Greeting extends React.Component { <h>Hello {this.props.name}!</h>; } }`\r\n"," `class Greeting extends React.Component { render({ name }) { return <h1>Hello {name}!</h1>; } }`\r\n\r\n"],"correctAns":1},{"query":" Q78. Which class-based lifecycle method would be called at the same time as this effect Hook?","code":"javascript\r\nuseEffect(() => {\r\n  // do things\r\n}, []);\r\n","options":[" componentWillUnmount\r\n"," componentDidUpdate\r\n"," render\r\n"," componentDidMount\r\n\r\n"],"correctAns":4},{"query":" Q79. What is the output of this code?","code":"javascript\r\nvar obj;\r\nconsole.log(obj);\r\n","options":[" ReferenceError: obj is not defined\r\n"," {}\r\n"," undefined\r\n"," null\r\n\r\n"],"correctAns":3},{"query":" Q80. How would you use the TaxCalculator to determine the amount of tax on \\$50?","code":"javascript\r\nclass TaxCalculator {\r\n  static calculate(total) {\r\n    return total * 0.05;\r\n  }\r\n}\r\n","options":[" calculate(50);\r\n"," new TaxCalculator().calculate(\\$50);\r\n"," TaxCalculator.calculate(50);\r\n"," new TaxCalculator().calculate(50);\r\n\r\n"],"correctAns":3},{"query":" Q81. What is wrong with this code?","code":"js\r\nconst foo = {\r\n  bar() {\r\n    console.log('Hello, world!');\r\n  },\r\n  name: 'Albert',\r\n  age: 26,\r\n};\r\n","options":[" The function bar needs to be defined as a key/value pair.\r\n"," Trailing commas are not allowed in JavaScript.\r\n"," Functions cannot be declared as properties of objects.\r\n"," Nothing, there are no errors.\r\n\r\n"],"correctAns":4},{"query":" Q82. What will be logged to the console?","code":null,"options":["\r\n\r\n```\r\nI\r\nJavascript!\r\nlove\r\n```\r\n\r\n","\r\n\r\n```\r\nlove\r\nI\r\nJavascript!\r\n```\r\n\r\n"," The output may change with each execution of code and cannot be determined.\r\n\r\n","\r\n\r\n```\r\nI\r\nlove\r\nJavascript!\r\n```\r\n\r\n"],"correctAns":1},{"query":" Q83. What will this code log to the console?","code":"js\r\nconst foo = [1, 2, 3];\r\nconst [n] = foo;\r\nconsole.log(n);\r\n","options":[" 1\r\n"," undefined\r\n"," NaN\r\n"," Nothing--this is not proper JavaScript syntax and will throw an error.\r\n\r\n"],"correctAns":1},{"query":" Q84. How do you remove the property name from this object?","code":"js\r\nconst foo = {\r\n  name: 'Albert',\r\n};\r\n","options":[" delete name from foo;\r\n"," delete foo.name;\r\n"," del foo.name;\r\n"," remove foo.name;\r\n\r\n"],"correctAns":2},{"query":" Q85. What is the difference between the map() and the forEach() methods on the Array prototype?","options":[" There is no difference.\r\n"," The `forEach()` method returns a single output value, wheras the `map()` method performs operation on each value in the array.\r\n"," The map() methods returns a new array with a transformation applied on each item in the original array, wheras the `forEach()` method iterates through an array with noreturn value.\r\n"," The `forEach()` methods returns a new array with a transformation applied on each item in the original array, wheras the `map()` method iterates through an array with noreturn value.\r\n\r\n"],"correctAns":3},{"query":" Q86. Which concept does this code illustrate?","code":"js\r\nfunction makeAdder(x) {\r\n  return function (y) {\r\n    return x + y;\r\n  };\r\n}\r\n\r\nvar addFive = makeAdder(5);\r\nconsole.log(addFive(3));\r\n","options":[" overloading\r\n"," closure\r\n"," currying\r\n"," overriding\r\n\r\n"],"correctAns":3},{"query":" Q87. Which tag pair is used in HTML to embed JavaScript?","options":[" `<script></script>`\r\n"," `<js></js>`\r\n"," `<javascript></javascript>`\r\n"," `<code></code>`\r\n\r\n"],"correctAns":1},{"query":" Q88. What would be the result in the console of running this code?","code":"js\r\nfor (var i = 0; i < 5; i++) {\r\n  console.log(i);\r\n}\r\n","options":[" 0 1 2 3 4\r\n"," 0 1 2 3 4 5\r\n"," 1 2 3 4\r\n"," 1 2 3 4 5\r\n\r\n"],"correctAns":1},{"query":" Q89. What is the value of dessert.type after executing this code?","code":"js\r\nconst dessert = { type: 'pie' };\r\ndessert.type = 'pudding';\r\n\r\nconst seconds = dessert;\r\nseconds.type = 'fruit';\r\n","options":[" pie\r\n"," fruit\r\n"," undefined\r\n"," pudding\r\n\r\n**Explanation:** `Assigning a variable (such as seconds) to an object (such as dessert) does not create a new object. The seconds variable merely becomes a reference for the dessert object. Any changes made to seconds will also reflect in dessert.`\r\n\r\n"],"correctAns":2},{"query":" Q90. If your app receives data from a third-party API, which HTTP response header must the server specify to allow exceptions to the same-origin policy?","options":[" Security-Mode\r\n"," Access-Control-Allow-Origin\r\n"," Different-Origin\r\n"," Same-Origin\r\n\r\n"],"correctAns":2},{"query":" Q91. What will be logged to the console??","code":"js\r\n'use strict';\r\nfunction logThis() {\r\n  this.desc = 'logger';\r\n  console.log(this);\r\n}\r\nnew logThis();\r\n","options":[" window\r\n"," undefined\r\n"," function\r\n"," {desc: \"logger\"}\r\n\r\n"],"correctAns":4},{"query":" Q92. Which statement is applicable to the defer attribute of the HTML \\<script\\> tag?","options":[" defer causes the script ta be loaded from the backup content delivery network (CDN).\r\n"," defer allows the browser ta continue processing the page while the script loads in the background.\r\n"," defer blacks the browser from processing HTML below the tag until the script is completely loaded.\r\n"," defer lazy loads the script, causing it to download only when it is called by another script on the page.\r\n\r\n**Explanation:** If the defer attribute is set, it specifies that the script is downloaded in parallel to parsing the page, and executed after the page has finished parsing. [HTML \\<script\\> defer Attribute](https://www.w3schools.com/tags/att_script_defer.asp)\r\n\r\n"],"correctAns":2},{"query":" Q93. What will this code print?","code":"js\r\nlet rainForests = ['Amazon', 'Borneo', 'Cerrado', 'Congo'];\r\nrainForests.splice(0, 2);\r\nconsole.log(rainForests);\r\n","options":[" `[\"Amazon\",\"Borneo\",\"Cerrado\",\"Congo\"]`\r\n"," `[\"Cerrado\", \"Congo\"]`\r\n"," `[\"Congo\"]`\r\n"," `[\"Amazon\",\"Borneo\"]`\r\n\r\n"],"correctAns":2},{"query":" Q94. Which missing line would allow you to create five variables(one,two,three,four,five) that correspond to their numerical values (1,2,3,4,5)?","code":"js\r\nconst numbers = [1, 2, 3, 4, 5];\r\n//MISSING LINE\r\n","options":[" `const [one,two,three,four,five]=numbers`\r\n"," `const {one,two,three,four,five}=numbers`\r\n"," `const [one,two,three,four,five]=[numbers]`\r\n"," `const {one,two,three,four,five}={numbers}`\r\n\r\n"],"correctAns":1},{"query":" Q95.","code":"js\r\nconst obj = {\r\n  a: 1,\r\n  b: 2,\r\n  c: 3,\r\n};\r\n\r\nconst obj2 = {\r\n  ...obj,\r\n  a: 0,\r\n};\r\n\r\nconsole.log(obj2.a, obj2.b);\r\n","options":[" Nothing, it will throw an error\r\n"," 0 2\r\n"," undefined 2\r\n"," undefined 2\r\n\r\n"],"correctAns":2},{"query":" Q96. Which line could you add to this code to print \"jaguar\" to the console?","code":"\r\nlet animals = [\"jaguar\",\"eagle\"];\r\n//Missing Line\r\nconsole.log(animals.pop()); //Prints jaguar\r\n","options":[" `animals.filter(e => e === \"jaguar\");`\r\n"," `animals.reverse();`\r\n"," `animals.shift();`\r\n"," `animals.pop();`\r\n\r\n"],"correctAns":4},{"query":" Q97. What line is missing from this code?","code":"js\r\n//Missing Line\r\nfor (var i = 0; i < vowels.length; i++) {\r\n  console.log(vowels[i]);\r\n  //Each letter printed on a separate line as follows;\r\n  //a\r\n  //e\r\n  //i\r\n  //o\r\n  //u\r\n}\r\n","options":[" `let vowels = \"aeiou\".toArray();`\r\n"," `let vowels = Array.of(\"aeiou\");`\r\n"," `let vowels = {\"a\", \"e\", \"i\", \"o\", \"u\"};`\r\n"," `let vowels = \"aeiou\";`\r\n\r\n"],"correctAns":4},{"query":" Q98. What will be logged to the console?","code":"js\r\nconst x = 6 % 2;\r\nconst y = x ? 'One' : 'Two';\r\nconsole.log(y);\r\n","options":[" undefined\r\n"," One\r\n"," true\r\n"," Two\r\n\r\n"],"correctAns":4},{"query":" Q99. How would you access the word It from this multidimensional array?","options":[" `matrix[1[2]]`\r\n"," `matrix[1][1]`\r\n"," `matrix[1,2]`\r\n"," `matrix[1][2]`\r\n\r\n"],"correctAns":2},{"query":" Q100. What does this code do?","code":"js\r\nconst animals = ['Rabbit', 'Dog', 'Cat'];\r\nanimals.unshift('Lizard');\r\n","options":[" It adds \"Lizard\" to the start of the animals array.\r\n"," It adds \"Lizard\" to the end of the animals array.\r\n"," It replaces \"Rabbit\" with \"Lizard\" in the animals array.\r\n"," It replaces \"Cat\" with \"Lizard\" in the animals array.\r\n\r\n"],"correctAns":1}]
+[
+    {
+        "query": " Q76. What is the result in the console of running this code?",
+        "code": "javascript\r\nfunction logThis() {\r\n  console.log(this);\r\n}\r\nlogThis();\r\n",
+        "options": [
+            " function\r\n",
+            " undefined\r\n",
+            " Function.prototype\r\n",
+            " window\r\n\r\n"
+        ],
+        "correctAns": 4
+    },
+    {
+        "query": " Q77. Which class-based component is equivalent to this function component?",
+        "code": "javascript\r\nconst Greeting = ({ name }) => <h1>Hello {name}!</h1>;\r\n",
+        "options": [
+            " `class Greeting extends React.Component { render() { return <h1>Hello {this.props.name}!</h1>; } }`\r\n",
+            " `class Greeting extends React.Component { constructor() { return <h1>Hello {this.props.name}!</h1>; } }`\r\n",
+            " `class Greeting extends React.Component { <h>Hello {this.props.name}!</h>; } }`\r\n",
+            " `class Greeting extends React.Component { render({ name }) { return <h1>Hello {name}!</h1>; } }`\r\n\r\n"
+        ],
+        "correctAns": 1
+    },
+    {
+        "query": " Q78. Which class-based lifecycle method would be called at the same time as this effect Hook?",
+        "code": "javascript\r\nuseEffect(() => {\r\n  // do things\r\n}, []);\r\n",
+        "options": [
+            " componentWillUnmount\r\n",
+            " componentDidUpdate\r\n",
+            " render\r\n",
+            " componentDidMount\r\n\r\n"
+        ],
+        "correctAns": 4
+    },
+    {
+        "query": " Q79. What is the output of this code?",
+        "code": "javascript\r\nvar obj;\r\nconsole.log(obj);\r\n",
+        "options": [
+            " ReferenceError: obj is not defined\r\n",
+            " {}\r\n",
+            " undefined\r\n",
+            " null\r\n\r\n"
+        ],
+        "correctAns": 3
+    },
+    {
+        "query": " Q80. How would you use the TaxCalculator to determine the amount of tax on \\$50?",
+        "code": "javascript\r\nclass TaxCalculator {\r\n  static calculate(total) {\r\n    return total * 0.05;\r\n  }\r\n}\r\n",
+        "options": [
+            " calculate(50);\r\n",
+            " new TaxCalculator().calculate(\\$50);\r\n",
+            " TaxCalculator.calculate(50);\r\n",
+            " new TaxCalculator().calculate(50);\r\n\r\n"
+        ],
+        "correctAns": 3
+    },
+    {
+        "query": " Q81. What is wrong with this code?",
+        "code": "js\r\nconst foo = {\r\n  bar() {\r\n    console.log('Hello, world!');\r\n  },\r\n  name: 'Albert',\r\n  age: 26,\r\n};\r\n",
+        "options": [
+            " The function bar needs to be defined as a key/value pair.\r\n",
+            " Trailing commas are not allowed in JavaScript.\r\n",
+            " Functions cannot be declared as properties of objects.\r\n",
+            " Nothing, there are no errors.\r\n\r\n"
+        ],
+        "correctAns": 4
+    },
+    {
+        "query": " Q82. What will be logged to the console?",
+        "code": null,
+        "options": [
+            "\r\n\r\n```\r\nI\r\nJavascript!\r\nlove\r\n```\r\n\r\n",
+            "\r\n\r\n```\r\nlove\r\nI\r\nJavascript!\r\n```\r\n\r\n",
+            " The output may change with each execution of code and cannot be determined.\r\n\r\n",
+            "\r\n\r\n```\r\nI\r\nlove\r\nJavascript!\r\n```\r\n\r\n"
+        ],
+        "correctAns": 1
+    },
+    {
+        "query": " Q83. What will this code log to the console?",
+        "code": "js\r\nconst foo = [1, 2, 3];\r\nconst [n] = foo;\r\nconsole.log(n);\r\n",
+        "options": [
+            " 1\r\n",
+            " undefined\r\n",
+            " NaN\r\n",
+            " Nothing--this is not proper JavaScript syntax and will throw an error.\r\n\r\n"
+        ],
+        "correctAns": 1
+    },
+    {
+        "query": " Q84. How do you remove the property name from this object?",
+        "code": "js\r\nconst foo = {\r\n  name: 'Albert',\r\n};\r\n",
+        "options": [
+            " delete name from foo;\r\n",
+            " delete foo.name;\r\n",
+            " del foo.name;\r\n",
+            " remove foo.name;\r\n\r\n"
+        ],
+        "correctAns": 2
+    },
+    {
+        "query": " Q85. What is the difference between the map() and the forEach() methods on the Array prototype?",
+        "options": [
+            " There is no difference.\r\n",
+            " The `forEach()` method returns a single output value, wheras the `map()` method performs operation on each value in the array.\r\n",
+            " The map() methods returns a new array with a transformation applied on each item in the original array, wheras the `forEach()` method iterates through an array with noreturn value.\r\n",
+            " The `forEach()` methods returns a new array with a transformation applied on each item in the original array, wheras the `map()` method iterates through an array with noreturn value.\r\n\r\n"
+        ],
+        "correctAns": 3
+    },
+    {
+        "query": " Q86. Which concept does this code illustrate?",
+        "code": "js\r\nfunction makeAdder(x) {\r\n  return function (y) {\r\n    return x + y;\r\n  };\r\n}\r\n\r\nvar addFive = makeAdder(5);\r\nconsole.log(addFive(3));\r\n",
+        "options": [
+            " overloading\r\n",
+            " closure\r\n",
+            " currying\r\n",
+            " overriding\r\n\r\n"
+        ],
+        "correctAns": 3
+    },
+    {
+        "query": " Q87. Which tag pair is used in HTML to embed JavaScript?",
+        "options": [
+            " `<script></script>`\r\n",
+            " `<js></js>`\r\n",
+            " `<javascript></javascript>`\r\n",
+            " `<code></code>`\r\n\r\n"
+        ],
+        "correctAns": 1
+    },
+    {
+        "query": " Q88. What would be the result in the console of running this code?",
+        "code": "js\r\nfor (var i = 0; i < 5; i++) {\r\n  console.log(i);\r\n}\r\n",
+        "options": [
+            " 0 1 2 3 4\r\n",
+            " 0 1 2 3 4 5\r\n",
+            " 1 2 3 4\r\n",
+            " 1 2 3 4 5\r\n\r\n"
+        ],
+        "correctAns": 1
+    },
+    {
+        "query": " Q89. What is the value of dessert.type after executing this code?",
+        "code": "js\r\nconst dessert = { type: 'pie' };\r\ndessert.type = 'pudding';\r\n\r\nconst seconds = dessert;\r\nseconds.type = 'fruit';\r\n",
+        "options": [
+            " pie\r\n",
+            " fruit\r\n",
+            " undefined\r\n",
+            " pudding\r\n\r\n**Explanation:** `Assigning a variable (such as seconds) to an object (such as dessert) does not create a new object. The seconds variable merely becomes a reference for the dessert object. Any changes made to seconds will also reflect in dessert.`\r\n\r\n"
+        ],
+        "correctAns": 2
+    },
+    {
+        "query": " Q90. If your app receives data from a third-party API, which HTTP response header must the server specify to allow exceptions to the same-origin policy?",
+        "options": [
+            " Security-Mode\r\n",
+            " Access-Control-Allow-Origin\r\n",
+            " Different-Origin\r\n",
+            " Same-Origin\r\n\r\n"
+        ],
+        "correctAns": 2
+    },
+    {
+        "query": " Q91. What will be logged to the console??",
+        "code": "js\r\n'use strict';\r\nfunction logThis() {\r\n  this.desc = 'logger';\r\n  console.log(this);\r\n}\r\nnew logThis();\r\n",
+        "options": [
+            " window\r\n",
+            " undefined\r\n",
+            " function\r\n",
+            " {desc: \"logger\"}\r\n\r\n"
+        ],
+        "correctAns": 4
+    },
+    {
+        "query": " Q92. Which statement is applicable to the defer attribute of the HTML \\<script\\> tag?",
+        "options": [
+            " defer causes the script ta be loaded from the backup content delivery network (CDN).\r\n",
+            " defer allows the browser ta continue processing the page while the script loads in the background.\r\n",
+            " defer blacks the browser from processing HTML below the tag until the script is completely loaded.\r\n",
+            " defer lazy loads the script, causing it to download only when it is called by another script on the page.\r\n\r\n**Explanation:** If the defer attribute is set, it specifies that the script is downloaded in parallel to parsing the page, and executed after the page has finished parsing. [HTML \\<script\\> defer Attribute](https://www.w3schools.com/tags/att_script_defer.asp)\r\n\r\n"
+        ],
+        "correctAns": 2
+    },
+    {
+        "query": " Q93. What will this code print?",
+        "code": "js\r\nlet rainForests = ['Amazon', 'Borneo', 'Cerrado', 'Congo'];\r\nrainForests.splice(0, 2);\r\nconsole.log(rainForests);\r\n",
+        "options": [
+            " `[\"Amazon\",\"Borneo\",\"Cerrado\",\"Congo\"]`\r\n",
+            " `[\"Cerrado\", \"Congo\"]`\r\n",
+            " `[\"Congo\"]`\r\n",
+            " `[\"Amazon\",\"Borneo\"]`\r\n\r\n"
+        ],
+        "correctAns": 2
+    },
+    {
+        "query": " Q94. Which missing line would allow you to create five variables(one,two,three,four,five) that correspond to their numerical values (1,2,3,4,5)?",
+        "code": "js\r\nconst numbers = [1, 2, 3, 4, 5];\r\n//MISSING LINE\r\n",
+        "options": [
+            " `const [one,two,three,four,five]=numbers`\r\n",
+            " `const {one,two,three,four,five}=numbers`\r\n",
+            " `const [one,two,three,four,five]=[numbers]`\r\n",
+            " `const {one,two,three,four,five}={numbers}`\r\n\r\n"
+        ],
+        "correctAns": 1
+    },
+    {
+        "query": " Q95.",
+        "code": "js\r\nconst obj = {\r\n  a: 1,\r\n  b: 2,\r\n  c: 3,\r\n};\r\n\r\nconst obj2 = {\r\n  ...obj,\r\n  a: 0,\r\n};\r\n\r\nconsole.log(obj2.a, obj2.b);\r\n",
+        "options": [
+            " Nothing, it will throw an error\r\n",
+            " 0 2\r\n",
+            " undefined 2\r\n",
+            " undefined 2\r\n\r\n"
+        ],
+        "correctAns": 2
+    },
+    {
+        "query": " Q96. Which line could you add to this code to print \"jaguar\" to the console?",
+        "code": "\r\nlet animals = [\"jaguar\",\"eagle\"];\r\n//Missing Line\r\nconsole.log(animals.pop()); //Prints jaguar\r\n",
+        "options": [
+            " `animals.filter(e => e === \"jaguar\");`\r\n",
+            " `animals.reverse();`\r\n",
+            " `animals.shift();`\r\n",
+            " `animals.pop();`\r\n\r\n"
+        ],
+        "correctAns": 4
+    },
+    {
+        "query": " Q97. What line is missing from this code?",
+        "code": "js\r\n//Missing Line\r\nfor (var i = 0; i < vowels.length; i++) {\r\n  console.log(vowels[i]);\r\n  //Each letter printed on a separate line as follows;\r\n  //a\r\n  //e\r\n  //i\r\n  //o\r\n  //u\r\n}\r\n",
+        "options": [
+            " `let vowels = \"aeiou\".toArray();`\r\n",
+            " `let vowels = Array.of(\"aeiou\");`\r\n",
+            " `let vowels = {\"a\", \"e\", \"i\", \"o\", \"u\"};`\r\n",
+            " `let vowels = \"aeiou\";`\r\n\r\n"
+        ],
+        "correctAns": 4
+    },
+    {
+        "query": " Q98. What will be logged to the console?",
+        "code": "js\r\nconst x = 6 % 2;\r\nconst y = x ? 'One' : 'Two';\r\nconsole.log(y);\r\n",
+        "options": [
+            " undefined\r\n",
+            " One\r\n",
+            " true\r\n",
+            " Two\r\n\r\n"
+        ],
+        "correctAns": 4
+    },
+    {
+        "query": " Q99. How would you access the word It from this multidimensional array?",
+        "options": [
+            " `matrix[1[2]]`\r\n",
+            " `matrix[1][1]`\r\n",
+            " `matrix[1,2]`\r\n",
+            " `matrix[1][2]`\r\n\r\n"
+        ],
+        "correctAns": 2
+    },
+    {
+        "query": " Q100. What does this code do?",
+        "code": "js\r\nconst animals = ['Rabbit', 'Dog', 'Cat'];\r\nanimals.unshift('Lizard');\r\n",
+        "options": [
+            " It adds \"Lizard\" to the start of the animals array.\r\n",
+            " It adds \"Lizard\" to the end of the animals array.\r\n",
+            " It replaces \"Rabbit\" with \"Lizard\" in the animals array.\r\n",
+            " It replaces \"Cat\" with \"Lizard\" in the animals array.\r\n\r\n"
+        ],
+        "correctAns": 1
+    }
+]

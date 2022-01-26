@@ -1,1 +1,253 @@
-[{"query":" Q26.How do you make an HTTP server object active and listen to requests on certain ports?","options":[" server. start\r\n"," server.activate\r\n"," server.listen\r\n"," server. run\r\n\r\n"],"correctAns":3},{"query":" Q27.What does the code shown below do?","code":"\r\nconst fs = require('fs'); const os = require('os');\r\nconst system = os.platform(); const user = os.userInfo().username;\r\nfs.appendFile('hello.txt', `Hello ${user} on ${system}`, (err) => { if (err) throw err; console.log('The data was appended to file!');}\r\n);\r\n","options":[" creates a text file hello.txt and appends customized text\r\n"," creates an image file\r\n"," console logs system information\r\n"," creates a file named data and append numbers\r\n\r\n"],"correctAns":1},{"query":" Q28.How do you start a Node application, if the entry file is indexjs?","options":[" nodemon start\r\n"," start index.js\r\n"," node index.js\r\n"," node start\r\n\r\n"],"correctAns":3},{"query":" Q29.What is the purpose of the file system (fs) module?","options":[" to provide methods to work with requests and responses\r\n"," to provide methods to work with files\r\n"," to provide methods to work with databases\r\n"," to find new file systems\r\n\r\n"],"correctAns":2},{"query":" Q30.What is the Node LTS version?","options":[" It is the current unstable version and is to be avoided.\r\n"," It is the version that will be retired soon.\r\n"," It is the version with the latest features.\r\n"," It is the safest version for long-term support.\r\n\r\n"],"correctAns":4},{"query":" Q31. Which of the following is NOT a valid stream in Node?","options":[" process. stdinfo\r\n"," process. stdin\r\n"," process. stdout\r\n"," process. stderr\r\n\r\n"],"correctAns":1},{"query":" Q32. You have a script.js file with the single line of code shown here. What will be the output of executing script.js with the node command?","options":[" ReferenceError: arguments is not defined\r\n"," an empty string\r\n"," undefined\r\n"," an object representing an array that has five elements\r\n\r\n"],"correctAns":4},{"query":" Q33. Which choice is not a valid method on event emitters?","options":[" start\r\n"," on\r\n"," once\r\n"," off\r\n\r\n"],"correctAns":1},{"query":" Q34. Which special object is an instance of EventEmitter?Which special object is an instance of null?","options":[" process\r\n"," Buffer\r\n"," root\r\n"," require\r\n\r\n"],"correctAns":4},{"query":" Q35. What is the command to get a list of available commands for Node.js?What is the command to get a list of available commands for Node.js?","options":[" node index.js -x\r\n"," node -v\r\n"," node -h\r\n"," node index.js -h\r\n\r\n"],"correctAns":3},{"query":" Q36. When a request event is received in the HTTP module, what is the type of the first argument passed to that event, usually named req?","options":[" http.IncomingMessage\r\n"," http.ServerRequest\r\n"," http.ClientRequest\r\n"," http.ServerResponse\r\n\r\n"],"correctAns":1},{"query":" Q37. What are the arguments passed to the module wrapper function?","options":[" `exports, __filename, __dirname`\r\n"," `exports, process, require, module, __filename, __dirname`\r\n"," `exports, module, __filename, __dirname`\r\n"," `exports, require, module, __filename, __dirname`\r\n\r\n"],"correctAns":4},{"query":" Q38. Which library provides Node.js with the event loop?","options":[" V8\r\n"," c-ares\r\n"," libuv\r\n"," events\r\n\r\n"],"correctAns":3},{"query":" Q39. What does the .node file extension represent?","options":[" a C++ file that can have a .node extension and that Node will be able to execute directly.\r\n"," a C++ Addon file that is built with node-gyp\r\n"," a JSON file that can have a .node extension as well as the .json extension\r\n"," a JavaScript file that can have a .node extension as well as the .js extension\r\n\r\n"],"correctAns":2},{"query":" Q40. What can you export with module.exports?","options":[" only objects.\r\n"," only functions\r\n"," only variables and arrays\r\n"," functions, objects, arrays, or anything you assign to the module\r\n\r\n"],"correctAns":4},{"query":" Q41. Which core module in Node can you use to take advantage of multicore systems?","options":[" os\r\n"," util\r\n"," cluster\r\n"," net\r\n\r\n"],"correctAns":3},{"query":" Q42. Which core Node module has wrappers for OpenSSL methods?","options":[" SSL\r\n"," hash\r\n"," crypto\r\n"," TLS\r\n\r\n"],"correctAns":3},{"query":" Q43. Which line imports a promise-based version of the readFile method?","options":[" const { readFile } = require(fs).promises\r\n"," const { readFile } = require(fs)\r\n"," const { readFilePromises: readFile } = require(fs)\r\n"," const { readFile } = require(promises)\r\n\r\n"],"correctAns":1},{"query":" Q44. According to the rules of semantic versioning, what does a release incrementing the third number in an npm version string communicate to users about the release changes?","options":[" Changes are not backwards compatible.\r\n"," Changes might not be backward compatible and might break existing code.\r\n"," Changes are just bug fixes and no new features were added.\r\n"," Changes will add new functionality but will not break any existing code.\r\n\r\n"],"correctAns":3},{"query":" Q45. What does REPL stand for?","options":[" run, examine, put, loop\r\n"," read, eval, print, loop\r\n"," run, edit, print, loop\r\n"," read, extend, print, loop\r\n\r\n"],"correctAns":2},{"query":" Q46. Which file does node-gyp use to read the build configuration of a module?","options":[" .gyprc\r\n"," binding.gyp\r\n"," gyp.json\r\n"," package.gyp\r\n\r\n"],"correctAns":2},{"query":" Q47. Which core module in Node can you use for testing?","options":[" chai\r\n"," jest\r\n"," assert\r\n"," mocha\r\n\r\n"],"correctAns":3},{"query":" Q48. Which core module in Node provides an API to register callbacks to track asynchronous resources created inside a Node.js application?","options":[" cluster\r\n"," async_hooks\r\n"," dgram\r\n"," inspector\r\n\r\n"],"correctAns":2},{"query":" Q49. Which Node.js module should you use when you need to decode raw data into strings?","options":[" buffer\r\n"," util\r\n"," string_decoder\r\n"," string_buffer\r\n\r\n"],"correctAns":3},{"query":" Q50. Which global object acts like a bridge between a Node script and the host operating system?","options":[" v8\r\n"," env\r\n"," process\r\n"," child_process\r\n\r\n**Explanation:** _process is an global object and act like a bridge, the others aren't (please see https://nodejs.org/api/globals.html or https://nodejs.org/api/process.html#process_process)._\r\n\r\n"],"correctAns":3}]
+[
+    {
+        "query": " Q26.How do you make an HTTP server object active and listen to requests on certain ports?",
+        "options": [
+            " server. start\r\n",
+            " server.activate\r\n",
+            " server.listen\r\n",
+            " server. run\r\n\r\n"
+        ],
+        "correctAns": 3
+    },
+    {
+        "query": " Q27.What does the code shown below do?",
+        "code": "\r\nconst fs = require('fs'); const os = require('os');\r\nconst system = os.platform(); const user = os.userInfo().username;\r\nfs.appendFile('hello.txt', `Hello ${user} on ${system}`, (err) => { if (err) throw err; console.log('The data was appended to file!');}\r\n);\r\n",
+        "options": [
+            " creates a text file hello.txt and appends customized text\r\n",
+            " creates an image file\r\n",
+            " console logs system information\r\n",
+            " creates a file named data and append numbers\r\n\r\n"
+        ],
+        "correctAns": 1
+    },
+    {
+        "query": " Q28.How do you start a Node application, if the entry file is indexjs?",
+        "options": [
+            " nodemon start\r\n",
+            " start index.js\r\n",
+            " node index.js\r\n",
+            " node start\r\n\r\n"
+        ],
+        "correctAns": 3
+    },
+    {
+        "query": " Q29.What is the purpose of the file system (fs) module?",
+        "options": [
+            " to provide methods to work with requests and responses\r\n",
+            " to provide methods to work with files\r\n",
+            " to provide methods to work with databases\r\n",
+            " to find new file systems\r\n\r\n"
+        ],
+        "correctAns": 2
+    },
+    {
+        "query": " Q30.What is the Node LTS version?",
+        "options": [
+            " It is the current unstable version and is to be avoided.\r\n",
+            " It is the version that will be retired soon.\r\n",
+            " It is the version with the latest features.\r\n",
+            " It is the safest version for long-term support.\r\n\r\n"
+        ],
+        "correctAns": 4
+    },
+    {
+        "query": " Q31. Which of the following is NOT a valid stream in Node?",
+        "options": [
+            " process. stdinfo\r\n",
+            " process. stdin\r\n",
+            " process. stdout\r\n",
+            " process. stderr\r\n\r\n"
+        ],
+        "correctAns": 1
+    },
+    {
+        "query": " Q32. You have a script.js file with the single line of code shown here. What will be the output of executing script.js with the node command?",
+        "options": [
+            " ReferenceError: arguments is not defined\r\n",
+            " an empty string\r\n",
+            " undefined\r\n",
+            " an object representing an array that has five elements\r\n\r\n"
+        ],
+        "correctAns": 4
+    },
+    {
+        "query": " Q33. Which choice is not a valid method on event emitters?",
+        "options": [
+            " start\r\n",
+            " on\r\n",
+            " once\r\n",
+            " off\r\n\r\n"
+        ],
+        "correctAns": 1
+    },
+    {
+        "query": " Q34. Which special object is an instance of EventEmitter?Which special object is an instance of null?",
+        "options": [
+            " process\r\n",
+            " Buffer\r\n",
+            " root\r\n",
+            " require\r\n\r\n"
+        ],
+        "correctAns": 4
+    },
+    {
+        "query": " Q35. What is the command to get a list of available commands for Node.js?What is the command to get a list of available commands for Node.js?",
+        "options": [
+            " node index.js -x\r\n",
+            " node -v\r\n",
+            " node -h\r\n",
+            " node index.js -h\r\n\r\n"
+        ],
+        "correctAns": 3
+    },
+    {
+        "query": " Q36. When a request event is received in the HTTP module, what is the type of the first argument passed to that event, usually named req?",
+        "options": [
+            " http.IncomingMessage\r\n",
+            " http.ServerRequest\r\n",
+            " http.ClientRequest\r\n",
+            " http.ServerResponse\r\n\r\n"
+        ],
+        "correctAns": 1
+    },
+    {
+        "query": " Q37. What are the arguments passed to the module wrapper function?",
+        "options": [
+            " `exports, __filename, __dirname`\r\n",
+            " `exports, process, require, module, __filename, __dirname`\r\n",
+            " `exports, module, __filename, __dirname`\r\n",
+            " `exports, require, module, __filename, __dirname`\r\n\r\n"
+        ],
+        "correctAns": 4
+    },
+    {
+        "query": " Q38. Which library provides Node.js with the event loop?",
+        "options": [
+            " V8\r\n",
+            " c-ares\r\n",
+            " libuv\r\n",
+            " events\r\n\r\n"
+        ],
+        "correctAns": 3
+    },
+    {
+        "query": " Q39. What does the .node file extension represent?",
+        "options": [
+            " a C++ file that can have a .node extension and that Node will be able to execute directly.\r\n",
+            " a C++ Addon file that is built with node-gyp\r\n",
+            " a JSON file that can have a .node extension as well as the .json extension\r\n",
+            " a JavaScript file that can have a .node extension as well as the .js extension\r\n\r\n"
+        ],
+        "correctAns": 2
+    },
+    {
+        "query": " Q40. What can you export with module.exports?",
+        "options": [
+            " only objects.\r\n",
+            " only functions\r\n",
+            " only variables and arrays\r\n",
+            " functions, objects, arrays, or anything you assign to the module\r\n\r\n"
+        ],
+        "correctAns": 4
+    },
+    {
+        "query": " Q41. Which core module in Node can you use to take advantage of multicore systems?",
+        "options": [
+            " os\r\n",
+            " util\r\n",
+            " cluster\r\n",
+            " net\r\n\r\n"
+        ],
+        "correctAns": 3
+    },
+    {
+        "query": " Q42. Which core Node module has wrappers for OpenSSL methods?",
+        "options": [
+            " SSL\r\n",
+            " hash\r\n",
+            " crypto\r\n",
+            " TLS\r\n\r\n"
+        ],
+        "correctAns": 3
+    },
+    {
+        "query": " Q43. Which line imports a promise-based version of the readFile method?",
+        "options": [
+            " const { readFile } = require(fs).promises\r\n",
+            " const { readFile } = require(fs)\r\n",
+            " const { readFilePromises: readFile } = require(fs)\r\n",
+            " const { readFile } = require(promises)\r\n\r\n"
+        ],
+        "correctAns": 1
+    },
+    {
+        "query": " Q44. According to the rules of semantic versioning, what does a release incrementing the third number in an npm version string communicate to users about the release changes?",
+        "options": [
+            " Changes are not backwards compatible.\r\n",
+            " Changes might not be backward compatible and might break existing code.\r\n",
+            " Changes are just bug fixes and no new features were added.\r\n",
+            " Changes will add new functionality but will not break any existing code.\r\n\r\n"
+        ],
+        "correctAns": 3
+    },
+    {
+        "query": " Q45. What does REPL stand for?",
+        "options": [
+            " run, examine, put, loop\r\n",
+            " read, eval, print, loop\r\n",
+            " run, edit, print, loop\r\n",
+            " read, extend, print, loop\r\n\r\n"
+        ],
+        "correctAns": 2
+    },
+    {
+        "query": " Q46. Which file does node-gyp use to read the build configuration of a module?",
+        "options": [
+            " .gyprc\r\n",
+            " binding.gyp\r\n",
+            " gyp.json\r\n",
+            " package.gyp\r\n\r\n"
+        ],
+        "correctAns": 2
+    },
+    {
+        "query": " Q47. Which core module in Node can you use for testing?",
+        "options": [
+            " chai\r\n",
+            " jest\r\n",
+            " assert\r\n",
+            " mocha\r\n\r\n"
+        ],
+        "correctAns": 3
+    },
+    {
+        "query": " Q48. Which core module in Node provides an API to register callbacks to track asynchronous resources created inside a Node.js application?",
+        "options": [
+            " cluster\r\n",
+            " async_hooks\r\n",
+            " dgram\r\n",
+            " inspector\r\n\r\n"
+        ],
+        "correctAns": 2
+    },
+    {
+        "query": " Q49. Which Node.js module should you use when you need to decode raw data into strings?",
+        "options": [
+            " buffer\r\n",
+            " util\r\n",
+            " string_decoder\r\n",
+            " string_buffer\r\n\r\n"
+        ],
+        "correctAns": 3
+    },
+    {
+        "query": " Q50. Which global object acts like a bridge between a Node script and the host operating system?",
+        "options": [
+            " v8\r\n",
+            " env\r\n",
+            " process\r\n",
+            " child_process\r\n\r\n**Explanation:** _process is an global object and act like a bridge, the others aren't (please see https://nodejs.org/api/globals.html or https://nodejs.org/api/process.html#process_process)._\r\n\r\n"
+        ],
+        "correctAns": 3
+    }
+]

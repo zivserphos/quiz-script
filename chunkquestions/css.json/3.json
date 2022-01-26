@@ -1,1 +1,259 @@
-[{"query":" Q51. Which code would you use to absolutely position an element of the logo class?","options":[" `.logo { position: absolute; left: 100px; top: 150px; }`\r\n"," `.logo { position: absolute; margin-left: 100px; margin-top: 150px; }`\r\n"," `.logo { position: absolute; padding-left: 100px; padding-top: 150px; }`\r\n"," `.logo { position: absolute; left-padding: 100px; top-padding: 150px; }`\r\n\r\n"],"correctAns":1},{"query":" Q52. In this example, what color will Paragraph 1 be?","code":"css\r\np:first-of-type {\r\n  color: red;\r\n}\r\np {\r\n  color: blue;\r\n}\r\n.container {\r\n  color: yellow;\r\n}\r\np:first-child {\r\n  color: green;\r\n}\r\n\r\n\r\nhtml\r\n<div class=\"container\">\r\n  <h1>Heading</h1>\r\n  <p>Paragraph1</p>\r\n  <p>Paragraph2</p>\r\n</div>\r\n","options":[" blue\r\n"," green\r\n"," red\r\n"," yellow\r\n\r\n"],"correctAns":3},{"query":" Q53. What is the `::placeholder pseudo-element` used for?","options":[" It is used to format the appearance of placeholder text within a form control.\r\n"," It specifies the default input text for a form control.\r\n"," It writes text content into a hyperlink tooltip.\r\n"," It writes text content into any page element.\r\n\r\n"],"correctAns":1},{"query":" Q54. Which statement is true of the single colon (`:`) or double colon (`::`) notations for pseudo-elements-for example, `::before` and `:before`?","options":[" All browsers support single and double colons for new and older pseudo-elements. So you can use either but it is convention to use single colons for consistency.\r\n"," In CSS3, the double colon notation (`::`) was introduced to create a consistency between pseudo-elements from pseudo-classes. For newer browsers, use the double colon notation. For IE8 and below, using single colon notation (`:`).\r\n"," Only the new CSS3 pseudo-elements require the double colon notation while the CSS2 pseudo-elements do not.\r\n"," In CSS3, the double colon notation (`::`) was introduced to differentiate pseudo-elements from pseudo-classes. However, modern browsers support both formats. Older browsers such as IE8 and below do not.\r\n\r\n"],"correctAns":4},{"query":" Q55. Which choice is not valid value for the font-style property?","options":[" normal\r\n"," italic\r\n"," none\r\n"," oblique\r\n\r\n"],"correctAns":3},{"query":" Q56. When would you use the @font-face method?","options":[" to set the font size of the text\r\n"," to load custom fonts into stylesheet\r\n"," to change the name of the font declared in the font-family\r\n"," to set the color of the text\r\n\r\n"],"correctAns":2},{"query":" Q57. When elements within a container overlap, the z-index property can be used to indicate how those items are stacked on top of each other. Which set of statements is true?","code":null,"options":["\r\n  ```markdown\r\n  1. Larger z-index values appear on top elements with a lower z-index value.\r\n  2. Negative and positive number can be used.\r\n  3. z-index can be used only on positioned elements.\r\n  ```\r\n","\r\n  ```markdown\r\n  1. Smaller z-index values appear on top of elements with a larger z-index value.\r\n  2. Negative and positive numbers can be used.\r\n  3. z-index can be used with or without positioned elements.\r\n  ```\r\n","\r\n  ```markdown\r\n  1. Smaller z-index values appear on top of elements with a larger z-index value.\r\n  2. Negative and positive number can be used.\r\n  3. z-index must also be used with positioned elements.\r\n  ```\r\n","\r\n  ```markdown\r\n  1. Larger z-index values appear on top of elements with a lower z-index value.\r\n  2. Only positive number can be used.\r\n  3. z-index must also be used with positioned elements.\r\n  ```\r\n\r\nNote: an alternative for Q13.\r\n\r\n"],"correctAns":1},{"query":" Q58. You have a large image that needs to fit into a 400 x 200 pixel area. What should you resize the image to if your users are using Retina displays?","options":[" 2000 x 1400 pixels\r\n"," 200 x 100 pixels\r\n"," 800 x 400 pixels\r\n"," 400 x 200 pixels\r\n\r\n"],"correctAns":3},{"query":" Q59. In Chrome's Developer Tools view, where are the default styles listed?","options":[" under the User Agent Stylesheet section on the right\r\n"," in the third panel under the Layout tab\r\n"," under the HTML view on the left\r\n"," in the middle panel\r\n\r\n"],"correctAns":1},{"query":" Q60. While HTML controls document structure, CSS controls `___`.","options":[" semantic meaning\r\n"," content meaning\r\n"," document structure\r\n"," content appearance\r\n\r\n"],"correctAns":4},{"query":" Q61. What is the recommended name you should give the folder that holds your project's images?","options":[" images\r\n"," #images\r\n"," Images\r\n"," my images\r\n\r\n"],"correctAns":1},{"query":" Q62. What is an advantage of using inline CSS?","options":[" It is easier to manage.\r\n"," It is easier to add multiple styles through it.\r\n"," It can be used to quickly test local CSS overrides.\r\n"," It reduces conflict with other CSS definition methods.\r\n\r\n"],"correctAns":2},{"query":" Q63.Which W3C status code represents a CSS specification that is fully implemented by modern browsers?","options":[" Proposed Recommendation\r\n"," Working Draft\r\n"," Recommendation\r\n"," Candidate Recommendation\r\n\r\n"],"correctAns":3},{"query":" Q64. Are any of the following declarations invalid?","code":"css\r\ncolor: red; /* declaration A */\r\nfont-size: 1em; /* declaration B */\r\npadding: 10px 0; /* declaration C */\r\n","options":[" Declaration A is invalid.\r\n"," Declaration B is invalid.\r\n"," Declaration C is invalid.\r\n"," All declarations are valid.\r\n\r\n"],"correctAns":4},{"query":" Q65. Which CSS will cause your links to have a solid blue background that changes to semitransparent on hover?","code":null,"options":["\r\n  ```css\r\n  a:link {\r\n    background: #0000ff;\r\n  }\r\n  a:hover {\r\n    background: rgba(0, 0, 255, 0.5);\r\n  }\r\n  ```\r\n","\r\n  ```css\r\n  a {\r\n    color: blue;\r\n  }\r\n  a:hover {\r\n    background: white;\r\n  }\r\n  ```\r\n","\r\n  ```css\r\n  a:link {\r\n    background: blue;\r\n  }\r\n  a:hover {\r\n    color: rgba(0, 0, 255, 0.5);\r\n  }\r\n  ```\r\n","\r\n  ```css\r\n  a:hover {\r\n    background: rgba(blue, 50%);\r\n  }\r\n  a:link {\r\n    background: rgba(blue);\r\n  }\r\n  ```\r\n\r\n"],"correctAns":1},{"query":" Q66. Which CSS rule takes precedence over the others listed?","options":[" `div.sidebar {}`\r\n"," `* {}`\r\n"," `div#sidebar2 p {}`\r\n"," `.sidebar p {}`\r\n\r\n"],"correctAns":3},{"query":" Q67. The body of your page includes some HTML sections. How will it look with the following CSS applied?","code":"css\r\nbody {\r\n  background: #ffffff; /* white */\r\n}\r\nsection {\r\n  background: #0000ff; /* blue */\r\n  height: 200px;\r\n}\r\n","options":[" blue sections on a white background\r\n"," Yellow sections on a blue background\r\n"," Green sections on a white background\r\n"," blue sections on a red background\r\n\r\n"],"correctAns":1},{"query":" Q68. Which CSS keyword can you use to override standard source order and specificity rules?","options":[" `!elevate!`\r\n"," `*prime`\r\n"," `override`\r\n"," `!important`\r\n\r\n"],"correctAns":4},{"query":" Q69. You can use the `___` pseudo-class to set a different color on a link if it was clicked on.","options":[" `a:visited`\r\n"," `a:hover`\r\n"," `a:link`\r\n"," `a:focus`\r\n\r\n"],"correctAns":1},{"query":" Q70. Which color will look the brightest on your screen, assuming the background is white?","options":[" `background-color: #aaa;`\r\n"," `background-color: #999999;`\r\n"," `background-color: rgba(170,170,170,0.5);`\r\n"," `background-color: rgba(170,170,170,0.2);`\r\n\r\n"],"correctAns":4},{"query":" Q71. Which CSS selector can you use to select all elements on your page associated with the two classes header and clear?","options":[" `.\"header clear\" {}`\r\n"," `header#clear {}`\r\n"," `.header.clear {}`\r\n"," `.header clear {}`\r\n\r\n"],"correctAns":3},{"query":" Q72. A universal selector is specified using a(n) `___`.","options":[" \"h1\" string\r\n"," \"a\" character\r\n"," \"p\" character\r\n"," \"\\*\" character\r\n\r\n"],"correctAns":4},{"query":" Q73. In the following CSS code, `'h1'` is the `___`, while `'color'` is the `___`.","code":"css\r\nh1 {\r\n  color: red;\r\n}\r\n","options":[" property; declaration\r\n"," declaration; rule\r\n"," \"p\" character\r\n"," selector; property\r\n\r\n"],"correctAns":4},{"query":" Q74. What is an alternate way to define the following CSS rule?","code":"css\r\nfont-weight: bold;\r\n","options":[" font-weight: 400;\r\n"," font-weight: medium;\r\n"," font-weight: 700;\r\n"," font-weight: Black;\r\n\r\n"],"correctAns":3},{"query":" Q75. You want your styling to be based on a font stack consisting of three fonts. Where should the generic font for your font family be specified?","options":[" It should be the first one on the list.\r\n"," Generic fonts are discouraged from this list.\r\n"," It should be the last one on the list.\r\n"," It should be the second one on the list.\r\n\r\n"],"correctAns":3}]
+[
+    {
+        "query": " Q51. Which code would you use to absolutely position an element of the logo class?",
+        "options": [
+            " `.logo { position: absolute; left: 100px; top: 150px; }`\r\n",
+            " `.logo { position: absolute; margin-left: 100px; margin-top: 150px; }`\r\n",
+            " `.logo { position: absolute; padding-left: 100px; padding-top: 150px; }`\r\n",
+            " `.logo { position: absolute; left-padding: 100px; top-padding: 150px; }`\r\n\r\n"
+        ],
+        "correctAns": 1
+    },
+    {
+        "query": " Q52. In this example, what color will Paragraph 1 be?",
+        "code": "css\r\np:first-of-type {\r\n  color: red;\r\n}\r\np {\r\n  color: blue;\r\n}\r\n.container {\r\n  color: yellow;\r\n}\r\np:first-child {\r\n  color: green;\r\n}\r\n\r\n\r\nhtml\r\n<div class=\"container\">\r\n  <h1>Heading</h1>\r\n  <p>Paragraph1</p>\r\n  <p>Paragraph2</p>\r\n</div>\r\n",
+        "options": [
+            " blue\r\n",
+            " green\r\n",
+            " red\r\n",
+            " yellow\r\n\r\n"
+        ],
+        "correctAns": 3
+    },
+    {
+        "query": " Q53. What is the `::placeholder pseudo-element` used for?",
+        "options": [
+            " It is used to format the appearance of placeholder text within a form control.\r\n",
+            " It specifies the default input text for a form control.\r\n",
+            " It writes text content into a hyperlink tooltip.\r\n",
+            " It writes text content into any page element.\r\n\r\n"
+        ],
+        "correctAns": 1
+    },
+    {
+        "query": " Q54. Which statement is true of the single colon (`:`) or double colon (`::`) notations for pseudo-elements-for example, `::before` and `:before`?",
+        "options": [
+            " All browsers support single and double colons for new and older pseudo-elements. So you can use either but it is convention to use single colons for consistency.\r\n",
+            " In CSS3, the double colon notation (`::`) was introduced to create a consistency between pseudo-elements from pseudo-classes. For newer browsers, use the double colon notation. For IE8 and below, using single colon notation (`:`).\r\n",
+            " Only the new CSS3 pseudo-elements require the double colon notation while the CSS2 pseudo-elements do not.\r\n",
+            " In CSS3, the double colon notation (`::`) was introduced to differentiate pseudo-elements from pseudo-classes. However, modern browsers support both formats. Older browsers such as IE8 and below do not.\r\n\r\n"
+        ],
+        "correctAns": 4
+    },
+    {
+        "query": " Q55. Which choice is not valid value for the font-style property?",
+        "options": [
+            " normal\r\n",
+            " italic\r\n",
+            " none\r\n",
+            " oblique\r\n\r\n"
+        ],
+        "correctAns": 3
+    },
+    {
+        "query": " Q56. When would you use the @font-face method?",
+        "options": [
+            " to set the font size of the text\r\n",
+            " to load custom fonts into stylesheet\r\n",
+            " to change the name of the font declared in the font-family\r\n",
+            " to set the color of the text\r\n\r\n"
+        ],
+        "correctAns": 2
+    },
+    {
+        "query": " Q57. When elements within a container overlap, the z-index property can be used to indicate how those items are stacked on top of each other. Which set of statements is true?",
+        "code": null,
+        "options": [
+            "\r\n  ```markdown\r\n  1. Larger z-index values appear on top elements with a lower z-index value.\r\n  2. Negative and positive number can be used.\r\n  3. z-index can be used only on positioned elements.\r\n  ```\r\n",
+            "\r\n  ```markdown\r\n  1. Smaller z-index values appear on top of elements with a larger z-index value.\r\n  2. Negative and positive numbers can be used.\r\n  3. z-index can be used with or without positioned elements.\r\n  ```\r\n",
+            "\r\n  ```markdown\r\n  1. Smaller z-index values appear on top of elements with a larger z-index value.\r\n  2. Negative and positive number can be used.\r\n  3. z-index must also be used with positioned elements.\r\n  ```\r\n",
+            "\r\n  ```markdown\r\n  1. Larger z-index values appear on top of elements with a lower z-index value.\r\n  2. Only positive number can be used.\r\n  3. z-index must also be used with positioned elements.\r\n  ```\r\n\r\nNote: an alternative for Q13.\r\n\r\n"
+        ],
+        "correctAns": 1
+    },
+    {
+        "query": " Q58. You have a large image that needs to fit into a 400 x 200 pixel area. What should you resize the image to if your users are using Retina displays?",
+        "options": [
+            " 2000 x 1400 pixels\r\n",
+            " 200 x 100 pixels\r\n",
+            " 800 x 400 pixels\r\n",
+            " 400 x 200 pixels\r\n\r\n"
+        ],
+        "correctAns": 3
+    },
+    {
+        "query": " Q59. In Chrome's Developer Tools view, where are the default styles listed?",
+        "options": [
+            " under the User Agent Stylesheet section on the right\r\n",
+            " in the third panel under the Layout tab\r\n",
+            " under the HTML view on the left\r\n",
+            " in the middle panel\r\n\r\n"
+        ],
+        "correctAns": 1
+    },
+    {
+        "query": " Q60. While HTML controls document structure, CSS controls `___`.",
+        "options": [
+            " semantic meaning\r\n",
+            " content meaning\r\n",
+            " document structure\r\n",
+            " content appearance\r\n\r\n"
+        ],
+        "correctAns": 4
+    },
+    {
+        "query": " Q61. What is the recommended name you should give the folder that holds your project's images?",
+        "options": [
+            " images\r\n",
+            " #images\r\n",
+            " Images\r\n",
+            " my images\r\n\r\n"
+        ],
+        "correctAns": 1
+    },
+    {
+        "query": " Q62. What is an advantage of using inline CSS?",
+        "options": [
+            " It is easier to manage.\r\n",
+            " It is easier to add multiple styles through it.\r\n",
+            " It can be used to quickly test local CSS overrides.\r\n",
+            " It reduces conflict with other CSS definition methods.\r\n\r\n"
+        ],
+        "correctAns": 2
+    },
+    {
+        "query": " Q63.Which W3C status code represents a CSS specification that is fully implemented by modern browsers?",
+        "options": [
+            " Proposed Recommendation\r\n",
+            " Working Draft\r\n",
+            " Recommendation\r\n",
+            " Candidate Recommendation\r\n\r\n"
+        ],
+        "correctAns": 3
+    },
+    {
+        "query": " Q64. Are any of the following declarations invalid?",
+        "code": "css\r\ncolor: red; /* declaration A */\r\nfont-size: 1em; /* declaration B */\r\npadding: 10px 0; /* declaration C */\r\n",
+        "options": [
+            " Declaration A is invalid.\r\n",
+            " Declaration B is invalid.\r\n",
+            " Declaration C is invalid.\r\n",
+            " All declarations are valid.\r\n\r\n"
+        ],
+        "correctAns": 4
+    },
+    {
+        "query": " Q65. Which CSS will cause your links to have a solid blue background that changes to semitransparent on hover?",
+        "code": null,
+        "options": [
+            "\r\n  ```css\r\n  a:link {\r\n    background: #0000ff;\r\n  }\r\n  a:hover {\r\n    background: rgba(0, 0, 255, 0.5);\r\n  }\r\n  ```\r\n",
+            "\r\n  ```css\r\n  a {\r\n    color: blue;\r\n  }\r\n  a:hover {\r\n    background: white;\r\n  }\r\n  ```\r\n",
+            "\r\n  ```css\r\n  a:link {\r\n    background: blue;\r\n  }\r\n  a:hover {\r\n    color: rgba(0, 0, 255, 0.5);\r\n  }\r\n  ```\r\n",
+            "\r\n  ```css\r\n  a:hover {\r\n    background: rgba(blue, 50%);\r\n  }\r\n  a:link {\r\n    background: rgba(blue);\r\n  }\r\n  ```\r\n\r\n"
+        ],
+        "correctAns": 1
+    },
+    {
+        "query": " Q66. Which CSS rule takes precedence over the others listed?",
+        "options": [
+            " `div.sidebar {}`\r\n",
+            " `* {}`\r\n",
+            " `div#sidebar2 p {}`\r\n",
+            " `.sidebar p {}`\r\n\r\n"
+        ],
+        "correctAns": 3
+    },
+    {
+        "query": " Q67. The body of your page includes some HTML sections. How will it look with the following CSS applied?",
+        "code": "css\r\nbody {\r\n  background: #ffffff; /* white */\r\n}\r\nsection {\r\n  background: #0000ff; /* blue */\r\n  height: 200px;\r\n}\r\n",
+        "options": [
+            " blue sections on a white background\r\n",
+            " Yellow sections on a blue background\r\n",
+            " Green sections on a white background\r\n",
+            " blue sections on a red background\r\n\r\n"
+        ],
+        "correctAns": 1
+    },
+    {
+        "query": " Q68. Which CSS keyword can you use to override standard source order and specificity rules?",
+        "options": [
+            " `!elevate!`\r\n",
+            " `*prime`\r\n",
+            " `override`\r\n",
+            " `!important`\r\n\r\n"
+        ],
+        "correctAns": 4
+    },
+    {
+        "query": " Q69. You can use the `___` pseudo-class to set a different color on a link if it was clicked on.",
+        "options": [
+            " `a:visited`\r\n",
+            " `a:hover`\r\n",
+            " `a:link`\r\n",
+            " `a:focus`\r\n\r\n"
+        ],
+        "correctAns": 1
+    },
+    {
+        "query": " Q70. Which color will look the brightest on your screen, assuming the background is white?",
+        "options": [
+            " `background-color: #aaa;`\r\n",
+            " `background-color: #999999;`\r\n",
+            " `background-color: rgba(170,170,170,0.5);`\r\n",
+            " `background-color: rgba(170,170,170,0.2);`\r\n\r\n"
+        ],
+        "correctAns": 4
+    },
+    {
+        "query": " Q71. Which CSS selector can you use to select all elements on your page associated with the two classes header and clear?",
+        "options": [
+            " `.\"header clear\" {}`\r\n",
+            " `header#clear {}`\r\n",
+            " `.header.clear {}`\r\n",
+            " `.header clear {}`\r\n\r\n"
+        ],
+        "correctAns": 3
+    },
+    {
+        "query": " Q72. A universal selector is specified using a(n) `___`.",
+        "options": [
+            " \"h1\" string\r\n",
+            " \"a\" character\r\n",
+            " \"p\" character\r\n",
+            " \"\\*\" character\r\n\r\n"
+        ],
+        "correctAns": 4
+    },
+    {
+        "query": " Q73. In the following CSS code, `'h1'` is the `___`, while `'color'` is the `___`.",
+        "code": "css\r\nh1 {\r\n  color: red;\r\n}\r\n",
+        "options": [
+            " property; declaration\r\n",
+            " declaration; rule\r\n",
+            " \"p\" character\r\n",
+            " selector; property\r\n\r\n"
+        ],
+        "correctAns": 4
+    },
+    {
+        "query": " Q74. What is an alternate way to define the following CSS rule?",
+        "code": "css\r\nfont-weight: bold;\r\n",
+        "options": [
+            " font-weight: 400;\r\n",
+            " font-weight: medium;\r\n",
+            " font-weight: 700;\r\n",
+            " font-weight: Black;\r\n\r\n"
+        ],
+        "correctAns": 3
+    },
+    {
+        "query": " Q75. You want your styling to be based on a font stack consisting of three fonts. Where should the generic font for your font family be specified?",
+        "options": [
+            " It should be the first one on the list.\r\n",
+            " Generic fonts are discouraged from this list.\r\n",
+            " It should be the last one on the list.\r\n",
+            " It should be the second one on the list.\r\n\r\n"
+        ],
+        "correctAns": 3
+    }
+]

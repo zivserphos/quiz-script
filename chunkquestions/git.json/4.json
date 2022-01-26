@@ -1,1 +1,222 @@
-[{"query":" Q76. How does this command alter the currently checked-out branch?","options":[" It resets the working branch to the first commit.\r\n"," It sets HEAD to previous commit and leaves changes from the undone commit in the stage/index.\r\n"," It deletes all previous commits and resets the repository history back to its initial state.\r\n"," It keeps the HEAD at the current commit, but clears all previous commits.\r\n\r\n"],"correctAns":2},{"query":" Q77. What is the difference between Git and SVN?","options":[" Git works only on Linux, while SVN works on all operating systems.\r\n"," SVN works only on Linux, while Git works on all operating systems.\r\n"," SVN is a centralized system, while Git is a distributed system.\r\n"," Git a centralized system, while SVN is a distributed system.\r\n\r\n"],"correctAns":3},{"query":" Q78. This command is an example of what kind of tag?","options":[" verbose\r\n"," annotated\r\n"," lightweight\r\n"," deferred\r\n\r\n"],"correctAns":2},{"query":" Q79. What is the difference between a soft reset (`git reset --soft`) and a hard reset (`git reset –hard`) ?","options":[" A soft reset only changes the commit that HEAD points to, while a hard reset resets the index and working tree to match the specified commit, discarding any changes.\r\n"," A soft reset caches the old HEAD pointer, while a hard reset deletes it entirely.\r\n"," A hard reset changes only where the HEAD is pointing, while a soft reset changes the HEAD and index.\r\n"," A hard reset caches the old HEAD pointer, while a soft reset deletes it entirely.\r\n\r\n"],"correctAns":1},{"query":" Q81. What information does the git config file store?","options":[" shell scripts and flags\r\n"," keychain and account information\r\n"," local and global repository options\r\n"," pre-compile scripts and settings\r\n\r\n"],"correctAns":3},{"query":" Q82. What is version control?","options":[" a type of architecture used to manage large databases\r\n"," a system that shows, tracks, and controls changes to a set of files over time\r\n"," a programmatic design pattern used to manage code between multiple engineering teams\r\n"," a type of software that links a project with a GitHub repository\r\n\r\n"],"correctAns":2},{"query":" Q83. What is the difference between using the git stash and git stash pop commands?","options":[" git stash removes a commit from the repo history, while git stash pop saves changes to multiple branches.\r\n"," git stash saves changes to multiple branches, while git stash pop removes a commit from the repo history.\r\n"," git stash removes the most recent commit, while git stash pop saves current changes.\r\n"," git stash creates a stash entry, while git stash pop places the saved state onto the working directory.\r\n\r\n"],"correctAns":4},{"query":" Q84. Which command can be used to list the branches that have been merged into the currently checked-out branch?","options":[" git master --status\r\n"," git branch --status\r\n"," git branch --merged\r\n"," git status --merged\r\n\r\n"],"correctAns":3},{"query":" Q85. How would you configure Git to abort a commit if a smoke test script fails?","options":[" Create a post-commit shell script that triggers the action.\r\n"," Create a post-commit hook to trigger the script.\r\n"," Create a pre-commit hook to trigger the script.\r\n"," Create a pre-commit shell script that triggers the action.\r\n\r\n"],"correctAns":3},{"query":" Q86. Which use case is NOT a good candidate for a Git hook?","options":[" state dependent environment changes\r\n"," continuous integration\r\n"," increasing code coverage\r\n"," enforcing commit rules\r\n\r\n"],"correctAns":1},{"query":" Q87. After starting to work on a new feature and creating new files in the working directory related to it, the customer determined the feature was no longer required. What command can be used to remove the untracked files from the working directory ?","options":[" `git clean -f`\r\n"," `git rm .`\r\n"," `git reset HEAD`\r\n"," `git checkout .`\r\n\r\n"],"correctAns":1},{"query":" Q88. What information do Git reflogs (reference logs) store?","options":[" shell script pointers and keychain credentials\r\n"," updates to branch tips and other references in the local repository\r\n"," release notes and hook script values\r\n"," tag and versioning information\r\n\r\n"],"correctAns":2},{"query":" Q89. You have just completed rebasing your master branch and need to manually update the remote master, even though there is a merge conflict. How can you accomplish this?","options":[" `git push --overwrite`\r\n"," `git push --update`\r\n"," `git push --assert`\r\n"," `git push --force-with-lease`\r\n\r\n"],"correctAns":4},{"query":" Q90. What is the difference between `git fetch` amd `git pull`","options":[" `git fetch` creates a new branch off the master branch, while `git pull` creates a new branch off the local repository's master branch.\r\n"," `git pull` downloads new data from a remote repository without integrating it into local files, while `git fetch` updates the current HEAD branch with the latest changes from the remote server.\r\n"," `git fetch` updates remote tracking branches with changes from a remote repository, while `git pull` updates remote tracking branches with changes from a remote repository and merges them into their corresponding local branches.\r\n"," `git fetch` downloads and merges data from the local repository, while `git pull` informs your colleagues you are about to make changes to the master branch.\r\n\r\n"],"correctAns":3},{"query":" Q91. What command displays the difference between the working tree and the stage/index area, as well as files not tracked by Git?","options":[" `git current`\r\n"," `git status`\r\n"," `git local`\r\n"," `git context`\r\n\r\n"],"correctAns":2},{"query":" Q92. Your current repository has three branches: master, beta, and push-notifications. You have just finished the notification feature and commit the changes to the push-notification branch, and you want to include them in the beta branch. How can you accomplish this?","options":[" Check out the beta branch and run git merge push-notifications.\r\n"," Check out the push-notifications branch and run git merge beta.\r\n"," Check out the master branch and run git merge beta -> push-notifications.\r\n"," Delete the push-notifications branch; it will be committed to the master branch automatically.\r\n\r\n"],"correctAns":1},{"query":" Q93. You would like to restore some previously stashed work to a new branch. How can you do that?","options":[" Use git branch <stash hash>.\r\n"," Add the stashed commits to the current commit, then create a new branch.\r\n"," Use git checkout -b.\r\n"," Run git stash branch <branch name>.\r\n\r\n[reference here](https://stackoverflow.com/questions/6925099/git-stash-changes-apply-to-new-branch)\r\n\r\n"],"correctAns":4},{"query":" Q94. What is the difference between git branch -d and git branch -D?","options":[" -D deletes the local branch, while -d deletes the branch regardless of push and merge status.\r\n"," -d deletes the current commit head, while -D deletes the entire branch.\r\n"," -d deletes the local branch, while -D deletes the local branch regardless of push and merge status.\r\n"," -D deletes the current commit head, while -d deletes the entire branch.\r\n\r\n"],"correctAns":3},{"query":" Q95. You stashed three sets of changes but cannot remember the contents of the first stash entry. What command would you use to see the details of the changes in the first of the three stash entries?","options":[" git stash show -p stash@{2}\r\n"," git stash list\r\n"," git stash show -p stash@{1}\r\n"," git stash show -p\r\n\r\n[reference here](https://stackoverflow.com/questions/10725729/see-whats-in-a-stash-without-applying-it)\r\n\r\n"],"correctAns":1},{"query":" Q96. Which statement is true of the git push command?","options":[" By default, a push doesn't send tags to the remote repository.\r\n"," Only annotated tags are automatically pushed to the remote repository with a commit.\r\n"," Tags are pushed to the remote repository with their respective commits.\r\n"," Commits can be tagged only when they are created.\r\n\r\n[reference here](https://git-scm.com/book/en/v2/Git-Basics-Tagging)\r\n\r\n"],"correctAns":1},{"query":" Q97. How would you delete a remote branch in your repository?","options":[" Use `git --delete <branch_name>`.\r\n"," Use `git push <remote_name> --d <branch_name>`.\r\n"," Use `git push <remote_name> --D`.\r\n"," Use `git push <remote_name> --delete <branch_name>`.\r\n\r\n[reference here](https://stackoverflow.com/questions/2003505/how-do-i-delete-a-git-branch-locally-and-remotely)\r\n\r\n"],"correctAns":4},{"query":" Q98. What is the default setting of `git reflog` when no subcommands are specified?","options":[" delete\r\n"," expire\r\n"," show\r\n"," update\r\n\r\n[reference here](https://git-scm.com/docs/git-reflog)\r\n"],"correctAns":3}]
+[
+    {
+        "query": " Q76. How does this command alter the currently checked-out branch?",
+        "options": [
+            " It resets the working branch to the first commit.\r\n",
+            " It sets HEAD to previous commit and leaves changes from the undone commit in the stage/index.\r\n",
+            " It deletes all previous commits and resets the repository history back to its initial state.\r\n",
+            " It keeps the HEAD at the current commit, but clears all previous commits.\r\n\r\n"
+        ],
+        "correctAns": 2
+    },
+    {
+        "query": " Q77. What is the difference between Git and SVN?",
+        "options": [
+            " Git works only on Linux, while SVN works on all operating systems.\r\n",
+            " SVN works only on Linux, while Git works on all operating systems.\r\n",
+            " SVN is a centralized system, while Git is a distributed system.\r\n",
+            " Git a centralized system, while SVN is a distributed system.\r\n\r\n"
+        ],
+        "correctAns": 3
+    },
+    {
+        "query": " Q78. This command is an example of what kind of tag?",
+        "options": [
+            " verbose\r\n",
+            " annotated\r\n",
+            " lightweight\r\n",
+            " deferred\r\n\r\n"
+        ],
+        "correctAns": 2
+    },
+    {
+        "query": " Q79. What is the difference between a soft reset (`git reset --soft`) and a hard reset (`git reset –hard`) ?",
+        "options": [
+            " A soft reset only changes the commit that HEAD points to, while a hard reset resets the index and working tree to match the specified commit, discarding any changes.\r\n",
+            " A soft reset caches the old HEAD pointer, while a hard reset deletes it entirely.\r\n",
+            " A hard reset changes only where the HEAD is pointing, while a soft reset changes the HEAD and index.\r\n",
+            " A hard reset caches the old HEAD pointer, while a soft reset deletes it entirely.\r\n\r\n"
+        ],
+        "correctAns": 1
+    },
+    {
+        "query": " Q81. What information does the git config file store?",
+        "options": [
+            " shell scripts and flags\r\n",
+            " keychain and account information\r\n",
+            " local and global repository options\r\n",
+            " pre-compile scripts and settings\r\n\r\n"
+        ],
+        "correctAns": 3
+    },
+    {
+        "query": " Q82. What is version control?",
+        "options": [
+            " a type of architecture used to manage large databases\r\n",
+            " a system that shows, tracks, and controls changes to a set of files over time\r\n",
+            " a programmatic design pattern used to manage code between multiple engineering teams\r\n",
+            " a type of software that links a project with a GitHub repository\r\n\r\n"
+        ],
+        "correctAns": 2
+    },
+    {
+        "query": " Q83. What is the difference between using the git stash and git stash pop commands?",
+        "options": [
+            " git stash removes a commit from the repo history, while git stash pop saves changes to multiple branches.\r\n",
+            " git stash saves changes to multiple branches, while git stash pop removes a commit from the repo history.\r\n",
+            " git stash removes the most recent commit, while git stash pop saves current changes.\r\n",
+            " git stash creates a stash entry, while git stash pop places the saved state onto the working directory.\r\n\r\n"
+        ],
+        "correctAns": 4
+    },
+    {
+        "query": " Q84. Which command can be used to list the branches that have been merged into the currently checked-out branch?",
+        "options": [
+            " git master --status\r\n",
+            " git branch --status\r\n",
+            " git branch --merged\r\n",
+            " git status --merged\r\n\r\n"
+        ],
+        "correctAns": 3
+    },
+    {
+        "query": " Q85. How would you configure Git to abort a commit if a smoke test script fails?",
+        "options": [
+            " Create a post-commit shell script that triggers the action.\r\n",
+            " Create a post-commit hook to trigger the script.\r\n",
+            " Create a pre-commit hook to trigger the script.\r\n",
+            " Create a pre-commit shell script that triggers the action.\r\n\r\n"
+        ],
+        "correctAns": 3
+    },
+    {
+        "query": " Q86. Which use case is NOT a good candidate for a Git hook?",
+        "options": [
+            " state dependent environment changes\r\n",
+            " continuous integration\r\n",
+            " increasing code coverage\r\n",
+            " enforcing commit rules\r\n\r\n"
+        ],
+        "correctAns": 1
+    },
+    {
+        "query": " Q87. After starting to work on a new feature and creating new files in the working directory related to it, the customer determined the feature was no longer required. What command can be used to remove the untracked files from the working directory ?",
+        "options": [
+            " `git clean -f`\r\n",
+            " `git rm .`\r\n",
+            " `git reset HEAD`\r\n",
+            " `git checkout .`\r\n\r\n"
+        ],
+        "correctAns": 1
+    },
+    {
+        "query": " Q88. What information do Git reflogs (reference logs) store?",
+        "options": [
+            " shell script pointers and keychain credentials\r\n",
+            " updates to branch tips and other references in the local repository\r\n",
+            " release notes and hook script values\r\n",
+            " tag and versioning information\r\n\r\n"
+        ],
+        "correctAns": 2
+    },
+    {
+        "query": " Q89. You have just completed rebasing your master branch and need to manually update the remote master, even though there is a merge conflict. How can you accomplish this?",
+        "options": [
+            " `git push --overwrite`\r\n",
+            " `git push --update`\r\n",
+            " `git push --assert`\r\n",
+            " `git push --force-with-lease`\r\n\r\n"
+        ],
+        "correctAns": 4
+    },
+    {
+        "query": " Q90. What is the difference between `git fetch` amd `git pull`",
+        "options": [
+            " `git fetch` creates a new branch off the master branch, while `git pull` creates a new branch off the local repository's master branch.\r\n",
+            " `git pull` downloads new data from a remote repository without integrating it into local files, while `git fetch` updates the current HEAD branch with the latest changes from the remote server.\r\n",
+            " `git fetch` updates remote tracking branches with changes from a remote repository, while `git pull` updates remote tracking branches with changes from a remote repository and merges them into their corresponding local branches.\r\n",
+            " `git fetch` downloads and merges data from the local repository, while `git pull` informs your colleagues you are about to make changes to the master branch.\r\n\r\n"
+        ],
+        "correctAns": 3
+    },
+    {
+        "query": " Q91. What command displays the difference between the working tree and the stage/index area, as well as files not tracked by Git?",
+        "options": [
+            " `git current`\r\n",
+            " `git status`\r\n",
+            " `git local`\r\n",
+            " `git context`\r\n\r\n"
+        ],
+        "correctAns": 2
+    },
+    {
+        "query": " Q92. Your current repository has three branches: master, beta, and push-notifications. You have just finished the notification feature and commit the changes to the push-notification branch, and you want to include them in the beta branch. How can you accomplish this?",
+        "options": [
+            " Check out the beta branch and run git merge push-notifications.\r\n",
+            " Check out the push-notifications branch and run git merge beta.\r\n",
+            " Check out the master branch and run git merge beta -> push-notifications.\r\n",
+            " Delete the push-notifications branch; it will be committed to the master branch automatically.\r\n\r\n"
+        ],
+        "correctAns": 1
+    },
+    {
+        "query": " Q93. You would like to restore some previously stashed work to a new branch. How can you do that?",
+        "options": [
+            " Use git branch <stash hash>.\r\n",
+            " Add the stashed commits to the current commit, then create a new branch.\r\n",
+            " Use git checkout -b.\r\n",
+            " Run git stash branch <branch name>.\r\n\r\n[reference here](https://stackoverflow.com/questions/6925099/git-stash-changes-apply-to-new-branch)\r\n\r\n"
+        ],
+        "correctAns": 4
+    },
+    {
+        "query": " Q94. What is the difference between git branch -d and git branch -D?",
+        "options": [
+            " -D deletes the local branch, while -d deletes the branch regardless of push and merge status.\r\n",
+            " -d deletes the current commit head, while -D deletes the entire branch.\r\n",
+            " -d deletes the local branch, while -D deletes the local branch regardless of push and merge status.\r\n",
+            " -D deletes the current commit head, while -d deletes the entire branch.\r\n\r\n"
+        ],
+        "correctAns": 3
+    },
+    {
+        "query": " Q95. You stashed three sets of changes but cannot remember the contents of the first stash entry. What command would you use to see the details of the changes in the first of the three stash entries?",
+        "options": [
+            " git stash show -p stash@{2}\r\n",
+            " git stash list\r\n",
+            " git stash show -p stash@{1}\r\n",
+            " git stash show -p\r\n\r\n[reference here](https://stackoverflow.com/questions/10725729/see-whats-in-a-stash-without-applying-it)\r\n\r\n"
+        ],
+        "correctAns": 1
+    },
+    {
+        "query": " Q96. Which statement is true of the git push command?",
+        "options": [
+            " By default, a push doesn't send tags to the remote repository.\r\n",
+            " Only annotated tags are automatically pushed to the remote repository with a commit.\r\n",
+            " Tags are pushed to the remote repository with their respective commits.\r\n",
+            " Commits can be tagged only when they are created.\r\n\r\n[reference here](https://git-scm.com/book/en/v2/Git-Basics-Tagging)\r\n\r\n"
+        ],
+        "correctAns": 1
+    },
+    {
+        "query": " Q97. How would you delete a remote branch in your repository?",
+        "options": [
+            " Use `git --delete <branch_name>`.\r\n",
+            " Use `git push <remote_name> --d <branch_name>`.\r\n",
+            " Use `git push <remote_name> --D`.\r\n",
+            " Use `git push <remote_name> --delete <branch_name>`.\r\n\r\n[reference here](https://stackoverflow.com/questions/2003505/how-do-i-delete-a-git-branch-locally-and-remotely)\r\n\r\n"
+        ],
+        "correctAns": 4
+    },
+    {
+        "query": " Q98. What is the default setting of `git reflog` when no subcommands are specified?",
+        "options": [
+            " delete\r\n",
+            " expire\r\n",
+            " show\r\n",
+            " update\r\n\r\n[reference here](https://git-scm.com/docs/git-reflog)\r\n"
+        ],
+        "correctAns": 3
+    }
+]

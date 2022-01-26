@@ -1,1 +1,116 @@
-[{"query":" Q26. Which choice does _not_ send output to standard error?","options":[" println(message)\r\n"," log.New(os.Stderr, \"\", 0).Println(message)\r\n"," fmt.Errorf(\"%s\\n\", message)\r\n"," fmt.Fprintln(os.Stderr, message)\r\n\r\n"],"correctAns":1},{"query":" Q27. How can you tell Go to import a package from a different location?","options":[" Use a proxy.\r\n"," Change the import path.\r\n"," Use a replace directive in go.mod.\r\n"," Use a replace directory.\r\n\r\n"],"correctAns":3},{"query":" Q28. If your current working directory is the top level of your project, which command will run all its test packages?","options":[" go test all\r\n"," go run --all\r\n"," go test .\r\n"," go test ./...\r\n\r\nReference: [Example of testing in Go (Golang)](https://pkg.go.dev/testing)\r\n\r\nReference: [Example of cmd in Go (Golang)](https://pkg.go.dev/cmd/go)\r\n\r\nRelevant excerpt from the article:\r\n\r\n> _Relative patterns are also allowed, like \"go test ./...\" to test all subdirectories._\r\n\r\n"],"correctAns":4},{"query":" Q29. Which encodings can you put in a string?","options":[" any, it accepts arbitary bytes\r\n"," any Unicode format\r\n"," UTF-8 or ASCII\r\n"," UTF-8\r\n\r\nReference: [Example of encoding in Go (Golang)](https://pkg.go.dev/golang.org/x/text/encoding)\r\n\r\nRelevant excerpt from the article:\r\n\r\n> _Package encoding defines an interface for character encodings, such as Shift JIS and Windows 1252, that can convert to and from UTF-8._\r\n\r\n"],"correctAns":4},{"query":" Q31. What does `log.Fatal` do?","options":[" It raises a panic.\r\n"," It prints the log and then raises a panic.\r\n"," It prints the log and then safely exits the program.\r\n"," It exits the program.\r\n\r\nReference: [Example of func Fatal in Go (Golang)](https://pkg.go.dev/log#Fatal)\r\n\r\nRelevant excerpt from the article:\r\n\r\n> _Fatal is equivalent to Print() followed by a call to os.Exit(1)._\r\n\r\n"],"correctAns":3},{"query":" Q32. Which is a valid Go time format literal?","options":[" \"2006-01-02\"\r\n"," \"YYYY-mm-dd\"\r\n"," \"y-mo-d\"\r\n"," \"year-month-day\"\r\n\r\nReference: [Example of func Time in Go (Golang)](https://pkg.go.dev/time)\r\n\r\nRelevant excerpt from the article:\r\n\r\n> _Most programs can use one of the defined constants as the layout passed to Format or Parse. The rest of this comment can be ignored unless you are creating a custom layout string._\r\n\r\n"],"correctAns":1},{"query":" Q36. What will be the output of this code?","code":"\r\nch := make(chan int)\r\nch <- 7\r\nval := <-ch\r\nfmt.Println(val)\r\n","options":[" 0\r\n"," It will deadlock\r\n"," It will not compile\r\n"," 2.718\r\n\r\n"],"correctAns":2},{"query":" Q37. What will be the output of this program?","code":"\r\nch := make(chan int)\r\nclose(ch)\r\nval := <-ch\r\nfmt.Println(val)\r\n","options":[" It will deadlock\r\n"," It will panic\r\n"," 0\r\n"," NaN\r\n\r\n"],"correctAns":3},{"query":" Q38. What will be printed in this code?","code":"\r\nvar stocks map[string]float64 // stock -> price\r\nprice := stocks[\"MSFT\"]\r\nfmt.Println(\"%f\\n\", price)\r\n","options":[" 0\r\n"," 0.000000\r\n"," The code will panic\r\n"," NaN\r\n\r\n"],"correctAns":1},{"query":" Q39. What is the common way to have several executables in your project?","options":[" Have a cmd directory and a directory per executable inside it.\r\n"," Comment out main.\r\n"," Use build tags.\r\n"," Have a pkg directory and a directory per executable inside it.\r\n\r\n"],"correctAns":4},{"query":" Q40. How is the behavior of ```t.Fatal``` different inside a ```t.Run``` ?","code":"t.Fatal","options":[" ```t.Fatal``` does not crash the test harness, preserving output messages.\r\n"," ```t.Fatal``` stops all tests and contains extra information about the failed sub test.\r\n"," ```t.Fatal``` stops execution of the subtest and continues with other test cases.\r\n"," There is no difference.\r\n\r\n"],"correctAns":2}]
+[
+    {
+        "query": " Q26. Which choice does _not_ send output to standard error?",
+        "options": [
+            " println(message)\r\n",
+            " log.New(os.Stderr, \"\", 0).Println(message)\r\n",
+            " fmt.Errorf(\"%s\\n\", message)\r\n",
+            " fmt.Fprintln(os.Stderr, message)\r\n\r\n"
+        ],
+        "correctAns": 1
+    },
+    {
+        "query": " Q27. How can you tell Go to import a package from a different location?",
+        "options": [
+            " Use a proxy.\r\n",
+            " Change the import path.\r\n",
+            " Use a replace directive in go.mod.\r\n",
+            " Use a replace directory.\r\n\r\n"
+        ],
+        "correctAns": 3
+    },
+    {
+        "query": " Q28. If your current working directory is the top level of your project, which command will run all its test packages?",
+        "options": [
+            " go test all\r\n",
+            " go run --all\r\n",
+            " go test .\r\n",
+            " go test ./...\r\n\r\nReference: [Example of testing in Go (Golang)](https://pkg.go.dev/testing)\r\n\r\nReference: [Example of cmd in Go (Golang)](https://pkg.go.dev/cmd/go)\r\n\r\nRelevant excerpt from the article:\r\n\r\n> _Relative patterns are also allowed, like \"go test ./...\" to test all subdirectories._\r\n\r\n"
+        ],
+        "correctAns": 4
+    },
+    {
+        "query": " Q29. Which encodings can you put in a string?",
+        "options": [
+            " any, it accepts arbitary bytes\r\n",
+            " any Unicode format\r\n",
+            " UTF-8 or ASCII\r\n",
+            " UTF-8\r\n\r\nReference: [Example of encoding in Go (Golang)](https://pkg.go.dev/golang.org/x/text/encoding)\r\n\r\nRelevant excerpt from the article:\r\n\r\n> _Package encoding defines an interface for character encodings, such as Shift JIS and Windows 1252, that can convert to and from UTF-8._\r\n\r\n"
+        ],
+        "correctAns": 4
+    },
+    {
+        "query": " Q31. What does `log.Fatal` do?",
+        "options": [
+            " It raises a panic.\r\n",
+            " It prints the log and then raises a panic.\r\n",
+            " It prints the log and then safely exits the program.\r\n",
+            " It exits the program.\r\n\r\nReference: [Example of func Fatal in Go (Golang)](https://pkg.go.dev/log#Fatal)\r\n\r\nRelevant excerpt from the article:\r\n\r\n> _Fatal is equivalent to Print() followed by a call to os.Exit(1)._\r\n\r\n"
+        ],
+        "correctAns": 3
+    },
+    {
+        "query": " Q32. Which is a valid Go time format literal?",
+        "options": [
+            " \"2006-01-02\"\r\n",
+            " \"YYYY-mm-dd\"\r\n",
+            " \"y-mo-d\"\r\n",
+            " \"year-month-day\"\r\n\r\nReference: [Example of func Time in Go (Golang)](https://pkg.go.dev/time)\r\n\r\nRelevant excerpt from the article:\r\n\r\n> _Most programs can use one of the defined constants as the layout passed to Format or Parse. The rest of this comment can be ignored unless you are creating a custom layout string._\r\n\r\n"
+        ],
+        "correctAns": 1
+    },
+    {
+        "query": " Q36. What will be the output of this code?",
+        "code": "\r\nch := make(chan int)\r\nch <- 7\r\nval := <-ch\r\nfmt.Println(val)\r\n",
+        "options": [
+            " 0\r\n",
+            " It will deadlock\r\n",
+            " It will not compile\r\n",
+            " 2.718\r\n\r\n"
+        ],
+        "correctAns": 2
+    },
+    {
+        "query": " Q37. What will be the output of this program?",
+        "code": "\r\nch := make(chan int)\r\nclose(ch)\r\nval := <-ch\r\nfmt.Println(val)\r\n",
+        "options": [
+            " It will deadlock\r\n",
+            " It will panic\r\n",
+            " 0\r\n",
+            " NaN\r\n\r\n"
+        ],
+        "correctAns": 3
+    },
+    {
+        "query": " Q38. What will be printed in this code?",
+        "code": "\r\nvar stocks map[string]float64 // stock -> price\r\nprice := stocks[\"MSFT\"]\r\nfmt.Println(\"%f\\n\", price)\r\n",
+        "options": [
+            " 0\r\n",
+            " 0.000000\r\n",
+            " The code will panic\r\n",
+            " NaN\r\n\r\n"
+        ],
+        "correctAns": 1
+    },
+    {
+        "query": " Q39. What is the common way to have several executables in your project?",
+        "options": [
+            " Have a cmd directory and a directory per executable inside it.\r\n",
+            " Comment out main.\r\n",
+            " Use build tags.\r\n",
+            " Have a pkg directory and a directory per executable inside it.\r\n\r\n"
+        ],
+        "correctAns": 4
+    },
+    {
+        "query": " Q40. How is the behavior of ```t.Fatal``` different inside a ```t.Run``` ?",
+        "code": "t.Fatal",
+        "options": [
+            " ```t.Fatal``` does not crash the test harness, preserving output messages.\r\n",
+            " ```t.Fatal``` stops all tests and contains extra information about the failed sub test.\r\n",
+            " ```t.Fatal``` stops execution of the subtest and continues with other test cases.\r\n",
+            " There is no difference.\r\n\r\n"
+        ],
+        "correctAns": 2
+    }
+]

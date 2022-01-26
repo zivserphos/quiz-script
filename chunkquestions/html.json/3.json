@@ -1,1 +1,256 @@
-[{"query":" Q58.What does the `<wbr>` tag do?","options":[" It requires the browser to wrap the current line at that point.\r\n"," It breaks a word into two pieces, using a hyphen to connect the words.\r\n"," It formats a sentence to be easily breakable.\r\n"," It presents an opportunity for a break in a very long word, if needed for proper page display.\r\n\r\n"],"correctAns":4},{"query":" Q59. Review the code below. How do you include subnavigation for Link 2 that includes a link?","code":"markdown\r\n<nav><ul>\r\n  <li><a href=\"#\">Link 1</a></li>\r\n  <li><a href=\"#\">Link 2</a></li>\r\n  <li><a href=\"#\">Link 3</a></li> \r\n</ul></nav>\r\n","options":[" A\r\n\r\n```markdown\r\n<nav><ul>\r\n  <li><a href=\"#\">Link 1</a></li>\r\n  <li><a href=\"#\">Link 2</a></li>\r\n    <ul>\r\n      <li><a href=\"#\">Link 2a</a></li>\r\n    </ul>\r\n  <li><a href=\"#\">Link 3</a></li> \r\n</ul></nav>\r\n```\r\n\r\n"," B\r\n\r\n```markdown\r\n<nav><ul>\r\n  <li><a href=\"#\">Link 1</a></li>\r\n  <li><a href=\"#\">Link 2</a>\r\n    <ul>\r\n      <li><a href=\"#\">Link 2a</a></li>\r\n    </ul>\r\n  </li>\r\n  <li><a href=\"#\">Link 3</a></li>\r\n</ul></nav>\r\n```\r\n\r\n"," C\r\n\r\n```markdown\r\n<ul><nav>\r\n  <li><a href=\"#\">Link 1</a></li>\r\n  <li><a href=\"#\">Link 2</a>\r\n    <ul><nav>\r\n      <li><a href=\"#\">Link 2a</a></li>\r\n    </nav></ul>\r\n  </li>\r\n  <li><a href=\"#\">Link 3</a></li>\r\n</nav></ul>\r\n```\r\n\r\n"," D\r\n\r\n```markdown\r\n<nav><ul>\r\n  <li><a href=\"#\">Link 1</a></li>\r\n  <li><a href=\"#\">Link 2</a></li>\r\n  <nav><ul>\r\n    <li><a href=\"#\">Link 2a</a></li>\r\n  </ul></nav>\r\n  <li><a href=\"#\">Link 3</a></li>\r\n</ul></nav>\r\n```\r\n\r\n"],"correctAns":2},{"query":" Q60. What is the correct way to code a comment in HTML?","options":[" `//this is a comment`\r\n"," `/* this is a comment */`\r\n"," `<! this is a comment ->`\r\n"," `<!-- this is a comment -->`\r\n\r\n"],"correctAns":4},{"query":" Q61. Which statement is **false**?","options":[" Inline elements can be nested inside inline elements.\r\n"," Block elements can be nested inside block elements.\r\n"," Inline elements can be nested inside block elements.\r\n"," Block elements can be nested inside inline elements.\r\n\r\n"],"correctAns":4},{"query":" Q62. What is the best semantic to use Quotes in HTML?","options":[" `<q>`\r\n"," `<quote>`\r\n"," `<blockquote>`\r\n"," `<notation>`\r\n\r\n"],"correctAns":2},{"query":" Q63. What is the semantic meaning of the `<hr>` tag?","options":[" It draws a horizontal line.\r\n"," This tag is deprecated and should not be used.\r\n"," It designates a separation of sections within an `<article>`.\r\n"," It designates a topic shift within a section at the paragraph level.\r\n\r\n"],"correctAns":4},{"query":" Q64. How will a video look displayed on a fully loaded webpage if the `<video>` tag is used and the **autoplay** attribute is not set?","options":[" It will display a random frame from a video, unless the **poster** attribute is set.\r\n"," It will display the first frame of the video, unless the **poster** attribute is set.\r\n"," It will display nothing unless the **poster** attribute is set.\r\n"," It will display a black window unless the **poster** attribute is set.\r\n\r\n"],"correctAns":2},{"query":" Q65. What is the correct way to describe an empty element?","options":[" It has opening and closing tags but no child content.\r\n"," It display nothing on a website.\r\n"," It has no child content and no closing tag.\r\n"," It has child content but no closing tag.\r\n\r\n"],"correctAns":3},{"query":" Q66. What is the purpose of async in this code?","options":[" It downloads the script from the server when resources allow.\r\n"," It runs the script after HTML parsing is complete.\r\n"," It runs the script when the script is ready.\r\n"," It pauses the parsing of HTML code while the script runs.\r\n\r\n"],"correctAns":3},{"query":" Q67. What does this code?","options":[" When the **play** button is pressed, the browser plays the sounds over and over again until the user stops it.\r\n"," The browser plays the sound once automatically in the background. The user has no control over the sound.\r\n"," The browser plays the sound automatically and continuously in the background. The user may stop the sound at any tune.\r\n"," The browser plays the sound automatically and continuously in the background. The user has no control over the sound.\r\n\r\n"],"correctAns":4},{"query":" Q68. What is the difference between the `<head>` and `<header>` tags?","options":[" There is only one `<head>` tag per page, while there may be many `<header>` tags.\r\n"," The `<head>` tag may contain CSS and Javascript links, while the `<header>` tag may contain headings and navigational links.\r\n"," all of these answers\r\n"," The `<head>` tag contains meta information, while the `<header>` tag contains navigation, logos, and other page identifying content.\r\n\r\n"],"correctAns":3},{"query":" Q69. In this code, what is the purpose of defer?","options":[" It downloads the script from the server when resources allow.\r\n"," It runs the script after HTML parsing is complete.\r\n"," It runs the script when the script is ready.\r\n"," It pauses the parsing of HTML code while the script runs.\r\n\r\n"],"correctAns":2},{"query":" Q70. The code below contains some errors. Which choice corrects all of the errors?","code":"html\r\n<table>\r\n  <tr>\r\n    Cell 1\r\n  </tr>\r\n  <td>Cell 2</td>\r\n  <caption>\r\n    A table\r\n  </caption>\r\n</table>\r\n","options":[" A\r\n\r\n```HTML\r\n<caption>A table</caption>\r\n  <table>\r\n    <td>\r\n      <tr>Cell 1</tr>\r\n      <tr>Cell 2</tr>\r\n    </td>\r\n  </table>\r\n```\r\n\r\n"," B\r\n\r\n```HTML\r\n<caption>A table</caption>\r\n<table>\r\n  <tr>\r\n    <td>Cell 1</td>\r\n    <td>Cell 2</td>\r\n  </tr>\r\n</table>\r\n```\r\n\r\n"," C\r\n\r\n```HTML\r\n<table>\r\n  <caption>A table</caption>\r\n  <tr>\r\n    <td>Cell 1</td>\r\n    <td>Cell 2</td>\r\n  </tr>\r\n</table>\r\n```\r\n\r\n"," D\r\n\r\n```HTML\r\n<table>\r\n  <tr>\r\n    <td>Cell 1</td>\r\n    <td>Cell 2</td>\r\n  </tr>\r\n  <caption>A table</caption>\r\n</table>\r\n```\r\n\r\n"],"correctAns":3},{"query":" Q72. When should you use the `<article>` element?","options":[" For blog posts and other social media items\r\n"," For the main content area of your website\r\n"," When the content stands alone as a unit, is suitable for syndication, or is reusable\r\n"," To associate comments with a blog post\r\n\r\n"],"correctAns":3},{"query":" Q73. Which list comprises three empty elements?","code":null,"options":[" A\r\n\r\n```HTML\r\n<area>\r\n<embed>\r\n<strong>\r\n```\r\n\r\n"," B\r\n\r\n```HTML\r\n<input>\r\n<br>\r\n<p>\r\n```\r\n\r\n"," C\r\n\r\n```HTML\r\n<link>\r\n<meta>\r\n<title>\r\n```\r\n\r\n"," D\r\n\r\n```HTML\r\n<wbr>\r\n<base>\r\n<source>\r\n```\r\n\r\n"],"correctAns":4},{"query":" Q74. Which snippet of HTML, when clicked, makes a phone call on a mobile device?","options":[" `<a href=\"tel: 802-555-1212\">Call me</a>`\r\n"," `<a href=\"phone\">802-555-1212</a>`\r\n"," `<a href=\"tel\">802-555-1212</a>`\r\n"," `<a href=\"phone: 802-555-1212\">Call me</a>`\r\n\r\n"],"correctAns":1},{"query":" Q75. What is the purpose of the `class` attribute?","options":[" Classes allow CSS to select specific elements on the page. You may list as many class names within the class attribute as you wish,\r\n      separated by spaces.\r\n"," Classes allow CSS and JavaScript to select specific elements on the page. You may list only one class name per class attribute.\r\n"," Classes allow CSS to select specific elements on the page. You may list only one class name per class attribute.\r\n"," Classes allow CSS and JavaScript to select specific elements on the page. You may list as many class names within the class attribute\r\n      as you wish, separated by spaces.\r\n\r\n"],"correctAns":4},{"query":" Q76. Which choice is not a legal type attribute for the `<input>` tag?","options":[" `<input type=\"color\">`\r\n"," `<input type=\"tel\">`\r\n"," `<input type=\"week\">`\r\n"," `<input type=\"num\">`\r\n\r\n"],"correctAns":4},{"query":" Q77. What is the most semantic way to mark up this sentence so that \"happy talk must die\" is rendered as an inline quote?","options":[" `<p>`As Steve Krug once said, `<b>`happy talk must die.`</b>` `</p>`\r\n"," `<p>`As Steve Krug once said, `<i>`happy talk must die.`</i>` `</p>`\r\n"," `<p>`As Steve Krug once said, `<blockquote>`happy talk must die.`</blockquote>` `</p>`\r\n"," `<p>`As Steve Krug once said, `<q>`happy talk must die.`</q>` `</p>`\r\n\r\n"],"correctAns":4},{"query":" Q78. What is the most semantically accurate way to make up a main navigation bar, displayed in a horizontal direction?","code":null,"options":[" A\r\n\r\n```markdown\r\n<nav>\r\n  <a href=\"index.html\">Home</a>\r\n  <a href=\"about.html\">About</a>\r\n  <a href=\"contact.html\">Contact</a>\r\n</nav>\r\n```\r\n\r\n"," B\r\n\r\n```markdown\r\n <nav>\r\n    <ol>\r\n      <li><a href=\"index.html\">Home</a></li>\r\n      <li><a href=\"about.html\">About</a></li>\r\n      <li><a href=\"contact.html\">Contact</a></li>\r\n     </ol>\r\n  </nav>\r\n```\r\n\r\n"," C\r\n\r\n```markdown\r\n <nav>\r\n   <ul>\r\n     <li><a href=\"index.html\">Home</a></li>\r\n     <li><a href=\"about.html\">About</a></li>\r\n     <li><a href=\"contact.html\">Contact</a></li>\r\n    </ul>\r\n  </nav>\r\n```\r\n\r\n"],"correctAns":3},{"query":" Q80. What is the primary purpose of HTML?","options":[" HTML structures the webpage, identifying its elements such as paragraphs, headings, and lists.\r\n"," HTML structures and provides a rudimentary look to webpages.\r\n"," HTML is responsible for the structure, styling, and interactivity of webpages.\r\n"," HTML is responsible for the structure and styling of webpages.\r\n\r\n"],"correctAns":1},{"query":" Q81. What is the correct way to describe an empty element, such as a line break tag?","options":[" It displays nothing on a website.\r\n"," It has opening and closing tags but no child content.\r\n"," It has child content but no closing tag.\r\n"," It has no child content and no closing tag.\r\n\r\n"],"correctAns":4},{"query":" Q82. For the HTML code below, when will \"Sample Text\" display to the browser?","code":"markdown\r\n<noscript>Sample Text</noscript>\r\n","options":[" when there is no JavaScript used on this webpage\r\n"," when JavaScript is not supported by the browser or if JavaScript is disabled in the browser\r\n"," when JavaScript is disabled in the web browser\r\n"," when JavaScript is not supported by the web browser\r\n\r\n"],"correctAns":2},{"query":" Q84. In this code, what is _target_?","options":[" an attribute\r\n"," a tag\r\n"," content\r\n"," an element\r\n\r\n"],"correctAns":1},{"query":" Q85. What is the difference between the `<svg>` and `<canvas>`?","options":[" `<svg>` produces vector graphics, while `<canvas>` produces raster graphics.\r\n"," `<svg>` integrates with JavaScript, while `<canvas>` does not.\r\n"," `<svg>` produces raster graphics, while `<canvas>` produces vector graphics.\r\n"," `<svg>` cannot be used as a background image, while `<canvas>` can be used as a background\r\n\r\n"],"correctAns":1}]
+[
+    {
+        "query": " Q58.What does the `<wbr>` tag do?",
+        "options": [
+            " It requires the browser to wrap the current line at that point.\r\n",
+            " It breaks a word into two pieces, using a hyphen to connect the words.\r\n",
+            " It formats a sentence to be easily breakable.\r\n",
+            " It presents an opportunity for a break in a very long word, if needed for proper page display.\r\n\r\n"
+        ],
+        "correctAns": 4
+    },
+    {
+        "query": " Q59. Review the code below. How do you include subnavigation for Link 2 that includes a link?",
+        "code": "markdown\r\n<nav><ul>\r\n  <li><a href=\"#\">Link 1</a></li>\r\n  <li><a href=\"#\">Link 2</a></li>\r\n  <li><a href=\"#\">Link 3</a></li> \r\n</ul></nav>\r\n",
+        "options": [
+            " A\r\n\r\n```markdown\r\n<nav><ul>\r\n  <li><a href=\"#\">Link 1</a></li>\r\n  <li><a href=\"#\">Link 2</a></li>\r\n    <ul>\r\n      <li><a href=\"#\">Link 2a</a></li>\r\n    </ul>\r\n  <li><a href=\"#\">Link 3</a></li> \r\n</ul></nav>\r\n```\r\n\r\n",
+            " B\r\n\r\n```markdown\r\n<nav><ul>\r\n  <li><a href=\"#\">Link 1</a></li>\r\n  <li><a href=\"#\">Link 2</a>\r\n    <ul>\r\n      <li><a href=\"#\">Link 2a</a></li>\r\n    </ul>\r\n  </li>\r\n  <li><a href=\"#\">Link 3</a></li>\r\n</ul></nav>\r\n```\r\n\r\n",
+            " C\r\n\r\n```markdown\r\n<ul><nav>\r\n  <li><a href=\"#\">Link 1</a></li>\r\n  <li><a href=\"#\">Link 2</a>\r\n    <ul><nav>\r\n      <li><a href=\"#\">Link 2a</a></li>\r\n    </nav></ul>\r\n  </li>\r\n  <li><a href=\"#\">Link 3</a></li>\r\n</nav></ul>\r\n```\r\n\r\n",
+            " D\r\n\r\n```markdown\r\n<nav><ul>\r\n  <li><a href=\"#\">Link 1</a></li>\r\n  <li><a href=\"#\">Link 2</a></li>\r\n  <nav><ul>\r\n    <li><a href=\"#\">Link 2a</a></li>\r\n  </ul></nav>\r\n  <li><a href=\"#\">Link 3</a></li>\r\n</ul></nav>\r\n```\r\n\r\n"
+        ],
+        "correctAns": 2
+    },
+    {
+        "query": " Q60. What is the correct way to code a comment in HTML?",
+        "options": [
+            " `//this is a comment`\r\n",
+            " `/* this is a comment */`\r\n",
+            " `<! this is a comment ->`\r\n",
+            " `<!-- this is a comment -->`\r\n\r\n"
+        ],
+        "correctAns": 4
+    },
+    {
+        "query": " Q61. Which statement is **false**?",
+        "options": [
+            " Inline elements can be nested inside inline elements.\r\n",
+            " Block elements can be nested inside block elements.\r\n",
+            " Inline elements can be nested inside block elements.\r\n",
+            " Block elements can be nested inside inline elements.\r\n\r\n"
+        ],
+        "correctAns": 4
+    },
+    {
+        "query": " Q62. What is the best semantic to use Quotes in HTML?",
+        "options": [
+            " `<q>`\r\n",
+            " `<quote>`\r\n",
+            " `<blockquote>`\r\n",
+            " `<notation>`\r\n\r\n"
+        ],
+        "correctAns": 2
+    },
+    {
+        "query": " Q63. What is the semantic meaning of the `<hr>` tag?",
+        "options": [
+            " It draws a horizontal line.\r\n",
+            " This tag is deprecated and should not be used.\r\n",
+            " It designates a separation of sections within an `<article>`.\r\n",
+            " It designates a topic shift within a section at the paragraph level.\r\n\r\n"
+        ],
+        "correctAns": 4
+    },
+    {
+        "query": " Q64. How will a video look displayed on a fully loaded webpage if the `<video>` tag is used and the **autoplay** attribute is not set?",
+        "options": [
+            " It will display a random frame from a video, unless the **poster** attribute is set.\r\n",
+            " It will display the first frame of the video, unless the **poster** attribute is set.\r\n",
+            " It will display nothing unless the **poster** attribute is set.\r\n",
+            " It will display a black window unless the **poster** attribute is set.\r\n\r\n"
+        ],
+        "correctAns": 2
+    },
+    {
+        "query": " Q65. What is the correct way to describe an empty element?",
+        "options": [
+            " It has opening and closing tags but no child content.\r\n",
+            " It display nothing on a website.\r\n",
+            " It has no child content and no closing tag.\r\n",
+            " It has child content but no closing tag.\r\n\r\n"
+        ],
+        "correctAns": 3
+    },
+    {
+        "query": " Q66. What is the purpose of async in this code?",
+        "options": [
+            " It downloads the script from the server when resources allow.\r\n",
+            " It runs the script after HTML parsing is complete.\r\n",
+            " It runs the script when the script is ready.\r\n",
+            " It pauses the parsing of HTML code while the script runs.\r\n\r\n"
+        ],
+        "correctAns": 3
+    },
+    {
+        "query": " Q67. What does this code?",
+        "options": [
+            " When the **play** button is pressed, the browser plays the sounds over and over again until the user stops it.\r\n",
+            " The browser plays the sound once automatically in the background. The user has no control over the sound.\r\n",
+            " The browser plays the sound automatically and continuously in the background. The user may stop the sound at any tune.\r\n",
+            " The browser plays the sound automatically and continuously in the background. The user has no control over the sound.\r\n\r\n"
+        ],
+        "correctAns": 4
+    },
+    {
+        "query": " Q68. What is the difference between the `<head>` and `<header>` tags?",
+        "options": [
+            " There is only one `<head>` tag per page, while there may be many `<header>` tags.\r\n",
+            " The `<head>` tag may contain CSS and Javascript links, while the `<header>` tag may contain headings and navigational links.\r\n",
+            " all of these answers\r\n",
+            " The `<head>` tag contains meta information, while the `<header>` tag contains navigation, logos, and other page identifying content.\r\n\r\n"
+        ],
+        "correctAns": 3
+    },
+    {
+        "query": " Q69. In this code, what is the purpose of defer?",
+        "options": [
+            " It downloads the script from the server when resources allow.\r\n",
+            " It runs the script after HTML parsing is complete.\r\n",
+            " It runs the script when the script is ready.\r\n",
+            " It pauses the parsing of HTML code while the script runs.\r\n\r\n"
+        ],
+        "correctAns": 2
+    },
+    {
+        "query": " Q70. The code below contains some errors. Which choice corrects all of the errors?",
+        "code": "html\r\n<table>\r\n  <tr>\r\n    Cell 1\r\n  </tr>\r\n  <td>Cell 2</td>\r\n  <caption>\r\n    A table\r\n  </caption>\r\n</table>\r\n",
+        "options": [
+            " A\r\n\r\n```HTML\r\n<caption>A table</caption>\r\n  <table>\r\n    <td>\r\n      <tr>Cell 1</tr>\r\n      <tr>Cell 2</tr>\r\n    </td>\r\n  </table>\r\n```\r\n\r\n",
+            " B\r\n\r\n```HTML\r\n<caption>A table</caption>\r\n<table>\r\n  <tr>\r\n    <td>Cell 1</td>\r\n    <td>Cell 2</td>\r\n  </tr>\r\n</table>\r\n```\r\n\r\n",
+            " C\r\n\r\n```HTML\r\n<table>\r\n  <caption>A table</caption>\r\n  <tr>\r\n    <td>Cell 1</td>\r\n    <td>Cell 2</td>\r\n  </tr>\r\n</table>\r\n```\r\n\r\n",
+            " D\r\n\r\n```HTML\r\n<table>\r\n  <tr>\r\n    <td>Cell 1</td>\r\n    <td>Cell 2</td>\r\n  </tr>\r\n  <caption>A table</caption>\r\n</table>\r\n```\r\n\r\n"
+        ],
+        "correctAns": 3
+    },
+    {
+        "query": " Q72. When should you use the `<article>` element?",
+        "options": [
+            " For blog posts and other social media items\r\n",
+            " For the main content area of your website\r\n",
+            " When the content stands alone as a unit, is suitable for syndication, or is reusable\r\n",
+            " To associate comments with a blog post\r\n\r\n"
+        ],
+        "correctAns": 3
+    },
+    {
+        "query": " Q73. Which list comprises three empty elements?",
+        "code": null,
+        "options": [
+            " A\r\n\r\n```HTML\r\n<area>\r\n<embed>\r\n<strong>\r\n```\r\n\r\n",
+            " B\r\n\r\n```HTML\r\n<input>\r\n<br>\r\n<p>\r\n```\r\n\r\n",
+            " C\r\n\r\n```HTML\r\n<link>\r\n<meta>\r\n<title>\r\n```\r\n\r\n",
+            " D\r\n\r\n```HTML\r\n<wbr>\r\n<base>\r\n<source>\r\n```\r\n\r\n"
+        ],
+        "correctAns": 4
+    },
+    {
+        "query": " Q74. Which snippet of HTML, when clicked, makes a phone call on a mobile device?",
+        "options": [
+            " `<a href=\"tel: 802-555-1212\">Call me</a>`\r\n",
+            " `<a href=\"phone\">802-555-1212</a>`\r\n",
+            " `<a href=\"tel\">802-555-1212</a>`\r\n",
+            " `<a href=\"phone: 802-555-1212\">Call me</a>`\r\n\r\n"
+        ],
+        "correctAns": 1
+    },
+    {
+        "query": " Q75. What is the purpose of the `class` attribute?",
+        "options": [
+            " Classes allow CSS to select specific elements on the page. You may list as many class names within the class attribute as you wish,\r\n      separated by spaces.\r\n",
+            " Classes allow CSS and JavaScript to select specific elements on the page. You may list only one class name per class attribute.\r\n",
+            " Classes allow CSS to select specific elements on the page. You may list only one class name per class attribute.\r\n",
+            " Classes allow CSS and JavaScript to select specific elements on the page. You may list as many class names within the class attribute\r\n      as you wish, separated by spaces.\r\n\r\n"
+        ],
+        "correctAns": 4
+    },
+    {
+        "query": " Q76. Which choice is not a legal type attribute for the `<input>` tag?",
+        "options": [
+            " `<input type=\"color\">`\r\n",
+            " `<input type=\"tel\">`\r\n",
+            " `<input type=\"week\">`\r\n",
+            " `<input type=\"num\">`\r\n\r\n"
+        ],
+        "correctAns": 4
+    },
+    {
+        "query": " Q77. What is the most semantic way to mark up this sentence so that \"happy talk must die\" is rendered as an inline quote?",
+        "options": [
+            " `<p>`As Steve Krug once said, `<b>`happy talk must die.`</b>` `</p>`\r\n",
+            " `<p>`As Steve Krug once said, `<i>`happy talk must die.`</i>` `</p>`\r\n",
+            " `<p>`As Steve Krug once said, `<blockquote>`happy talk must die.`</blockquote>` `</p>`\r\n",
+            " `<p>`As Steve Krug once said, `<q>`happy talk must die.`</q>` `</p>`\r\n\r\n"
+        ],
+        "correctAns": 4
+    },
+    {
+        "query": " Q78. What is the most semantically accurate way to make up a main navigation bar, displayed in a horizontal direction?",
+        "code": null,
+        "options": [
+            " A\r\n\r\n```markdown\r\n<nav>\r\n  <a href=\"index.html\">Home</a>\r\n  <a href=\"about.html\">About</a>\r\n  <a href=\"contact.html\">Contact</a>\r\n</nav>\r\n```\r\n\r\n",
+            " B\r\n\r\n```markdown\r\n <nav>\r\n    <ol>\r\n      <li><a href=\"index.html\">Home</a></li>\r\n      <li><a href=\"about.html\">About</a></li>\r\n      <li><a href=\"contact.html\">Contact</a></li>\r\n     </ol>\r\n  </nav>\r\n```\r\n\r\n",
+            " C\r\n\r\n```markdown\r\n <nav>\r\n   <ul>\r\n     <li><a href=\"index.html\">Home</a></li>\r\n     <li><a href=\"about.html\">About</a></li>\r\n     <li><a href=\"contact.html\">Contact</a></li>\r\n    </ul>\r\n  </nav>\r\n```\r\n\r\n"
+        ],
+        "correctAns": 3
+    },
+    {
+        "query": " Q80. What is the primary purpose of HTML?",
+        "options": [
+            " HTML structures the webpage, identifying its elements such as paragraphs, headings, and lists.\r\n",
+            " HTML structures and provides a rudimentary look to webpages.\r\n",
+            " HTML is responsible for the structure, styling, and interactivity of webpages.\r\n",
+            " HTML is responsible for the structure and styling of webpages.\r\n\r\n"
+        ],
+        "correctAns": 1
+    },
+    {
+        "query": " Q81. What is the correct way to describe an empty element, such as a line break tag?",
+        "options": [
+            " It displays nothing on a website.\r\n",
+            " It has opening and closing tags but no child content.\r\n",
+            " It has child content but no closing tag.\r\n",
+            " It has no child content and no closing tag.\r\n\r\n"
+        ],
+        "correctAns": 4
+    },
+    {
+        "query": " Q82. For the HTML code below, when will \"Sample Text\" display to the browser?",
+        "code": "markdown\r\n<noscript>Sample Text</noscript>\r\n",
+        "options": [
+            " when there is no JavaScript used on this webpage\r\n",
+            " when JavaScript is not supported by the browser or if JavaScript is disabled in the browser\r\n",
+            " when JavaScript is disabled in the web browser\r\n",
+            " when JavaScript is not supported by the web browser\r\n\r\n"
+        ],
+        "correctAns": 2
+    },
+    {
+        "query": " Q84. In this code, what is _target_?",
+        "options": [
+            " an attribute\r\n",
+            " a tag\r\n",
+            " content\r\n",
+            " an element\r\n\r\n"
+        ],
+        "correctAns": 1
+    },
+    {
+        "query": " Q85. What is the difference between the `<svg>` and `<canvas>`?",
+        "options": [
+            " `<svg>` produces vector graphics, while `<canvas>` produces raster graphics.\r\n",
+            " `<svg>` integrates with JavaScript, while `<canvas>` does not.\r\n",
+            " `<svg>` produces raster graphics, while `<canvas>` produces vector graphics.\r\n",
+            " `<svg>` cannot be used as a background image, while `<canvas>` can be used as a background\r\n\r\n"
+        ],
+        "correctAns": 1
+    }
+]

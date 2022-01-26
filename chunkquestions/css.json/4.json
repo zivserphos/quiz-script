@@ -1,1 +1,265 @@
-[{"query":" Q76. What is one disadvantage of using a web font service?","options":[" It requires you to host font files on your own server.\r\n"," It uses more of your site's bandwidth.\r\n"," It offers a narrow selection of custom fonts.\r\n"," It is not always a free service.\r\n\r\n"],"correctAns":4},{"query":" Q77. How do you add Google fonts to your project?","options":[" by using an HTML link element referring to a Google-provided CSS\r\n"," by embedding the font file directly into the project's master JavaScript\r\n"," by using a Google-specific CSS syntax that directly links to the desired font file\r\n"," by using a standard font-face CSS definition sourcing a font file on Google's servers\r\n\r\n"],"correctAns":1},{"query":" Q78. Using the following HTML and CSS example, what will equivalent pixel value be for .em and .rem elements?","code":"css\r\nhtml {\r\n  font-size: 10px;\r\n}\r\nbody {\r\n  font-size: 2rem;\r\n}\r\n.rem {\r\n  font-size: 1.5rem;\r\n}\r\n.em {\r\n  font-size: 2em;\r\n}\r\n\r\n\r\nhtml\r\n<body>\r\n  <p class=\"rem\"></p>\r\n  <p class=\"em\"></p>\r\n</body>\r\n","options":[" The .rem will be equivalent to 25px; the .em value will be 20px.\r\n"," The .rem will be equivalent to 15px; the .em value will be 20px.\r\n"," The .rem will be equivalent to 15px; the .em value will be 40px.\r\n"," The .rem will be equivalent to 20px; the .em value will be 40px.\r\n\r\n"],"correctAns":3},{"query":" Q79. What property is used to adjust the space between text characters?","options":[" `font-style`\r\n"," `text-transform`\r\n"," `font-variant`\r\n"," `letter-spacing`\r\n\r\n"],"correctAns":4},{"query":" Q80. What is the correct syntax for changing the cursor from an arrow to a pointing hand when it interacts with a named element?","options":[" `.element {cursor: pointer;}`\r\n"," `.element {cursor: hand;}`\r\n"," `.element {cursor: move-hand;}`\r\n"," `.element {cursor: pointer-hand;}`\r\n\r\n"],"correctAns":1},{"query":" Q81. What is the effect of this style?","code":"css\r\nbackground-position: 10% 50%;\r\n","options":[" The background image is placed 10% from the left and 50% from the top of its container\r\n"," The background image is placed 10% from the bottom and 50% from the left of its container\r\n"," The background image is placed 10% from the right and 50% from the bottom of its container\r\n"," The background image is placed 10% from the top and 50% from the left of its container\r\n\r\n"],"correctAns":1},{"query":" Q82. How will the grid items display?","code":"css\r\ngrid-template-columns: 2fr 1fr;\r\n","options":[" The first column is twice the height of the second column and will be as wide as the content\r\n"," The first column is half the size of the container and the second column will absorb the remaining space\r\n"," The first column is twice as wide as the second column and will fit proportionally within the grid container\r\n"," The first column is twice the width and height of the second column, and will fit proportionally within the grid container\r\n\r\n"],"correctAns":3},{"query":" Q83. Which style rule would make the image 50% smaller during a hover?","code":"html\r\n<img id=\"photo\" alt=\"\" src=\"...\" />\r\n","options":[" img#photo:hover {scale: 0.5;}\r\n"," img#photo:hover {transform: scale(0.5);}\r\n"," img#photo {hover-scale: 0.5;}\r\n"," img#photo:hover {size: smaller;}\r\n\r\n"],"correctAns":2},{"query":" Q84. Which CSS properties can you use to create a rounded corner on just the top-left and top-right corners of an element?","code":"css\r\nA. border-radius: 10px 10px 0 0;\r\nB. border-top-left-radius: 10px; and border-top-right-radius: 10px;\r\nC. border-radius: 10px 0;\r\nD. border-top-radius: 10px;\r\n","options":[" A and C\r\n"," C and D\r\n"," B and C\r\n"," A and B\r\n\r\n"],"correctAns":4},{"query":" Q85. Review the HTML example below. Then choose the list of selectors that select the \\<p>, from lowest to highest specificity.","code":"html\r\n<section>\r\n  <p class=\"example\">...</p>\r\n</section>\r\n","options":["\r\n  ```css\r\n  1. section \\* {\r\n    ...;\r\n  }\r\n  2. [class*='example'] {\r\n    ...;\r\n  }\r\n  3. p.example {\r\n    ...;\r\n  }\r\n  4. section p {\r\n    ...;\r\n  }\r\n  ```\r\n","\r\n  ```css\r\n  1. p {\r\n    ...;\r\n  }\r\n  2. p.example {\r\n    ...;\r\n  }\r\n  3. section p {\r\n    ...;\r\n  }\r\n  4. [class*='example'] {\r\n    ...;\r\n  }\r\n  ```\r\n","\r\n  ```css\r\n  1. p.example {\r\n    ...;\r\n  }\r\n  2. section p {\r\n    ...;\r\n  }\r\n  3. [class*='example'] {\r\n    ...;\r\n  }\r\n  4. section \\* {\r\n    ...;\r\n  }\r\n  ```\r\n","\r\n  ```css\r\n  1. p {\r\n    ...;\r\n  }\r\n  2. section p {\r\n    ...;\r\n  }\r\n  3. [class*='example'] {\r\n    ...;\r\n  }\r\n  4. p.example {\r\n    ...;\r\n  }\r\n  ```\r\n\r\n"],"correctAns":4},{"query":" Q86. Which property is used to create a drop shadow effect on an HTML element?","options":[" element-shadow\r\n"," outer-shadow\r\n"," dropbox-shadow\r\n"," box-shadow\r\n\r\n"],"correctAns":4},{"query":" Q87. What is the correct selector for targeting all text inputs that are not disabled?","options":[" `input[type=\"text\"]:not([disabled]) {...}`\r\n"," `input[type=\"text\"]:not(\"disabled\") {...}`\r\n"," `input[type*=\"text\"]:not([disabled=\"disabled\"]) {...}`\r\n"," `input[type=\"text\"]:not([type=\"disabled\"]) {...}`\r\n\r\n**Explanation:**\r\n\r\n`input[type=\"text\"]` selects all the input with type text, and `:not([disabled])` selects all the elements not having the attribute \"disabled\". Combining both only selects all the input elements with type attribte as \"text\" and not having \"disabled\" attribute.`\r\n\r\n- "],"correctAns":1},{"query":" Q88. How can you create a semi-transparent background color?","options":[" background-color: hsl(0, 0, 0, 0.5);\r\n"," background-color: rgbx(0, 0, 0, 0.5);\r\n"," background-color: rgba(0, 0, 0, 0.5);\r\n"," background-color: rgba(0, 0, 0, 1);\r\n\r\n**Explanation:**\r\n`rgba` is a funtion in css. rgba stands for red, green, blue and alpha. The value of alpha can be between 0 and 1 both inclusive with 0 being fully transparent and 1 being fully opaque.\r\n\r\n- "],"correctAns":3},{"query":" Q89. Using this HTML markup, how would you select only the headings contained within the `<header>` element?","code":"html\r\n<header>\r\n  <hl>Heading 1</h1>\r\n  <h2>Heading 2</h2>\r\n</header>\r\n<h2>Heading 2</h2>\r\n","options":[" `header h1, header h2 {...}`\r\n"," `header h1 + header h2 {...}`\r\n"," `header h1, h2 {...}`\r\n"," `h1, h2 {...}`\r\n\r\n"],"correctAns":1},{"query":" Q90. Suppose you want to have a list of items (.item) displayed in a row and in reverse order using flexbox. What is the error in the CSS below?","code":"css\r\n.container {\r\n  display: flex;\r\n}\r\n.item {\r\n  border: 1px solid red;\r\n  flex-direction: row-reverse;\r\n}\r\n","options":[" The value for flex-direction should be reverse-row.\r\n"," The .container element should have a property of flex: display.\r\n"," The flex-direction property should be declared in the container.\r\n"," The display value should be flex-inline to display the items in a row.\r\n\r\n"],"correctAns":3},{"query":" Q91. Which choice is not a valid transition?","options":[" `transition: margin 1000ms ease-in-out;`\r\n"," `transition: color 1.3s ease-in;`\r\n"," `transition: position 400ms linear;`\r\n"," `transition: opacity 1s ease-in;`\r\n\r\n"],"correctAns":1},{"query":" Q92. In this example, what color will the paragraphs be and why?","code":"css\r\narticle p {\r\n  color: blue;\r\n}\r\narticle > p {\r\n  color: green;\r\n}\r\n\r\n\r\nhtml\r\n<article>\r\n  <p>Paragraph 1</p>\r\n\r\n  <aside>\r\n    <p>Paragraph 2</p>\r\n  </aside>\r\n</article>\r\n","options":[" Paragraph 1 will be blue. Paragraph 2 will be green.\r\n"," Both paragraphs will be green.\r\n"," Paragraph 1 will be green. Paragraph 2 will be blue.\r\n"," Both paragraphs will be blue.\r\n\r\n"],"correctAns":3},{"query":" Q93. Review the declaration of border style shown below. What is the corresponding longhand syntax?","code":"css\r\nborder: 1px solid red;\r\n","options":["\r\n  ```css\r\n  border-size: 1px;\r\n  border-style: solid;\r\n  border-color: red;\r\n  ```\r\n","\r\n  ```css\r\n  border-size: 1px;\r\n  border-type: solid;\r\n  border-color: red;\r\n  ```\r\n","\r\n  ```css\r\n  border-width: 1px;\r\n  border-style: solid;\r\n  border-color: red;\r\n  ```\r\n","\r\n  ```css\r\n  border-width: 1px;\r\n  border-line: solid;\r\n  border-color: red;\r\n  ```\r\n\r\n"],"correctAns":3},{"query":" Q94. Pseudo-classes are used to `_`.","options":[" style the state of the selected element\r\n"," insert presentational content\r\n"," style a specific part of the selected element\r\n"," style the elements using class selectors\r\n\r\n"],"correctAns":1},{"query":" Q95. In this example, what styles will be applied to which elements?","code":"css\r\nsection {\r\n  color: gray;\r\n}\r\n\r\n\r\nhtml\r\n<section>\r\n  <p>paragraph</p>\r\n  <a href=\"#\">link</a>\r\n</section>\r\n","options":[" The paragraph and link will be gray.\r\n"," The background color of the section element will be gray.\r\n"," The paragraph will be gray. The link will be the browser default, black.\r\n"," Only the paragraph will be gray.\r\n\r\n"],"correctAns":4},{"query":" Q96. Which answer is an example of a type selector (also sometimes referred to as an element selector)?","options":[" `.header {...}`\r\n"," `header {...}`\r\n"," `#header {...}`\r\n"," `header > h1 {...}`\r\n\r\n"],"correctAns":2},{"query":" Q97. What is the correct order for listing different link states in a website so those states display correctly on the page?","code":null,"options":["\r\n  ```css\r\n  a\r\n  a:hover\r\n  ```\r\n","\r\n  ```css\r\n  :link\r\n  :visited\r\n  :hover\r\n  :active\r\n  :focus\r\n  ```\r\n","\r\n  ```css\r\n  :active\r\n  :focus\r\n  :hover\r\n  :link\r\n  :visited\r\n  ```\r\n","\r\n  ```css\r\n  :link\r\n  :visited\r\n  :focus\r\n  :hover\r\n  :active\r\n  ```\r\n\r\n"],"correctAns":4},{"query":" Q98. Which selector is used to select the paragraph element that is a direct descendent of section?","options":[" `section * p`\r\n"," `section + p`\r\n"," `section ~ p`\r\n"," `section > p`\r\n\r\nReference: [Child combinator](https://developer.mozilla.org/en-US/docs/Web/CSS/Child_combinator)\r\n\r\n"],"correctAns":4},{"query":" Q99. For this code, what is the font color of the hypertext link?","code":"css\r\nul {\r\n  --color: red;\r\n}\r\np {\r\n  color: var(--color);\r\n}\r\na {\r\n  color: var(--color, orange);\r\n}\r\n\r\n\r\nhtml\r\n<p>Paragraph</p>\r\n<ul>\r\n  <li>\r\n    <a href=\"#\">list item a link </a>\r\n  </li>\r\n  <li>list item</li>\r\n</ul>\r\n","options":[" red\r\n"," orange\r\n"," blue\r\n"," black\r\n\r\n"],"correctAns":1},{"query":" Q100. Which statement is not true?","options":[" Specificity determines which CSS rule is applied by the browsers.\r\n"," When two selectors apply to the same element, the one with lower specificity wins.\r\n"," The last rule defined overrides all previous rules and even conflicting rules.\r\n"," Rules with more specific selectors have greater specificity.\r\n\r\n  "],"correctAns":2}]
+[
+    {
+        "query": " Q76. What is one disadvantage of using a web font service?",
+        "options": [
+            " It requires you to host font files on your own server.\r\n",
+            " It uses more of your site's bandwidth.\r\n",
+            " It offers a narrow selection of custom fonts.\r\n",
+            " It is not always a free service.\r\n\r\n"
+        ],
+        "correctAns": 4
+    },
+    {
+        "query": " Q77. How do you add Google fonts to your project?",
+        "options": [
+            " by using an HTML link element referring to a Google-provided CSS\r\n",
+            " by embedding the font file directly into the project's master JavaScript\r\n",
+            " by using a Google-specific CSS syntax that directly links to the desired font file\r\n",
+            " by using a standard font-face CSS definition sourcing a font file on Google's servers\r\n\r\n"
+        ],
+        "correctAns": 1
+    },
+    {
+        "query": " Q78. Using the following HTML and CSS example, what will equivalent pixel value be for .em and .rem elements?",
+        "code": "css\r\nhtml {\r\n  font-size: 10px;\r\n}\r\nbody {\r\n  font-size: 2rem;\r\n}\r\n.rem {\r\n  font-size: 1.5rem;\r\n}\r\n.em {\r\n  font-size: 2em;\r\n}\r\n\r\n\r\nhtml\r\n<body>\r\n  <p class=\"rem\"></p>\r\n  <p class=\"em\"></p>\r\n</body>\r\n",
+        "options": [
+            " The .rem will be equivalent to 25px; the .em value will be 20px.\r\n",
+            " The .rem will be equivalent to 15px; the .em value will be 20px.\r\n",
+            " The .rem will be equivalent to 15px; the .em value will be 40px.\r\n",
+            " The .rem will be equivalent to 20px; the .em value will be 40px.\r\n\r\n"
+        ],
+        "correctAns": 3
+    },
+    {
+        "query": " Q79. What property is used to adjust the space between text characters?",
+        "options": [
+            " `font-style`\r\n",
+            " `text-transform`\r\n",
+            " `font-variant`\r\n",
+            " `letter-spacing`\r\n\r\n"
+        ],
+        "correctAns": 4
+    },
+    {
+        "query": " Q80. What is the correct syntax for changing the cursor from an arrow to a pointing hand when it interacts with a named element?",
+        "options": [
+            " `.element {cursor: pointer;}`\r\n",
+            " `.element {cursor: hand;}`\r\n",
+            " `.element {cursor: move-hand;}`\r\n",
+            " `.element {cursor: pointer-hand;}`\r\n\r\n"
+        ],
+        "correctAns": 1
+    },
+    {
+        "query": " Q81. What is the effect of this style?",
+        "code": "css\r\nbackground-position: 10% 50%;\r\n",
+        "options": [
+            " The background image is placed 10% from the left and 50% from the top of its container\r\n",
+            " The background image is placed 10% from the bottom and 50% from the left of its container\r\n",
+            " The background image is placed 10% from the right and 50% from the bottom of its container\r\n",
+            " The background image is placed 10% from the top and 50% from the left of its container\r\n\r\n"
+        ],
+        "correctAns": 1
+    },
+    {
+        "query": " Q82. How will the grid items display?",
+        "code": "css\r\ngrid-template-columns: 2fr 1fr;\r\n",
+        "options": [
+            " The first column is twice the height of the second column and will be as wide as the content\r\n",
+            " The first column is half the size of the container and the second column will absorb the remaining space\r\n",
+            " The first column is twice as wide as the second column and will fit proportionally within the grid container\r\n",
+            " The first column is twice the width and height of the second column, and will fit proportionally within the grid container\r\n\r\n"
+        ],
+        "correctAns": 3
+    },
+    {
+        "query": " Q83. Which style rule would make the image 50% smaller during a hover?",
+        "code": "html\r\n<img id=\"photo\" alt=\"\" src=\"...\" />\r\n",
+        "options": [
+            " img#photo:hover {scale: 0.5;}\r\n",
+            " img#photo:hover {transform: scale(0.5);}\r\n",
+            " img#photo {hover-scale: 0.5;}\r\n",
+            " img#photo:hover {size: smaller;}\r\n\r\n"
+        ],
+        "correctAns": 2
+    },
+    {
+        "query": " Q84. Which CSS properties can you use to create a rounded corner on just the top-left and top-right corners of an element?",
+        "code": "css\r\nA. border-radius: 10px 10px 0 0;\r\nB. border-top-left-radius: 10px; and border-top-right-radius: 10px;\r\nC. border-radius: 10px 0;\r\nD. border-top-radius: 10px;\r\n",
+        "options": [
+            " A and C\r\n",
+            " C and D\r\n",
+            " B and C\r\n",
+            " A and B\r\n\r\n"
+        ],
+        "correctAns": 4
+    },
+    {
+        "query": " Q85. Review the HTML example below. Then choose the list of selectors that select the \\<p>, from lowest to highest specificity.",
+        "code": "html\r\n<section>\r\n  <p class=\"example\">...</p>\r\n</section>\r\n",
+        "options": [
+            "\r\n  ```css\r\n  1. section \\* {\r\n    ...;\r\n  }\r\n  2. [class*='example'] {\r\n    ...;\r\n  }\r\n  3. p.example {\r\n    ...;\r\n  }\r\n  4. section p {\r\n    ...;\r\n  }\r\n  ```\r\n",
+            "\r\n  ```css\r\n  1. p {\r\n    ...;\r\n  }\r\n  2. p.example {\r\n    ...;\r\n  }\r\n  3. section p {\r\n    ...;\r\n  }\r\n  4. [class*='example'] {\r\n    ...;\r\n  }\r\n  ```\r\n",
+            "\r\n  ```css\r\n  1. p.example {\r\n    ...;\r\n  }\r\n  2. section p {\r\n    ...;\r\n  }\r\n  3. [class*='example'] {\r\n    ...;\r\n  }\r\n  4. section \\* {\r\n    ...;\r\n  }\r\n  ```\r\n",
+            "\r\n  ```css\r\n  1. p {\r\n    ...;\r\n  }\r\n  2. section p {\r\n    ...;\r\n  }\r\n  3. [class*='example'] {\r\n    ...;\r\n  }\r\n  4. p.example {\r\n    ...;\r\n  }\r\n  ```\r\n\r\n"
+        ],
+        "correctAns": 4
+    },
+    {
+        "query": " Q86. Which property is used to create a drop shadow effect on an HTML element?",
+        "options": [
+            " element-shadow\r\n",
+            " outer-shadow\r\n",
+            " dropbox-shadow\r\n",
+            " box-shadow\r\n\r\n"
+        ],
+        "correctAns": 4
+    },
+    {
+        "query": " Q87. What is the correct selector for targeting all text inputs that are not disabled?",
+        "options": [
+            " `input[type=\"text\"]:not([disabled]) {...}`\r\n",
+            " `input[type=\"text\"]:not(\"disabled\") {...}`\r\n",
+            " `input[type*=\"text\"]:not([disabled=\"disabled\"]) {...}`\r\n",
+            " `input[type=\"text\"]:not([type=\"disabled\"]) {...}`\r\n\r\n**Explanation:**\r\n\r\n`input[type=\"text\"]` selects all the input with type text, and `:not([disabled])` selects all the elements not having the attribute \"disabled\". Combining both only selects all the input elements with type attribte as \"text\" and not having \"disabled\" attribute.`\r\n\r\n- "
+        ],
+        "correctAns": 1
+    },
+    {
+        "query": " Q88. How can you create a semi-transparent background color?",
+        "options": [
+            " background-color: hsl(0, 0, 0, 0.5);\r\n",
+            " background-color: rgbx(0, 0, 0, 0.5);\r\n",
+            " background-color: rgba(0, 0, 0, 0.5);\r\n",
+            " background-color: rgba(0, 0, 0, 1);\r\n\r\n**Explanation:**\r\n`rgba` is a funtion in css. rgba stands for red, green, blue and alpha. The value of alpha can be between 0 and 1 both inclusive with 0 being fully transparent and 1 being fully opaque.\r\n\r\n- "
+        ],
+        "correctAns": 3
+    },
+    {
+        "query": " Q89. Using this HTML markup, how would you select only the headings contained within the `<header>` element?",
+        "code": "html\r\n<header>\r\n  <hl>Heading 1</h1>\r\n  <h2>Heading 2</h2>\r\n</header>\r\n<h2>Heading 2</h2>\r\n",
+        "options": [
+            " `header h1, header h2 {...}`\r\n",
+            " `header h1 + header h2 {...}`\r\n",
+            " `header h1, h2 {...}`\r\n",
+            " `h1, h2 {...}`\r\n\r\n"
+        ],
+        "correctAns": 1
+    },
+    {
+        "query": " Q90. Suppose you want to have a list of items (.item) displayed in a row and in reverse order using flexbox. What is the error in the CSS below?",
+        "code": "css\r\n.container {\r\n  display: flex;\r\n}\r\n.item {\r\n  border: 1px solid red;\r\n  flex-direction: row-reverse;\r\n}\r\n",
+        "options": [
+            " The value for flex-direction should be reverse-row.\r\n",
+            " The .container element should have a property of flex: display.\r\n",
+            " The flex-direction property should be declared in the container.\r\n",
+            " The display value should be flex-inline to display the items in a row.\r\n\r\n"
+        ],
+        "correctAns": 3
+    },
+    {
+        "query": " Q91. Which choice is not a valid transition?",
+        "options": [
+            " `transition: margin 1000ms ease-in-out;`\r\n",
+            " `transition: color 1.3s ease-in;`\r\n",
+            " `transition: position 400ms linear;`\r\n",
+            " `transition: opacity 1s ease-in;`\r\n\r\n"
+        ],
+        "correctAns": 1
+    },
+    {
+        "query": " Q92. In this example, what color will the paragraphs be and why?",
+        "code": "css\r\narticle p {\r\n  color: blue;\r\n}\r\narticle > p {\r\n  color: green;\r\n}\r\n\r\n\r\nhtml\r\n<article>\r\n  <p>Paragraph 1</p>\r\n\r\n  <aside>\r\n    <p>Paragraph 2</p>\r\n  </aside>\r\n</article>\r\n",
+        "options": [
+            " Paragraph 1 will be blue. Paragraph 2 will be green.\r\n",
+            " Both paragraphs will be green.\r\n",
+            " Paragraph 1 will be green. Paragraph 2 will be blue.\r\n",
+            " Both paragraphs will be blue.\r\n\r\n"
+        ],
+        "correctAns": 3
+    },
+    {
+        "query": " Q93. Review the declaration of border style shown below. What is the corresponding longhand syntax?",
+        "code": "css\r\nborder: 1px solid red;\r\n",
+        "options": [
+            "\r\n  ```css\r\n  border-size: 1px;\r\n  border-style: solid;\r\n  border-color: red;\r\n  ```\r\n",
+            "\r\n  ```css\r\n  border-size: 1px;\r\n  border-type: solid;\r\n  border-color: red;\r\n  ```\r\n",
+            "\r\n  ```css\r\n  border-width: 1px;\r\n  border-style: solid;\r\n  border-color: red;\r\n  ```\r\n",
+            "\r\n  ```css\r\n  border-width: 1px;\r\n  border-line: solid;\r\n  border-color: red;\r\n  ```\r\n\r\n"
+        ],
+        "correctAns": 3
+    },
+    {
+        "query": " Q94. Pseudo-classes are used to `_`.",
+        "options": [
+            " style the state of the selected element\r\n",
+            " insert presentational content\r\n",
+            " style a specific part of the selected element\r\n",
+            " style the elements using class selectors\r\n\r\n"
+        ],
+        "correctAns": 1
+    },
+    {
+        "query": " Q95. In this example, what styles will be applied to which elements?",
+        "code": "css\r\nsection {\r\n  color: gray;\r\n}\r\n\r\n\r\nhtml\r\n<section>\r\n  <p>paragraph</p>\r\n  <a href=\"#\">link</a>\r\n</section>\r\n",
+        "options": [
+            " The paragraph and link will be gray.\r\n",
+            " The background color of the section element will be gray.\r\n",
+            " The paragraph will be gray. The link will be the browser default, black.\r\n",
+            " Only the paragraph will be gray.\r\n\r\n"
+        ],
+        "correctAns": 4
+    },
+    {
+        "query": " Q96. Which answer is an example of a type selector (also sometimes referred to as an element selector)?",
+        "options": [
+            " `.header {...}`\r\n",
+            " `header {...}`\r\n",
+            " `#header {...}`\r\n",
+            " `header > h1 {...}`\r\n\r\n"
+        ],
+        "correctAns": 2
+    },
+    {
+        "query": " Q97. What is the correct order for listing different link states in a website so those states display correctly on the page?",
+        "code": null,
+        "options": [
+            "\r\n  ```css\r\n  a\r\n  a:hover\r\n  ```\r\n",
+            "\r\n  ```css\r\n  :link\r\n  :visited\r\n  :hover\r\n  :active\r\n  :focus\r\n  ```\r\n",
+            "\r\n  ```css\r\n  :active\r\n  :focus\r\n  :hover\r\n  :link\r\n  :visited\r\n  ```\r\n",
+            "\r\n  ```css\r\n  :link\r\n  :visited\r\n  :focus\r\n  :hover\r\n  :active\r\n  ```\r\n\r\n"
+        ],
+        "correctAns": 4
+    },
+    {
+        "query": " Q98. Which selector is used to select the paragraph element that is a direct descendent of section?",
+        "options": [
+            " `section * p`\r\n",
+            " `section + p`\r\n",
+            " `section ~ p`\r\n",
+            " `section > p`\r\n\r\nReference: [Child combinator](https://developer.mozilla.org/en-US/docs/Web/CSS/Child_combinator)\r\n\r\n"
+        ],
+        "correctAns": 4
+    },
+    {
+        "query": " Q99. For this code, what is the font color of the hypertext link?",
+        "code": "css\r\nul {\r\n  --color: red;\r\n}\r\np {\r\n  color: var(--color);\r\n}\r\na {\r\n  color: var(--color, orange);\r\n}\r\n\r\n\r\nhtml\r\n<p>Paragraph</p>\r\n<ul>\r\n  <li>\r\n    <a href=\"#\">list item a link </a>\r\n  </li>\r\n  <li>list item</li>\r\n</ul>\r\n",
+        "options": [
+            " red\r\n",
+            " orange\r\n",
+            " blue\r\n",
+            " black\r\n\r\n"
+        ],
+        "correctAns": 1
+    },
+    {
+        "query": " Q100. Which statement is not true?",
+        "options": [
+            " Specificity determines which CSS rule is applied by the browsers.\r\n",
+            " When two selectors apply to the same element, the one with lower specificity wins.\r\n",
+            " The last rule defined overrides all previous rules and even conflicting rules.\r\n",
+            " Rules with more specific selectors have greater specificity.\r\n\r\n  "
+        ],
+        "correctAns": 2
+    }
+]

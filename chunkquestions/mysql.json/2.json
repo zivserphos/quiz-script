@@ -278,5 +278,5 @@
             " WITH cte as (SELECT id FROM users) SELECT ...\r\n\r\n"
         ],
         "correctAns": 4
-    },
+    }
 ]

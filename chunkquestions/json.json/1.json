@@ -1,1 +1,255 @@
-[{"query":" Q1. By convention, what name is used for the first key in a JSON schema?","options":[" schema\r\n"," \\$schema\r\n"," JsonSchema\r\n"," JSONschema\r\n\r\n"],"correctAns":2},{"query":" Q3. Which JavaScript method converts a JavaScript value to Json?","options":[" JSON.parse()\r\n"," JSON.stringify()\r\n"," JSON.toString()\r\n"," JSON.objectify()\r\n\r\n"],"correctAns":2},{"query":" Q4. Which data type is NOT part of JSON standard?","options":[" string\r\n"," number\r\n"," date\r\n"," array\r\n\r\n"],"correctAns":3},{"query":" Q5. Which term is commonly used to refer to converting data to JSON?","options":[" unpacking\r\n"," serialization\r\n"," deserialization\r\n"," parsing\r\n\r\n"],"correctAns":2},{"query":" Q6. Which code uses the correct JSON syntax to encode the key/value pair shown?","options":[" \"accountNum\": \"000605802\"\r\n"," accountNum: \"000605802\"\r\n"," \"accountNum\": 000605802\r\n"," accountNum: 000605802\r\n\r\n"],"correctAns":1},{"query":" Q7. What character do you specify before a JSON control character when you want to use that control characters as a literal part of a string?","options":[" `/`\r\n"," `\\`\r\n"," `:`\r\n"," `{`\r\n\r\n"],"correctAns":2},{"query":" Q8. Which date type is part of the JSON standard?","options":[" Boolean\r\n"," map\r\n"," promise\r\n"," function\r\n\r\n"],"correctAns":1},{"query":" Q9. Which key name is used to specify properties that must be included for JSON to be valid?","options":[" important\r\n"," base\r\n"," core\r\n"," required\r\n\r\n"],"correctAns":4},{"query":" Q10. Which is the valid JSON equivalent of the data shown?","code":"\r\n{\r\n\tphoto: {\r\n\twidth: 1600,\r\n\theight: 900,\r\n\tbinaries: {\r\n\turl: 'https://www.example.com/images/34097349843',\r\n\tthumbnail: 'https://www.example.com/images/thumbs/34097349843'\r\n\t},\r\n\tanimated: false,\r\n\ttags: [116, 943, 234, 38793],\r\n\t}\r\n}\r\n","options":["\r\n\r\n```json\r\n{\r\n  \"photo\": {\r\n    \"width\": 1600,\r\n    \"height\": 900,\r\n    \"binaries\": {\r\n      \"url\": \"https://www.example.com/images/34097349843\",\r\n      \"thumbnail\": \"https://www.example.com/images/thumbs/34097349843\"\r\n    },\r\n    \"animated\": \"false\",\r\n    \"tags\": [116, 943, 234, 38793]\r\n  }\r\n}\r\n```\r\n\r\n","\r\n\r\n```json\r\n{\r\n  \"photo\": {\r\n    \"width\": 1600,\r\n    \"height\": 900,\r\n    \"binaries\": {\r\n      \"url\": \"https://www.example.com/images/34097349843\",\r\n      \"thumbnail\": \"https://www.example.com/images/thumbs/34097349843\"\r\n    },\r\n    \"animated\": false,\r\n    \"tags\": [116, 943, 234, 38793]\r\n  }\r\n}\r\n```\r\n\r\n","\r\n\r\n```json\r\n{\r\n  \"photo\": {\r\n    \"width\": 1600,\r\n    \"height\": 900,\r\n    \"binaries\": {\r\n      \"url\": \"https://www.example.com/images/34097349843\",\r\n      \"thumbnail\": \"https://www.example.com/images/thumbs/34097349843\"\r\n    },\r\n    \"animated\": false,\r\n    \"tags\": [116, 943, 234, 38793]\r\n  }\r\n}\r\n```\r\n\r\n","\r\n\r\n```json\r\n{\r\n  \"photo\": {\r\n    \"width\": \"1600\",\r\n    \"height\": \"900\",\r\n    \"binaries\": {\r\n      \"url\": \"https://www.example.com/images/34097349843\",\r\n      \"thumbnail\": \"https://www.example.com/images/thumbs/34097349843\"\r\n    },\r\n    \"animated\": \"false\",\r\n    \"tags\": [\"116\", \"943\", \"234\", \"38793\"]\r\n  }\r\n}\r\n```\r\n\r\n"],"correctAns":3},{"query":" Q11. How do you store several paragraphs of text as a string in JSON?","options":[" Escape all whitespaces expect space characters.\r\n"," Escape line breaks.\r\n"," Escape paragraphs.\r\n"," Remove all whitespaces\r\n\r\n"],"correctAns":1},{"query":" Q12. What data type is represented by the value of the key/value pair shown?","options":[" string\r\n"," Boolean\r\n"," number\r\n"," object\r\n\r\n"],"correctAns":2},{"query":" Q13. If you need to store the loggedIn status of a user in JSON as a boolean, what is the correct syntax?","options":[" \"loggedIn\": (true)\r\n"," loggedIn: \"true\"\r\n"," \"loggedIn\": true\r\n"," loggedIn: {true}\r\n\r\n"],"correctAns":3},{"query":" Q14. What does JSON with padding (JSON-P) use to make a request?","options":[" an `<origin>` element\r\n"," a header request\r\n"," the `<script>` element\r\n"," the XMLHttpRequest object\r\n\r\n"],"correctAns":3},{"query":" Q15. Which value is supported in the JSON specifications?","options":[" undefined\r\n"," infinity\r\n"," NaN\r\n"," null\r\n\r\n"],"correctAns":4},{"query":" Q16. Which JavaScript method converts JSON to a JavaScript value?","options":[" JSON.parse()\r\n"," JSON.stringify()\r\n"," JSON.toString()\r\n"," JSON.objectify()\r\n\r\n"],"correctAns":1},{"query":" Q17. Transferring JSON information from client to server and back again often includes HTTP requests. Match each method with the best choice describing its use.","options":[" 1.POST 2.DELETE 3.OPTIONS 4.HEADER 5.GET 6.PUT\r\n"," 1.POST 2.PUT 3.HEADER 4.OPTIONS 5.GET 6.DELETE\r\n"," 1.POST 2.DELETE 3.OPTIONS 4.HEADER 5.GET 6.PUT\r\n"," 1.POST 2.PUT 3.HEADER 4.OPTIONS 5.GET 6.DELETE\r\n\r\n"],"correctAns":4},{"query":" Q18. Which code uses valid JSON syntax for the text \"Centennial Olympics?","code":null,"options":["\r\n\r\n```json\r\n{\r\n\"host\": \"Atlanta\",\r\n\"year\": 1996\r\n/_ Centennial Olympics _/\r\n}\r\n```\r\n\r\n","\r\n\r\n```json\r\n{\r\n\"host\": \"Atlanta\",\r\n\"year\": 1996,\r\n/_ Centennial Olympics _/\r\n}\r\n```\r\n\r\n","\r\n\r\n```json\r\n{\r\n  \"host\": \"Atlanta\",\r\n  \"year\": 1996\r\n  // Centennial Olympics\r\n}\r\n```\r\n\r\n","\r\n\r\n```json\r\n{\r\n  \"host\": \"Atlanta\",\r\n  \"year\": 1996,\r\n  \"comments\": \"Centennial Olympics\"\r\n}\r\n```\r\n\r\n"],"correctAns":4},{"query":" Q19. Can trailing commas be used in objects and arrays?","options":[" yes\r\n"," only if there is more than one item\r\n"," no\r\n"," only when arrays and objects contain more than 10 items\r\n\r\n"],"correctAns":3},{"query":" Q20. Which whitespace characters should be escaped within a string?","options":[" All whitespace is allowed.\r\n"," double quotes, slashes new lines, and carriage returns\r\n"," new lines and carriage returns only\r\n"," double quotes only\r\n\r\n"],"correctAns":3},{"query":" Q21. Which is supported by YAML but not supported by JSON?","options":[" nested\r\n"," comments\r\n"," arrays\r\n"," null values\r\n\r\n"],"correctAns":2},{"query":" Q22. Which is an invalid JSON value?","options":[" \"'|=(_)(X 72(_)|\\/||\\*'\"\r\n"," \"|=(_)(X 72(_)|\\/||\\*\"\r\n"," \"|=(_)(X\\\" \\\"72(_)|\\/||\\*\"\r\n"," \"\\s(_)(X 72(_)|\\/||\\*\"\r\n\r\n"],"correctAns":4},{"query":" Q23. How do you encode a date in JSON?","options":[" Convert the date to UTC and enclose in quotes.\r\n"," Encode the date as string using the ISO-8601 date format.\r\n"," Wrap the date in double quotes.\r\n"," Add a \"date\" key to your object and include the date as string.\r\n\r\n"],"correctAns":2},{"query":" Q24. What’s wrong with this JavaScript?","options":[" JSON should be wrapped with curly braces.\r\n"," JSON.parse() is missing an argument.\r\n"," The value supplied to JSON.parse() is not a string.\r\n"," Nothing is wrong with it.\r\n\r\n"],"correctAns":3},{"query":" Q25. What does this JavaScript code print?","code":"js\r\nprintNullness(JSON.parse('{ \"lemmings\": [] }'));\r\nprintNullness(JSON.parse('{ \"lemmings\": null }'));\r\nprintNullness(JSON.parse('{ \"lemmings\": \"null\" }'));\r\n\r\nfunction printNullness() {\r\n  if (testMe.lemmings == null) console.log('null');\r\n  else console.log('not null');\r\n}\r\n","options":[" A\r\n\r\n```\r\nnot null\r\nnull\r\nnot null\r\n```\r\n\r\n"," B\r\n\r\n```\r\nnull\r\nnull\r\nnot null\r\n```\r\n\r\n"," C\r\n\r\n```\r\nnot null\r\nnull\r\nnull\r\n```\r\n\r\n"," D\r\n\r\n```\r\nnull\r\nnull\r\nnull\r\n```\r\n\r\n"],"correctAns":1},{"query":" Q26. What tool might you use to validate your JSON?","options":[" JSONLint\r\n"," ValidateJSON\r\n"," JSONFiddle\r\n"," TextEdit\r\n\r\n"],"correctAns":1}]
+[
+    {
+        "query": " Q1. By convention, what name is used for the first key in a JSON schema?",
+        "options": [
+            " schema\r\n",
+            " \\$schema\r\n",
+            " JsonSchema\r\n",
+            " JSONschema\r\n\r\n"
+        ],
+        "correctAns": 2
+    },
+    {
+        "query": " Q3. Which JavaScript method converts a JavaScript value to Json?",
+        "options": [
+            " JSON.parse()\r\n",
+            " JSON.stringify()\r\n",
+            " JSON.toString()\r\n",
+            " JSON.objectify()\r\n\r\n"
+        ],
+        "correctAns": 2
+    },
+    {
+        "query": " Q4. Which data type is NOT part of JSON standard?",
+        "options": [
+            " string\r\n",
+            " number\r\n",
+            " date\r\n",
+            " array\r\n\r\n"
+        ],
+        "correctAns": 3
+    },
+    {
+        "query": " Q5. Which term is commonly used to refer to converting data to JSON?",
+        "options": [
+            " unpacking\r\n",
+            " serialization\r\n",
+            " deserialization\r\n",
+            " parsing\r\n\r\n"
+        ],
+        "correctAns": 2
+    },
+    {
+        "query": " Q6. Which code uses the correct JSON syntax to encode the key/value pair shown?",
+        "options": [
+            " \"accountNum\": \"000605802\"\r\n",
+            " accountNum: \"000605802\"\r\n",
+            " \"accountNum\": 000605802\r\n",
+            " accountNum: 000605802\r\n\r\n"
+        ],
+        "correctAns": 1
+    },
+    {
+        "query": " Q7. What character do you specify before a JSON control character when you want to use that control characters as a literal part of a string?",
+        "options": [
+            " `/`\r\n",
+            " `\\`\r\n",
+            " `:`\r\n",
+            " `{`\r\n\r\n"
+        ],
+        "correctAns": 2
+    },
+    {
+        "query": " Q8. Which date type is part of the JSON standard?",
+        "options": [
+            " Boolean\r\n",
+            " map\r\n",
+            " promise\r\n",
+            " function\r\n\r\n"
+        ],
+        "correctAns": 1
+    },
+    {
+        "query": " Q9. Which key name is used to specify properties that must be included for JSON to be valid?",
+        "options": [
+            " important\r\n",
+            " base\r\n",
+            " core\r\n",
+            " required\r\n\r\n"
+        ],
+        "correctAns": 4
+    },
+    {
+        "query": " Q10. Which is the valid JSON equivalent of the data shown?",
+        "code": "\r\n{\r\n\tphoto: {\r\n\twidth: 1600,\r\n\theight: 900,\r\n\tbinaries: {\r\n\turl: 'https://www.example.com/images/34097349843',\r\n\tthumbnail: 'https://www.example.com/images/thumbs/34097349843'\r\n\t},\r\n\tanimated: false,\r\n\ttags: [116, 943, 234, 38793],\r\n\t}\r\n}\r\n",
+        "options": [
+            "\r\n\r\n```json\r\n{\r\n  \"photo\": {\r\n    \"width\": 1600,\r\n    \"height\": 900,\r\n    \"binaries\": {\r\n      \"url\": \"https://www.example.com/images/34097349843\",\r\n      \"thumbnail\": \"https://www.example.com/images/thumbs/34097349843\"\r\n    },\r\n    \"animated\": \"false\",\r\n    \"tags\": [116, 943, 234, 38793]\r\n  }\r\n}\r\n```\r\n\r\n",
+            "\r\n\r\n```json\r\n{\r\n  \"photo\": {\r\n    \"width\": 1600,\r\n    \"height\": 900,\r\n    \"binaries\": {\r\n      \"url\": \"https://www.example.com/images/34097349843\",\r\n      \"thumbnail\": \"https://www.example.com/images/thumbs/34097349843\"\r\n    },\r\n    \"animated\": false,\r\n    \"tags\": [116, 943, 234, 38793]\r\n  }\r\n}\r\n```\r\n\r\n",
+            "\r\n\r\n```json\r\n{\r\n  \"photo\": {\r\n    \"width\": 1600,\r\n    \"height\": 900,\r\n    \"binaries\": {\r\n      \"url\": \"https://www.example.com/images/34097349843\",\r\n      \"thumbnail\": \"https://www.example.com/images/thumbs/34097349843\"\r\n    },\r\n    \"animated\": false,\r\n    \"tags\": [116, 943, 234, 38793]\r\n  }\r\n}\r\n```\r\n\r\n",
+            "\r\n\r\n```json\r\n{\r\n  \"photo\": {\r\n    \"width\": \"1600\",\r\n    \"height\": \"900\",\r\n    \"binaries\": {\r\n      \"url\": \"https://www.example.com/images/34097349843\",\r\n      \"thumbnail\": \"https://www.example.com/images/thumbs/34097349843\"\r\n    },\r\n    \"animated\": \"false\",\r\n    \"tags\": [\"116\", \"943\", \"234\", \"38793\"]\r\n  }\r\n}\r\n```\r\n\r\n"
+        ],
+        "correctAns": 3
+    },
+    {
+        "query": " Q11. How do you store several paragraphs of text as a string in JSON?",
+        "options": [
+            " Escape all whitespaces expect space characters.\r\n",
+            " Escape line breaks.\r\n",
+            " Escape paragraphs.\r\n",
+            " Remove all whitespaces\r\n\r\n"
+        ],
+        "correctAns": 1
+    },
+    {
+        "query": " Q12. What data type is represented by the value of the key/value pair shown?",
+        "options": [
+            " string\r\n",
+            " Boolean\r\n",
+            " number\r\n",
+            " object\r\n\r\n"
+        ],
+        "correctAns": 2
+    },
+    {
+        "query": " Q13. If you need to store the loggedIn status of a user in JSON as a boolean, what is the correct syntax?",
+        "options": [
+            " \"loggedIn\": (true)\r\n",
+            " loggedIn: \"true\"\r\n",
+            " \"loggedIn\": true\r\n",
+            " loggedIn: {true}\r\n\r\n"
+        ],
+        "correctAns": 3
+    },
+    {
+        "query": " Q14. What does JSON with padding (JSON-P) use to make a request?",
+        "options": [
+            " an `<origin>` element\r\n",
+            " a header request\r\n",
+            " the `<script>` element\r\n",
+            " the XMLHttpRequest object\r\n\r\n"
+        ],
+        "correctAns": 3
+    },
+    {
+        "query": " Q15. Which value is supported in the JSON specifications?",
+        "options": [
+            " undefined\r\n",
+            " infinity\r\n",
+            " NaN\r\n",
+            " null\r\n\r\n"
+        ],
+        "correctAns": 4
+    },
+    {
+        "query": " Q16. Which JavaScript method converts JSON to a JavaScript value?",
+        "options": [
+            " JSON.parse()\r\n",
+            " JSON.stringify()\r\n",
+            " JSON.toString()\r\n",
+            " JSON.objectify()\r\n\r\n"
+        ],
+        "correctAns": 1
+    },
+    {
+        "query": " Q17. Transferring JSON information from client to server and back again often includes HTTP requests. Match each method with the best choice describing its use.",
+        "options": [
+            " 1.POST 2.DELETE 3.OPTIONS 4.HEADER 5.GET 6.PUT\r\n",
+            " 1.POST 2.PUT 3.HEADER 4.OPTIONS 5.GET 6.DELETE\r\n",
+            " 1.POST 2.DELETE 3.OPTIONS 4.HEADER 5.GET 6.PUT\r\n",
+            " 1.POST 2.PUT 3.HEADER 4.OPTIONS 5.GET 6.DELETE\r\n\r\n"
+        ],
+        "correctAns": 4
+    },
+    {
+        "query": " Q18. Which code uses valid JSON syntax for the text \"Centennial Olympics?",
+        "code": null,
+        "options": [
+            "\r\n\r\n```json\r\n{\r\n\"host\": \"Atlanta\",\r\n\"year\": 1996\r\n/_ Centennial Olympics _/\r\n}\r\n```\r\n\r\n",
+            "\r\n\r\n```json\r\n{\r\n\"host\": \"Atlanta\",\r\n\"year\": 1996,\r\n/_ Centennial Olympics _/\r\n}\r\n```\r\n\r\n",
+            "\r\n\r\n```json\r\n{\r\n  \"host\": \"Atlanta\",\r\n  \"year\": 1996\r\n  // Centennial Olympics\r\n}\r\n```\r\n\r\n",
+            "\r\n\r\n```json\r\n{\r\n  \"host\": \"Atlanta\",\r\n  \"year\": 1996,\r\n  \"comments\": \"Centennial Olympics\"\r\n}\r\n```\r\n\r\n"
+        ],
+        "correctAns": 4
+    },
+    {
+        "query": " Q19. Can trailing commas be used in objects and arrays?",
+        "options": [
+            " yes\r\n",
+            " only if there is more than one item\r\n",
+            " no\r\n",
+            " only when arrays and objects contain more than 10 items\r\n\r\n"
+        ],
+        "correctAns": 3
+    },
+    {
+        "query": " Q20. Which whitespace characters should be escaped within a string?",
+        "options": [
+            " All whitespace is allowed.\r\n",
+            " double quotes, slashes new lines, and carriage returns\r\n",
+            " new lines and carriage returns only\r\n",
+            " double quotes only\r\n\r\n"
+        ],
+        "correctAns": 3
+    },
+    {
+        "query": " Q21. Which is supported by YAML but not supported by JSON?",
+        "options": [
+            " nested\r\n",
+            " comments\r\n",
+            " arrays\r\n",
+            " null values\r\n\r\n"
+        ],
+        "correctAns": 2
+    },
+    {
+        "query": " Q22. Which is an invalid JSON value?",
+        "options": [
+            " \"'|=(_)(X 72(_)|\\/||\\*'\"\r\n",
+            " \"|=(_)(X 72(_)|\\/||\\*\"\r\n",
+            " \"|=(_)(X\\\" \\\"72(_)|\\/||\\*\"\r\n",
+            " \"\\s(_)(X 72(_)|\\/||\\*\"\r\n\r\n"
+        ],
+        "correctAns": 4
+    },
+    {
+        "query": " Q23. How do you encode a date in JSON?",
+        "options": [
+            " Convert the date to UTC and enclose in quotes.\r\n",
+            " Encode the date as string using the ISO-8601 date format.\r\n",
+            " Wrap the date in double quotes.\r\n",
+            " Add a \"date\" key to your object and include the date as string.\r\n\r\n"
+        ],
+        "correctAns": 2
+    },
+    {
+        "query": " Q24. What’s wrong with this JavaScript?",
+        "options": [
+            " JSON should be wrapped with curly braces.\r\n",
+            " JSON.parse() is missing an argument.\r\n",
+            " The value supplied to JSON.parse() is not a string.\r\n",
+            " Nothing is wrong with it.\r\n\r\n"
+        ],
+        "correctAns": 3
+    },
+    {
+        "query": " Q25. What does this JavaScript code print?",
+        "code": "js\r\nprintNullness(JSON.parse('{ \"lemmings\": [] }'));\r\nprintNullness(JSON.parse('{ \"lemmings\": null }'));\r\nprintNullness(JSON.parse('{ \"lemmings\": \"null\" }'));\r\n\r\nfunction printNullness() {\r\n  if (testMe.lemmings == null) console.log('null');\r\n  else console.log('not null');\r\n}\r\n",
+        "options": [
+            " A\r\n\r\n```\r\nnot null\r\nnull\r\nnot null\r\n```\r\n\r\n",
+            " B\r\n\r\n```\r\nnull\r\nnull\r\nnot null\r\n```\r\n\r\n",
+            " C\r\n\r\n```\r\nnot null\r\nnull\r\nnull\r\n```\r\n\r\n",
+            " D\r\n\r\n```\r\nnull\r\nnull\r\nnull\r\n```\r\n\r\n"
+        ],
+        "correctAns": 1
+    },
+    {
+        "query": " Q26. What tool might you use to validate your JSON?",
+        "options": [
+            " JSONLint\r\n",
+            " ValidateJSON\r\n",
+            " JSONFiddle\r\n",
+            " TextEdit\r\n\r\n"
+        ],
+        "correctAns": 1
+    }
+]

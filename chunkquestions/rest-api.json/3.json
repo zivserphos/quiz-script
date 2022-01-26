@@ -1,1 +1,102 @@
-[{"query":" Q51. Which response header will tell the client that the response is cached for 1 minute ?","options":[" `Expires: 1 minute`\r\n"," `Cache-Control: max-age=60`\r\n"," `Expires: 1 January 2020`\r\n"," `Cache-Expires: max-age=60`\r\n\r\n**Explanation:** [Cache Control Header](https://developer.mozilla.org/en-US/docs/Web/HTTP/Headers/Cache-Control)\r\n\r\n"],"correctAns":2},{"query":" Q52. What is the concept that allows an API client to explore an API via links embedded in payloads?","options":[" `hypermedia`\r\n"," `link relations`\r\n"," `parsing`\r\n"," `browsing`\r\n\r\n"],"correctAns":2},{"query":" Q53. Which HTTP response code describes a new resource as created successfully?","options":[" `200`\r\n"," `201`\r\n"," `204`\r\n"," `202`\r\n\r\n**Explanation:** [Response Codes](https://developer.mozilla.org/en-US/docs/Web/HTTP/Status#successful_responses)\r\n\r\n"],"correctAns":2},{"query":" Q54. Which is an example of Code on Demand?","options":[" AWS Lambda\r\n"," downloading open-source software\r\n"," Serverless\r\n"," JavaScript on a webpage\r\n\r\n**Explanation:** [Code on Demand](https://en.wikipedia.org/wiki/Code_on_demand)\r\n\r\n"],"correctAns":4},{"query":" Q55. Which URL pattern should you follow for accessing a subresource attached to a specific resource?","options":[" /companies/employees/{companyId}/{employeeId}\r\n"," /company/{companyId}/employees/{employeeId}\r\n"," /companies/{companyId}/employees/{employeeId}\r\n"," /companies/{companyId}/employee/{employeeId}\r\n\r\n**Explanation:** [Resource Naming](https://restfulapi.net/resource-naming/)\r\n\r\n"],"correctAns":3},{"query":" Q56. Which REST constraint essentially prohibits the use of cookies?","options":[" Stateless\r\n"," Cacheable\r\n"," Layered System\r\n"," Uniform Interface\r\n\r\n"],"correctAns":1},{"query":" Q57. Which HTTP verb is used to delete a resource?","options":[" FLUSH\r\n"," DELETE\r\n"," CLEAR\r\n"," DESTROY\r\n\r\n"],"correctAns":2},{"query":" Q58. Which verb is _not_ considered idempotent?","options":[" DELETE\r\n"," GET\r\n"," PUT\r\n"," POST\r\n\r\n**Explanation:** [Idempotency](https://restfulapi.net/idempotent-rest-apis/)\r\n\r\n"],"correctAns":4},{"query":" Q59. Which REST constraint specifies that each request should stand on its own and not have a specific required order?","options":[" Uniform Interface\r\n"," Cacheable\r\n"," Stateless\r\n"," Client-Server\r\n\r\n**Explanation:** [REST Architectural Constraints](https://restfulapi.net/rest-architectural-constraints/)\r\n\r\n"],"correctAns":3},{"query":" Q60. When you get a 429 code, what should you do next?","options":[" Check you JSON structure.\r\n"," Check the API uptime status.\r\n"," Slow down your requests.\r\n"," Check you API key.\r\n"],"correctAns":3}]
+[
+    {
+        "query": " Q51. Which response header will tell the client that the response is cached for 1 minute ?",
+        "options": [
+            " `Expires: 1 minute`\r\n",
+            " `Cache-Control: max-age=60`\r\n",
+            " `Expires: 1 January 2020`\r\n",
+            " `Cache-Expires: max-age=60`\r\n\r\n**Explanation:** [Cache Control Header](https://developer.mozilla.org/en-US/docs/Web/HTTP/Headers/Cache-Control)\r\n\r\n"
+        ],
+        "correctAns": 2
+    },
+    {
+        "query": " Q52. What is the concept that allows an API client to explore an API via links embedded in payloads?",
+        "options": [
+            " `hypermedia`\r\n",
+            " `link relations`\r\n",
+            " `parsing`\r\n",
+            " `browsing`\r\n\r\n"
+        ],
+        "correctAns": 2
+    },
+    {
+        "query": " Q53. Which HTTP response code describes a new resource as created successfully?",
+        "options": [
+            " `200`\r\n",
+            " `201`\r\n",
+            " `204`\r\n",
+            " `202`\r\n\r\n**Explanation:** [Response Codes](https://developer.mozilla.org/en-US/docs/Web/HTTP/Status#successful_responses)\r\n\r\n"
+        ],
+        "correctAns": 2
+    },
+    {
+        "query": " Q54. Which is an example of Code on Demand?",
+        "options": [
+            " AWS Lambda\r\n",
+            " downloading open-source software\r\n",
+            " Serverless\r\n",
+            " JavaScript on a webpage\r\n\r\n**Explanation:** [Code on Demand](https://en.wikipedia.org/wiki/Code_on_demand)\r\n\r\n"
+        ],
+        "correctAns": 4
+    },
+    {
+        "query": " Q55. Which URL pattern should you follow for accessing a subresource attached to a specific resource?",
+        "options": [
+            " /companies/employees/{companyId}/{employeeId}\r\n",
+            " /company/{companyId}/employees/{employeeId}\r\n",
+            " /companies/{companyId}/employees/{employeeId}\r\n",
+            " /companies/{companyId}/employee/{employeeId}\r\n\r\n**Explanation:** [Resource Naming](https://restfulapi.net/resource-naming/)\r\n\r\n"
+        ],
+        "correctAns": 3
+    },
+    {
+        "query": " Q56. Which REST constraint essentially prohibits the use of cookies?",
+        "options": [
+            " Stateless\r\n",
+            " Cacheable\r\n",
+            " Layered System\r\n",
+            " Uniform Interface\r\n\r\n"
+        ],
+        "correctAns": 1
+    },
+    {
+        "query": " Q57. Which HTTP verb is used to delete a resource?",
+        "options": [
+            " FLUSH\r\n",
+            " DELETE\r\n",
+            " CLEAR\r\n",
+            " DESTROY\r\n\r\n"
+        ],
+        "correctAns": 2
+    },
+    {
+        "query": " Q58. Which verb is _not_ considered idempotent?",
+        "options": [
+            " DELETE\r\n",
+            " GET\r\n",
+            " PUT\r\n",
+            " POST\r\n\r\n**Explanation:** [Idempotency](https://restfulapi.net/idempotent-rest-apis/)\r\n\r\n"
+        ],
+        "correctAns": 4
+    },
+    {
+        "query": " Q59. Which REST constraint specifies that each request should stand on its own and not have a specific required order?",
+        "options": [
+            " Uniform Interface\r\n",
+            " Cacheable\r\n",
+            " Stateless\r\n",
+            " Client-Server\r\n\r\n**Explanation:** [REST Architectural Constraints](https://restfulapi.net/rest-architectural-constraints/)\r\n\r\n"
+        ],
+        "correctAns": 3
+    },
+    {
+        "query": " Q60. When you get a 429 code, what should you do next?",
+        "options": [
+            " Check you JSON structure.\r\n",
+            " Check the API uptime status.\r\n",
+            " Slow down your requests.\r\n",
+            " Check you API key.\r\n"
+        ],
+        "correctAns": 3
+    }
+]

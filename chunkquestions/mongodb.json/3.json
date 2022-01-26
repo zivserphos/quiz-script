@@ -1,1 +1,242 @@
-[{"query":" Q51. To cleanly shut down MongoDB, what command should you use from the MongoDB shell?","options":[" quit()\r\n"," exit()\r\n"," db.shutdownServer()\r\n"," db.shutdown()\r\n\r\n"],"correctAns":3},{"query":" Q52. Given a customer collection which includes fields for gender and city, which aggregate pipeline shows the number of female customers in each city? (_Alternative_: How can you view the execution performance statistics for a query?)","options":[" `db.members.aggregate([ {$match: {gender: \"Female\"}}, {$group: {_id: {city: \"$city\"}, number: {$sum: 1}}}, {$sort :{number: -1}}])`\r\n"," `db.members.find({$match: {gender: \"Female\"}}, {$group: {_id: {city: \"$city\"}, number: {$sum: 1}}}.$sort ({number: -1})`\r\n"," `db.members.find([ {$match: {gender: \"Female\"}}, {$group: {_id: {city: \"$city\"}, number: {$sum: 1}}}, {$sort :{number: -1}}])`\r\n"," `db.members.aggregate([ {$match: {gender: \"Female\"}}, {$sort :{number: -1}}])`\r\n\r\n"],"correctAns":1},{"query":" Q53. When no parameters are passed to `explain()`, what mode does it run in?","options":[" wireTiger mode\r\n"," executionStats mode\r\n"," queryPlanner mode\r\n"," allPlansExecution mode\r\n\r\n"],"correctAns":3},{"query":" Q54. What is the correct query to find all of the people who have a home phone number defined?","options":[" `db.person.find({exists: 'homePhone'});`\r\n"," `db.person.exists({homePhone: true});`\r\n"," `db.person.find({homePhone: {$exists: true}});`\r\n"," `db.person.has('homePhone');`\r\n\r\n"],"correctAns":3},{"query":" Q55. Which file in the MongoDB directly holds the MongoDB daemon?","options":[" mongodb\r\n"," mongo-daemon\r\n"," daemon\r\n"," mongod\r\n\r\n"],"correctAns":4},{"query":" Q56. You have just secured your previously unsecured MongoDB server, but the server is still not requiring authentication. What is the best option?","options":[" Restart the `mongod` process.\r\n"," Issue the `secure()` command.\r\n"," Issue the `mongoimport` command.\r\n"," Issue the `authenticate()` command.\r\n\r\n"],"correctAns":1},{"query":" Q57. What is the most accurate statement regarding MongoDB and ad hoc queries?","options":[" MongoDB does not allow ad hoc queries; all queries require an index.\r\n"," Ad hoc queries are allowed only in the paid version.\r\n"," Ad hoc queries are allowed only through the ad hoc command.\r\n"," MongoDB allows ad hoc queries.\r\n\r\n"],"correctAns":4},{"query":" Q58. In MongoDB, what does a projection do?","options":[" allows you to do a calculation on the results\r\n"," allows you to run queries on the server\r\n"," allows you to select which fields should be in the return data\r\n"," allows you to format the results for a display\r\n\r\n"],"correctAns":3},{"query":" Q59. To remove a database and all of its records from MongoDB, what operator should you use?","options":[" `dropDatabase()`\r\n"," `removeAll()`\r\n"," `clear()`\r\n"," `deleteDatabase()`\r\n\r\n"],"correctAns":1},{"query":" Q60. What option can be passed to start the MongoDB shell without connecting to a database?","options":[" `-db=null`\r\n"," `--shell-only`\r\n"," `--free`\r\n"," `-nodb`\r\n\r\n"],"correctAns":4},{"query":" Q61. How can you improve the appearance of the output JSON that contains the `_id`?","options":[" `Use db.collection.set({$_id:pretty})`\r\n"," `Create a second index`\r\n"," `Use db.collection.format(numeric)`\r\n"," `Use $_id = value`\r\n\r\n"],"correctAns":3},{"query":" Q62. What happens to a Replica set oplog if it runs out of memory?","options":[" `The oplog will be saved on one of the secondary servers.`\r\n"," `The oplog is capped collection and can't run out of memory`\r\n"," `The MongoDB instance will fail`\r\n"," `The oplog will stop recording logging information`\r\n\r\n"],"correctAns":1},{"query":" Q63. MongoDB ships with a variety of files. Which file runs the MongoDB shell?","options":[" mongo\r\n"," mongo-s\r\n"," shell\r\n"," mongo-shell\r\n\r\n"],"correctAns":1},{"query":" Q64. How can you view the execution performance statistics for a query?","options":[" `db.performance.members.aggregate([ {$match: {gender: \"Female\"}}, {$group: {_id:{city:\"$city\"}, number: {$sum: 1}}}, {$sort : {number: -1}}])`\r\n"," `db.members.aggregate([ {$match: {gender: \"Female\"}}, {$group: {_id: {city: \"$city\"}, number:{$sum:1}}}, {$sort: {number:-1}}]).explain(\"executionStats\")`\r\n"," `db.members.aggregate([ {$match: {gender: \"Female\"}}, {$group:{_id: {city: \"$city\"}, number: {$sum: 1}}}, {$sort: {number: -1}}]).explain()`\r\n"," `db.members.aggregate([ {$match: {gender: \"\"\"Female\"\"\"}}, {$group: {_id: {city: \"\"\"$city\"\"\"}, number: {$sum:1}}}, {$sort: {number: -1}}]).number()`\r\n\r\n"],"correctAns":2},{"query":" Q65. From the MongoDB shell, how do you execute a JavaScript file named list.js?","options":[" node 'list.js'\r\n"," exec('list.js)\r\n"," run('list.js)\r\n"," load('list.js)\r\n\r\n"],"correctAns":4},{"query":" Q66. Which MongoDB shell query will sort the customer's collection by name descending?","options":[" db.customers.sort({name: -1}.find({})\r\n"," db.customers.sort({name: -1})\r\n"," db.customers.find({}).sort({name: -1})\r\n"," db.customers.find({}).sort({name: 1})\r\n\r\n"],"correctAns":3},{"query":" Q67. Suppose you are using the mongoimport command to import personnel data and there is a unique index on the email field. What happens when there are duplicate emails in the import?","options":[" The import command aborts without importing any records.\r\n"," The import command imports records upto but not including the record, and then aborts.\r\n"," The import command doesn't import the bad document but does import the rest.\r\n"," The import command prompts you to correct the bad record.\r\n\r\n"],"correctAns":4},{"query":" Q68. You have a collection with millions of documents. Each time you attempt to sort. MongoDB runs out of memory. What might help?","options":[" Use the purge operator before the sort.\r\n"," Return the entire collection and sort on the client.\r\n"," Pass the --more-memory option.\r\n"," Create an index on the field you are sorting.\r\n\r\n"],"correctAns":4},{"query":" Q69. You need to be able to quickly find a word in a text field. What should you do?","options":[" Create a text index on the field and do a $text Query.\r\n"," Create an single field index in descending order, and do a query for the word.\r\n"," Do a $text query.\r\n"," Create a $regex on the fields, and do a $regex query.\r\n\r\n"],"correctAns":3},{"query":" Q70. Which field is always included in a projection unless specifically excluded?","options":[" index\r\n"," Name\r\n"," `_id`\r\n"," row number\r\n\r\n"],"correctAns":3},{"query":" Q71. After installing MongoDB on your machine, what must you do before launching Mongo?","options":[" Create a user account.\r\n"," Register online.\r\n"," Create a data directory.\r\n"," Establish security credentials.\r\n      "],"correctAns":4},{"query":" Q72. How does a --jsonArray file need to be structured?","options":[" as a properly formatted JSON array\r\n"," as YAML\r\n"," as plain text\r\n"," as a BSON object\r\n      "],"correctAns":1},{"query":" Q74. How do you create a new MongoDB user?","options":[" db.createUser({})\r\n"," db.insert({user: 1})\r\n"," db.customers.newUser({})\r\n"," db.newUser({})\r\n      Reference: [MongoDB documentation](https://docs.mongodb.com/manual/tutorial/create-users/)\r\n\r\n"],"correctAns":1},{"query":" Q75. What is the internal data structure of a MongoDB document?","options":[" JSON (JavaScript Object Notation)\r\n"," BSON (Binary JSON)\r\n"," ORM (object relational mode)\r\n"," MBF (MongoDB binary format)\r\n      Reference: [MongoDB documentation](https://docs.mongodb.com/guides/server/introduction/)"],"correctAns":1}]
+[
+    {
+        "query": " Q51. To cleanly shut down MongoDB, what command should you use from the MongoDB shell?",
+        "options": [
+            " quit()\r\n",
+            " exit()\r\n",
+            " db.shutdownServer()\r\n",
+            " db.shutdown()\r\n\r\n"
+        ],
+        "correctAns": 3
+    },
+    {
+        "query": " Q52. Given a customer collection which includes fields for gender and city, which aggregate pipeline shows the number of female customers in each city? (_Alternative_: How can you view the execution performance statistics for a query?)",
+        "options": [
+            " `db.members.aggregate([ {$match: {gender: \"Female\"}}, {$group: {_id: {city: \"$city\"}, number: {$sum: 1}}}, {$sort :{number: -1}}])`\r\n",
+            " `db.members.find({$match: {gender: \"Female\"}}, {$group: {_id: {city: \"$city\"}, number: {$sum: 1}}}.$sort ({number: -1})`\r\n",
+            " `db.members.find([ {$match: {gender: \"Female\"}}, {$group: {_id: {city: \"$city\"}, number: {$sum: 1}}}, {$sort :{number: -1}}])`\r\n",
+            " `db.members.aggregate([ {$match: {gender: \"Female\"}}, {$sort :{number: -1}}])`\r\n\r\n"
+        ],
+        "correctAns": 1
+    },
+    {
+        "query": " Q53. When no parameters are passed to `explain()`, what mode does it run in?",
+        "options": [
+            " wireTiger mode\r\n",
+            " executionStats mode\r\n",
+            " queryPlanner mode\r\n",
+            " allPlansExecution mode\r\n\r\n"
+        ],
+        "correctAns": 3
+    },
+    {
+        "query": " Q54. What is the correct query to find all of the people who have a home phone number defined?",
+        "options": [
+            " `db.person.find({exists: 'homePhone'});`\r\n",
+            " `db.person.exists({homePhone: true});`\r\n",
+            " `db.person.find({homePhone: {$exists: true}});`\r\n",
+            " `db.person.has('homePhone');`\r\n\r\n"
+        ],
+        "correctAns": 3
+    },
+    {
+        "query": " Q55. Which file in the MongoDB directly holds the MongoDB daemon?",
+        "options": [
+            " mongodb\r\n",
+            " mongo-daemon\r\n",
+            " daemon\r\n",
+            " mongod\r\n\r\n"
+        ],
+        "correctAns": 4
+    },
+    {
+        "query": " Q56. You have just secured your previously unsecured MongoDB server, but the server is still not requiring authentication. What is the best option?",
+        "options": [
+            " Restart the `mongod` process.\r\n",
+            " Issue the `secure()` command.\r\n",
+            " Issue the `mongoimport` command.\r\n",
+            " Issue the `authenticate()` command.\r\n\r\n"
+        ],
+        "correctAns": 1
+    },
+    {
+        "query": " Q57. What is the most accurate statement regarding MongoDB and ad hoc queries?",
+        "options": [
+            " MongoDB does not allow ad hoc queries; all queries require an index.\r\n",
+            " Ad hoc queries are allowed only in the paid version.\r\n",
+            " Ad hoc queries are allowed only through the ad hoc command.\r\n",
+            " MongoDB allows ad hoc queries.\r\n\r\n"
+        ],
+        "correctAns": 4
+    },
+    {
+        "query": " Q58. In MongoDB, what does a projection do?",
+        "options": [
+            " allows you to do a calculation on the results\r\n",
+            " allows you to run queries on the server\r\n",
+            " allows you to select which fields should be in the return data\r\n",
+            " allows you to format the results for a display\r\n\r\n"
+        ],
+        "correctAns": 3
+    },
+    {
+        "query": " Q59. To remove a database and all of its records from MongoDB, what operator should you use?",
+        "options": [
+            " `dropDatabase()`\r\n",
+            " `removeAll()`\r\n",
+            " `clear()`\r\n",
+            " `deleteDatabase()`\r\n\r\n"
+        ],
+        "correctAns": 1
+    },
+    {
+        "query": " Q60. What option can be passed to start the MongoDB shell without connecting to a database?",
+        "options": [
+            " `-db=null`\r\n",
+            " `--shell-only`\r\n",
+            " `--free`\r\n",
+            " `-nodb`\r\n\r\n"
+        ],
+        "correctAns": 4
+    },
+    {
+        "query": " Q61. How can you improve the appearance of the output JSON that contains the `_id`?",
+        "options": [
+            " `Use db.collection.set({$_id:pretty})`\r\n",
+            " `Create a second index`\r\n",
+            " `Use db.collection.format(numeric)`\r\n",
+            " `Use $_id = value`\r\n\r\n"
+        ],
+        "correctAns": 3
+    },
+    {
+        "query": " Q62. What happens to a Replica set oplog if it runs out of memory?",
+        "options": [
+            " `The oplog will be saved on one of the secondary servers.`\r\n",
+            " `The oplog is capped collection and can't run out of memory`\r\n",
+            " `The MongoDB instance will fail`\r\n",
+            " `The oplog will stop recording logging information`\r\n\r\n"
+        ],
+        "correctAns": 1
+    },
+    {
+        "query": " Q63. MongoDB ships with a variety of files. Which file runs the MongoDB shell?",
+        "options": [
+            " mongo\r\n",
+            " mongo-s\r\n",
+            " shell\r\n",
+            " mongo-shell\r\n\r\n"
+        ],
+        "correctAns": 1
+    },
+    {
+        "query": " Q64. How can you view the execution performance statistics for a query?",
+        "options": [
+            " `db.performance.members.aggregate([ {$match: {gender: \"Female\"}}, {$group: {_id:{city:\"$city\"}, number: {$sum: 1}}}, {$sort : {number: -1}}])`\r\n",
+            " `db.members.aggregate([ {$match: {gender: \"Female\"}}, {$group: {_id: {city: \"$city\"}, number:{$sum:1}}}, {$sort: {number:-1}}]).explain(\"executionStats\")`\r\n",
+            " `db.members.aggregate([ {$match: {gender: \"Female\"}}, {$group:{_id: {city: \"$city\"}, number: {$sum: 1}}}, {$sort: {number: -1}}]).explain()`\r\n",
+            " `db.members.aggregate([ {$match: {gender: \"\"\"Female\"\"\"}}, {$group: {_id: {city: \"\"\"$city\"\"\"}, number: {$sum:1}}}, {$sort: {number: -1}}]).number()`\r\n\r\n"
+        ],
+        "correctAns": 2
+    },
+    {
+        "query": " Q65. From the MongoDB shell, how do you execute a JavaScript file named list.js?",
+        "options": [
+            " node 'list.js'\r\n",
+            " exec('list.js)\r\n",
+            " run('list.js)\r\n",
+            " load('list.js)\r\n\r\n"
+        ],
+        "correctAns": 4
+    },
+    {
+        "query": " Q66. Which MongoDB shell query will sort the customer's collection by name descending?",
+        "options": [
+            " db.customers.sort({name: -1}.find({})\r\n",
+            " db.customers.sort({name: -1})\r\n",
+            " db.customers.find({}).sort({name: -1})\r\n",
+            " db.customers.find({}).sort({name: 1})\r\n\r\n"
+        ],
+        "correctAns": 3
+    },
+    {
+        "query": " Q67. Suppose you are using the mongoimport command to import personnel data and there is a unique index on the email field. What happens when there are duplicate emails in the import?",
+        "options": [
+            " The import command aborts without importing any records.\r\n",
+            " The import command imports records upto but not including the record, and then aborts.\r\n",
+            " The import command doesn't import the bad document but does import the rest.\r\n",
+            " The import command prompts you to correct the bad record.\r\n\r\n"
+        ],
+        "correctAns": 4
+    },
+    {
+        "query": " Q68. You have a collection with millions of documents. Each time you attempt to sort. MongoDB runs out of memory. What might help?",
+        "options": [
+            " Use the purge operator before the sort.\r\n",
+            " Return the entire collection and sort on the client.\r\n",
+            " Pass the --more-memory option.\r\n",
+            " Create an index on the field you are sorting.\r\n\r\n"
+        ],
+        "correctAns": 4
+    },
+    {
+        "query": " Q69. You need to be able to quickly find a word in a text field. What should you do?",
+        "options": [
+            " Create a text index on the field and do a $text Query.\r\n",
+            " Create an single field index in descending order, and do a query for the word.\r\n",
+            " Do a $text query.\r\n",
+            " Create a $regex on the fields, and do a $regex query.\r\n\r\n"
+        ],
+        "correctAns": 3
+    },
+    {
+        "query": " Q70. Which field is always included in a projection unless specifically excluded?",
+        "options": [
+            " index\r\n",
+            " Name\r\n",
+            " `_id`\r\n",
+            " row number\r\n\r\n"
+        ],
+        "correctAns": 3
+    },
+    {
+        "query": " Q71. After installing MongoDB on your machine, what must you do before launching Mongo?",
+        "options": [
+            " Create a user account.\r\n",
+            " Register online.\r\n",
+            " Create a data directory.\r\n",
+            " Establish security credentials.\r\n      "
+        ],
+        "correctAns": 4
+    },
+    {
+        "query": " Q72. How does a --jsonArray file need to be structured?",
+        "options": [
+            " as a properly formatted JSON array\r\n",
+            " as YAML\r\n",
+            " as plain text\r\n",
+            " as a BSON object\r\n      "
+        ],
+        "correctAns": 1
+    },
+    {
+        "query": " Q74. How do you create a new MongoDB user?",
+        "options": [
+            " db.createUser({})\r\n",
+            " db.insert({user: 1})\r\n",
+            " db.customers.newUser({})\r\n",
+            " db.newUser({})\r\n      "
+        ],
+        "correctAns": 1
+    },
+    {
+        "query": " Q75. What is the internal data structure of a MongoDB document?",
+        "options": [
+            " JSON (JavaScript Object Notation)\r\n",
+            " BSON (Binary JSON)\r\n",
+            " ORM (object relational mode)\r\n",
+            " MBF (MongoDB binary format)\r\n"
+        ],
+        "correctAns": 1
+    }
+]

@@ -1,1 +1,252 @@
-[{"query":" Q1. Which types of indexes are available in CosmosDB?","options":[" range and spatial\r\n"," secondary and primary key\r\n"," secondary and spatial\r\n"," range and primary key\r\n\r\n"],"correctAns":1},{"query":" Q2. You want to connect a DynamoDB stream to AWS Lambda function?","options":[" DynamoDB table\r\n"," DynamoDB trigger\r\n"," DynamoDB item\r\n"," DynamoDB index\r\n\r\n"],"correctAns":2},{"query":" Q3. To index a field that holds an array value in MongoDB, which index type do you create?","options":[" partial\r\n"," sparse\r\n"," compound\r\n"," multikey\r\n\r\n"],"correctAns":4},{"query":" Q4. You want to test HBASE on your laptop using the fewest number of steps. What do you do?","options":[" Set up Hadoop in pseudo-distributed mode.\r\n"," Set up HBASE in local mode.\r\n"," Set up HBASE in pseudo-distributed mode.\r\n"," Set up Hadoop in local mode.\r\n\r\n"],"correctAns":3},{"query":" Q5. You need to create a document database that supports database triggers. Which NoSQL database should you use?","options":[" DynamoDB\r\n"," BigTable\r\n"," Redis\r\n"," MongoDB\r\n\r\n"],"correctAns":1},{"query":" Q6. What is recommended size for Redis keys?","options":[" medium\r\n"," short\r\n"," single bit\r\n"," long\r\n\r\n"],"correctAns":2},{"query":" Q7. You need to design security for DynamoDB to allow users read-only access to certain items and attributes in a table. What do you do?","options":[" Use lAM policy conditions\r\n"," Use lAM roles\r\n"," Use VPC endpoint\r\n"," Use lAM policies\r\n\r\n"],"correctAns":4},{"query":" Q8. What does redis use to sort the elements of a sorted set?","options":[" Scores.\r\n"," Ids.\r\n"," Values.\r\n"," Keys.\r\n\r\n"],"correctAns":4},{"query":" Q9.You need to change the shard key of an existing MongoDB collection. What do you do?","options":[" Dump the collection data, drop the collection, create a new collection and shard key, import the data.\r\n"," Add second shard key and drop the first shard key.\r\n"," Dump the collection data, drop the collection, presplit the data, create a new collection and shard key, import the data.\r\n"," Drop and recreate the shard key.\r\n\r\n"],"correctAns":3},{"query":" Q10. Polyglot storage means using multiple types of what in the same application?","options":[" Security systems.\r\n"," Database systems.\r\n"," Storage systems.\r\n"," Query systems.\r\n\r\n"],"correctAns":4},{"query":" Q11. You need to implement the simplest possible scalable, in-memory cache for your AWS application. Which service do you select?","options":[" Elasticache using Memcached.\r\n"," DynamoDB.\r\n"," DynamoDB Accelerator (DAX).\r\n"," Elasticache using Redis.\r\n\r\n"],"correctAns":4},{"query":" Q12. You are doing data modelling for Google BigTable. Which statement expresses if and when you should split entities across multiple rows?","options":[" Keep all information for an entity in a single row. Store related entities in adjacent rows.\r\n"," Keep all information for an entity in a single row.\r\n"," Split entities across multiple rows if the entity data is over thousands of MBs, or if it does not need atomic updates and reads.\r\n"," Split entities across multiple rows if the entity data is over hundreds of MBs, or if it does not need atomic updates and reads.\r\n\r\n"],"correctAns":4},{"query":" Q13. Which two characteristics define Amazon Quantum Ledger Database?","options":[" Key-value data model; transactionally consistent with ACID semantics.\r\n"," Document data model; transactionally consistent with ACID semantics.\r\n"," Key-value data model; transactions with tunable consistency.\r\n"," Document data model; transactions with tunable consistency.\r\n\r\n"],"correctAns":2},{"query":" Q14. You need to design the primary key for DynamoDB based on three attributes. What do you do?","options":[" Designate all three fields as the primary key.\r\n"," Concatenate all three fields into one new field, then designate that new field as the primary key.\r\n"," Designate two fields of the three fields as the primary key.\r\n"," Concatenate two fields into one new field, then designate that new field and the remaining field as the primary key.\r\n\r\n"],"correctAns":2},{"query":" Q15. You need to design the primary key for DynamoDB based on three attributes. What do you do?","options":[" Designate all three fields as the primary key.\r\n"," Concatenate all three fields into one new field, then designate that new field as the primary key.\r\n"," Designate two fields of the three fields as the primary key.\r\n"," Concatenate two fields into one new field, then designate that new field and the remaining field as the primary key.\r\n\r\n"],"correctAns":2},{"query":" Q16. Which of these data types should you avoid in designing a Google Bigtable row key?","options":[" multi-valued identifiers\r\n"," string identifiers\r\n"," timesstamps\r\n"," frequently updated identifiers\r\n\r\n"],"correctAns":4},{"query":" Q17. Your startup is building a prototype that has an evolving schema. Your data will be eventually consistent. Your application is hosted in AWS. Which databse do you choose?","options":[" Neptune\r\n"," DocumentDB\r\n"," DynamoDB\r\n"," Amazon Aurora\r\n\r\n"],"correctAns":3},{"query":" Q18. You need to create a scalable databse that allows you to share documents across authorized mobile clients in real time. What Google NoSQL database should you use?","options":[" Memorystore\r\n"," Datastore\r\n"," Firebase\r\n"," Bigtable\r\n\r\n"],"correctAns":3},{"query":" Q19. You want to test HBase on your laptop using the fewest number of steps. What do you do?","options":[" Set up HBase in local mode.\r\n"," Set up Hadoop in pseudo-distributed mode.\r\n"," Set up HBase in pseudo-distributed mode.\r\n"," Set up Hadoop in local mode.\r\n\r\n"],"correctAns":4},{"query":" Q20. You need to design security for DynamoDB to allow users read-obly access to certain items and attriutes in a table. What do you do?","options":[" Use IAM roles.\r\n"," Use IAM plicy conditions.\r\n"," Use a VPC endpoint.\r\n"," Use IAM plicies.\r\n\r\n"],"correctAns":2},{"query":" Q21. You need to design a primary key for DynamoDb based on three attributes. What do you do?","options":[" Concatenate all three fields into into one new field, than disignate that new field as the primary key.\r\n"," Concatenate two fileds into one new field, than disignate that new field and the remaining field as the primary key.\r\n"," Designate all three fields as the primary key.\r\n"," Designate two filds of the three fields as the primary key.\r\n\r\n"],"correctAns":3},{"query":" Q22. What does Redis use to sort the elements of a sorted set?","options":[" keys\r\n"," values\r\n"," scroes\r\n"," ids\r\n\r\n"],"correctAns":3},{"query":" Q23. You need to create a document database that supports database triggers. Which NoSQL database should you use?","options":[" DynamoDb\r\n"," Redis\r\n"," MongoDB\r\n"," Bigtable\r\n\r\n"],"correctAns":1},{"query":" Q24. Which statement is prefered Cypher code for Neo4j?","options":[" MATCH (:Person)-->(:Card)-->(:Company) RETURN count(vehicle)\r\n"," Match (:Person)-->(:Car):(vehicle:Car)-->(:Company) RETURN count(vehicle)\r\n"," MATCH (:Person)-->(vehicle:Car)-->(:Company) RETURN count(vehicle)\r\n"," MATCH (:Person)-->(:Card), (vehicle:Car)-->(:Company) RETURN count(vehicle)\r\n\r\n"],"correctAns":3},{"query":" Q25. You need multi-item ACID transactions with snapshot isolation within a partition for your cloud-based application. Which NoSQL databse do you choose?","options":[" Bigtable\r\n"," GraphDB\r\n"," DynamoDB\r\n"," Cosmos DB\r\n\r\n"],"correctAns":4}]
+[
+    {
+        "query": " Q1. Which types of indexes are available in CosmosDB?",
+        "options": [
+            " range and spatial\r\n",
+            " secondary and primary key\r\n",
+            " secondary and spatial\r\n",
+            " range and primary key\r\n\r\n"
+        ],
+        "correctAns": 1
+    },
+    {
+        "query": " Q2. You want to connect a DynamoDB stream to AWS Lambda function?",
+        "options": [
+            " DynamoDB table\r\n",
+            " DynamoDB trigger\r\n",
+            " DynamoDB item\r\n",
+            " DynamoDB index\r\n\r\n"
+        ],
+        "correctAns": 2
+    },
+    {
+        "query": " Q3. To index a field that holds an array value in MongoDB, which index type do you create?",
+        "options": [
+            " partial\r\n",
+            " sparse\r\n",
+            " compound\r\n",
+            " multikey\r\n\r\n"
+        ],
+        "correctAns": 4
+    },
+    {
+        "query": " Q4. You want to test HBASE on your laptop using the fewest number of steps. What do you do?",
+        "options": [
+            " Set up Hadoop in pseudo-distributed mode.\r\n",
+            " Set up HBASE in local mode.\r\n",
+            " Set up HBASE in pseudo-distributed mode.\r\n",
+            " Set up Hadoop in local mode.\r\n\r\n"
+        ],
+        "correctAns": 3
+    },
+    {
+        "query": " Q5. You need to create a document database that supports database triggers. Which NoSQL database should you use?",
+        "options": [
+            " DynamoDB\r\n",
+            " BigTable\r\n",
+            " Redis\r\n",
+            " MongoDB\r\n\r\n"
+        ],
+        "correctAns": 1
+    },
+    {
+        "query": " Q6. What is recommended size for Redis keys?",
+        "options": [
+            " medium\r\n",
+            " short\r\n",
+            " single bit\r\n",
+            " long\r\n\r\n"
+        ],
+        "correctAns": 2
+    },
+    {
+        "query": " Q7. You need to design security for DynamoDB to allow users read-only access to certain items and attributes in a table. What do you do?",
+        "options": [
+            " Use lAM policy conditions\r\n",
+            " Use lAM roles\r\n",
+            " Use VPC endpoint\r\n",
+            " Use lAM policies\r\n\r\n"
+        ],
+        "correctAns": 4
+    },
+    {
+        "query": " Q8. What does redis use to sort the elements of a sorted set?",
+        "options": [
+            " Scores.\r\n",
+            " Ids.\r\n",
+            " Values.\r\n",
+            " Keys.\r\n\r\n"
+        ],
+        "correctAns": 4
+    },
+    {
+        "query": " Q9.You need to change the shard key of an existing MongoDB collection. What do you do?",
+        "options": [
+            " Dump the collection data, drop the collection, create a new collection and shard key, import the data.\r\n",
+            " Add second shard key and drop the first shard key.\r\n",
+            " Dump the collection data, drop the collection, presplit the data, create a new collection and shard key, import the data.\r\n",
+            " Drop and recreate the shard key.\r\n\r\n"
+        ],
+        "correctAns": 3
+    },
+    {
+        "query": " Q10. Polyglot storage means using multiple types of what in the same application?",
+        "options": [
+            " Security systems.\r\n",
+            " Database systems.\r\n",
+            " Storage systems.\r\n",
+            " Query systems.\r\n\r\n"
+        ],
+        "correctAns": 4
+    },
+    {
+        "query": " Q11. You need to implement the simplest possible scalable, in-memory cache for your AWS application. Which service do you select?",
+        "options": [
+            " Elasticache using Memcached.\r\n",
+            " DynamoDB.\r\n",
+            " DynamoDB Accelerator (DAX).\r\n",
+            " Elasticache using Redis.\r\n\r\n"
+        ],
+        "correctAns": 4
+    },
+    {
+        "query": " Q12. You are doing data modelling for Google BigTable. Which statement expresses if and when you should split entities across multiple rows?",
+        "options": [
+            " Keep all information for an entity in a single row. Store related entities in adjacent rows.\r\n",
+            " Keep all information for an entity in a single row.\r\n",
+            " Split entities across multiple rows if the entity data is over thousands of MBs, or if it does not need atomic updates and reads.\r\n",
+            " Split entities across multiple rows if the entity data is over hundreds of MBs, or if it does not need atomic updates and reads.\r\n\r\n"
+        ],
+        "correctAns": 4
+    },
+    {
+        "query": " Q13. Which two characteristics define Amazon Quantum Ledger Database?",
+        "options": [
+            " Key-value data model; transactionally consistent with ACID semantics.\r\n",
+            " Document data model; transactionally consistent with ACID semantics.\r\n",
+            " Key-value data model; transactions with tunable consistency.\r\n",
+            " Document data model; transactions with tunable consistency.\r\n\r\n"
+        ],
+        "correctAns": 2
+    },
+    {
+        "query": " Q14. You need to design the primary key for DynamoDB based on three attributes. What do you do?",
+        "options": [
+            " Designate all three fields as the primary key.\r\n",
+            " Concatenate all three fields into one new field, then designate that new field as the primary key.\r\n",
+            " Designate two fields of the three fields as the primary key.\r\n",
+            " Concatenate two fields into one new field, then designate that new field and the remaining field as the primary key.\r\n\r\n"
+        ],
+        "correctAns": 2
+    },
+    {
+        "query": " Q15. You need to design the primary key for DynamoDB based on three attributes. What do you do?",
+        "options": [
+            " Designate all three fields as the primary key.\r\n",
+            " Concatenate all three fields into one new field, then designate that new field as the primary key.\r\n",
+            " Designate two fields of the three fields as the primary key.\r\n",
+            " Concatenate two fields into one new field, then designate that new field and the remaining field as the primary key.\r\n\r\n"
+        ],
+        "correctAns": 2
+    },
+    {
+        "query": " Q16. Which of these data types should you avoid in designing a Google Bigtable row key?",
+        "options": [
+            " multi-valued identifiers\r\n",
+            " string identifiers\r\n",
+            " timesstamps\r\n",
+            " frequently updated identifiers\r\n\r\n"
+        ],
+        "correctAns": 4
+    },
+    {
+        "query": " Q17. Your startup is building a prototype that has an evolving schema. Your data will be eventually consistent. Your application is hosted in AWS. Which databse do you choose?",
+        "options": [
+            " Neptune\r\n",
+            " DocumentDB\r\n",
+            " DynamoDB\r\n",
+            " Amazon Aurora\r\n\r\n"
+        ],
+        "correctAns": 3
+    },
+    {
+        "query": " Q18. You need to create a scalable databse that allows you to share documents across authorized mobile clients in real time. What Google NoSQL database should you use?",
+        "options": [
+            " Memorystore\r\n",
+            " Datastore\r\n",
+            " Firebase\r\n",
+            " Bigtable\r\n\r\n"
+        ],
+        "correctAns": 3
+    },
+    {
+        "query": " Q19. You want to test HBase on your laptop using the fewest number of steps. What do you do?",
+        "options": [
+            " Set up HBase in local mode.\r\n",
+            " Set up Hadoop in pseudo-distributed mode.\r\n",
+            " Set up HBase in pseudo-distributed mode.\r\n",
+            " Set up Hadoop in local mode.\r\n\r\n"
+        ],
+        "correctAns": 4
+    },
+    {
+        "query": " Q20. You need to design security for DynamoDB to allow users read-obly access to certain items and attriutes in a table. What do you do?",
+        "options": [
+            " Use IAM roles.\r\n",
+            " Use IAM plicy conditions.\r\n",
+            " Use a VPC endpoint.\r\n",
+            " Use IAM plicies.\r\n\r\n"
+        ],
+        "correctAns": 2
+    },
+    {
+        "query": " Q21. You need to design a primary key for DynamoDb based on three attributes. What do you do?",
+        "options": [
+            " Concatenate all three fields into into one new field, than disignate that new field as the primary key.\r\n",
+            " Concatenate two fileds into one new field, than disignate that new field and the remaining field as the primary key.\r\n",
+            " Designate all three fields as the primary key.\r\n",
+            " Designate two filds of the three fields as the primary key.\r\n\r\n"
+        ],
+        "correctAns": 3
+    },
+    {
+        "query": " Q22. What does Redis use to sort the elements of a sorted set?",
+        "options": [
+            " keys\r\n",
+            " values\r\n",
+            " scroes\r\n",
+            " ids\r\n\r\n"
+        ],
+        "correctAns": 3
+    },
+    {
+        "query": " Q23. You need to create a document database that supports database triggers. Which NoSQL database should you use?",
+        "options": [
+            " DynamoDb\r\n",
+            " Redis\r\n",
+            " MongoDB\r\n",
+            " Bigtable\r\n\r\n"
+        ],
+        "correctAns": 1
+    },
+    {
+        "query": " Q24. Which statement is prefered Cypher code for Neo4j?",
+        "options": [
+            " MATCH (:Person)-->(:Card)-->(:Company) RETURN count(vehicle)\r\n",
+            " Match (:Person)-->(:Car):(vehicle:Car)-->(:Company) RETURN count(vehicle)\r\n",
+            " MATCH (:Person)-->(vehicle:Car)-->(:Company) RETURN count(vehicle)\r\n",
+            " MATCH (:Person)-->(:Card), (vehicle:Car)-->(:Company) RETURN count(vehicle)\r\n\r\n"
+        ],
+        "correctAns": 3
+    },
+    {
+        "query": " Q25. You need multi-item ACID transactions with snapshot isolation within a partition for your cloud-based application. Which NoSQL databse do you choose?",
+        "options": [
+            " Bigtable\r\n",
+            " GraphDB\r\n",
+            " DynamoDB\r\n",
+            " Cosmos DB\r\n\r\n"
+        ],
+        "correctAns": 4
+    }
+]

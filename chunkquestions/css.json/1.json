@@ -1,1 +1,262 @@
-[{"query":" Q1. In the following example, which selector has the highest specificity ranking for selecting the anchor link element?","code":"css\r\nul li a\r\na\r\n.example a\r\ndiv a\r\n","options":[" `.example a`\r\n"," `div a`\r\n"," `a`\r\n"," `ul li a`\r\n\r\n"],"correctAns":1},{"query":" Q2. Using an attribute selector, how would you select an `<a>` element with a \"title\" attribute?","options":[" a[title]{...}\r\n"," a > title {...}\r\n"," a.title {...}\r\n"," a=title {...}\r\n\r\n"],"correctAns":1},{"query":" Q3. CSS grid and flexbox are now becoming a more popular way to create page layouts. However, floats are still commonly used, especially when working with an older code base, or if you need to support older browser version. What are two valid techniques used to clear floats?","options":[" Use the \"clearfix hack\" on the floated element and add a float to the parent element.\r\n"," Use the overflow property on the floated element or the \"clearfix hack\" on either the floated or parent element.\r\n"," Use the \"clearfix hack\" on the floated element or the overflow property on the parent element.\r\n"," Use the \"clearfix hack\" on the parent element or use the overflow property with a value other than \"visible.\"\r\n\r\n"],"correctAns":4},{"query":" Q4. What element(s) do the following selectors match to?","code":"css\r\n1) .nav {\r\n  ...;\r\n}\r\n2) nav {\r\n  ...;\r\n}\r\n3) #nav {\r\n  ...;\r\n}\r\n","options":["\r\n  ```markdown\r\n  1. An element with an ID of \"nav\"\r\n  2. A nav element\r\n  3. An element with a class of \"nav\"\r\n  ```\r\n","\r\n  ```markdown\r\n      They all target the same nav element.\r\n  ```\r\n","\r\n  ```markdown\r\n  1. An element with an class of \"nav\"\r\n  2. A nav element\r\n  3. An element with a id of \"nav\"\r\n  ```\r\n","\r\n  ```markdown\r\n  1. An element with an class of \"nav\"\r\n  2. A nav element\r\n  3. An div with a id of \"nav\"\r\n  ```\r\n\r\n"],"correctAns":3},{"query":" Q5. When adding transparency styles, what is the difference between using the opacity property versus the background property with an `rgba()` value?","options":[" Opacity specifies the level of transparency of the child elements. Background with an `rgba()` value applies transparency to the background color only.\r\n"," Opacity applies transparency to the background color only. Background with an `rgba()` value specifies the level of transparency of an element, as a whole, including its content.\r\n"," Opacity specifies the level of transparency of an element, including its content. Background with an `rgba()` value applies transparency to the background color only.\r\n"," Opacity applies transparency to the parent and child elements. Background with an `rgba()` value specifies the level of transparency of the parent element only.\r\n\r\n"],"correctAns":3},{"query":" Q6. What is true of block and inline elements? (_Alternative_: Which statement about block and inline elements is true?)","options":[" By default, block elements are the same height and width as the content container between their tags; inline elements span the entire width of its container.\r\n"," By default, block elements span the entire width of its container; inline elements are the same height and width as the content contained between their tags.\r\n"," A `<nav>` element is an example of an inline element. `<header>` is an example of a block element.\r\n"," A `<span>` is an example of a block element. `<div>` is an example of an inline element.\r\n\r\n"],"correctAns":2},{"query":" Q7. CSS grid introduced a new length unit, fr, to create flexible grid tracks. Referring to the code sample below, what will the widths of the three columns be?","code":"css\r\n.grid {\r\n  display: grid;\r\n  width: 500px;\r\n  grid-template-columns: 50px 1fr 2fr;\r\n}\r\n","options":[" The first column will have a width of 50px. The second column will be 50px wide and the third column will be 100px wide.\r\n"," The first column will have a width of 50px. The second column will be 150px wide and the third column will be 300px wide.\r\n"," The first column will have a width of 50px. The second column will be 300px wide and the third column will be 150px wide.\r\n"," The first column will have a width of 50px. The second column will be 500px wide and the third column will be 1000px wide.\r\n\r\n"],"correctAns":2},{"query":" Q8. What is the line-height property primarily used for?","options":[" to control the height of the space between two lines of content\r\n"," to control the height of the space between heading elements\r\n"," to control the height of the character size\r\n"," to control the width of the space between characters\r\n\r\n"],"correctAns":1},{"query":" Q9. Three of these choices are true about class selectors. Which is NOT true?","options":[" Multiple classes can be used within the same element.\r\n"," The same class can be used multiple times per page.\r\n"," Class selectors with a leading period\r\n"," Classes can be used multiple times per page but not within the same element.\r\n\r\n"],"correctAns":4},{"query":" Q10. There are many properties that can be used to align elements and create page layouts such as float, position, flexbox and grid. Of these four properties, which one should be used to align a global navigation bar which stays fixed at the top of the page?","options":[" position\r\n"," flexbox\r\n"," grid\r\n"," float\r\n\r\n"],"correctAns":1},{"query":" Q11. In the shorthand example below, which individual background properties are represented?","code":"css\r\nbackground: blue url(image.jpg) no-repeat scroll 0px 0px;\r\n","options":["\r\n  ```css\r\n  background-color: blue;\r\n  background-image: url(image.jpg);\r\n  background-repeat: no-repeat;\r\n  background-attachment: scroll;\r\n  background-position: 0px 0px;\r\n  ```\r\n","\r\n  ```css\r\n  background-color: blue;\r\n  background-img: url(image.jpg);\r\n  background-position: no-repeat;\r\n  background-scroll: scroll;\r\n  background-size: 0px 0px;\r\n  ```\r\n","\r\n  ```css\r\n  background-color: blue;\r\n  background-src: url(image.jpg);\r\n  background-repeat: no-repeat;\r\n  background-wrap: scroll;\r\n  background-position: 0px 0px;\r\n  ```\r\n","\r\n  ```css\r\n  background-color: blue;\r\n  background-src: url(image.jpg);\r\n  background-repeat: no-repeat;\r\n  background-scroll: scroll;\r\n  background-position: 0px 0px;\r\n  ```\r\n\r\n"],"correctAns":1},{"query":" Q12. In the following example, according to cascading and specificity rules, what color will the link be?","code":"css\r\n.example {\r\n  color: yellow;\r\n}\r\nul li a {\r\n  color: blue;\r\n}\r\nul a {\r\n  color: green;\r\n}\r\na {\r\n  color: red;\r\n}\r\n\r\n\r\nhtml\r\n<ul>\r\n  <li><a href=\"#\" class=\"example\">link</a></li>\r\n  <li>list item</li>\r\n  <li>list item</li>\r\n</ul>\r\n","options":[" green\r\n"," yellow\r\n"," blue\r\n"," red\r\n\r\n"],"correctAns":2},{"query":" Q13. When elements overlap, they are ordered on the z-axis (i.e., which element covers another). The z-index property can be used to specify the z-order of overlapping elements. Which set of statements about the z-index property are true?","options":[" Larger z-index values appear on top of elements with a lower z-index value. Negative and positive numbers can be used. z-index can only be used on positioned elements.\r\n"," Smaller z-index values appear on top of elements with a larger z-index value. Negative and positive numbers can be used. z-index must also be used with positioned elements.\r\n"," Larger z-index values appear on top of elements with a lower z-index value. Only positive numbers can be used. z-index must also be used with positioned elements.\r\n"," Smaller z-index values appear on top of elements with a larger z-index value. Negative and positive numbers can be used. z-index can be used with or without positioned elements.\r\n\r\n"],"correctAns":1},{"query":" Q14. What is the difference between the following line-height settings?","code":"css\r\nline-height: 20px;\r\nline-height: 2;\r\n","options":[" The value of 20px will set the line-height to 20px. The value of 2 will set the line-height to twice the size of the corresponding font-size value.\r\n"," The value of 20px will set the line-height to 20px. The value of 2 is not valid.\r\n"," The value of 20px will set the line-height to 20px. The value of 2 will default to a value of 2px.\r\n"," The value of 20px will set the line-height to 20px. The value of 2 will set the line-height to 20% of the corresponding font-size value.\r\n\r\n"],"correctAns":1},{"query":" Q15. In the following example, what color will paragraph one and paragraph two be? (_Alternative_: In this example, what color will paragraphs one and two be?)","code":"html\r\n<section>\r\n  <p>paragraph one</p>\r\n</section>\r\n\r\n<p>paragraph two</p>\r\n\r\n\r\ncss\r\nsection p {\r\n  color: red;\r\n}\r\nsection + p {\r\n  color: blue;\r\n}\r\n","options":[" Paragraph one will be blue, paragraph two will be red.\r\n"," Both paragraphs will be blue.\r\n"," Paragraphs one will be red, paragraph two will be blue.\r\n"," Both paragraphs will be red.\r\n\r\n"],"correctAns":3},{"query":" Q16.What are three valid ways of adding CSS to an HTML page?","code":null,"options":["\r\n  ```markdown\r\n  1. External; CSS is written in a separate file.\r\n  2. Inline; CSS is added to the <head> of the HTML page.\r\n  3. Internal; CSS is included within the HTML tags.\r\n  ```\r\n","\r\n  ```markdown\r\n  1. External; CSS is written in a separate file and is linked within the <header> element of the HTML file.\r\n  2. Inline; CSS is added to the HTML tag.\r\n  3. Internal; CSS is included within the <header> element of the HTML file.\r\n  ```\r\n","\r\n  ```markdown\r\n  1. External; CSS is written in a separate file and is linked within the <head> element of the HTML file.\r\n  2. Internal; CSS is included within the <header> element of the HTML file.\r\n  3. Inline; CSS is added to the HTML tag.\r\n  ```\r\n","\r\n  ```markdown\r\n  1. External; CSS is written in a separate file and is linked within the <head> element of the HTML file.\r\n  2. Inline; CSS is added to the HTML tag.\r\n  3. Internal; CSS is included within the <head> element of the HTML file.\r\n  ```\r\n\r\n"],"correctAns":4},{"query":" Q17. Which of the following is true of the SVG image format? (_Alternative_: Which statement about the SVG image format is true?)","options":[" CSS can be applied to SVGs but JavaScript cannot be.\r\n"," SVGs work best for creating 3D graphics.\r\n"," SVGs can be created as a vector graphic or coded using SVG specific elements such as &#x3C;svg&#x3E;, &#x3C;line&#x3E;, and &#x3C;ellipse&#x3E;.\r\n"," SVGs are a HAML-based markup language for creating vector graphics.\r\n\r\n"],"correctAns":3},{"query":" Q18. In the example below, when will the color pink be applied to the anchor element?","code":"css\r\na:active {\r\n  color: pink;\r\n}\r\n","options":[" The color of the link will display as pink after its been clicked or if the mouse is hovering over the link.\r\n"," The color of the link will display as pink on mouse hover.\r\n"," The color of the link will display as pink while the link is being clicked but before the mouse click is released.\r\n"," The color of the link will display as pink before it has been clicked.\r\n\r\n"],"correctAns":3},{"query":" Q19. To change the color of an SVG using CSS, which property is used?","options":[" Use background-fill to set the color inside the object and stroke or border to set the color of the border.\r\n"," The color cannot be changed with CSS.\r\n"," Use fill or background to set the color inside the object and stroke to set the color of the border.\r\n"," Use fill to set the color inside the object and stroke to set the color of the border.\r\n\r\n"],"correctAns":4},{"query":" Q20. When using position: fixed, what will the element always be positioned relative to?","options":[" the closest element with position: relative\r\n"," the viewport\r\n"," the parent element\r\n"," the wrapper element\r\n\r\n"],"correctAns":2},{"query":" Q21. By default, a background image will repeat \\_","options":[" only if the background-repeat property is set to repeat\r\n"," indefinitely, vertically, and horizontally\r\n"," indefinitely on the horizontal axis only\r\n"," once, on the x and y axis\r\n\r\n"],"correctAns":2},{"query":" Q22. When using media queries, media types are used to target a device category. Which choice lists current valid media types?","options":[" print, screen, aural\r\n"," print, screen, television\r\n"," print, screen, speech\r\n"," print, speech, device\r\n\r\n"],"correctAns":3},{"query":" Q23. How would you make the first letter of every paragraph on the page red?","options":[" p::first-letter { color: red; }\r\n"," p:first-letter { color: red; }\r\n"," first-letter::p { color: red; }\r\n"," first-letter:p { color: red; }\r\n\r\n"],"correctAns":1},{"query":" Q24. In this example, what is the selector, property, and value?","code":"css\r\np {\r\n  color: #000000;\r\n}\r\n","options":["\r\n  ```markdown\r\n  \"p\" is the selector\r\n  \"#000000\" is the property\r\n  \"color\" is the value\r\n  ```\r\n","\r\n  ```markdown\r\n  \"p\" is the selector\r\n  \"color\" is the property\r\n  \"#000000\" is the value\r\n  ```\r\n","\r\n  ```markdown\r\n  \"color\" is the selector\r\n  \"#000000\" is the property\r\n  \"#p\" is the value\r\n  ```\r\n","\r\n  ```markdown\r\n  \"color\" is the selector\r\n  \"p\" is the property\r\n  \"#000000\" is the value\r\n  ```\r\n\r\n"],"correctAns":2},{"query":" Q25. What is the rem unit based on?","options":[" The rem unit is relative to the font-size of the p element.\r\n"," You have to set the value for the rem unit by writing a declaration such as rem { font-size: 1 Spx; }\r\n"," The rem unit is relative to the font-size of the containing (parent) element.\r\n"," The rem unit is relative to the font-size of the root element of the page.\r\n\r\n"],"correctAns":4}]
+[
+    {
+        "query": " Q1. In the following example, which selector has the highest specificity ranking for selecting the anchor link element?",
+        "code": "css\r\nul li a\r\na\r\n.example a\r\ndiv a\r\n",
+        "options": [
+            " `.example a`\r\n",
+            " `div a`\r\n",
+            " `a`\r\n",
+            " `ul li a`\r\n\r\n"
+        ],
+        "correctAns": 1
+    },
+    {
+        "query": " Q2. Using an attribute selector, how would you select an `<a>` element with a \"title\" attribute?",
+        "options": [
+            " a[title]{...}\r\n",
+            " a > title {...}\r\n",
+            " a.title {...}\r\n",
+            " a=title {...}\r\n\r\n"
+        ],
+        "correctAns": 1
+    },
+    {
+        "query": " Q3. CSS grid and flexbox are now becoming a more popular way to create page layouts. However, floats are still commonly used, especially when working with an older code base, or if you need to support older browser version. What are two valid techniques used to clear floats?",
+        "options": [
+            " Use the \"clearfix hack\" on the floated element and add a float to the parent element.\r\n",
+            " Use the overflow property on the floated element or the \"clearfix hack\" on either the floated or parent element.\r\n",
+            " Use the \"clearfix hack\" on the floated element or the overflow property on the parent element.\r\n",
+            " Use the \"clearfix hack\" on the parent element or use the overflow property with a value other than \"visible.\"\r\n\r\n"
+        ],
+        "correctAns": 4
+    },
+    {
+        "query": " Q4. What element(s) do the following selectors match to?",
+        "code": "css\r\n1) .nav {\r\n  ...;\r\n}\r\n2) nav {\r\n  ...;\r\n}\r\n3) #nav {\r\n  ...;\r\n}\r\n",
+        "options": [
+            "\r\n  ```markdown\r\n  1. An element with an ID of \"nav\"\r\n  2. A nav element\r\n  3. An element with a class of \"nav\"\r\n  ```\r\n",
+            "\r\n  ```markdown\r\n      They all target the same nav element.\r\n  ```\r\n",
+            "\r\n  ```markdown\r\n  1. An element with an class of \"nav\"\r\n  2. A nav element\r\n  3. An element with a id of \"nav\"\r\n  ```\r\n",
+            "\r\n  ```markdown\r\n  1. An element with an class of \"nav\"\r\n  2. A nav element\r\n  3. An div with a id of \"nav\"\r\n  ```\r\n\r\n"
+        ],
+        "correctAns": 3
+    },
+    {
+        "query": " Q5. When adding transparency styles, what is the difference between using the opacity property versus the background property with an `rgba()` value?",
+        "options": [
+            " Opacity specifies the level of transparency of the child elements. Background with an `rgba()` value applies transparency to the background color only.\r\n",
+            " Opacity applies transparency to the background color only. Background with an `rgba()` value specifies the level of transparency of an element, as a whole, including its content.\r\n",
+            " Opacity specifies the level of transparency of an element, including its content. Background with an `rgba()` value applies transparency to the background color only.\r\n",
+            " Opacity applies transparency to the parent and child elements. Background with an `rgba()` value specifies the level of transparency of the parent element only.\r\n\r\n"
+        ],
+        "correctAns": 3
+    },
+    {
+        "query": " Q6. What is true of block and inline elements? (_Alternative_: Which statement about block and inline elements is true?)",
+        "options": [
+            " By default, block elements are the same height and width as the content container between their tags; inline elements span the entire width of its container.\r\n",
+            " By default, block elements span the entire width of its container; inline elements are the same height and width as the content contained between their tags.\r\n",
+            " A `<nav>` element is an example of an inline element. `<header>` is an example of a block element.\r\n",
+            " A `<span>` is an example of a block element. `<div>` is an example of an inline element.\r\n\r\n"
+        ],
+        "correctAns": 2
+    },
+    {
+        "query": " Q7. CSS grid introduced a new length unit, fr, to create flexible grid tracks. Referring to the code sample below, what will the widths of the three columns be?",
+        "code": "css\r\n.grid {\r\n  display: grid;\r\n  width: 500px;\r\n  grid-template-columns: 50px 1fr 2fr;\r\n}\r\n",
+        "options": [
+            " The first column will have a width of 50px. The second column will be 50px wide and the third column will be 100px wide.\r\n",
+            " The first column will have a width of 50px. The second column will be 150px wide and the third column will be 300px wide.\r\n",
+            " The first column will have a width of 50px. The second column will be 300px wide and the third column will be 150px wide.\r\n",
+            " The first column will have a width of 50px. The second column will be 500px wide and the third column will be 1000px wide.\r\n\r\n"
+        ],
+        "correctAns": 2
+    },
+    {
+        "query": " Q8. What is the line-height property primarily used for?",
+        "options": [
+            " to control the height of the space between two lines of content\r\n",
+            " to control the height of the space between heading elements\r\n",
+            " to control the height of the character size\r\n",
+            " to control the width of the space between characters\r\n\r\n"
+        ],
+        "correctAns": 1
+    },
+    {
+        "query": " Q9. Three of these choices are true about class selectors. Which is NOT true?",
+        "options": [
+            " Multiple classes can be used within the same element.\r\n",
+            " The same class can be used multiple times per page.\r\n",
+            " Class selectors with a leading period\r\n",
+            " Classes can be used multiple times per page but not within the same element.\r\n\r\n"
+        ],
+        "correctAns": 4
+    },
+    {
+        "query": " Q10. There are many properties that can be used to align elements and create page layouts such as float, position, flexbox and grid. Of these four properties, which one should be used to align a global navigation bar which stays fixed at the top of the page?",
+        "options": [
+            " position\r\n",
+            " flexbox\r\n",
+            " grid\r\n",
+            " float\r\n\r\n"
+        ],
+        "correctAns": 1
+    },
+    {
+        "query": " Q11. In the shorthand example below, which individual background properties are represented?",
+        "code": "css\r\nbackground: blue url(image.jpg) no-repeat scroll 0px 0px;\r\n",
+        "options": [
+            "\r\n  ```css\r\n  background-color: blue;\r\n  background-image: url(image.jpg);\r\n  background-repeat: no-repeat;\r\n  background-attachment: scroll;\r\n  background-position: 0px 0px;\r\n  ```\r\n",
+            "\r\n  ```css\r\n  background-color: blue;\r\n  background-img: url(image.jpg);\r\n  background-position: no-repeat;\r\n  background-scroll: scroll;\r\n  background-size: 0px 0px;\r\n  ```\r\n",
+            "\r\n  ```css\r\n  background-color: blue;\r\n  background-src: url(image.jpg);\r\n  background-repeat: no-repeat;\r\n  background-wrap: scroll;\r\n  background-position: 0px 0px;\r\n  ```\r\n",
+            "\r\n  ```css\r\n  background-color: blue;\r\n  background-src: url(image.jpg);\r\n  background-repeat: no-repeat;\r\n  background-scroll: scroll;\r\n  background-position: 0px 0px;\r\n  ```\r\n\r\n"
+        ],
+        "correctAns": 1
+    },
+    {
+        "query": " Q12. In the following example, according to cascading and specificity rules, what color will the link be?",
+        "code": "css\r\n.example {\r\n  color: yellow;\r\n}\r\nul li a {\r\n  color: blue;\r\n}\r\nul a {\r\n  color: green;\r\n}\r\na {\r\n  color: red;\r\n}\r\n\r\n\r\nhtml\r\n<ul>\r\n  <li><a href=\"#\" class=\"example\">link</a></li>\r\n  <li>list item</li>\r\n  <li>list item</li>\r\n</ul>\r\n",
+        "options": [
+            " green\r\n",
+            " yellow\r\n",
+            " blue\r\n",
+            " red\r\n\r\n"
+        ],
+        "correctAns": 2
+    },
+    {
+        "query": " Q13. When elements overlap, they are ordered on the z-axis (i.e., which element covers another). The z-index property can be used to specify the z-order of overlapping elements. Which set of statements about the z-index property are true?",
+        "options": [
+            " Larger z-index values appear on top of elements with a lower z-index value. Negative and positive numbers can be used. z-index can only be used on positioned elements.\r\n",
+            " Smaller z-index values appear on top of elements with a larger z-index value. Negative and positive numbers can be used. z-index must also be used with positioned elements.\r\n",
+            " Larger z-index values appear on top of elements with a lower z-index value. Only positive numbers can be used. z-index must also be used with positioned elements.\r\n",
+            " Smaller z-index values appear on top of elements with a larger z-index value. Negative and positive numbers can be used. z-index can be used with or without positioned elements.\r\n\r\n"
+        ],
+        "correctAns": 1
+    },
+    {
+        "query": " Q14. What is the difference between the following line-height settings?",
+        "code": "css\r\nline-height: 20px;\r\nline-height: 2;\r\n",
+        "options": [
+            " The value of 20px will set the line-height to 20px. The value of 2 will set the line-height to twice the size of the corresponding font-size value.\r\n",
+            " The value of 20px will set the line-height to 20px. The value of 2 is not valid.\r\n",
+            " The value of 20px will set the line-height to 20px. The value of 2 will default to a value of 2px.\r\n",
+            " The value of 20px will set the line-height to 20px. The value of 2 will set the line-height to 20% of the corresponding font-size value.\r\n\r\n"
+        ],
+        "correctAns": 1
+    },
+    {
+        "query": " Q15. In the following example, what color will paragraph one and paragraph two be? (_Alternative_: In this example, what color will paragraphs one and two be?)",
+        "code": "html\r\n<section>\r\n  <p>paragraph one</p>\r\n</section>\r\n\r\n<p>paragraph two</p>\r\n\r\n\r\ncss\r\nsection p {\r\n  color: red;\r\n}\r\nsection + p {\r\n  color: blue;\r\n}\r\n",
+        "options": [
+            " Paragraph one will be blue, paragraph two will be red.\r\n",
+            " Both paragraphs will be blue.\r\n",
+            " Paragraphs one will be red, paragraph two will be blue.\r\n",
+            " Both paragraphs will be red.\r\n\r\n"
+        ],
+        "correctAns": 3
+    },
+    {
+        "query": " Q16.What are three valid ways of adding CSS to an HTML page?",
+        "code": null,
+        "options": [
+            "\r\n  ```markdown\r\n  1. External; CSS is written in a separate file.\r\n  2. Inline; CSS is added to the <head> of the HTML page.\r\n  3. Internal; CSS is included within the HTML tags.\r\n  ```\r\n",
+            "\r\n  ```markdown\r\n  1. External; CSS is written in a separate file and is linked within the <header> element of the HTML file.\r\n  2. Inline; CSS is added to the HTML tag.\r\n  3. Internal; CSS is included within the <header> element of the HTML file.\r\n  ```\r\n",
+            "\r\n  ```markdown\r\n  1. External; CSS is written in a separate file and is linked within the <head> element of the HTML file.\r\n  2. Internal; CSS is included within the <header> element of the HTML file.\r\n  3. Inline; CSS is added to the HTML tag.\r\n  ```\r\n",
+            "\r\n  ```markdown\r\n  1. External; CSS is written in a separate file and is linked within the <head> element of the HTML file.\r\n  2. Inline; CSS is added to the HTML tag.\r\n  3. Internal; CSS is included within the <head> element of the HTML file.\r\n  ```\r\n\r\n"
+        ],
+        "correctAns": 4
+    },
+    {
+        "query": " Q17. Which of the following is true of the SVG image format? (_Alternative_: Which statement about the SVG image format is true?)",
+        "options": [
+            " CSS can be applied to SVGs but JavaScript cannot be.\r\n",
+            " SVGs work best for creating 3D graphics.\r\n",
+            " SVGs can be created as a vector graphic or coded using SVG specific elements such as &#x3C;svg&#x3E;, &#x3C;line&#x3E;, and &#x3C;ellipse&#x3E;.\r\n",
+            " SVGs are a HAML-based markup language for creating vector graphics.\r\n\r\n"
+        ],
+        "correctAns": 3
+    },
+    {
+        "query": " Q18. In the example below, when will the color pink be applied to the anchor element?",
+        "code": "css\r\na:active {\r\n  color: pink;\r\n}\r\n",
+        "options": [
+            " The color of the link will display as pink after its been clicked or if the mouse is hovering over the link.\r\n",
+            " The color of the link will display as pink on mouse hover.\r\n",
+            " The color of the link will display as pink while the link is being clicked but before the mouse click is released.\r\n",
+            " The color of the link will display as pink before it has been clicked.\r\n\r\n"
+        ],
+        "correctAns": 3
+    },
+    {
+        "query": " Q19. To change the color of an SVG using CSS, which property is used?",
+        "options": [
+            " Use background-fill to set the color inside the object and stroke or border to set the color of the border.\r\n",
+            " The color cannot be changed with CSS.\r\n",
+            " Use fill or background to set the color inside the object and stroke to set the color of the border.\r\n",
+            " Use fill to set the color inside the object and stroke to set the color of the border.\r\n\r\n"
+        ],
+        "correctAns": 4
+    },
+    {
+        "query": " Q20. When using position: fixed, what will the element always be positioned relative to?",
+        "options": [
+            " the closest element with position: relative\r\n",
+            " the viewport\r\n",
+            " the parent element\r\n",
+            " the wrapper element\r\n\r\n"
+        ],
+        "correctAns": 2
+    },
+    {
+        "query": " Q21. By default, a background image will repeat \\_",
+        "options": [
+            " only if the background-repeat property is set to repeat\r\n",
+            " indefinitely, vertically, and horizontally\r\n",
+            " indefinitely on the horizontal axis only\r\n",
+            " once, on the x and y axis\r\n\r\n"
+        ],
+        "correctAns": 2
+    },
+    {
+        "query": " Q22. When using media queries, media types are used to target a device category. Which choice lists current valid media types?",
+        "options": [
+            " print, screen, aural\r\n",
+            " print, screen, television\r\n",
+            " print, screen, speech\r\n",
+            " print, speech, device\r\n\r\n"
+        ],
+        "correctAns": 3
+    },
+    {
+        "query": " Q23. How would you make the first letter of every paragraph on the page red?",
+        "options": [
+            " p::first-letter { color: red; }\r\n",
+            " p:first-letter { color: red; }\r\n",
+            " first-letter::p { color: red; }\r\n",
+            " first-letter:p { color: red; }\r\n\r\n"
+        ],
+        "correctAns": 1
+    },
+    {
+        "query": " Q24. In this example, what is the selector, property, and value?",
+        "code": "css\r\np {\r\n  color: #000000;\r\n}\r\n",
+        "options": [
+            "\r\n  ```markdown\r\n  \"p\" is the selector\r\n  \"#000000\" is the property\r\n  \"color\" is the value\r\n  ```\r\n",
+            "\r\n  ```markdown\r\n  \"p\" is the selector\r\n  \"color\" is the property\r\n  \"#000000\" is the value\r\n  ```\r\n",
+            "\r\n  ```markdown\r\n  \"color\" is the selector\r\n  \"#000000\" is the property\r\n  \"#p\" is the value\r\n  ```\r\n",
+            "\r\n  ```markdown\r\n  \"color\" is the selector\r\n  \"p\" is the property\r\n  \"#000000\" is the value\r\n  ```\r\n\r\n"
+        ],
+        "correctAns": 2
+    },
+    {
+        "query": " Q25. What is the rem unit based on?",
+        "options": [
+            " The rem unit is relative to the font-size of the p element.\r\n",
+            " You have to set the value for the rem unit by writing a declaration such as rem { font-size: 1 Spx; }\r\n",
+            " The rem unit is relative to the font-size of the containing (parent) element.\r\n",
+            " The rem unit is relative to the font-size of the root element of the page.\r\n\r\n"
+        ],
+        "correctAns": 4
+    }
+]

@@ -1,1 +1,105 @@
-[{"query":" Q86. What is the difference between the _readonly_ and _disabled_ attributes for the `<textarea>` element?","options":[" _readonly_ allows clicking in the `<textarea>` element. _disabled_ prevents all interaction with the control.\r\n"," _readonly_ is invalid attribute for `<textarea>`, while _disabled_ is a valid attribute.\r\n"," _disabled_ allows clicking in the `<textarea>` element. _readonly_ prevents all interaction with the control.\r\n"," _disabled_ is invalid attribute for `<textarea>`, while _readonly_ is a valid attribute.\r\n\r\n"],"correctAns":1},{"query":" Q87. In this code, what is _target_?","options":[" an attribute\r\n"," a tag\r\n"," content\r\n"," an element\r\n\r\n"],"correctAns":1},{"query":" Q88. What is the correct way to add a submit URL to a button element?","code":null,"options":[" A\r\n\r\n```HTML\r\n<button submit=\"http://example.com/process\">\r\n      Process data\r\n</button>\r\n```\r\n\r\n"," B\r\n\r\n```HTML\r\n<button action=\"http://example.com/process\">\r\n      Process data\r\n</button>\r\n```\r\n\r\n"," C\r\n\r\n```HTML\r\n<button formaction=\"http://example.com/process\">\r\n      Process data\r\n</button>\r\n```\r\n\r\n"," D\r\n\r\n```HTML\r\n<button method=\"http://example.com/process\">\r\n      Process data\r\n</button>\r\n```\r\n\r\n"],"correctAns":3},{"query":" Q90. What is wrong with this code snippet?","code":"HTML\r\n<label>Address:</label>\r\n<input type=\"text\" name=\"address\" id=\"address-input\" />\r\n","options":[" The `<label>` and `<input>` should be nested inside of a `<fieldset>` element.\r\n\r\n"," **\"address\"** is not a valid value for the attribute **name** on an `<input>` element.\r\n\r\n"," The `<label>` element is missing an **id** set to \"address-input\".\r\n\r\n"," The `<label>` element is missing a **for** attribute set to \"address-input\".\r\n\r\n"],"correctAns":4},{"query":" Q91. What is the default method for form submission?","options":[" GET\r\n"," POST\r\n"," PUT\r\n"," SUBMIT\r\n\r\n"],"correctAns":1},{"query":" Q92. Which is the most semantically correct markup for a side comment in small print?","options":[" `<p>` Get 10% discount `<small>`not valid in France`</small></p>`\r\n"," `<p>` Get 10% discount `<!--not valid in France--> </p>`\r\n"," `<p>` Get 10% discount `<comment>`not valid in France`</comment></p>`\r\n"," `<p>` Get 10% discount `<aside>`not valid in France`</aside></p>`\r\n\r\n"],"correctAns":1},{"query":" Q93. Which choice will produce the spanish word <i>canción</i>?","options":[" `<p lang=\"es\">canción</p>`\r\n"," `<p lang=\"es\">canci&oacuten</p>`\r\n"," `<p lang=\"es\">cancio'n</p>`\r\n"," `<p lang=\"es\">canci'on</p>`\r\n\r\n"],"correctAns":2},{"query":" Q94. What is the purpose of `<caption>`?","options":[" `<caption>` provides captions for `<audio>`,`<video>`,`<img>`, and `<table>`.\r\n"," `<caption>` provides captions to `<table>`.\r\n"," `<caption>` provides captions for `<audio>`, `<video>`, and `<table>`.\r\n"," `<caption>` provides captions for `<img>`, `<audio>`, and `<video>`.\r\n\r\n"],"correctAns":2},{"query":" Q95. The value attribute is associated with which set of tags ?","code":null,"options":[" A\r\n\r\n```HTML\r\n<li>\r\n<input>\r\n<option>\r\n```\r\n\r\n"," B\r\n\r\n```HTML\r\n<input>\r\n<option>\r\n<textarea>\r\n```\r\n\r\n"," C\r\n\r\n```HTML\r\n<button>\r\n<input>\r\n<form>\r\n```\r\n\r\n"," D\r\n\r\n```HTML\r\n<input>\r\n<label>\r\n<meter>\r\n```\r\n\r\n"],"correctAns":1},{"query":" Q96. What is wrong with this code?","options":[" `<img>` should be paired with a `<caption>` tag.\r\n"," The `<img>` element is missing an alt attribute.\r\n"," `<img>` is not a valid HTML element. Instead, use `<image src=\"...\"/>`.\r\n"," `<img>` should be nested within a `<figure>` tag.\r\n"],"correctAns":2}]
+[
+    {
+        "query": " Q86. What is the difference between the _readonly_ and _disabled_ attributes for the `<textarea>` element?",
+        "options": [
+            " _readonly_ allows clicking in the `<textarea>` element. _disabled_ prevents all interaction with the control.\r\n",
+            " _readonly_ is invalid attribute for `<textarea>`, while _disabled_ is a valid attribute.\r\n",
+            " _disabled_ allows clicking in the `<textarea>` element. _readonly_ prevents all interaction with the control.\r\n",
+            " _disabled_ is invalid attribute for `<textarea>`, while _readonly_ is a valid attribute.\r\n\r\n"
+        ],
+        "correctAns": 1
+    },
+    {
+        "query": " Q87. In this code, what is _target_?",
+        "options": [
+            " an attribute\r\n",
+            " a tag\r\n",
+            " content\r\n",
+            " an element\r\n\r\n"
+        ],
+        "correctAns": 1
+    },
+    {
+        "query": " Q88. What is the correct way to add a submit URL to a button element?",
+        "code": null,
+        "options": [
+            " A\r\n\r\n```HTML\r\n<button submit=\"http://example.com/process\">\r\n      Process data\r\n</button>\r\n```\r\n\r\n",
+            " B\r\n\r\n```HTML\r\n<button action=\"http://example.com/process\">\r\n      Process data\r\n</button>\r\n```\r\n\r\n",
+            " C\r\n\r\n```HTML\r\n<button formaction=\"http://example.com/process\">\r\n      Process data\r\n</button>\r\n```\r\n\r\n",
+            " D\r\n\r\n```HTML\r\n<button method=\"http://example.com/process\">\r\n      Process data\r\n</button>\r\n```\r\n\r\n"
+        ],
+        "correctAns": 3
+    },
+    {
+        "query": " Q90. What is wrong with this code snippet?",
+        "code": "HTML\r\n<label>Address:</label>\r\n<input type=\"text\" name=\"address\" id=\"address-input\" />\r\n",
+        "options": [
+            " The `<label>` and `<input>` should be nested inside of a `<fieldset>` element.\r\n\r\n",
+            " **\"address\"** is not a valid value for the attribute **name** on an `<input>` element.\r\n\r\n",
+            " The `<label>` element is missing an **id** set to \"address-input\".\r\n\r\n",
+            " The `<label>` element is missing a **for** attribute set to \"address-input\".\r\n\r\n"
+        ],
+        "correctAns": 4
+    },
+    {
+        "query": " Q91. What is the default method for form submission?",
+        "options": [
+            " GET\r\n",
+            " POST\r\n",
+            " PUT\r\n",
+            " SUBMIT\r\n\r\n"
+        ],
+        "correctAns": 1
+    },
+    {
+        "query": " Q92. Which is the most semantically correct markup for a side comment in small print?",
+        "options": [
+            " `<p>` Get 10% discount `<small>`not valid in France`</small></p>`\r\n",
+            " `<p>` Get 10% discount `<!--not valid in France--> </p>`\r\n",
+            " `<p>` Get 10% discount `<comment>`not valid in France`</comment></p>`\r\n",
+            " `<p>` Get 10% discount `<aside>`not valid in France`</aside></p>`\r\n\r\n"
+        ],
+        "correctAns": 1
+    },
+    {
+        "query": " Q93. Which choice will produce the spanish word <i>canción</i>?",
+        "options": [
+            " `<p lang=\"es\">canción</p>`\r\n",
+            " `<p lang=\"es\">canci&oacuten</p>`\r\n",
+            " `<p lang=\"es\">cancio'n</p>`\r\n",
+            " `<p lang=\"es\">canci'on</p>`\r\n\r\n"
+        ],
+        "correctAns": 2
+    },
+    {
+        "query": " Q94. What is the purpose of `<caption>`?",
+        "options": [
+            " `<caption>` provides captions for `<audio>`,`<video>`,`<img>`, and `<table>`.\r\n",
+            " `<caption>` provides captions to `<table>`.\r\n",
+            " `<caption>` provides captions for `<audio>`, `<video>`, and `<table>`.\r\n",
+            " `<caption>` provides captions for `<img>`, `<audio>`, and `<video>`.\r\n\r\n"
+        ],
+        "correctAns": 2
+    },
+    {
+        "query": " Q95. The value attribute is associated with which set of tags ?",
+        "code": null,
+        "options": [
+            " A\r\n\r\n```HTML\r\n<li>\r\n<input>\r\n<option>\r\n```\r\n\r\n",
+            " B\r\n\r\n```HTML\r\n<input>\r\n<option>\r\n<textarea>\r\n```\r\n\r\n",
+            " C\r\n\r\n```HTML\r\n<button>\r\n<input>\r\n<form>\r\n```\r\n\r\n",
+            " D\r\n\r\n```HTML\r\n<input>\r\n<label>\r\n<meter>\r\n```\r\n\r\n"
+        ],
+        "correctAns": 1
+    },
+    {
+        "query": " Q96. What is wrong with this code?",
+        "options": [
+            " `<img>` should be paired with a `<caption>` tag.\r\n",
+            " The `<img>` element is missing an alt attribute.\r\n",
+            " `<img>` is not a valid HTML element. Instead, use `<image src=\"...\"/>`.\r\n",
+            " `<img>` should be nested within a `<figure>` tag.\r\n"
+        ],
+        "correctAns": 2
+    }
+]
