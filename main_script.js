@@ -25,7 +25,4 @@ filterdFiles.map((fileName) => {
   totalQuestionsInsert1 += content.length;
 });
 
-// console.log(
-//   `${totalQuestionsInsert} questions inserted \r\n ${totalQuestionsNotInserted} questions not inserted`
-// );
 fs.writeFileSync("a.json", "SAFffffffff");
