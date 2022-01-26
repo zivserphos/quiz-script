@@ -1,1 +1,282 @@
-[{"query":" Q27. What is the default port for MySQL Server?","options":[" 25\r\n"," 990\r\n"," 0\r\n"," 3306\r\n\r\n"],"correctAns":4},{"query":" Q28. How can you filter duplicate data while retrieving records from a table?","options":[" DISTINCT\r\n"," WHERE\r\n"," LIMIT\r\n"," AS\r\n\r\n"],"correctAns":1},{"query":" Q29. What is the difference between DROP and TRUNCATE?","options":[" They both refer to the same operation of deleting the table completely.\r\n"," They both refer to the same operation of clearing the table, but keeping its definition intact.\r\n"," TRUNCATE deletes table completely, removing its definition as well. DROP clears the table but does not delete the definition.\r\n"," DROP deletes table completely, removing its definition as well. TRUNCATE clears the table but does not delete the definition.\r\n\r\n"],"correctAns":4},{"query":" Q30. How do you select every row in a given table named \"inventory\"?","options":[" SELECT all FROM inventory;\r\n"," FROM inventory SELECT all;\r\n"," FROM inventory SELECT \\*;\r\n"," SELECT \\* FROM inventory;\r\n\r\n"],"correctAns":4},{"query":" Q31. In an efficiently designed relational database, what does every table have?","options":[" set of triggers\r\n"," sequential id field\r\n"," minimum of three columns\r\n"," primary key\r\n\r\n"],"correctAns":4},{"query":" Q32. MySQL option files provide a way to specify commonly used options so that they need not be entered on the command line each time you run a program. What is another name for the option files?","options":[" variable settings\r\n"," configuration files\r\n"," help files\r\n"," default settings\r\n\r\n"],"correctAns":2},{"query":" Q33. After installing MySQL, it may be necessary to initialize the \\_ which may be done automatically with some MySQL installation methods.","options":[" storage engine\r\n"," user accounts\r\n"," grant tables\r\n"," data directory\r\n\r\n"],"correctAns":4},{"query":" Q34. You need to export the data in the customers table into a CSV file, with columns headers in the first row. Which clause do you add to your MySQL command?","options":[" JOIN\r\n"," WITH HEADERS\r\n"," UNION\r\n"," WITH COLUMNS\r\n\r\n"],"correctAns":3},{"query":" Q35. One form of backup, replication, enables you to maintain identical data on multiple servers, as a \\_ configuration.","options":[" remote-local\r\n"," parent-child\r\n"," master-slave\r\n"," logical-physical\r\n\r\n"],"correctAns":3},{"query":" Q36. What is the requirement for using a subquery in the SELECT clause?","options":[" the subquery must use an aggregate function.\r\n"," the subquery must refer to the same table as the main query.\r\n"," the subquery must return a single value.\r\n"," the subquery must return at least one value.\r\n\r\n"],"correctAns":3},{"query":" Q37. Each time MySQL is upgraded, it is best to execute mysql_upgrade, which looks for incompatibilities with the upgraded MySQL server. What does this command do, upon finding a table with a possible incompatibility?","options":[" it performs a table check and, if problems are found, attempts a table repair.\r\n"," it stops and notifies the server administrator that the upgrade cannot complete until the incompatibility issue are resolved.\r\n"," it provides a full report of the table specifications and the incompatibilities to the server administrator.\r\n"," it performs a table check and, if problems are found, displays the information for the server administrator to take action.\r\n\r\n"],"correctAns":1},{"query":" Q38. What mysql statement is used to check which accounts have specific privileges?","options":[" show grants (displays the privileges and roles that are assigned to a MySQL user account or role)\r\n"," show privileges (shows the list of system privileges that the MySQL server supports)\r\n"," show access\r\n"," show user permissions\r\n\r\n"],"correctAns":1},{"query":" Q39. What table cannot have a trigger associated with it?","options":[" temporary\r\n"," system\r\n"," large\r\n"," new\r\n\r\n"],"correctAns":2},{"query":" Q40. later versions of mysql support the native json data type for storing json documents. What is a drawback of json columns?","options":[" inefficient for storing json documents\r\n"," cannot be indexed directly\r\n"," documents cannot be validated when stored in json columns\r\n"," cannot be normalized\r\n\r\n"],"correctAns":2},{"query":" Q42.Which statement can you use to load data from a file into the table?","options":[" cat file|mysql\r\n"," load data infile (correct if the file is already on the server)\r\n"," load data local infile (also correct but only if the file is from the client)\r\n"," extended insert statement\r\n\r\n"],"correctAns":2},{"query":" Q44. Which is the correct syntax of an extended insert statement?","options":[" insert into cars (make, model, year) values ('Ford', 'Mustang', 2002)\r\n      ('Mercedes', 'C', 2003)\r\n\r\n"," insert into cars (make, model, year) values ('Ford', 'Mustang', 2002)\r\n      values ('Mercedes', 'C', 2003)\r\n\r\n"," insert into cars (make, model, year) extended ('Ford', 'Mustang', 2002),\r\n      ('Mercedes', 'C', 2003)\r\n\r\n"," insert into cars (make, model, year) values ('Ford', 'Mustang', 2002),\r\n      ('Mercedes', 'C', 2003)\r\n\r\n"],"correctAns":4},{"query":" Q45. You need to make an exact copy of a table, with all columns and indexes. How can you get all of the information needed to accomplish this?","options":[" create table\r\n"," clone table\r\n"," insert into\r\n"," show create table\r\n\r\nNote that the question is about _getting_ the data and not about the _duplicating_ operation itself. And actually there is no need to run `SHOW CREATE TABLE` at all. [To duplicate the table](https://popsql.com/learn-sql/mysql/how-to-duplicate-a-table-in-mysql) structure you can `CREATE TABLE new_table LIKE original_table;`.\r\n\r\n"],"correctAns":4},{"query":" Q46. you need to make your mysql system secure against attackers. What are you _not_ supposed to do?","options":[" Run MySQL server as a normal user.\r\n"," Grant PROCESS or SUPER privilege to other users.\r\n"," Run MySQL server as the unix root user.\r\n"," Use the compressed protocol.\r\n\r\n"],"correctAns":3},{"query":" Q47. You manage a database with a table \"customers\". You created a temporary table also called \"customers\" with which you are working for the duration of your session. You need to recreate the temporary table with different specs. Which command do you need to run first?","options":[" `create temporary table customers;`\r\n"," `drop temp table customers;`\r\n"," `drop table customers;`\r\n"," `drop temporary table customers;`\r\n\r\n"],"correctAns":4},{"query":" Q48. You need to run a complex query with recursive subqueries, but without creating a stored procedure or a function. Which command or clause do you use?","options":[" COLLATE\r\n"," UNION\r\n"," FULL JOIN\r\n"," WITH\r\n\r\nThis is exactly what [WITH clause](https://dev.mysql.com/doc/refman/8.0/en/with.html) is designed for\r\n\r\n"],"correctAns":4},{"query":" Q49. Which choice is not a processing algorithm for database views?","options":[" merge\r\n"," updatable\r\n"," temptable\r\n"," undefined\r\n\r\n"],"correctAns":2},{"query":" Q50. What is the MySQL `perror` command-line utility used for?","options":[" to display your version of MySQL\r\n"," to display operating system error codes\r\n"," to display default settings that are in error\r\n"," to display storage error codes\r\n\r\nNote: perror prints a description for a system error code or for a storage engine (table handler) error code -\r\n[link](<https://dev.mysql.com/doc/refman/5.7/en/perror.html#:~:text=2%20perror%20%E2%80%94%20Display%20MySQL%20Error%20Message%20Information,-For%20most%20system&text=You%20can%20find%20out%20what,(table%20handler)%20error%20code>)\r\n\r\n"],"correctAns":4},{"query":" Q51. How can you list all columns for a given table?","options":[" SHOW table COLUMNS;\r\n"," SHOW COLUMNS FROM table;\r\n"," LIST table COLUMNS;\r\n"," SELECT COLUMNS FROM table;\r\n\r\nNote: `DESCRIBE tablename` is a shortcut for this command\r\n\r\n"],"correctAns":2},{"query":" Q52. How would you list the full set of tables in the currently selected database?","options":[" SELECT \\* FROM DATABASE;\r\n"," SHOW TABLES;\r\n"," LIST TABLES;\r\n"," SELECT ALL TABLES;\r\n\r\n"],"correctAns":2},{"query":" Q53. Which choice is not one of the table maintenance statements?","options":[" CHECK TABLE;\r\n"," CREATE TABLE;\r\n"," ANALYZE TABLE;\r\n"," OPTIMIZE TABLE;\r\n\r\n"],"correctAns":2}]
+[
+    {
+        "query": " Q27. What is the default port for MySQL Server?",
+        "options": [
+            " 25\r\n",
+            " 990\r\n",
+            " 0\r\n",
+            " 3306\r\n\r\n"
+        ],
+        "correctAns": 4
+    },
+    {
+        "query": " Q28. How can you filter duplicate data while retrieving records from a table?",
+        "options": [
+            " DISTINCT\r\n",
+            " WHERE\r\n",
+            " LIMIT\r\n",
+            " AS\r\n\r\n"
+        ],
+        "correctAns": 1
+    },
+    {
+        "query": " Q29. What is the difference between DROP and TRUNCATE?",
+        "options": [
+            " They both refer to the same operation of deleting the table completely.\r\n",
+            " They both refer to the same operation of clearing the table, but keeping its definition intact.\r\n",
+            " TRUNCATE deletes table completely, removing its definition as well. DROP clears the table but does not delete the definition.\r\n",
+            " DROP deletes table completely, removing its definition as well. TRUNCATE clears the table but does not delete the definition.\r\n\r\n"
+        ],
+        "correctAns": 4
+    },
+    {
+        "query": " Q30. How do you select every row in a given table named \"inventory\"?",
+        "options": [
+            " SELECT all FROM inventory;\r\n",
+            " FROM inventory SELECT all;\r\n",
+            " FROM inventory SELECT \\*;\r\n",
+            " SELECT \\* FROM inventory;\r\n\r\n"
+        ],
+        "correctAns": 4
+    },
+    {
+        "query": " Q31. In an efficiently designed relational database, what does every table have?",
+        "options": [
+            " set of triggers\r\n",
+            " sequential id field\r\n",
+            " minimum of three columns\r\n",
+            " primary key\r\n\r\n"
+        ],
+        "correctAns": 4
+    },
+    {
+        "query": " Q32. MySQL option files provide a way to specify commonly used options so that they need not be entered on the command line each time you run a program. What is another name for the option files?",
+        "options": [
+            " variable settings\r\n",
+            " configuration files\r\n",
+            " help files\r\n",
+            " default settings\r\n\r\n"
+        ],
+        "correctAns": 2
+    },
+    {
+        "query": " Q33. After installing MySQL, it may be necessary to initialize the \\_ which may be done automatically with some MySQL installation methods.",
+        "options": [
+            " storage engine\r\n",
+            " user accounts\r\n",
+            " grant tables\r\n",
+            " data directory\r\n\r\n"
+        ],
+        "correctAns": 4
+    },
+    {
+        "query": " Q34. You need to export the data in the customers table into a CSV file, with columns headers in the first row. Which clause do you add to your MySQL command?",
+        "options": [
+            " JOIN\r\n",
+            " WITH HEADERS\r\n",
+            " UNION\r\n",
+            " WITH COLUMNS\r\n\r\n"
+        ],
+        "correctAns": 3
+    },
+    {
+        "query": " Q35. One form of backup, replication, enables you to maintain identical data on multiple servers, as a \\_ configuration.",
+        "options": [
+            " remote-local\r\n",
+            " parent-child\r\n",
+            " master-slave\r\n",
+            " logical-physical\r\n\r\n"
+        ],
+        "correctAns": 3
+    },
+    {
+        "query": " Q36. What is the requirement for using a subquery in the SELECT clause?",
+        "options": [
+            " the subquery must use an aggregate function.\r\n",
+            " the subquery must refer to the same table as the main query.\r\n",
+            " the subquery must return a single value.\r\n",
+            " the subquery must return at least one value.\r\n\r\n"
+        ],
+        "correctAns": 3
+    },
+    {
+        "query": " Q37. Each time MySQL is upgraded, it is best to execute mysql_upgrade, which looks for incompatibilities with the upgraded MySQL server. What does this command do, upon finding a table with a possible incompatibility?",
+        "options": [
+            " it performs a table check and, if problems are found, attempts a table repair.\r\n",
+            " it stops and notifies the server administrator that the upgrade cannot complete until the incompatibility issue are resolved.\r\n",
+            " it provides a full report of the table specifications and the incompatibilities to the server administrator.\r\n",
+            " it performs a table check and, if problems are found, displays the information for the server administrator to take action.\r\n\r\n"
+        ],
+        "correctAns": 1
+    },
+    {
+        "query": " Q38. What mysql statement is used to check which accounts have specific privileges?",
+        "options": [
+            " show grants (displays the privileges and roles that are assigned to a MySQL user account or role)\r\n",
+            " show privileges (shows the list of system privileges that the MySQL server supports)\r\n",
+            " show access\r\n",
+            " show user permissions\r\n\r\n"
+        ],
+        "correctAns": 1
+    },
+    {
+        "query": " Q39. What table cannot have a trigger associated with it?",
+        "options": [
+            " temporary\r\n",
+            " system\r\n",
+            " large\r\n",
+            " new\r\n\r\n"
+        ],
+        "correctAns": 2
+    },
+    {
+        "query": " Q40. later versions of mysql support the native json data type for storing json documents. What is a drawback of json columns?",
+        "options": [
+            " inefficient for storing json documents\r\n",
+            " cannot be indexed directly\r\n",
+            " documents cannot be validated when stored in json columns\r\n",
+            " cannot be normalized\r\n\r\n"
+        ],
+        "correctAns": 2
+    },
+    {
+        "query": " Q42.Which statement can you use to load data from a file into the table?",
+        "options": [
+            " cat file|mysql\r\n",
+            " load data infile (correct if the file is already on the server)\r\n",
+            " load data local infile (also correct but only if the file is from the client)\r\n",
+            " extended insert statement\r\n\r\n"
+        ],
+        "correctAns": 2
+    },
+    {
+        "query": " Q44. Which is the correct syntax of an extended insert statement?",
+        "options": [
+            " insert into cars (make, model, year) values ('Ford', 'Mustang', 2002)\r\n      ('Mercedes', 'C', 2003)\r\n\r\n",
+            " insert into cars (make, model, year) values ('Ford', 'Mustang', 2002)\r\n      values ('Mercedes', 'C', 2003)\r\n\r\n",
+            " insert into cars (make, model, year) extended ('Ford', 'Mustang', 2002),\r\n      ('Mercedes', 'C', 2003)\r\n\r\n",
+            " insert into cars (make, model, year) values ('Ford', 'Mustang', 2002),\r\n      ('Mercedes', 'C', 2003)\r\n\r\n"
+        ],
+        "correctAns": 4
+    },
+    {
+        "query": " Q45. You need to make an exact copy of a table, with all columns and indexes. How can you get all of the information needed to accomplish this?",
+        "options": [
+            " create table\r\n",
+            " clone table\r\n",
+            " insert into\r\n",
+            " show create table\r\n\r\nNote that the question is about _getting_ the data and not about the _duplicating_ operation itself. And actually there is no need to run `SHOW CREATE TABLE` at all. [To duplicate the table](https://popsql.com/learn-sql/mysql/how-to-duplicate-a-table-in-mysql) structure you can `CREATE TABLE new_table LIKE original_table;`.\r\n\r\n"
+        ],
+        "correctAns": 4
+    },
+    {
+        "query": " Q46. you need to make your mysql system secure against attackers. What are you _not_ supposed to do?",
+        "options": [
+            " Run MySQL server as a normal user.\r\n",
+            " Grant PROCESS or SUPER privilege to other users.\r\n",
+            " Run MySQL server as the unix root user.\r\n",
+            " Use the compressed protocol.\r\n\r\n"
+        ],
+        "correctAns": 3
+    },
+    {
+        "query": " Q47. You manage a database with a table \"customers\". You created a temporary table also called \"customers\" with which you are working for the duration of your session. You need to recreate the temporary table with different specs. Which command do you need to run first?",
+        "options": [
+            " `create temporary table customers;`\r\n",
+            " `drop temp table customers;`\r\n",
+            " `drop table customers;`\r\n",
+            " `drop temporary table customers;`\r\n\r\n"
+        ],
+        "correctAns": 4
+    },
+    {
+        "query": " Q48. You need to run a complex query with recursive subqueries, but without creating a stored procedure or a function. Which command or clause do you use?",
+        "options": [
+            " COLLATE\r\n",
+            " UNION\r\n",
+            " FULL JOIN\r\n",
+            " WITH\r\n\r\nThis is exactly what [WITH clause](https://dev.mysql.com/doc/refman/8.0/en/with.html) is designed for\r\n\r\n"
+        ],
+        "correctAns": 4
+    },
+    {
+        "query": " Q49. Which choice is not a processing algorithm for database views?",
+        "options": [
+            " merge\r\n",
+            " updatable\r\n",
+            " temptable\r\n",
+            " undefined\r\n\r\n"
+        ],
+        "correctAns": 2
+    },
+    {
+        "query": " Q50. What is the MySQL `perror` command-line utility used for?",
+        "options": [
+            " to display your version of MySQL\r\n",
+            " to display operating system error codes\r\n",
+            " to display default settings that are in error\r\n",
+            " to display storage error codes\r\n\r\nNote: perror prints a description for a system error code or for a storage engine (table handler) error code -\r\n[link](<https://dev.mysql.com/doc/refman/5.7/en/perror.html#:~:text=2%20perror%20%E2%80%94%20Display%20MySQL%20Error%20Message%20Information,-For%20most%20system&text=You%20can%20find%20out%20what,(table%20handler)%20error%20code>)\r\n\r\n"
+        ],
+        "correctAns": 4
+    },
+    {
+        "query": " Q51. How can you list all columns for a given table?",
+        "options": [
+            " SHOW table COLUMNS;\r\n",
+            " SHOW COLUMNS FROM table;\r\n",
+            " LIST table COLUMNS;\r\n",
+            " SELECT COLUMNS FROM table;\r\n\r\nNote: `DESCRIBE tablename` is a shortcut for this command\r\n\r\n"
+        ],
+        "correctAns": 2
+    },
+    {
+        "query": " Q52. How would you list the full set of tables in the currently selected database?",
+        "options": [
+            " SELECT \\* FROM DATABASE;\r\n",
+            " SHOW TABLES;\r\n",
+            " LIST TABLES;\r\n",
+            " SELECT ALL TABLES;\r\n\r\n"
+        ],
+        "correctAns": 2
+    },
+    {
+        "query": " Q53. Which choice is not one of the table maintenance statements?",
+        "options": [
+            " CHECK TABLE;\r\n",
+            " CREATE TABLE;\r\n",
+            " ANALYZE TABLE;\r\n",
+            " OPTIMIZE TABLE;\r\n\r\n"
+        ],
+        "correctAns": 2
+    },
+    {
+        "query": " Q54. In which table does MySQL store passwords for user accounts?",
+        "options": [
+            " mysql.accounts;\r\n",
+            " mysql.passwords;\r\n",
+            " mysql.admin;\r\n",
+            " mysql.user;\r\n\r\n"
+        ],
+        "correctAns": 4
+    },
+    {
+        "query": " Q55. Management has requested that you build an employee database. You need to include each employee's current position and salary, as well as all prior positions and salaries with the company. You decide to use a one-to-many structure: an employee table with the main information such as name and address, and an employment table with position and salary history. You can use the employeeID field to connect them. What is employment.employeeID an example of?",
+        "options": [
+            " primary key;\r\n",
+            " secondary key;\r\n",
+            " foreign key;\r\n",
+            " alternate key;\r\n\r\n"
+        ],
+        "correctAns": 3
+    },
+    {
+        "query": " Q56. In recent versions of MySQL (8.0+), what's the correct syntax to declare a CTE (Common Table Expression)?",
+        "options": [
+            " WITH (SELECT id FROM users) as cte, SELECT ...\r\n",
+            " WITH (SELECT id FROM users) as cte SELECT ...\r\n",
+            " WITH cte as (SELECT id FROM users), SELECT ...\r\n",
+            " WITH cte as (SELECT id FROM users) SELECT ...\r\n\r\n"
+        ],
+        "correctAns": 4
+    },
+]

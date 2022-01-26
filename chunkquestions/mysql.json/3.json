@@ -1,1 +1,285 @@
-[{"query":" Q54. In which table does MySQL store passwords for user accounts?","options":[" mysql.accounts;\r\n"," mysql.passwords;\r\n"," mysql.admin;\r\n"," mysql.user;\r\n\r\n"],"correctAns":4},{"query":" Q55. Management has requested that you build an employee database. You need to include each employee's current position and salary, as well as all prior positions and salaries with the company. You decide to use a one-to-many structure: an employee table with the main information such as name and address, and an employment table with position and salary history. You can use the employeeID field to connect them. What is employment.employeeID an example of?","options":[" primary key;\r\n"," secondary key;\r\n"," foreign key;\r\n"," alternate key;\r\n\r\n"],"correctAns":3},{"query":" Q56. In recent versions of MySQL (8.0+), what's the correct syntax to declare a CTE (Common Table Expression)?","options":[" WITH (SELECT id FROM users) as cte, SELECT ...\r\n"," WITH (SELECT id FROM users) as cte SELECT ...\r\n"," WITH cte as (SELECT id FROM users), SELECT ...\r\n"," WITH cte as (SELECT id FROM users) SELECT ...\r\n\r\n"],"correctAns":4},{"query":" Q57. What is one reason to introduce data redundancy into a normalized database design?","options":[" to reduce corruption in data\r\n"," to reduce storage space\r\n"," to make the system faster\r\n"," to prevent data anomalies\r\n\r\nNote: \"to make the system faster\" can also be correct. For example we can calculate some heavy query in advance and store its result in some column (use it as a cache). So if \"system\" means \"application which uses mysql\" then it's correct too.\r\n\r\n"],"correctAns":1},{"query":" Q58. The code snippet below is used to read data from an XML file into a table. Which XML structure is _not_ supported by the statement?","code":"mysql\r\nLOAD XML LOCAL INFILE 'cars.xml'\r\nINTO TABLE cars\r\nROWS IDENTIFIED BY `<car>`;\r\n","options":[" A\r\n\r\n```xml\r\n<car>\r\n   <field name=\"make\"> Lexus </field>\r\n   <field name=\"model\"> IS300 </field>\r\n   <field name=\"make\"> 2016 </field>\r\n</car>\r\n```\r\n\r\n"," B\r\n\r\n```xml\r\n<car name=\"make\"> Dodge </car>\r\n<car name=\"model\"> Ram </car>\r\n<car name=\"year\"> 2000 </car>\r\n```\r\n\r\n"," C\r\n\r\n```xml\r\n<car make=\"Ford\" model=\"Mustang\" year=\"2002\"/>\r\n```\r\n\r\n"," D\r\n\r\n```xml\r\n<car year=\"2010\">\r\n    <make>Mercedes</make> <model> C-Class</model>\r\n</car>\r\n```\r\n\r\n"],"correctAns":2},{"query":" Q59. You are loading data into a table. Which command can you use to make sure that all data is inserted and duplicated rows are discarded?","options":[" `INSERT IGNORE`\r\n"," `INSERT UNIQUE`\r\n"," `INSERT INTO`\r\n"," `INSERT DISTINCT`\r\n\r\n"],"correctAns":1},{"query":" Q60. Which statement about the `TRUNCATE TABLE` statement is true?","options":[" It will stop and issue an error when it encounters a row that is referenced by a row in a child table.\r\n"," It always first drops, then re-creates a new table.\r\n"," It deletes rows one by one on tables with foreign key constraints.\r\n"," It does not invoke the `DELETE` triggers associated with the table.\r\n\r\nNote: both answers are correct - see [TRUNCATE TABLE Statement](https://dev.mysql.com/doc/refman/8.0/en/truncate-table.html) in MySQL manual\r\n\r\n"],"correctAns":4},{"query":" Q62. In data migration, there is often a need to delete duplicate rows as part of data cleanup. Which statement works best?","options":[" `DELETE DUPS`\r\n"," `DELETE DISTINCT`\r\n"," `DELETE JOIN`\r\n"," `DELETE WITH`\r\n\r\n"],"correctAns":3},{"query":" Q63. When working with MySQL cursor, what must you also declare?","options":[" `DEFAULT` value\r\n"," `RETURN` variable\r\n"," `SQLEXCEPTION` routine\r\n"," `NOT FOUND` handler\r\n\r\n"],"correctAns":4},{"query":" Q64. Which type of backup includes all the changes made to the data since the last full backup was performed?","options":[" snapshot\r\n"," logical\r\n"," differential\r\n"," incremental\r\n\r\n"],"correctAns":3},{"query":" Q65. You need to restore a MySQL database from a backup file. Which command-line tool do you use for the actual data import, after re-creating the database?","options":[" `mysqld`\r\n"," `mysql`\r\n"," `mysqladmin`\r\n"," `mysqldump`\r\n\r\n"],"correctAns":2},{"query":" Q66. You are importing data as JSON into a new table. You run CREATE TABLE json_data ( city JSON ); and insert rows into this table. What is the correct syntax to see the list of cities?","options":[" `SELECT city FROM json_data;`\r\n"," `SELECT city->>'$.name' city FROM json_data;`\r\n"," `SELECT city.name city FROM json_data;`\r\n"," `SELECT city->'$.name' city FROM json_data;`\r\n\r\nNote: the last option is valid too but the results will be enclosed with quotation marks\r\n\r\n"],"correctAns":2},{"query":" Q67. If you want to use MyISAM instead of InnoDB, which option do you need to specify in the CREATE TABLE statement?","options":[" ENGINE\r\n"," PARTITION\r\n"," STORAGE\r\n"," TABLESPACE\r\n\r\n"],"correctAns":1},{"query":" Q68. You are working with the table in this diagram. You want to use full-text search to find the customers who live on a street or a drive. What is the command to do that?","code":null,"options":[" A\r\n\r\n```sql\r\nSELECT *\r\nFROM customers\r\nWHERE address MATCH 'Street' OR 'Drive';\r\n```\r\n\r\n"," B\r\n\r\n```sql\r\nSELECT *\r\nFROM customers\r\nWHERE MATCH(address) IN ('street, drive');\r\n```\r\n\r\n"," C\r\n\r\n```sql\r\nSELECT *\r\nFROM customers\r\nWHERE address MATCH 'Street' OR address MATCH 'Drive';\r\n```\r\n\r\n"," D\r\n\r\n```sql\r\nSELECT *\r\nFROM customers\r\nWHERE MATCH(address) AGAINST ('street, drive');\r\n```\r\n\r\n"],"correctAns":4},{"query":" Q69. Which query lists the databases on the current server?","options":[" SHOW DATABASES;\r\n"," LIST ALL DATABASES;\r\n"," LIST DATABASES;\r\n"," SHOW DB;\r\n\r\n"],"correctAns":1},{"query":" Q70. What is the product of the database designing phase?","options":[" all tables, columns, data types, indexes and their relationships\r\n"," a list of entities, their relationship, and constraints\r\n"," all tables and their names, which are needed to implement the logical model\r\n"," a list of entities, their relationship, constraints, data types, and cardinalities\r\n\r\n"],"correctAns":4},{"query":" Q71. Which choice is _not_ a valid model for a stored procedure parameter?","options":[" INOUT\r\n"," IN\r\n"," OUT\r\n"," IN OUT\r\n\r\n"],"correctAns":1},{"query":" Q72. What is the advantage of using a temporary table instead of a heap table?","options":[" The temporary table will be dropped when the database is restarted.\r\n"," Temporary tables can be shared among clients, which makes them more usable in group development environments.\r\n"," The temporary table will be dropped as soon as your session disconnects.\r\n"," Creating a temporary table does not require any special privileges.\r\n\r\n"],"correctAns":3},{"query":" Q73. Which is a valid constructor for a class named User?","options":[" `public construct User() {}`\r\n"," `public User() {}`\r\n"," `public instance User() {}`\r\n"," `public init User() {}`\r\n\r\n"],"correctAns":2},{"query":" Q74. What is the maximum number of columns that can be used by a single table index?","options":[" 2\r\n"," 4\r\n"," 8\r\n"," 16\r\n\r\n"],"correctAns":4},{"query":" Q75. Which command will return a list of triggers in the current database?","options":[" `DISPLAY TRIGGERS;`\r\n"," `SHOW TRIGGERS;`\r\n"," `SELECT ALL TRIGGERS;`\r\n"," `SELECT * FROM information_schema.triggers;`\r\n\r\n"],"correctAns":2},{"query":" Q76. Which statement is true about TIMESTAMP and DATETIME data types?","options":[" TIMESTAMP values require more bytes for storage than DATETIME values.\r\n"," TIMESTAMP is stored without timezone, and DATETIME is stored in UTC values.\r\n"," TIMESTAMP and DATETIME are both stored without time zone.\r\n"," TIMESTAMP is stored in UTC values, and DATETIME is stored in without time zone.\r\n\r\n"],"correctAns":3},{"query":" Q77. What is the equivalent of the mysqladmin reload command?","options":[" `mysqladmin flush-threads`\r\n"," `mysqladmin flush-tables`\r\n"," `mysqladmin flush-privileges`\r\n"," `mysqladmin flush-all`\r\n\r\n"],"correctAns":3},{"query":" Q78. Explain the security aspect of stored procedures","options":[" Stored procedures are not secure, because they can be executed from the command line as the root user\r\n"," Stored procedures are secure, because the owner of the stored procedure can decide to whom access is granted\r\n"," Stored procedures are secure, because applications can be given access to stored procedures and not any underlying variables\r\n"," Stored procedures are not secure, because they can execute statements to drop tables or bulk delete data\r\n\r\n"],"correctAns":3},{"query":" Q79. How would you retrieve data on all the customers where no phone number is stored?","options":[" `SELECT * FROM customers WHERE PhoneNumber = NULL;`\r\n"," `SELECT * FROM customers WHERE PhoneNumber IS NOT VALID;`\r\n"," `SELECT * FROM customers WHERE PhoneNumber IS NULL;`\r\n"," `SELECT * FROM customers WHERE PhoneNumber IS UNKNOWN;`\r\n\r\n"],"correctAns":3}]
+[
+    {
+        "query": " Q57. What is one reason to introduce data redundancy into a normalized database design?",
+        "options": [
+            " to reduce corruption in data\r\n",
+            " to reduce storage space\r\n",
+            " to make the system faster\r\n",
+            " to prevent data anomalies\r\n\r\nNote: \"to make the system faster\" can also be correct. For example we can calculate some heavy query in advance and store its result in some column (use it as a cache). So if \"system\" means \"application which uses mysql\" then it's correct too.\r\n\r\n"
+        ],
+        "correctAns": 1
+    },
+    {
+        "query": " Q58. The code snippet below is used to read data from an XML file into a table. Which XML structure is _not_ supported by the statement?",
+        "code": "mysql\r\nLOAD XML LOCAL INFILE 'cars.xml'\r\nINTO TABLE cars\r\nROWS IDENTIFIED BY `<car>`;\r\n",
+        "options": [
+            " A\r\n\r\n```xml\r\n<car>\r\n   <field name=\"make\"> Lexus </field>\r\n   <field name=\"model\"> IS300 </field>\r\n   <field name=\"make\"> 2016 </field>\r\n</car>\r\n```\r\n\r\n",
+            " B\r\n\r\n```xml\r\n<car name=\"make\"> Dodge </car>\r\n<car name=\"model\"> Ram </car>\r\n<car name=\"year\"> 2000 </car>\r\n```\r\n\r\n",
+            " C\r\n\r\n```xml\r\n<car make=\"Ford\" model=\"Mustang\" year=\"2002\"/>\r\n```\r\n\r\n",
+            " D\r\n\r\n```xml\r\n<car year=\"2010\">\r\n    <make>Mercedes</make> <model> C-Class</model>\r\n</car>\r\n```\r\n\r\n"
+        ],
+        "correctAns": 2
+    },
+    {
+        "query": " Q59. You are loading data into a table. Which command can you use to make sure that all data is inserted and duplicated rows are discarded?",
+        "options": [
+            " `INSERT IGNORE`\r\n",
+            " `INSERT UNIQUE`\r\n",
+            " `INSERT INTO`\r\n",
+            " `INSERT DISTINCT`\r\n\r\n"
+        ],
+        "correctAns": 1
+    },
+    {
+        "query": " Q60. Which statement about the `TRUNCATE TABLE` statement is true?",
+        "options": [
+            " It will stop and issue an error when it encounters a row that is referenced by a row in a child table.\r\n",
+            " It always first drops, then re-creates a new table.\r\n",
+            " It deletes rows one by one on tables with foreign key constraints.\r\n",
+            " It does not invoke the `DELETE` triggers associated with the table.\r\n\r\nNote: both answers are correct - see [TRUNCATE TABLE Statement](https://dev.mysql.com/doc/refman/8.0/en/truncate-table.html) in MySQL manual\r\n\r\n"
+        ],
+        "correctAns": 4
+    },
+    {
+        "query": " Q62. In data migration, there is often a need to delete duplicate rows as part of data cleanup. Which statement works best?",
+        "options": [
+            " `DELETE DUPS`\r\n",
+            " `DELETE DISTINCT`\r\n",
+            " `DELETE JOIN`\r\n",
+            " `DELETE WITH`\r\n\r\n"
+        ],
+        "correctAns": 3
+    },
+    {
+        "query": " Q63. When working with MySQL cursor, what must you also declare?",
+        "options": [
+            " `DEFAULT` value\r\n",
+            " `RETURN` variable\r\n",
+            " `SQLEXCEPTION` routine\r\n",
+            " `NOT FOUND` handler\r\n\r\n"
+        ],
+        "correctAns": 4
+    },
+    {
+        "query": " Q64. Which type of backup includes all the changes made to the data since the last full backup was performed?",
+        "options": [
+            " snapshot\r\n",
+            " logical\r\n",
+            " differential\r\n",
+            " incremental\r\n\r\n"
+        ],
+        "correctAns": 3
+    },
+    {
+        "query": " Q65. You need to restore a MySQL database from a backup file. Which command-line tool do you use for the actual data import, after re-creating the database?",
+        "options": [
+            " `mysqld`\r\n",
+            " `mysql`\r\n",
+            " `mysqladmin`\r\n",
+            " `mysqldump`\r\n\r\n"
+        ],
+        "correctAns": 2
+    },
+    {
+        "query": " Q66. You are importing data as JSON into a new table. You run CREATE TABLE json_data ( city JSON ); and insert rows into this table. What is the correct syntax to see the list of cities?",
+        "options": [
+            " `SELECT city FROM json_data;`\r\n",
+            " `SELECT city->>'$.name' city FROM json_data;`\r\n",
+            " `SELECT city.name city FROM json_data;`\r\n",
+            " `SELECT city->'$.name' city FROM json_data;`\r\n\r\nNote: the last option is valid too but the results will be enclosed with quotation marks\r\n\r\n"
+        ],
+        "correctAns": 2
+    },
+    {
+        "query": " Q67. If you want to use MyISAM instead of InnoDB, which option do you need to specify in the CREATE TABLE statement?",
+        "options": [
+            " ENGINE\r\n",
+            " PARTITION\r\n",
+            " STORAGE\r\n",
+            " TABLESPACE\r\n\r\n"
+        ],
+        "correctAns": 1
+    },
+    {
+        "query": " Q68. You are working with the table in this diagram. You want to use full-text search to find the customers who live on a street or a drive. What is the command to do that?",
+        "code": null,
+        "options": [
+            " A\r\n\r\n```sql\r\nSELECT *\r\nFROM customers\r\nWHERE address MATCH 'Street' OR 'Drive';\r\n```\r\n\r\n",
+            " B\r\n\r\n```sql\r\nSELECT *\r\nFROM customers\r\nWHERE MATCH(address) IN ('street, drive');\r\n```\r\n\r\n",
+            " C\r\n\r\n```sql\r\nSELECT *\r\nFROM customers\r\nWHERE address MATCH 'Street' OR address MATCH 'Drive';\r\n```\r\n\r\n",
+            " D\r\n\r\n```sql\r\nSELECT *\r\nFROM customers\r\nWHERE MATCH(address) AGAINST ('street, drive');\r\n```\r\n\r\n"
+        ],
+        "correctAns": 4
+    },
+    {
+        "query": " Q69. Which query lists the databases on the current server?",
+        "options": [
+            " SHOW DATABASES;\r\n",
+            " LIST ALL DATABASES;\r\n",
+            " LIST DATABASES;\r\n",
+            " SHOW DB;\r\n\r\n"
+        ],
+        "correctAns": 1
+    },
+    {
+        "query": " Q70. What is the product of the database designing phase?",
+        "options": [
+            " all tables, columns, data types, indexes and their relationships\r\n",
+            " a list of entities, their relationship, and constraints\r\n",
+            " all tables and their names, which are needed to implement the logical model\r\n",
+            " a list of entities, their relationship, constraints, data types, and cardinalities\r\n\r\n"
+        ],
+        "correctAns": 4
+    },
+    {
+        "query": " Q71. Which choice is _not_ a valid model for a stored procedure parameter?",
+        "options": [
+            " INOUT\r\n",
+            " IN\r\n",
+            " OUT\r\n",
+            " IN OUT\r\n\r\n"
+        ],
+        "correctAns": 1
+    },
+    {
+        "query": " Q72. What is the advantage of using a temporary table instead of a heap table?",
+        "options": [
+            " The temporary table will be dropped when the database is restarted.\r\n",
+            " Temporary tables can be shared among clients, which makes them more usable in group development environments.\r\n",
+            " The temporary table will be dropped as soon as your session disconnects.\r\n",
+            " Creating a temporary table does not require any special privileges.\r\n\r\n"
+        ],
+        "correctAns": 3
+    },
+    {
+        "query": " Q73. Which is a valid constructor for a class named User?",
+        "options": [
+            " `public construct User() {}`\r\n",
+            " `public User() {}`\r\n",
+            " `public instance User() {}`\r\n",
+            " `public init User() {}`\r\n\r\n"
+        ],
+        "correctAns": 2
+    },
+    {
+        "query": " Q74. What is the maximum number of columns that can be used by a single table index?",
+        "options": [
+            " 2\r\n",
+            " 4\r\n",
+            " 8\r\n",
+            " 16\r\n\r\n"
+        ],
+        "correctAns": 4
+    },
+    {
+        "query": " Q75. Which command will return a list of triggers in the current database?",
+        "options": [
+            " `DISPLAY TRIGGERS;`\r\n",
+            " `SHOW TRIGGERS;`\r\n",
+            " `SELECT ALL TRIGGERS;`\r\n",
+            " `SELECT * FROM information_schema.triggers;`\r\n\r\n"
+        ],
+        "correctAns": 2
+    },
+    {
+        "query": " Q76. Which statement is true about TIMESTAMP and DATETIME data types?",
+        "options": [
+            " TIMESTAMP values require more bytes for storage than DATETIME values.\r\n",
+            " TIMESTAMP is stored without timezone, and DATETIME is stored in UTC values.\r\n",
+            " TIMESTAMP and DATETIME are both stored without time zone.\r\n",
+            " TIMESTAMP is stored in UTC values, and DATETIME is stored in without time zone.\r\n\r\n"
+        ],
+        "correctAns": 3
+    },
+    {
+        "query": " Q77. What is the equivalent of the mysqladmin reload command?",
+        "options": [
+            " `mysqladmin flush-threads`\r\n",
+            " `mysqladmin flush-tables`\r\n",
+            " `mysqladmin flush-privileges`\r\n",
+            " `mysqladmin flush-all`\r\n\r\n"
+        ],
+        "correctAns": 3
+    },
+    {
+        "query": " Q78. Explain the security aspect of stored procedures",
+        "options": [
+            " Stored procedures are not secure, because they can be executed from the command line as the root user\r\n",
+            " Stored procedures are secure, because the owner of the stored procedure can decide to whom access is granted\r\n",
+            " Stored procedures are secure, because applications can be given access to stored procedures and not any underlying variables\r\n",
+            " Stored procedures are not secure, because they can execute statements to drop tables or bulk delete data\r\n\r\n"
+        ],
+        "correctAns": 3
+    },
+    {
+        "query": " Q79. How would you retrieve data on all the customers where no phone number is stored?",
+        "options": [
+            " `SELECT * FROM customers WHERE PhoneNumber = NULL;`\r\n",
+            " `SELECT * FROM customers WHERE PhoneNumber IS NOT VALID;`\r\n",
+            " `SELECT * FROM customers WHERE PhoneNumber IS NULL;`\r\n",
+            " `SELECT * FROM customers WHERE PhoneNumber IS UNKNOWN;`\r\n\r\n"
+        ],
+        "correctAns": 3
+    },
+    {
+        "query": " Q81. Which choice is `not` an available string type for a column?",
+        "options": [
+            " `ENUM`\r\n",
+            " `SET`\r\n",
+            " `BIT`\r\n",
+            " `CHAR`\r\n\r\nExplnation: BIT is not a string type\r\n\r\n"
+        ],
+        "correctAns": 3
+    },
+    {
+        "query": " Q83. A stored routine is a set of SQL statements stored on the server and takes form as either a procedure or a function. Which statement cannot be used inside stored routines?",
+        "options": [
+            " `SELECT`\r\n",
+            " `USE`\r\n",
+            " `SET`\r\n",
+            " `DECLARE`\r\n\r\nExplanation: Both `SET` and `DECLARE` are used to create variables. Reference: [MySQL STORED PROCEDURE Tutorial With Examples](https://www.softwaretestinghelp.com/mysql-stored-procedure/)\r\n\r\n"
+        ],
+        "correctAns": 2
+    },
+    {
+        "query": " Q84. When a new student is added to a new database, you want new records to be created in the related tables such as Exam, Score and Attendance. How would you accomplish this?",
+        "options": [
+            " trigger\r\n",
+            " regular expression\r\n",
+            " view\r\n",
+            " index\r\n\r\n"
+        ],
+        "correctAns": 1
+    },
+    {
+        "query": " Q86. Why would you use a common table expression (CTE)?",
+        "options": [
+            " To define queries for later reuse for the duration of the current session\r\n",
+            " To create temporary tables that can be used to pre-select often-used result sets.\r\n",
+            " To calculate a new single value from a result set and return it to the query parser.\r\n",
+            " To break down complex queries and allow reuse within a query.\r\n\r\nExplanation: CTEs do not create temporary tables, they only work within a signle query. Reference: [13.2.15 WITH (Common Table Expressions)](https://dev.mysql.com/doc/refman/8.0/en/with.html).\r\n\r\n"
+        ],
+        "correctAns": 4
+    },
+    {
+        "query": " Q87. Which option modifier tells a program not to exit with an error if it does not recognize the option, but instead to issue a warning?",
+        "options": [
+            " --verbose\r\n",
+            " --skip\r\n",
+            " --skip-error\r\n",
+            " --loose\r\n\r\nReference: [4.2.2.4 Program Option Modifiers](https://dev.mysql.com/doc/refman/8.0/en/option-modifiers.html)\r\n\r\n"
+        ],
+        "correctAns": 4
+    },
+    {
+        "query": " Q89. What does this SQL statement return?",
+        "code": "\r\nSELECT name FROM students WHERE name REGEXP '^to';\r\n",
+        "options": [
+            " all names starting with \"to,\" such as Tommy or Tony\r\n",
+            " all names with \"to,\" such as Roberto and Tommy\r\n",
+            " all names without \"to,\" such as Samantha or Kathryn\r\n",
+            " all names ending with \"to,\" such as Roberto\r\n\r\n"
+        ],
+        "correctAns": 1
+    }
+]

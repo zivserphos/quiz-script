@@ -1,1 +1,254 @@
-[{"query":" Q1. When you have a subquery inside of the main query, which query is executed first?","options":[" The subquery is never executed. Only the main query is executed.\r\n"," They are executed at the same time\r\n"," the main query\r\n"," the subquery\r\n\r\n"],"correctAns":4},{"query":" Q2. You need to export the entire database, including the database objects, in addition to the data. Which command-line tool do you use?","options":[" mysqlexport\r\n"," mysqladmin\r\n"," mysqldump\r\n"," mysqld\r\n\r\n"],"correctAns":3},{"query":" Q3. You must ensure the accuracy and reliability of the data in your database. You assign some constraints to limit the type of data that can go into a table. What type of constraints are you assigning?","options":[" row level\r\n"," database level\r\n"," column level\r\n"," function level\r\n\r\n"],"correctAns":3},{"query":" Q4. Which option of most MySQL command-line programs can be used to get a description of the program's different options?","options":[" --options\r\n"," ?\r\n"," --help\r\n"," -h\r\n\r\n"],"correctAns":3},{"query":" Q5. MySQL uses environment variables in some of the programs and command-line operations. Which variable is used by the shell to find MySQL programs?","options":[" DIR\r\n"," HOME\r\n"," PATH\r\n"," MYSQL_HOME\r\n\r\n"],"correctAns":3},{"query":" Q6. How can you create a stored procedure in MySQL?","code":null,"options":[" A\r\n\r\n```\r\n1 CREATE PROCEDURE P () AS\r\n2 BEGIN\r\n3 END;\r\n```\r\n\r\n"," B\r\n\r\n```\r\n1 CREATE PROCEDURE P ()\r\n2 BEGIN\r\n3 END\r\n```\r\n\r\n"," C\r\n\r\n```\r\n1 CREATE PROCP\r\n2 BEGIN\r\n3 END;\r\n```\r\n\r\n"," D\r\n\r\n```\r\n1 CREATE PROC P AS O\r\n2 BEGIN\r\n3 END;\r\n```\r\n\r\n"],"correctAns":2},{"query":" Q7. If you were building a table schema to store student grades as a letter (A, B, C, D, or F) which column type would be the best choice?","options":[" ENUM\r\n"," OTEXT\r\n"," VARCHAR\r\n"," LONGTEXT\r\n\r\n"],"correctAns":1},{"query":" Q8. Management has requested that you build an employee database. You start with the employee table. What is the correct syntax?","code":null,"options":[" A\r\n\r\n```\r\n    1 CREATE TABLE employee (\r\n    2 employee ID char(10),\r\n    3 firstName varchar(50),\r\n    4 lastName varchar(50),\r\n    5 phone varchar(20),\r\n    6 address varchar(50),\r\n    7 PRIMARY KEY ON employeeID\r\n    8 );\r\n```\r\n\r\n"," B\r\n\r\n```\r\n    1 CREATE TABLE employee (\r\n    2 employee ID char(10),\r\n    3 firstName varchar(50),\r\n    4 lastName varchar(50),\r\n    5 phone varchar(20),\r\n    6 address varchar(50),\r\n    7 PRIMARY KEY employeeID\r\n    8 );\r\n```\r\n\r\n"," C\r\n\r\n```\r\n    1 CREATE TABLE IF EXISTS employee (\r\n    2 employee ID char(10),\r\n    3 firstName varchar(50),\r\n    4 lastName varchar(50),\r\n    5 phone varchar(20),\r\n    6 address varchar(50),\r\n    7 PRIMARY KEY (employeeID)\r\n    8 );\r\n```\r\n\r\n"," D\r\n\r\n```sql\r\n    1 CREATE TABLE IF NOT EXISTS employee (\r\n    2 employee ID char(10),\r\n    3 firstName varchar(50),\r\n    4 lastName varchar(50),\r\n    5 phone varchar(20),\r\n    6 address varchar(50),\r\n    7 PRIMARY KEY (employeeID)\r\n    8 );\r\n```\r\n\r\n"],"correctAns":4},{"query":" Q10. Which query would NOT be used to administer a MySQL server?","options":[" USE db\r\n"," SELECT column FROM tbl\r\n"," SHOW COLUMNS FROM tbl\r\n"," SHOW TABLES\r\n\r\n"],"correctAns":2},{"query":" Q11. What is the product of the database designing phase?","options":[" system definition\r\n"," logical model\r\n"," physical model\r\n"," normalized database\r\n\r\n`Logical, physical and normalized are all products of the designing phase in this order.`\r\n\r\n"],"correctAns":2},{"query":" Q12. MySQL server can operate in different SQL modes, depending on the value of the sql_mode system variable. Which mode changes syntax and behavior to conform more closely to standard SQL?","options":[" TRADITIONAL\r\n"," ANSI\r\n"," MSSQL\r\n"," STRICT\r\n\r\n"],"correctAns":2},{"query":" Q13. MySQL programs are a set of command-line utilities that are provided with typical MySQL distributions. MySQL is designed to be a database.","options":[" database and programming\r\n"," user and administrator\r\n"," client and server\r\n"," syntax and objects\r\n\r\n"],"correctAns":3},{"query":" Q14. Which MySQL command shows the structure of a table?","options":[" INFO table;\r\n"," SHOW table;\r\n"," STRUCTURE table;\r\n"," DESCRIBE table;\r\n\r\n"],"correctAns":4},{"query":" Q15. MySQL uses security based on \\_ for all connections, queries, and other operations that users can attempt to perform.","options":[" administrator schema\r\n"," encrypted algorithms\r\n"," user settings\r\n"," access control lists\r\n\r\n"],"correctAns":4},{"query":" Q16. Which MySQL command modifies data records in a table?","options":[" UPDATE\r\n"," MODIFY\r\n"," CHANGE\r\n"," ALTER\r\n\r\n"],"correctAns":1},{"query":" Q17. What is the best type of query for validating the format of an email address in a MySQL table?","options":[" a SQL query using partitions\r\n"," a SQL query using IS NULL\r\n"," a SQL query using a regular expression\r\n"," a SQL query using LTRIM Or RTRIM\r\n\r\n"],"correctAns":3},{"query":" Q18. In MySQL, queries are always followed by what character?","options":[" line break\r\n"," colon\r\n"," semicolon\r\n"," period\r\n\r\n"],"correctAns":3},{"query":" Q19. How can you remove a record using MySQL?","options":[" DELETE\r\n"," DELETE FROM\r\n"," REMOVE\r\n"," REMOVE FROM\r\n\r\n"],"correctAns":2},{"query":" Q20. Which choice is NOT a statement you would use to filter data?","options":[" GROUP_BY\r\n"," WHERE\r\n"," LIMIT\r\n"," LIKE\r\n\r\n"],"correctAns":1},{"query":" Q21. What does the following SQL statement return?","options":[" It records in the Employees table where the value in the EmployeeName column doesn't have an \"a\".\r\n"," It records in the Employees table where the value in the EmployeeName column starts with \"a\".\r\n"," It records in the Employees table where the value in the EmployeeName column has an \"a\".\r\n"," It records in the Employees table where the value in the EmployeeName column ends with \"a\".\r\n\r\n"],"correctAns":2},{"query":" Q22. In `SELECT * FROM clients;` what does clients represent?","options":[" a SQL query\r\n"," a SQL statement\r\n"," a database\r\n"," a table\r\n\r\n"],"correctAns":4},{"query":" Q23. How does MySQL differ from SQL?","options":[" SQL is a standard language for retrieving and manipulating data from structured databases. MySQL is a nonrelational database management system that is used to manage SQL databases.\r\n"," SQL is a standard language for retrieving and manipulating data from structured databases. MySQL is a relational database management system that is used to manage SQL databases.\r\n"," They are not different. MySQL and SQL refer to the same thing.\r\n"," My SQL is a language, and SQL is a software application.\r\n\r\n"],"correctAns":2},{"query":" Q24. If you need to order a table of movies by name, which query will work?","options":[" SELECT \\* FROM movies GROUP BY name\r\n"," SELECT \\* FROM movies ORDER BY name\r\n"," SELECT \\* FROM movies ORDER TABLE by name\r\n"," SELECT \\* FROM movies FILTER BY name\r\n\r\n"],"correctAns":2},{"query":" Q25. A trigger is a database object that is associated with a table, and that activates when a particular event occurs for the table. Which three events are these?","options":[" INSERT, UPDATE, DELETE\r\n"," CREATE, ALTER, DROP\r\n"," OPEN, FETCH, CLOSE\r\n"," DECLARE, SET, SELECT\r\n\r\n"],"correctAns":1},{"query":" Q26. You are working with very large tables in your database. Which SQL clause do you use to prevent exceedingly large query results?","options":[" UNIQUE\r\n"," LIMIT\r\n"," DISTINCT\r\n"," CONSTRAINT\r\n\r\n"],"correctAns":2}]
+[
+    {
+        "query": " Q1. When you have a subquery inside of the main query, which query is executed first?",
+        "options": [
+            " The subquery is never executed. Only the main query is executed.\r\n",
+            " They are executed at the same time\r\n",
+            " the main query\r\n",
+            " the subquery\r\n\r\n"
+        ],
+        "correctAns": 4
+    },
+    {
+        "query": " Q2. You need to export the entire database, including the database objects, in addition to the data. Which command-line tool do you use?",
+        "options": [
+            " mysqlexport\r\n",
+            " mysqladmin\r\n",
+            " mysqldump\r\n",
+            " mysqld\r\n\r\n"
+        ],
+        "correctAns": 3
+    },
+    {
+        "query": " Q3. You must ensure the accuracy and reliability of the data in your database. You assign some constraints to limit the type of data that can go into a table. What type of constraints are you assigning?",
+        "options": [
+            " row level\r\n",
+            " database level\r\n",
+            " column level\r\n",
+            " function level\r\n\r\n"
+        ],
+        "correctAns": 3
+    },
+    {
+        "query": " Q4. Which option of most MySQL command-line programs can be used to get a description of the program's different options?",
+        "options": [
+            " --options\r\n",
+            " ?\r\n",
+            " --help\r\n",
+            " -h\r\n\r\n"
+        ],
+        "correctAns": 3
+    },
+    {
+        "query": " Q5. MySQL uses environment variables in some of the programs and command-line operations. Which variable is used by the shell to find MySQL programs?",
+        "options": [
+            " DIR\r\n",
+            " HOME\r\n",
+            " PATH\r\n",
+            " MYSQL_HOME\r\n\r\n"
+        ],
+        "correctAns": 3
+    },
+    {
+        "query": " Q6. How can you create a stored procedure in MySQL?",
+        "code": null,
+        "options": [
+            " A\r\n\r\n```\r\n1 CREATE PROCEDURE P () AS\r\n2 BEGIN\r\n3 END;\r\n```\r\n\r\n",
+            " B\r\n\r\n```\r\n1 CREATE PROCEDURE P ()\r\n2 BEGIN\r\n3 END\r\n```\r\n\r\n",
+            " C\r\n\r\n```\r\n1 CREATE PROCP\r\n2 BEGIN\r\n3 END;\r\n```\r\n\r\n",
+            " D\r\n\r\n```\r\n1 CREATE PROC P AS O\r\n2 BEGIN\r\n3 END;\r\n```\r\n\r\n"
+        ],
+        "correctAns": 2
+    },
+    {
+        "query": " Q7. If you were building a table schema to store student grades as a letter (A, B, C, D, or F) which column type would be the best choice?",
+        "options": [
+            " ENUM\r\n",
+            " OTEXT\r\n",
+            " VARCHAR\r\n",
+            " LONGTEXT\r\n\r\n"
+        ],
+        "correctAns": 1
+    },
+    {
+        "query": " Q8. Management has requested that you build an employee database. You start with the employee table. What is the correct syntax?",
+        "code": null,
+        "options": [
+            " A\r\n\r\n```\r\n    1 CREATE TABLE employee (\r\n    2 employee ID char(10),\r\n    3 firstName varchar(50),\r\n    4 lastName varchar(50),\r\n    5 phone varchar(20),\r\n    6 address varchar(50),\r\n    7 PRIMARY KEY ON employeeID\r\n    8 );\r\n```\r\n\r\n",
+            " B\r\n\r\n```\r\n    1 CREATE TABLE employee (\r\n    2 employee ID char(10),\r\n    3 firstName varchar(50),\r\n    4 lastName varchar(50),\r\n    5 phone varchar(20),\r\n    6 address varchar(50),\r\n    7 PRIMARY KEY employeeID\r\n    8 );\r\n```\r\n\r\n",
+            " C\r\n\r\n```\r\n    1 CREATE TABLE IF EXISTS employee (\r\n    2 employee ID char(10),\r\n    3 firstName varchar(50),\r\n    4 lastName varchar(50),\r\n    5 phone varchar(20),\r\n    6 address varchar(50),\r\n    7 PRIMARY KEY (employeeID)\r\n    8 );\r\n```\r\n\r\n",
+            " D\r\n\r\n```sql\r\n    1 CREATE TABLE IF NOT EXISTS employee (\r\n    2 employee ID char(10),\r\n    3 firstName varchar(50),\r\n    4 lastName varchar(50),\r\n    5 phone varchar(20),\r\n    6 address varchar(50),\r\n    7 PRIMARY KEY (employeeID)\r\n    8 );\r\n```\r\n\r\n"
+        ],
+        "correctAns": 4
+    },
+    {
+        "query": " Q10. Which query would NOT be used to administer a MySQL server?",
+        "options": [
+            " USE db\r\n",
+            " SELECT column FROM tbl\r\n",
+            " SHOW COLUMNS FROM tbl\r\n",
+            " SHOW TABLES\r\n\r\n"
+        ],
+        "correctAns": 2
+    },
+    {
+        "query": " Q11. What is the product of the database designing phase?",
+        "options": [
+            " system definition\r\n",
+            " logical model\r\n",
+            " physical model\r\n",
+            " normalized database\r\n\r\n`Logical, physical and normalized are all products of the designing phase in this order.`\r\n\r\n"
+        ],
+        "correctAns": 2
+    },
+    {
+        "query": " Q12. MySQL server can operate in different SQL modes, depending on the value of the sql_mode system variable. Which mode changes syntax and behavior to conform more closely to standard SQL?",
+        "options": [
+            " TRADITIONAL\r\n",
+            " ANSI\r\n",
+            " MSSQL\r\n",
+            " STRICT\r\n\r\n"
+        ],
+        "correctAns": 2
+    },
+    {
+        "query": " Q13. MySQL programs are a set of command-line utilities that are provided with typical MySQL distributions. MySQL is designed to be a database.",
+        "options": [
+            " database and programming\r\n",
+            " user and administrator\r\n",
+            " client and server\r\n",
+            " syntax and objects\r\n\r\n"
+        ],
+        "correctAns": 3
+    },
+    {
+        "query": " Q14. Which MySQL command shows the structure of a table?",
+        "options": [
+            " INFO table;\r\n",
+            " SHOW table;\r\n",
+            " STRUCTURE table;\r\n",
+            " DESCRIBE table;\r\n\r\n"
+        ],
+        "correctAns": 4
+    },
+    {
+        "query": " Q15. MySQL uses security based on \\_ for all connections, queries, and other operations that users can attempt to perform.",
+        "options": [
+            " administrator schema\r\n",
+            " encrypted algorithms\r\n",
+            " user settings\r\n",
+            " access control lists\r\n\r\n"
+        ],
+        "correctAns": 4
+    },
+    {
+        "query": " Q16. Which MySQL command modifies data records in a table?",
+        "options": [
+            " UPDATE\r\n",
+            " MODIFY\r\n",
+            " CHANGE\r\n",
+            " ALTER\r\n\r\n"
+        ],
+        "correctAns": 1
+    },
+    {
+        "query": " Q17. What is the best type of query for validating the format of an email address in a MySQL table?",
+        "options": [
+            " a SQL query using partitions\r\n",
+            " a SQL query using IS NULL\r\n",
+            " a SQL query using a regular expression\r\n",
+            " a SQL query using LTRIM Or RTRIM\r\n\r\n"
+        ],
+        "correctAns": 3
+    },
+    {
+        "query": " Q18. In MySQL, queries are always followed by what character?",
+        "options": [
+            " line break\r\n",
+            " colon\r\n",
+            " semicolon\r\n",
+            " period\r\n\r\n"
+        ],
+        "correctAns": 3
+    },
+    {
+        "query": " Q19. How can you remove a record using MySQL?",
+        "options": [
+            " DELETE\r\n",
+            " DELETE FROM\r\n",
+            " REMOVE\r\n",
+            " REMOVE FROM\r\n\r\n"
+        ],
+        "correctAns": 2
+    },
+    {
+        "query": " Q20. Which choice is NOT a statement you would use to filter data?",
+        "options": [
+            " GROUP_BY\r\n",
+            " WHERE\r\n",
+            " LIMIT\r\n",
+            " LIKE\r\n\r\n"
+        ],
+        "correctAns": 1
+    },
+    {
+        "query": " Q21. What does the following SQL statement return?",
+        "options": [
+            " It records in the Employees table where the value in the EmployeeName column doesn't have an \"a\".\r\n",
+            " It records in the Employees table where the value in the EmployeeName column starts with \"a\".\r\n",
+            " It records in the Employees table where the value in the EmployeeName column has an \"a\".\r\n",
+            " It records in the Employees table where the value in the EmployeeName column ends with \"a\".\r\n\r\n"
+        ],
+        "correctAns": 2
+    },
+    {
+        "query": " Q22. In `SELECT * FROM clients;` what does clients represent?",
+        "options": [
+            " a SQL query\r\n",
+            " a SQL statement\r\n",
+            " a database\r\n",
+            " a table\r\n\r\n"
+        ],
+        "correctAns": 4
+    },
+    {
+        "query": " Q23. How does MySQL differ from SQL?",
+        "options": [
+            " SQL is a standard language for retrieving and manipulating data from structured databases. MySQL is a nonrelational database management system that is used to manage SQL databases.\r\n",
+            " SQL is a standard language for retrieving and manipulating data from structured databases. MySQL is a relational database management system that is used to manage SQL databases.\r\n",
+            " They are not different. MySQL and SQL refer to the same thing.\r\n",
+            " My SQL is a language, and SQL is a software application.\r\n\r\n"
+        ],
+        "correctAns": 2
+    },
+    {
+        "query": " Q24. If you need to order a table of movies by name, which query will work?",
+        "options": [
+            " SELECT \\* FROM movies GROUP BY name\r\n",
+            " SELECT \\* FROM movies ORDER BY name\r\n",
+            " SELECT \\* FROM movies ORDER TABLE by name\r\n",
+            " SELECT \\* FROM movies FILTER BY name\r\n\r\n"
+        ],
+        "correctAns": 2
+    },
+    {
+        "query": " Q25. A trigger is a database object that is associated with a table, and that activates when a particular event occurs for the table. Which three events are these?",
+        "options": [
+            " INSERT, UPDATE, DELETE\r\n",
+            " CREATE, ALTER, DROP\r\n",
+            " OPEN, FETCH, CLOSE\r\n",
+            " DECLARE, SET, SELECT\r\n\r\n"
+        ],
+        "correctAns": 1
+    },
+    {
+        "query": " Q26. You are working with very large tables in your database. Which SQL clause do you use to prevent exceedingly large query results?",
+        "options": [
+            " UNIQUE\r\n",
+            " LIMIT\r\n",
+            " DISTINCT\r\n",
+            " CONSTRAINT\r\n\r\n"
+        ],
+        "correctAns": 2
+    }
+]
