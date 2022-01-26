@@ -1,0 +1,32 @@
+[
+    {
+        "query": " Q32. Which statement is true about the Appearance preferences?",
+        "options": [
+            " The default brightness is the halfway position between darker and lighter.\r\n",
+            " You can set the top bar of windows to a custom accent color.\r\n",
+            " You can adjust the intensity of the Focus Indicator to help easily identify which window is active.\r\n",
+            " You can change the highlight color.\r\n\r\n"
+        ],
+        "correctAns": 4
+    },
+    {
+        "query": " Q34. Your project has several sequences that are no longer needed. How would you use the Project Manager to produce a new version of the project that excludes the unwanted sequences?",
+        "options": [
+            " Deselect the unwanted sequences in the Sequence area.\r\n",
+            " Select Create New Trimmed Project.\r\n",
+            " Select Consolidate and Transcode.\r\n",
+            " Choose Collect Files and Copy to New Location.\r\n\r\n"
+        ],
+        "correctAns": 4
+    },
+    {
+        "query": " Q48. To quickly arrange the panels in Adobe Premiere Pro for a specific task, what do you use?",
+        "options": [
+            " workspaces\r\n",
+            " layouts\r\n",
+            " panel presets\r\n",
+            " events\r\n"
+        ],
+        "correctAns": 1
+    }
+]

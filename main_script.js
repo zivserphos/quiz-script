@@ -1,28 +1,25 @@
 const path = require("path");
 const fs = require("fs");
-const genQuery = require("./helpers/genQuery");
-const genAns = require("./helpers/genAns");
-const genCode = require("./helpers/genCode");
 
 let totalQuestionsInsert = 0;
-let totalQuestionsInsert1 = 0;
-let totalQuestionsNotInserted = 0;
-// let nullQuestions;
-let totalNullQuestions = 0;
 
-const files = fs.readdirSync("./questionsNotFilter");
-const filterdFiles = fs.readdirSync("./questions");
+const files = fs.readdirSync("./questions");
+
 files.map((fileName) => {
-  const content = JSON.parse(
-    fs.readFileSync(`./questionsNotFilter/${fileName}`).toString()
-  );
-  totalQuestionsInsert += content.length;
-});
-filterdFiles.map((fileName) => {
   const content = JSON.parse(
     fs.readFileSync(`./questions/${fileName}`).toString()
   );
-  totalQuestionsInsert1 += content.length;
+  totalQuestionsInsert += content.length;
+  fs.mkdirSync(`./chunkquestions/${fileName}`);
+  const numOfQuestions = content.length;
+  let chunk = 1;
+  let i = 0;
+  while (i < numOfQuestions) {
+    fs.writeFileSync(
+      `./chunkquestions/${fileName}/${chunk}.json`,
+      JSON.stringify(content.slice(i, i + 25))
+    );
+    chunk += 1;
+    i += 25;
+  }
 });
-
-fs.writeFileSync("a.json", "SAFffffffff");
