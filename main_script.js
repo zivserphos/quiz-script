@@ -24,7 +24,7 @@
 //   }
 // });
 
-const a = [
+const questions = [
   {
     query:
       " Q1. Which operator returns true if the two compared values are not equal?",
@@ -279,9 +279,13 @@ const a = [
   },
 ];
 
-a.map((question) => {
+questions.map((question) => {
   let answers = "";
   if (!question.query.includes("\r\n")) question.query += "\r\n";
-  question.options.map((option) => (answers += option));
-  console.log(`${question.query} ${question.code || ""} ${answers}`);
+  question.options.map((option) => (answers += option.slice(1)));
+  console.log(
+    `${question.query} ${question.code || ""} ${answers} correct answer: ${
+      question.correctAns
+    }`
+  );
 });

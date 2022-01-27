@@ -215,7 +215,7 @@
             " as a properly formatted JSON array\r\n",
             " as YAML\r\n",
             " as plain text\r\n",
-            " as a BSON object\r\n      "
+            " as a BSON object\r\n "
         ],
         "correctAns": 1
     },
