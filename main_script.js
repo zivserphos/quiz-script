@@ -12,7 +12,7 @@ files.map((fileName) => {
   const updatedFile = content.map((question) => {
     const newOptions = question.options.map((option, i) => {
       const numOfbr = option.split("\r\n");
-      if (option.includes("```")) return option.split("```")[1];
+      if (option.includes("[reference]")) return option.split("[reference]")[0];
       return option;
     });
     return { ...question, options: newOptions };
@@ -22,3 +22,17 @@ files.map((fileName) => {
 });
 
 console.log(totalQuestionsInsert);
+
+// const updatedFile = content.map((question) => {
+//   const newOptions = question.options.map((option, i) => {
+//     const numOfbr = option.split("\r\n");
+//     if (option.split("\r\n").length !== 1) {
+//       console.log(fileName, option.split("\r\n").length);
+//       fileswithbr.find((file) => fileName === file)
+//         ? null
+//         : fileswithbr.push(fileName);
+//     }
+//   });
+//   return { ...question, options: newOptions };
+// });
+// totalQuestionsInsert += updatedFile.length;
