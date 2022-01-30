@@ -432,10 +432,10 @@
         "query": " Q45. You have a UDP load balancer that is created by an instance that is running an NGINX proxy. Your application performance management (APM) solution can detect failures in your load balancer instance and transfer the Elastic IP to a passive standby instance. Using the AWS CLI, which script do you program into your APM to move the Elastic IP?",
         "code": null,
         "options": [
-            " A\r\n\r\n```\r\naws ec2 disassociate-address --association-id eipassoc-2bebb712\r\naws ec2 associate-address --instance-id i-8b953 --allocation-id eipalloc-02d021a\r\n```\r\n\r\n",
-            " B\r\n\r\n```\r\naws ec2 release-address --association-id eipassoc-2bebb712\r\naws ec2 assign-address --instance-id i-8b953 --allocation-id eipalloc-02d021a\r\n```\r\n\r\n",
-            " C\r\n\r\n```\r\naws ec2 stop-instances --instance-ids i-8b953\r\nwait 30\r\naws ec2 disassociate-address --association-id eipassoc-2bebb712\r\naws ec2 associate-address --instance-id i-8b953 --allocation-id eipalloc-02d021a\r\naws ec2 start-instances --instance-ids i-8b953\r\n```\r\n\r\n",
-            " D\r\n\r\n```\r\naws ec2 release-address --association-id eipassoc-2bebb712\r\naws ec2 associate-address --instance-id i-8b953 --allocation-id eipalloc-02d021a\r\n```\r\n\r\n"
+            "\r\naws ec2 disassociate-address --association-id eipassoc-2bebb712\r\naws ec2 associate-address --instance-id i-8b953 --allocation-id eipalloc-02d021a\r\n",
+            "\r\naws ec2 release-address --association-id eipassoc-2bebb712\r\naws ec2 assign-address --instance-id i-8b953 --allocation-id eipalloc-02d021a\r\n",
+            "\r\naws ec2 stop-instances --instance-ids i-8b953\r\nwait 30\r\naws ec2 disassociate-address --association-id eipassoc-2bebb712\r\naws ec2 associate-address --instance-id i-8b953 --allocation-id eipalloc-02d021a\r\naws ec2 start-instances --instance-ids i-8b953\r\n",
+            "\r\naws ec2 release-address --association-id eipassoc-2bebb712\r\naws ec2 associate-address --instance-id i-8b953 --allocation-id eipalloc-02d021a\r\n"
         ],
         "correctAns": 1
     },
@@ -613,10 +613,10 @@
         "query": " Q63. Your application performance management (APM) system can read the status of your CloudWatch monitors and perform scripted actions. When the CloudWatch metric StatusCheckFailed enters a failed state (a value of 1), you would like your APM to automatically repair the instance. Which script do you use?",
         "code": null,
         "options": [
-            " A\r\n\r\n```\r\naws ec2 stop-instances --instance-ids i-0b263919b6498b123\r\naws ec2 start-instances --instance-ids i-0b263919b6498b123\r\n```\r\n\r\n",
-            " B\r\n\r\n```\r\naws ec2 reboot-instances --instance-ids i-0b263919b6498b123\r\n```\r\n\r\n",
-            " C\r\n\r\n```\r\naws ec2 reboot-instances --instance-ids i-0b263919b6498b123\r\nwait 30\r\naws ec2 start-instance --instance-ids i-0b263919b6498b123\r\n```\r\n\r\n",
-            " D\r\n\r\n```\r\naws ec2 reboot-instances --instance-ids i-0b263919b6498b123\r\naws ec2 start-instances --instance-ids i-0b263919b6498b123\r\n```\r\n\r\n"
+            "\r\naws ec2 stop-instances --instance-ids i-0b263919b6498b123\r\naws ec2 start-instances --instance-ids i-0b263919b6498b123\r\n",
+            "\r\naws ec2 reboot-instances --instance-ids i-0b263919b6498b123\r\n",
+            "\r\naws ec2 reboot-instances --instance-ids i-0b263919b6498b123\r\nwait 30\r\naws ec2 start-instance --instance-ids i-0b263919b6498b123\r\n",
+            "\r\naws ec2 reboot-instances --instance-ids i-0b263919b6498b123\r\naws ec2 start-instances --instance-ids i-0b263919b6498b123\r\n"
         ],
         "correctAns": 1
     },
