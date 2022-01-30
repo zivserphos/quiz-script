@@ -12,12 +12,8 @@ files.map((fileName) => {
   const updatedFile = content.map((question) => {
     const newOptions = question.options.map((option, i) => {
       const numOfbr = option.split("\r\n");
-      // if (
-      //   option.includes("\r\n\r\n**Explanation**") &&
-      //   i === 3 &&
-      //   fileName.includes("wordpress")
-      // )
-      //   return option.split("\r\n\r\n**Explanation**")[0];
+      if (option.includes("\r\n\r\n") && i === 3 && fileName.includes("nodejs"))
+        return option.split("\r\n\r\n")[0];
       return option;
     });
     return { ...question, options: newOptions };
