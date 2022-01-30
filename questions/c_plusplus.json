@@ -110,10 +110,10 @@
         "query": " Q11. Suppose you need to keep a data struct with permission to access some resource based on the days of the week, but you can't use a bool variable for each day. You need to use one bit per day of the week. Which of the following is a correct implementation of a structure with bit fields for this application?",
         "code": null,
         "options": [
-            "cpp\r\ntypedef struct {\r\n    int sunday:1;\r\n    int monday:1;\r\n    // more days\r\n    int friday:1;\r\n    int saturday:1;\r\n} weekdays;\r\n",
-            "cpp\r\ntypedef char[7]: weekdays;\r\n",
-            "cpp\r\ntypedef struct {\r\n    bit sunday:1;\r\n    bit monday:1;\r\n    // more days\r\n    bit friday:1;\r\n    bit saturday:1;\r\n} weekdays;\r\n\r\n",
-            "cpp\r\ntypedef struct {\r\n    bit sunday;\r\n    bit monday;\r\n    // more days\r\n    bit friday;\r\n    bit saturday;\r\n} weekdays;\r\n"
+            "typedef struct {\r\n    int sunday:1;\r\n    int monday:1;\r\n    // more days\r\n    int friday:1;\r\n    int saturday:1;\r\n} weekdays;\r\n",
+            "typedef char[7]: weekdays;\r\n",
+            "typedef struct {\r\n    bit sunday:1;\r\n    bit monday:1;\r\n    // more days\r\n    bit friday:1;\r\n    bit saturday:1;\r\n} weekdays;\r\n\r\n",
+            "typedef struct {\r\n    bit sunday;\r\n    bit monday;\r\n    // more days\r\n    bit friday;\r\n    bit saturday;\r\n} weekdays;\r\n"
         ],
         "correctAns": 1
     },
@@ -206,10 +206,10 @@
         "query": " Q20. What is a valid definition for the `get_length` function, which returns the length of a null-terminated string?",
         "code": null,
         "options": [
-            "cpp\r\nint get_length(char *str) {\r\n    int count=0;\r\n    while(str[count++]);\r\n    return count-1;\r\n}\r\n",
-            "cpp\r\nint get_length(char *str) {\r\n    int count=0;\r\n    while(str!=NULL){\r\n        count++;\r\n        str++;\r\n    }\r\n    return count;\r\n}\r\n",
-            "cpp\r\nint get_length(char *str) {\r\n    int count=0;\r\n    while((*str)++)\r\n        count++;\r\n    return count;\r\n}\r\n",
-            "cpp\r\nint get_length(char *str) {\r\n    int count=0;\r\n    while(str++)\r\n        count++;\r\n    return count;\r\n}\r\n"
+            "int get_length(char *str) {\r\n    int count=0;\r\n    while(str[count++]);\r\n    return count-1;\r\n}\r\n",
+            "int get_length(char *str) {\r\n    int count=0;\r\n    while(str!=NULL){\r\n        count++;\r\n        str++;\r\n    }\r\n    return count;\r\n}\r\n",
+            "int get_length(char *str) {\r\n    int count=0;\r\n    while((*str)++)\r\n        count++;\r\n    return count;\r\n}\r\n",
+            "int get_length(char *str) {\r\n    int count=0;\r\n    while(str++)\r\n        count++;\r\n    return count;\r\n}\r\n"
         ],
         "correctAns": 1
     },
@@ -333,10 +333,10 @@
         "query": " Q32. For these declarations, which choice shows four equivalent ways to assign the character \"y\" in the string to a char variable c?",
         "code": "cpp\r\nchar buff[50] = \"strings as arrays of characters are fun!\"\r\nchar *str = buff+11;\r\nchar c;\r\n",
         "options": [
-            "cpp\r\nc = buff[16];\r\nc = str[5];\r\nc = *(buff+16);\r\nc = *(str+5);\r\n",
-            "cpp\r\nc = *(buff[15]);\r\nc = *(str[4]);\r\nc = buff+15;\r\nc = str+4;\r\n",
-            "cpp\r\nc = buff[15];\r\nc = str[4];\r\nc = *(buff+15);\r\nc = *(str+4);\r\n",
-            "cpp\r\nc = *(buff[16]);\r\nc = *(str[5]);\r\nc = buff+16;\r\nc = str+5;\r\n"
+            "c = buff[16];\r\nc = str[5];\r\nc = *(buff+16);\r\nc = *(str+5);\r\n",
+            "c = *(buff[15]);\r\nc = *(str[4]);\r\nc = buff+15;\r\nc = str+4;\r\n",
+            "c = buff[15];\r\nc = str[4];\r\nc = *(buff+15);\r\nc = *(str+4);\r\n",
+            "c = *(buff[16]);\r\nc = *(str[5]);\r\nc = buff+16;\r\nc = str+5;\r\n"
         ],
         "correctAns": 3
     },
@@ -344,10 +344,10 @@
         "query": " Q33. Which choice is the correct declaration for the class named Dog, derived from the Animal class?",
         "code": "cpp\r\nclass Animal{\r\n    //....\r\n}\r\n",
         "options": [
-            "cpp\r\nclass Dog :: public Animal {\r\n   //....\r\n};\r\n",
-            "cpp\r\nclass Dog : public Animal {\r\n   //....\r\n};\r\n",
-            "cpp\r\npublic class Animal :: Dog {\r\n   //....\r\n};\r\n",
-            "cpp\r\npublic class Dog extends Animal {\r\n   //....\r\n};\r\n"
+            "class Dog :: public Animal {\r\n   //....\r\n};\r\n",
+            "class Dog : public Animal {\r\n   //....\r\n};\r\n",
+            "public class Animal :: Dog {\r\n   //....\r\n};\r\n",
+            "public class Dog extends Animal {\r\n   //....\r\n};\r\n"
         ],
         "correctAns": 2
     },
@@ -376,10 +376,10 @@
         "query": " Q36. Which choice is _not_ a valid type definition of a structure that contains x and y coordinates as integers, and that can be used exactly as shown for the variable named `center`?",
         "code": "\r\ncoord center;\r\ncenter.x = 5;\r\ncenter.y = 3;\r\n",
         "options": [
-            "cpp\r\ntypedef struct coord {\r\n    int x;\r\n    int y;\r\n};\r\n",
-            "cpp\r\ntypedef struct coord {\r\n    int x;\r\n    int y;\r\n} coord;\r\n",
-            "cpp\r\ntypedef struct {\r\n    int x;\r\n    int y;\r\n} coord;\r\n",
-            "cpp\r\nstruct coord {\r\n    int x;\r\n    int y;\r\n};\r\n\r\ntypedef struct coord coord;\r\n"
+            "typedef struct coord {\r\n    int x;\r\n    int y;\r\n};\r\n",
+            "typedef struct coord {\r\n    int x;\r\n    int y;\r\n} coord;\r\n",
+            "typedef struct {\r\n    int x;\r\n    int y;\r\n} coord;\r\n",
+            "struct coord {\r\n    int x;\r\n    int y;\r\n};\r\n\r\ntypedef struct coord coord;\r\n"
         ],
         "correctAns": 1
     },
@@ -387,10 +387,10 @@
         "query": " Q37. Which choice does _not_ produce the same output as this code snippet? Assume the variable `i` will not be used anywhere else in the code.",
         "code": "cpp\r\nfor (i=1;i<10;i++){\r\n    cout<<i<<endl;\r\n}\r\n",
         "options": [
-            "cpp\r\ni=1;\r\nwhile(i<10){\r\n    cout<<++i<<endl;\r\n}\r\n",
-            "cpp\r\nfor (int i:{1,2,3,4,5,6,7,8,9}) {\r\n    cout<<i<<endl;\r\n}\r\n",
-            "cpp\r\ni = 1;\r\ndo {\r\n    cout<<i++<<endl;\r\n} while(i<10);\r\n",
-            "cpp\r\ni = 1;\r\nloop:\r\n    cout<<i++<<endl;\r\n    if(i<10) goto loop;\r\n"
+            "i=1;\r\nwhile(i<10){\r\n    cout<<++i<<endl;\r\n}\r\n",
+            "for (int i:{1,2,3,4,5,6,7,8,9}) {\r\n    cout<<i<<endl;\r\n}\r\n",
+            "i = 1;\r\ndo {\r\n    cout<<i++<<endl;\r\n} while(i<10);\r\n",
+            "i = 1;\r\nloop:\r\n    cout<<i++<<endl;\r\n    if(i<10) goto loop;\r\n"
         ],
         "correctAns": 1
     },
@@ -409,10 +409,10 @@
         "query": " Q39. Consider this function declaration of `is_even`, which takes in an integer and returns true if the argument is an even number and false otherwise. Which declarations are correct for overloaded versions of that function to support floating point numbers and string representations of numbers?",
         "code": "cpp\r\nbool is_even(int);\r\n",
         "options": [
-            "cpp\r\nbool is_even(float f);\r\nbool is_even(char *str);\r\n",
-            "cpp\r\nbool is_even(float f);\r\nbool is_even(char str);\r\n",
-            "cpp\r\nbool is_even_float(float f);\r\nbool is_even_str(char *str);\r\n",
-            "cpp\r\nfloat is_even(float f);\r\nchar *is_even(char *str);\r\n"
+            "bool is_even(float f);\r\nbool is_even(char *str);\r\n",
+            "bool is_even(float f);\r\nbool is_even(char str);\r\n",
+            "bool is_even_float(float f);\r\nbool is_even_str(char *str);\r\n",
+            "float is_even(float f);\r\nchar *is_even(char *str);\r\n"
         ],
         "correctAns": 1
     },
@@ -420,10 +420,10 @@
         "query": " Q40. Which choice is an include guard for the header file `my_library.h`?",
         "code": null,
         "options": [
-            "cpp\r\n#ifdef MY_LIBRARY_H\r\n#define MY_LIBRARY_H\r\n\r\n// my_library.h content\r\n\r\n#endif /* MY_LIBRARY_H */\r\n",
-            "cpp\r\n#ifndef MY_LIBRARY_H\r\n#define MY_LIBRARY_H\r\n\r\n// my_library.h content\r\n\r\n#endif /* MY_LIBRARY_H */\r\n",
-            "cpp\r\n#ifdef MY_LIBRARY_H\r\n#undef MY_LIBRARY_H\r\n\r\n// my_library.h content\r\n\r\n#endif /* MY_LIBRARY_H */\r\n",
-            "cpp\r\n#define MY_LIBRARY_H\r\n#include MY_LIBRARY_H\r\n\r\n// my_library.h content\r\n\r\n#undef MY_LIBRARY_H\r\n"
+            "#ifdef MY_LIBRARY_H\r\n#define MY_LIBRARY_H\r\n\r\n// my_library.h content\r\n\r\n#endif /* MY_LIBRARY_H */\r\n",
+            "#ifndef MY_LIBRARY_H\r\n#define MY_LIBRARY_H\r\n\r\n// my_library.h content\r\n\r\n#endif /* MY_LIBRARY_H */\r\n",
+            "#ifdef MY_LIBRARY_H\r\n#undef MY_LIBRARY_H\r\n\r\n// my_library.h content\r\n\r\n#endif /* MY_LIBRARY_H */\r\n",
+            "#define MY_LIBRARY_H\r\n#include MY_LIBRARY_H\r\n\r\n// my_library.h content\r\n\r\n#undef MY_LIBRARY_H\r\n"
         ],
         "correctAns": 2
     },
@@ -453,10 +453,10 @@
         "query": " Q43. Consider a class named `complexNumber`. Which code will result in an equivalent object?",
         "code": "cpp\r\ncomplexNumber(float real, float im)\r\n: real_part(real),\r\n im_part(im){}\r\n",
         "options": [
-            "cpp\r\ncomplexNumber(float real, float im) {\r\n    this->real = real_part;\r\n    this->im = im_part;\r\n}\r\n",
-            "cpp\r\ncomplexNumber(float real, float im) {\r\n    this->real_part(real);\r\n    this->im_part(im);\r\n}\r\n",
-            "cpp\r\ncomplexNumber(float real, float im) {\r\n    this->real_part = real;\r\n    this->im_part = im;\r\n}\r\n",
-            "cpp\r\ncomplexNumber(float real, float im) {\r\n    this->real_part = &real;\r\n    this->im_part = &im;\r\n}\r\n"
+            "complexNumber(float real, float im) {\r\n    this->real = real_part;\r\n    this->im = im_part;\r\n}\r\n",
+            "complexNumber(float real, float im) {\r\n    this->real_part(real);\r\n    this->im_part(im);\r\n}\r\n",
+            "complexNumber(float real, float im) {\r\n    this->real_part = real;\r\n    this->im_part = im;\r\n}\r\n",
+            "complexNumber(float real, float im) {\r\n    this->real_part = &real;\r\n    this->im_part = &im;\r\n}\r\n"
         ],
         "correctAns": 3
     },
@@ -626,10 +626,10 @@
         "query": " Q59. You want to sort my_array, declared below. Which choice is the correct call to std::sort, using a lambda expression as the comparison function?",
         "code": "cpp\r\nstd::array<uint32_t, 50> my_array;\r\n",
         "options": [
-            "cpp\r\nstd::sort(my_array.begin(), my_array.end(),\r\n    [](uint32_t a, uint32_t b) {\r\n        return a < b;\r\n    })\r\n",
-            "cpp\r\nlambda(uint32_t a, uint32_t b){\r\n    return a < b;\r\n}\r\nstd::sort(my_array.begin(), my_array.end(), lambda);\r\n",
-            "cpp\r\nstd::sort(my_array.begin(), my_array.end(),\r\n    lambda(uint32_t a, uint32_t b){\r\n        return a < b;\r\n    })\r\n",
-            "cpp\r\nlambda(uint32_t a, uint32_t b){\r\n    return a < b;\r\n}\r\nstd::sort(my_array.begin(), my_array.end(), &lambda);\r\n"
+            "std::sort(my_array.begin(), my_array.end(),\r\n    [](uint32_t a, uint32_t b) {\r\n        return a < b;\r\n    })\r\n",
+            "lambda(uint32_t a, uint32_t b){\r\n    return a < b;\r\n}\r\nstd::sort(my_array.begin(), my_array.end(), lambda);\r\n",
+            "std::sort(my_array.begin(), my_array.end(),\r\n    lambda(uint32_t a, uint32_t b){\r\n        return a < b;\r\n    })\r\n",
+            "lambda(uint32_t a, uint32_t b){\r\n    return a < b;\r\n}\r\nstd::sort(my_array.begin(), my_array.end(), &lambda);\r\n"
         ],
         "correctAns": 1
     },
@@ -637,10 +637,10 @@
         "query": " Q60. Which choice is the most reasonable implementation of the function std::mutex::lock() by using std::mutex::try_lock()?",
         "code": null,
         "options": [
-            "cpp\r\nvoid std::mutex::lock(){\r\n    while(!this->try_lock());\r\n}\r\n",
-            "cpp\r\nvoid std::mutex::lock(){\r\n    return (this->try_lock());\r\n}\r\n",
-            "cpp\r\nvoid std::mutex::lock(){\r\n    while(1)\r\n        this->try_lock();\r\n}\r\n",
-            "cpp\r\nvoid std::mutex::lock(){\r\n    while(this->try_lock());\r\n}\r\n"
+            "void std::mutex::lock(){\r\n    while(!this->try_lock());\r\n}\r\n",
+            "void std::mutex::lock(){\r\n    return (this->try_lock());\r\n}\r\n",
+            "void std::mutex::lock(){\r\n    while(1)\r\n        this->try_lock();\r\n}\r\n",
+            "void std::mutex::lock(){\r\n    while(this->try_lock());\r\n}\r\n"
         ],
         "correctAns": 1
     },
@@ -700,10 +700,10 @@
         "query": " Q66. What would be the correct declaration of a default constructor for a class named Sprite?",
         "code": null,
         "options": [
-            "cpp\r\n  public:\r\n    \t\tSprite();\r\n  ",
-            "cpp\r\n  private:\r\n    \t\tvoid Sprite();\r\n  ",
-            "cpp\r\n  public:\r\n    \t\tvoid Sprite();\r\n  ",
-            "cpp\r\n     private:\r\n    \t\tSprite();\r\n  "
+            "  public:\r\n    \t\tSprite();\r\n  ",
+            "  private:\r\n    \t\tvoid Sprite();\r\n  ",
+            "  public:\r\n    \t\tvoid Sprite();\r\n  ",
+            "     private:\r\n    \t\tSprite();\r\n  "
         ],
         "correctAns": 1
     },
