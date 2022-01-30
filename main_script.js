@@ -12,7 +12,8 @@ files.map((fileName) => {
   const updatedFile = content.map((question) => {
     const newOptions = question.options.map((option, i) => {
       const numOfbr = option.split("\r\n");
-      if (option.startsWith("cpp\r\n")) return option.split("cpp\r\n")[1];
+      if (option.includes("https://") && i === 3 && fileName.includes("unity"))
+        return option.split("https://")[1];
       return option;
     });
     return { ...question, options: newOptions };
