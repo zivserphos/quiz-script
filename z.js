@@ -1,13 +1,13 @@
 const question = {
-  query: " Q20. What is the best semantic markup for the sentence shown?",
-  code: 'markdown\r\nOn July 21, 1969, Neil Armstrong said, "One small step for man, one giant leap for mankind."\r\n',
+  query: " Q16. What is the output of this code?",
+  code: 'cpp\r\n#include <iostream>\r\n\r\nint main(){\r\n    int x=10, y=20;\r\n    std::cout << "x = " << x++ << " and y = " << --y << std::endl;\r\n    std::cout << "x = " << x-- << " and y = " << ++y << std::endl;\r\n    return(0);\r\n}\r\n',
   options: [
-    '<p>\r\n  On <time datetime="1969-07-21">July 21, 1969</time>, Neil Armstrong said,\r\n  <q cite="https://www.hq.nasa.gov/alsj/a11l/a11.html"\r\n    >One small step for man, one giant leap for mankind.</q\r\n  >\r\n</p>\r\n',
-    '<p>\r\n  On July 21, 1969, Neil Armstrong said,\r\n  <q cite="https://www.hq.nasa.gov/alsj/a11l/a11.html"\r\n    >One small step for man, one giant leap for mankind.</q\r\n  >\r\n</p>\r\n',
-    "<p>\r\n  On July 21, 1969, Neil Armstrong said, <q>One small step for man, one giant leap for mankind.</q>\r\n</p>\r\n",
-    '<p>\r\n  On <time datetime="07-21-1969">July 21, 1969</time>, Neil Armstrong said,\r\n  <q cite="https://www.hq.nasa.gov/alsj/a11l/a11.html"\r\n    >One small step for man, one giant leap for mankind.</q\r\n  >\r\n</p>\r\n',
+    " `x = 10 and y = 20`  \r\n       `x = 11 and y = 19`\r\n",
+    " `x = 11 and y = 19`  \r\n       `x = 10 and y = 20`\r\n",
+    " `x = 10 and y = 19`  \r\n       `x = 11 and y = 20`\r\n",
+    " `x = 11 and y = 20`  \r\n       `x = 10 and y = 19`\r\n\r\n",
   ],
-  correctAns: 1,
+  correctAns: 3,
 };
 
 const x = (question) => {

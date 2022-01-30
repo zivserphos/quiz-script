@@ -1010,7 +1010,7 @@
             " `section * p`",
             " `section + p`",
             " `section ~ p`",
-            " `section > p`\r\n\r\nReference: [Child combinator](https://developer.mozilla.org/en-US/docs/Web/CSS/Child_combinator)\r\n\r\n"
+            " `section > p`\r\n\r\n"
         ],
         "correctAns": 4
     },
@@ -1100,7 +1100,7 @@
             " a[href*='domain.com'",
             " {\r\n  color: rgb(255, 155, 155);\r\n}\r\n\r\n",
             " a[href*='domain.com'",
-            "\r\n\r\n[Reference",
+            "\r\n\r\n[",
             "(https://www.smashingmagazine.com/2007/07/css-specificity-things-you-should-know/)\r\n\r\n"
         ],
         "correctAns": 3

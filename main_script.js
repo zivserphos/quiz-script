@@ -12,14 +12,14 @@ files.map((fileName) => {
   const updatedFile = content.map((question) => {
     const newOptions = question.options.map((option, i) => {
       const numOfbr = option.split("\r\n");
-      if (option.startsWith("markdown\r\n"))
-        return option.split("markdown\r\n")[1];
+      if (option.includes("Explanation:") && i === 3)
+        return option.split("Explanation:")[0];
       return option;
     });
     return { ...question, options: newOptions };
   });
   totalQuestionsInsert += updatedFile.length;
-  fs.writeFileSync(`./questions/${fileName}`, JSON.stringify(updatedFile));
+  // fs.writeFileSync(`./questions/${fileName}`, JSON.stringify(updatedFile));
 });
 
 console.log(totalQuestionsInsert);
