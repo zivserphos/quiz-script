@@ -13,7 +13,7 @@ files.map((fileName) => {
     const newOptions = question.options.map((option, i) => {
       const numOfbr = option.split("\r\n");
       if (option.includes("https://") && i === 3 && fileName.includes("unity"))
-        return option.split("https://")[1];
+        return option.split("https://")[0];
       return option;
     });
     return { ...question, options: newOptions };

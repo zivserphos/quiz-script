@@ -35,7 +35,7 @@
             " To reduce scene file size",
             " To externally parse a scene and its objects",
             " To optimize scene loading and unloading",
-            "docs.unity3d.com/2021.2/Documentation/Manual/TextSceneFormat.html\r\n\r\n"
+            " To improve platform compatibility\r\n\r\n> Also, the text data can be generated and parsed by tools, making it possible to create and analyze scenes automatically.\r\n> "
         ],
         "correctAns": 2
     },
@@ -45,7 +45,7 @@
             " Gamma color space",
             " Depth of field",
             " Foreshortening",
-            "docs.unity3d.com/2019.3/Documentation/Manual/CamerasOverview.html\r\n"
+            " Bloom\r\n\r\nGamma color space and bloom are related to graphics. Depth of field is related to objects bluring when at a certain distance from the camera.\r\n"
         ],
         "correctAns": 3
     },
@@ -55,7 +55,7 @@
             " To override standard scene cameras with cinematic behaviours",
             " To determine what cameras will see when arriving at specific locations",
             " To create predefined camera presets to apply on standard cameras",
-            "docs.unity3d.com/Packages/com.unity.cinemachine@2.9/manual/CinemachineVirtualCamera.html\r\n\r\n"
+            " To act as dummy cameras for fooling meshes into thinking they are being seen\r\n\r\n> Use the Aim, Body, and Noise properties to specify how the Virtual Camera animates position, rotation, and other properties. The Virtual Camera applies these settings to the Unity Camera when Cinemachine Brain or Timeline transfers control of the Unity camera to the Virtual Camera.\r\n> "
         ],
         "correctAns": 3
     },
@@ -65,7 +65,7 @@
             " An audio clip asset",
             " An MP3 file",
             " A WAV file",
-            "docs.unity3d.com/Script"
+            " An OGG file\r\n\r\nThe Microphone class saves captured audio as an audio clip asset, which may then be stored as a OGG file.\r\n"
         ],
         "correctAns": 1
     },
@@ -85,7 +85,7 @@
             " Cubits",
             " Feet",
             " Inches",
-            "docs.unity3d.com/2019.3/Documentation/Manual/BestPracticeMakingBelievableVisuals1.html\r\n\r\n"
+            " Meters\r\n\r\nUnity's default units are in meters (Unreal Engine too). If you keep this in mind and model with your units alined to meters, the lighting system will work minimal artifacting.\r\n"
         ],
         "correctAns": 4
     },
@@ -215,7 +215,7 @@
             " Range",
             " HideInInspector",
             " Serializable",
-            "docs.unity3d.com/Script"
+            " SerializedField\r\n\r\n"
         ],
         "correctAns": 4
     },
@@ -225,7 +225,7 @@
             " Group static UI elements on one canvas, and dynamic elements on a separate canvas",
             " Position all canvas objects to the world origin",
             " Group as many UI elements as possible onto only one canvas",
-            "unity.com/how-to/unity-ui-optimization-tips\r\n\r\n"
+            " Divide the screen into multiple canvas objects, each sized to a quarter of the screen size\r\n\r\nEvery time an element on a canvas is updated, the whole canvas is redrawn. If elements are never being updated, keeping them on a single canvas is ideal.\r\n"
         ],
         "correctAns": 1
     },
@@ -235,7 +235,7 @@
             " It inserts 20 space characters as a default value into the string variable below",
             " It inserts 20 pixels of margin on all edges around the variable inside the Object Inspector",
             " It inserts 20 pixels of empty space above the variable inside the Object Inspector",
-            "docs.unity3d.com/Script"
+            " It inserts 20 pixels of empty space below the variable inside the Object Inspector\r\n\r\nThis is a great way to customize your inspector without writing a new inspector script for it.\r\n"
         ],
         "correctAns": 4
     },
@@ -275,7 +275,7 @@
             " AnimatorClipInfo",
             " StateMachineBehaviour",
             " AnimationInfo",
-            "docs.unity3d.com/Script"
+            " AnimatorUtility\r\n\r\n`OnStateMachineEnter()` and `OnStateMachineExit()` are the methods of the StateMachineBehavior class that handle this. AnimatorClipInfo displays information about the current clip being played, AnimatiorUtility deals with transform hierarchy, and AnimationInfo was removed in version 5.0.\r\n"
         ],
         "correctAns": 2
     },
@@ -355,7 +355,7 @@
             " Virtual reality",
             " Augmented reality",
             " Motion capture",
-            "github.com/Unity-Technologies/DeLightingTool\r\n"
+            " Photogrammetry\r\n\r\nWhen you use photogrammetry to scan in models from the real world, and bring in those models into Unity (or any renderer), you will notice that the lighting information is baked into the texture. You can remove the baked in lighting information with various tools online, but even Unity themeless wrote a custom tool for just this; check it out!\r\n"
         ],
         "correctAns": 4
     },
@@ -375,7 +375,7 @@
             " It prints a Quaternion to a string that shows its X, Y, and Z rotation in degrees",
             " It converts a 3D orientation from Radiens to a Quaternion",
             " It converts a 3D orientation that is measured in degrees into a Quaternion",
-            "docs.unity3d.com/Script"
+            " It converts a Quaternion into a Vector3 in which X, Y, and Z are measured in degrees\r\n\r\nSimplfying the math: Unity uses Quaternions internally to avoid Gimbal lock.\r\nThe Euler XYZ (Pitch, Yaw, and Roll) axises can lock up when two axies are aligned.\r\nQuaternion.Euler converts the Euler number provided to the internally used Quarternion, to prevent this problem.\r\n"
         ],
         "correctAns": 3
     },
@@ -385,7 +385,7 @@
             " It deactivates the specified game object immidiately",
             " It deletes the specified game object after the current update loop",
             " It deletes the specified game object when the application terminates",
-            "docs.unity3d.com/Script"
+            " It deletes the specified game object immidaitely\r\n\r\n> The object obj is destroyed immediately after the current Update loop, or t seconds from now if a time is specified.\r\n> "
         ],
         "correctAns": 2
     },
@@ -395,7 +395,7 @@
             " audio attenuation",
             " exposed parameters",
             " ParamEQ",
-            "www.youtube.com/watch?v=9tqi1aXlcpE\r\n\r\n"
+            " Audio Mixer groups\r\n\r\nAudio attenuation is about energy loss, commonly refered to as \"gain\". ParamEQ allows you to change the frequency of the audio - \"pitch\", with no C# support. Audio Mixer groups do allow you to control audio effects, but not through C#.\r\nOfficial Unity Tutorial: "
         ],
         "correctAns": 2
     },
@@ -405,7 +405,7 @@
             " Mip Maps",
             " avatar masks",
             " StateMachineBehaviour scripts",
-            "docs.unity3d.com/Manual/class-AvatarMask.html\r\n\r\n"
+            " animation events\r\n\r\nMip Maps are a technique that improves image quality and reduces rendering speed, at the cost of storage space, by including smaller copies of the image in the same file. Animation events allow you to call functions at points in the timeline.\r\n"
         ],
         "correctAns": 2
     },
@@ -415,7 +415,7 @@
             " run multiple functions on different game objects in parallel",
             " switch between different scene cameras on demand",
             " control the playback of a timeline instance in the scene",
-            "docs.unity3d.com/2019.2/Documentation/Manual/class-PlayableDirector.html\r\n\r\n"
+            " record a gameplay session to a video file\r\n\r\nThe PlayableDirector component stores the link between a Timeline instance and a Timeline Asset.\r\n"
         ],
         "correctAns": 3
     },
@@ -435,7 +435,7 @@
             " EventSystem",
             " markers",
             " signals",
-            "forum.unity.com/threads/new-in-2019-1-marker-customization.594712/ and "
+            " packets\r\n\r\nEventSystem is not a timeline feature, neither are packets. Timeline signals are a subfeature of the markers, markers can directly initiate code, while a signal can only send the signal to a reciver.\r\n"
         ],
         "correctAns": 2
     },
