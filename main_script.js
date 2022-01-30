@@ -12,7 +12,8 @@ files.map((fileName) => {
   const updatedFile = content.map((question) => {
     const newOptions = question.options.map((option, i) => {
       const numOfbr = option.split("\r\n");
-      if (option.includes("[reference]")) return option.split("[reference]")[0];
+      if (option.includes("**Reference:**"))
+        return option.split("**Reference:**")[0];
       return option;
     });
     return { ...question, options: newOptions };

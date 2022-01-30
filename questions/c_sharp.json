@@ -15,7 +15,7 @@
             " Delegates are not supported in the current version of C#",
             " They cannot be used as callbacks.",
             " Only variables can be passed to delegates as parameters.",
-            " They can be chained together.\r\n\r\n**Reference** [Official documentation: Delegates](https://docs.microsoft.com/en-us/dotnet/csharp/programming-guide/delegates/#delegates-overview)\r\n\r\n"
+            " They can be chained together.\r\n\r\n"
         ],
         "correctAns": 4
     },
@@ -25,7 +25,7 @@
             " reactive",
             " inherited callback",
             " task-based",
-            " callback-based\r\n\r\n**Reference** [Official documentation: Task asynchronous programming model](https://docs.microsoft.com/en-us/dotnet/csharp/programming-guide/concepts/async/task-asynchronous-programming-model)\r\n\r\n"
+            " callback-based\r\n\r\n"
         ],
         "correctAns": 3
     },
@@ -46,7 +46,7 @@
             " Variables passed to out specify that the parameter is an output parameter, while ref specifies that a variable may be passed to a function without being initialized.",
             " Variables passed to ref can be passed to a function without being initialized, while out specifies that the value is a reference value that can be changed inside the calling method.",
             " Variables passed to out can be passed to a function without being initialized, while ref specifies that the value is a reference value that can be changed inside the calling method.",
-            " Variables passed to ref specify that the parameter is an output parameter, while out specifies that a variable may be passed to a function without being initialized.\r\n\r\n**Reference** [Official documentation: ref](https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/keywords/ref)\r\n\r\n**Reference** [Official documentation: out parameter modifier](https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/keywords/out-parameter-modifier)\r\n\r\n"
+            " Variables passed to ref specify that the parameter is an output parameter, while out specifies that a variable may be passed to a function without being initialized.\r\n\r\n"
         ],
         "correctAns": 3
     },
@@ -56,7 +56,7 @@
             " reflection",
             " serialization",
             " abstraction",
-            " dependency injection\r\n\r\n**Reference** [Official documentation: Reflection ](https://docs.microsoft.com/en-us/dotnet/csharp/programming-guide/concepts/reflection)\r\n\r\n"
+            " dependency injection\r\n\r\n"
         ],
         "correctAns": 1
     },
@@ -67,7 +67,7 @@
             " a private class that uses multithreading",
             " multithread coding",
             " thread mismanagement",
-            " a potential deadlock\r\n\r\n**Reference** [Official documentation: Deadlocks and race conditions](https://docs.microsoft.com/en-us/dotnet/standard/threading/managed-threading-best-practices#deadlocks-and-race-conditions)\r\n\r\n"
+            " a potential deadlock\r\n\r\n"
         ],
         "correctAns": 4
     },
@@ -77,7 +77,7 @@
             " Anonymous types don't have type names",
             " Anonymous types can only be static",
             " Anonymous types can be used only in struts",
-            " Anonymous types don't work with LINQ.\r\n\r\n**Reference** [Official documentation: Anonymous Types](https://docs.microsoft.com/en-us/dotnet/csharp/fundamentals/types/anonymous-types)\r\n\r\n"
+            " Anonymous types don't work with LINQ.\r\n\r\n"
         ],
         "correctAns": 1
     },
@@ -87,7 +87,7 @@
             " when you need a jagged collection structure",
             " when you need to store values of the same type",
             " when you need to store key-value pairs rather than single values",
-            " when you need an ordered, searchable list\r\n\r\n**Reference** [Official documentation: Dictionary<TKey,TValue> Class](https://docs.microsoft.com/en-us/dotnet/api/system.collections.generic.dictionary-2?view=net-5.0)\r\n\r\n"
+            " when you need an ordered, searchable list\r\n\r\n"
         ],
         "correctAns": 3
     },
@@ -107,7 +107,7 @@
             " when you try to instantiate two objects at the same time in the same class or struct",
             " when you are trying to execute an action after a user event is registered",
             " when simultaneous instructions are waiting on each other to finish before executing",
-            " when you try to execute a series of events simultaneously on multiple threads\r\n\r\n**Reference** [Official documentation: Deadlocks and race conditions](https://docs.microsoft.com/en-us/dotnet/standard/threading/managed-threading-best-practices#deadlocks-and-race-conditions)\r\n\r\n"
+            " when you try to execute a series of events simultaneously on multiple threads\r\n\r\n"
         ],
         "correctAns": 3
     },
@@ -117,7 +117,7 @@
             " It allows access to asynchronous methods in the C# API",
             " It allows thread pooling and synchronous processes in static classes.",
             " It allows the await keyword to be used in a method",
-            " It allows access to synchronous methods in the C# API\r\n\r\n**Reference** [Official documentation: async](https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/keywords/async)\r\n\r\n"
+            " It allows access to synchronous methods in the C# API\r\n\r\n"
         ],
         "correctAns": 3
     },
@@ -127,7 +127,7 @@
             " a class or struct, including its variables and functions",
             " a primitive data type that can be created only at compile time",
             " a value type that can be used only with an abstract class",
-            " an instance of a class or struct that includes fields, properties, and/or methods\r\n\r\n**Reference** [Official documentation: Objects](https://docs.microsoft.com/en-us/dotnet/csharp/fundamentals/object-oriented/objects)\r\n\r\n"
+            " an instance of a class or struct that includes fields, properties, and/or methods\r\n\r\n"
         ],
         "correctAns": 4
     },
@@ -137,7 +137,7 @@
             " `var<<!---->T> userData = new <<!---->T> { name = \"John\", age = 32 };`",
             " `var userData = new { name = \"John\", age = 32 };`",
             " `AType userData = new AType { name = \"John\", age = 32 };`",
-            " `Anonymous<T> userData = new Anonymous<T> { name = \"John\", age = 32 };`\r\n\r\n**Reference** [Official documentation: Anonymous Types](https://docs.microsoft.com/en-us/dotnet/csharp/fundamentals/types/anonymous-types)\r\n\r\n"
+            " `Anonymous<T> userData = new Anonymous<T> { name = \"John\", age = 32 };`\r\n\r\n"
         ],
         "correctAns": 2
     },
@@ -147,7 +147,7 @@
             " nothing",
             " a Boolean",
             " a string variable",
-            " an integer\r\n\r\n**Reference** [Official documentation: void](https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/void)\r\n\r\n"
+            " an integer\r\n\r\n"
         ],
         "correctAns": 1
     },
@@ -158,7 +158,7 @@
             " ascending",
             " unordered",
             " descending",
-            " first in, first out\r\n\r\n**Reference** [dotnetpattern: LINQ OrderBy Operator](http://dotnetpattern.com/linq-orderby-operator)\r\n\r\n"
+            " first in, first out\r\n\r\n"
         ],
         "correctAns": 1
     },
@@ -168,7 +168,7 @@
             " Namespaces",
             " LINQ",
             " Type Aliasing",
-            " Assemblies\r\n\r\n**Reference** [Official documentation: Language Integrated Query (LINQ) Overview](https://docs.microsoft.com/en-us/dotnet/csharp/programming-guide/concepts/linq/)\r\n\r\n"
+            " Assemblies\r\n\r\n"
         ],
         "correctAns": 2
     },
@@ -178,7 +178,7 @@
             " /_/ - Single Line\r\n      /_ - Multiline\r\n",
             " // Multiline\r\n      /_ Single Line _/\r\n",
             " //\\* Multiline\r\n      / Single Line\r\n",
-            " // Single Line\r\n      /_ Multiline _/\r\n\r\n**Reference** [w3schools: C# Comments](https://www.w3schools.com/cs/cs_comments.php)\r\n\r\n"
+            " // Single Line\r\n      /_ Multiline _/\r\n\r\n"
         ],
         "correctAns": 4
     },
@@ -188,7 +188,7 @@
             " Make it public",
             " Make it static",
             " Make it private",
-            " Make it virtual\r\n\r\n**Reference** [Official documentation: virtual](https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/keywords/virtual)\r\n\r\n**Reference** [Official documentation: abstract](https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/keywords/abstract)\r\n\r\n"
+            " Make it virtual\r\n\r\n"
         ],
         "correctAns": 4
     },
@@ -198,7 +198,7 @@
             " public int Age { get - set }",
             " public int Age: get set;",
             " public int Age (get, set );",
-            " public int Age { get; set; }\r\n\r\n**Reference** [Official documentation: Using Properties](https://docs.microsoft.com/en-us/dotnet/csharp/programming-guide/classes-and-structs/using-properties)\r\n\r\n"
+            " public int Age { get; set; }\r\n\r\n"
         ],
         "correctAns": 4
     },
@@ -208,7 +208,7 @@
             " a class that is denoted by the class keyword (can be seen and used by any other class in the system--thus it is by default public)",
             " something denoted by the abstract keyword and used system wide; if you want any program to create an object of a class you use the abstract class",
             " a class that is denoted by the virtual keyword",
-            " a class that can be used only as base class\r\n\r\n**Reference** [Official documentation: Abstract and Sealed Classes and Class Members](https://docs.microsoft.com/en-us/dotnet/csharp/programming-guide/classes-and-structs/abstract-and-sealed-classes-and-class-members)\r\n\r\n"
+            " a class that can be used only as base class\r\n\r\n"
         ],
         "correctAns": 4
     },
@@ -218,7 +218,7 @@
             " The thread is destroyed and memory is freed up.",
             " The thread runs in loop until the next assignment.",
             " The thread goes inactive in the background and waits for garbage collection.",
-            " The thread returns to the pool for reuse.\r\n\r\n**Reference** [Official documentation: Thread pool characteristics](https://docs.microsoft.com/en-us/dotnet/standard/threading/the-managed-thread-pool#thread-pool-characteristics)\r\n\r\n"
+            " The thread returns to the pool for reuse.\r\n\r\n"
         ],
         "correctAns": 4
     },
@@ -228,7 +228,7 @@
             " a second base class",
             " a revised class",
             " a derived class",
-            " a parent class\r\n\r\n**Reference** [Official documentation: Inheritance](https://docs.microsoft.com/en-us/dotnet/csharp/fundamentals/object-oriented/inheritance)\r\n\r\n"
+            " a parent class\r\n\r\n"
         ],
         "correctAns": 3
     },
@@ -238,7 +238,7 @@
             " hide built-in operatores when necessary",
             " add methods to be interpreted by the compiler at runtime",
             " define how enums and other primitive value types work within the rest of the application",
-            " define custom functionality for common operators like addition and equality\r\n\r\n**Reference** [Official documentation: Operator overloading](https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/operators/operator-overloading)\r\n\r\n"
+            " define custom functionality for common operators like addition and equality\r\n\r\n"
         ],
         "correctAns": 4
     },
@@ -248,7 +248,7 @@
             " to delete duplicate data",
             " to bind namespaces and assemblies",
             " to query and transform data",
-            " to connect assemblies\r\n\r\n**Reference** [Official documentation: Language Integrated Query (LINQ) Overview](https://docs.microsoft.com/en-us/dotnet/csharp/programming-guide/concepts/linq/#query-expression-overview)\r\n\r\n"
+            " to connect assemblies\r\n\r\n"
         ],
         "correctAns": 3
     },
@@ -258,7 +258,7 @@
             " public List<string names> contacts = new List<string names>();",
             " public List(string names) contacts = new List(string names)();",
             " var contacts = new List<string>();",
-            " var contacts = new List(string);\r\n\r\n**Reference** [Official documentation: List<T> Class](https://docs.microsoft.com/en-us/dotnet/api/system.collections.generic.list-1?view=net-5.0)\r\n\r\n"
+            " var contacts = new List(string);\r\n\r\n"
         ],
         "correctAns": 3
     },
@@ -268,7 +268,7 @@
             " Throw clauses fire only at runtime, while throw exceptions can fire at any time.",
             " Throw exceptions overwrite the stack trace, while throw clauses retain the stack information.",
             " Throw clauses overwrite the stack trace, while throw exceptions retain the stack information.",
-            " Throw exceptions fire only at runtime, while throw clauses can fire during compile time.\r\n\r\n**Reference** [Official documentation: throw](https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/keywords/throw)\r\n\r\n**Reference** [c-sharpcorner: Difference Between Throw Exception and Throw Clause](https://www.c-sharpcorner.com/UploadFile/akkiraju/difference-between-throw-exception-and-throw-clause/)\r\n\r\n"
+            " Throw exceptions fire only at runtime, while throw clauses can fire during compile time.\r\n\r\n"
         ],
         "correctAns": 2
     },
@@ -288,7 +288,7 @@
             " system actions that communicate directly with the compiler at runtime",
             " actions that execute when the code compiles, generating logs and test output",
             " actions that generate notifications, which are sent to their registered listeners",
-            " user-only methods that send data to the application's back end\r\n\r\n**Reference** [Official documentation: Introduction to events](https://docs.microsoft.com/en-us/dotnet/csharp/events-overview)\r\n\r\n"
+            " user-only methods that send data to the application's back end\r\n\r\n"
         ],
         "correctAns": 3
     },
@@ -298,7 +298,7 @@
             " unordered collections of numerc values",
             " key-value pairs of any C# supported type",
             " class and struct instances",
-            " multiple variables, or collections, of the same type\r\n\r\n**Reference** [Official documentation: Arrays](https://docs.microsoft.com/en-us/dotnet/csharp/programming-guide/arrays/)\r\n\r\n"
+            " multiple variables, or collections, of the same type\r\n\r\n"
         ],
         "correctAns": 4
     },
@@ -308,7 +308,7 @@
             " string currentState = (string)AppState.Loading;",
             " string currentState = AppState.Loading.integralVal;",
             " int currentState = AppState.Loading.rawValue;",
-            " int currentState = (int)AppState.Loading;\r\n\r\n**Reference** [Official documentation: Enumeration types](https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/enum#conversions)\r\n\r\n"
+            " int currentState = (int)AppState.Loading;\r\n\r\n"
         ],
         "correctAns": 4
     },
@@ -318,7 +318,7 @@
             " d",
             " \\a",
             " \\b",
-            " \\w\r\n\r\n**Reference** [regular-expressions: Word Boundaries](https://www.regular-expressions.info/wordboundaries.html)\r\n\r\n**Reference** [Official documentation: Regular Expression Language - Quick Reference](https://docs.microsoft.com/en-us/dotnet/standard/base-types/regular-expression-language-quick-reference)\r\n\r\n"
+            " \\w\r\n\r\n"
         ],
         "correctAns": 3
     },
@@ -329,7 +329,7 @@
             " Both the FirstName and LastName properties need to be implemented.",
             " Neither, they are both optional.",
             " Only the LastName property needs to be implemented.",
-            " Only the FirstName property needs to be implemented.\r\n\r\n**Reference** [Official documentation: interface](https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/keywords/interface)\r\n\r\n"
+            " Only the FirstName property needs to be implemented.\r\n\r\n"
         ],
         "correctAns": 1
     },
@@ -349,7 +349,7 @@
             " A regular expression is a C# tool used to parse HTML",
             " A regular expression is a special text string for describing a search patters.",
             " A regular expression allows a variable to be passed by reference.",
-            " A regular expression allows a class to conform to the Equatable protocol.\r\n\r\n**Reference** [Official documentation: Regular Expression Language - Quick Reference](https://docs.microsoft.com/en-us/dotnet/standard/base-types/regular-expression-language-quick-reference)\r\n\r\n**Reference** [Official documentation: .NET regular expressions](https://docs.microsoft.com/en-us/dotnet/standard/base-types/regular-expressions)\r\n\r\n"
+            " A regular expression allows a class to conform to the Equatable protocol.\r\n\r\n"
         ],
         "correctAns": 2
     },
@@ -359,7 +359,7 @@
             " To define behaviours of the class",
             " To hold information and data contained in the class object",
             " To communicate between classes and object",
-            " To store the class definition value\r\n\r\n**Reference** [Official documentation: Introduction to classes](https://docs.microsoft.com/en-us/dotnet/csharp/fundamentals/types/classes)\r\n\r\n"
+            " To store the class definition value\r\n\r\n"
         ],
         "correctAns": 2
     },
@@ -369,7 +369,7 @@
             " to increase code performance",
             " all of these answers",
             " when code reuse is a priority",
-            " when type safety is important\r\n\r\n**Reference** [Official documentation: Generic classes and methods](https://docs.microsoft.com/en-us/dotnet/csharp/fundamentals/types/generics)\r\n\r\n"
+            " when type safety is important\r\n\r\n"
         ],
         "correctAns": 2
     },
@@ -380,7 +380,7 @@
             " Login successful...",
             " Valid user!",
             " an error, because the method signature of Login doesn't match the delegate",
-            " Login successful... Valid user!\r\n\r\n**Reference** [Official documentation: Introduction to Delegates](https://docs.microsoft.com/en-us/dotnet/csharp/delegates-overview)\r\n\r\n**Reference** [Official documentation: Introduction to Events](https://docs.microsoft.com/en-us/dotnet/csharp/events-overview)\r\n\r\n"
+            " Login successful... Valid user!\r\n\r\n"
         ],
         "correctAns": 3
     },
@@ -390,7 +390,7 @@
             " public class User",
             " abstract User {}",
             " sealed class User",
-            " private sealed class User\r\n\r\n**Reference** [Official documentation: Abstract and Sealed Classes and Class Members](https://docs.microsoft.com/en-us/dotnet/csharp/programming-guide/classes-and-structs/abstract-and-sealed-classes-and-class-members)\r\n\r\n"
+            " private sealed class User\r\n\r\n"
         ],
         "correctAns": 3
     },
@@ -400,7 +400,7 @@
             " `var contacts = new List<string>();`",
             " `var contacts = new List(string);`",
             " `public List<string names> contacts = new List<string names>();`",
-            " `public List(string names) contacts = new List(string names);`\r\n\r\n**Reference** [Official documentation: List<T>](https://docs.microsoft.com/en-us/dotnet/api/system.collections.generic.list-1?view=net-5.0)\r\n\r\n"
+            " `public List(string names) contacts = new List(string names);`\r\n\r\n"
         ],
         "correctAns": 1
     },
@@ -410,7 +410,7 @@
             " non-static classes need to be initialized before use, while static classes do not",
             " non-static classes are accessible only from an interface while static classes are accessible from anywhere",
             " non-static classes need to initialize all class members at runtime, while static classes do not",
-            " non-static classes do not need to be initialized while static classes do\r\n\r\n**Reference** [stackoverflow](https://stackoverflow.com/questions/20451554/whats-the-function-of-a-static-constructor-in-a-non-static-class)\r\n\r\n**Reference** [Official documentation: Static Constructors](https://docs.microsoft.com/en-us/dotnet/csharp/programming-guide/classes-and-structs/static-constructors)\r\n\r\n"
+            " non-static classes do not need to be initialized while static classes do\r\n\r\n"
         ],
         "correctAns": 1
     },
@@ -420,7 +420,7 @@
             " type safety",
             " single inheritance",
             " dependency injection",
-            " multiple inheritance\r\n\r\n**Reference** [c-sharpcorner: Type Safety in .NET](https://www.c-sharpcorner.com/UploadFile/vikie4u/type-safety-in-net/)\r\n\r\n"
+            " multiple inheritance\r\n\r\n"
         ],
         "correctAns": 1
     },
@@ -430,7 +430,7 @@
             " Mark the User class with the `DeserializableAttribute`.",
             " Declare the class as `public serializable class User {}`.",
             " Mark the User class with the `SerializableAttribute` attribute.",
-            " Declare the class as `private serializable class User {}`.\r\n\r\n**Reference** [Official documentation: SerializableAttribute Class](https://docs.microsoft.com/en-us/dotnet/api/system.serializableattribute?view=net-5.0)\r\n\r\n"
+            " Declare the class as `private serializable class User {}`.\r\n\r\n"
         ],
         "correctAns": 3
     },
@@ -440,7 +440,7 @@
             " public delegate ResultCallback(int responseCode)",
             " public delegate void ResultCallback<(int) responseCode>;",
             " public void delegate ResultCallback<int responseCode>;",
-            " public delegate void ResultCallback(int responseCode);\r\n\r\n**Reference** [Official documentation: Delegates](https://docs.microsoft.com/en-us/dotnet/csharp/programming-guide/delegates/)\r\n\r\n"
+            " public delegate void ResultCallback(int responseCode);\r\n\r\n"
         ],
         "correctAns": 4
     },
@@ -450,7 +450,7 @@
             " non-static methods always need to have a void return type",
             " non-static methods do not have access to static member variables",
             " static methods do not have to instantiate an instance of the class to call the method",
-            " static methods always have to be public\r\n\r\n**Reference** [Official documentation: Static Members](https://docs.microsoft.com/en-us/dotnet/csharp/programming-guide/classes-and-structs/static-classes-and-static-class-members#static-members)\r\n\r\n"
+            " static methods always have to be public\r\n\r\n"
         ],
         "correctAns": 3
     },
@@ -460,7 +460,7 @@
             " public void event ResultCallback apiResult;",
             " public event ResultCallback(() -> apiResult);",
             " public event void ResultCallback",
-            " public event ResultCallback apiResult;\r\n\r\n**Reference** [Official documentation: Introduction to events](https://docs.microsoft.com/en-us/dotnet/csharp/events-overview)\r\n\r\n"
+            " public event ResultCallback apiResult;\r\n\r\n"
         ],
         "correctAns": 4
     },
@@ -470,7 +470,7 @@
             " if there is an error, it won't execute at all",
             " between the try and catch blocks",
             " after the try and catch blocks",
-            " when the finally block overrides the catch block and executes in its place\r\n\r\n**Reference** [Official documentation: try-catch](https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/keywords/try-catch)\r\n\r\n"
+            " when the finally block overrides the catch block and executes in its place\r\n\r\n"
         ],
         "correctAns": 3
     },
@@ -490,7 +490,7 @@
             " They do not support multiple inheritance.",
             " They support multiple inheritance.",
             " They can have only a set number of properties.",
-            " They can have only a set number of methods.\r\n\r\n**Reference** [Official documentation: Class inheritance](https://docs.microsoft.com/en-us/dotnet/csharp/fundamentals/types/classes#class-inheritance)\r\n\r\n"
+            " They can have only a set number of methods.\r\n\r\n"
         ],
         "correctAns": 1
     },
@@ -500,7 +500,7 @@
             " Namespaces calculate code coverage at runtime.",
             " Namespaces compile application code together at compile time.",
             " Namespaces group code together into a single repository.",
-            " Namespaces separate code into groupings, control access, and void naming collisions.\r\n\r\n**Reference** [Official documentation: namespace](https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/keywords/namespace)\r\n\r\n"
+            " Namespaces separate code into groupings, control access, and void naming collisions.\r\n\r\n"
         ],
         "correctAns": 4
     },
@@ -521,7 +521,7 @@
             " a collection of synchronous methods created during initialization that cannot be reused",
             " a collection of threads created during initialization that can be reused",
             " a collection of threads only recognized at compile time that can be reused",
-            " a collection of asynchronous methods created at compile time that cannot be reused\r\n\r\n**Reference** [Official documentation: ThreadPool Class](https://docs.microsoft.com/en-us/dotnet/api/system.threading.threadpool?view=net-5.0)\r\n\r\n"
+            " a collection of asynchronous methods created at compile time that cannot be reused\r\n\r\n"
         ],
         "correctAns": 2
     },
@@ -531,7 +531,7 @@
             " A regular expressions allows a variable to be passed by reference",
             " A regular expression allows a class to conform to the Equatable protocol",
             " A regular expression is a C# tool used to parse HTML",
-            " A regular expression is a special text string for describing a search pattern\r\n\r\n**Reference** [Official documentation: Regular Expression Language - Quick Reference](https://docs.microsoft.com/en-us/dotnet/standard/base-types/regular-expression-language-quick-reference)\r\n\r\n"
+            " A regular expression is a special text string for describing a search pattern\r\n\r\n"
         ],
         "correctAns": 4
     },
@@ -541,7 +541,7 @@
             " XML",
             " JSON",
             " byte stream",
-            " value stream\r\n\r\n**Reference:** [Official documentation: Serialization](https://docs.microsoft.com/en-us/dotnet/csharp/programming-guide/concepts/serialization/)\r\n\r\n"
+            " value stream\r\n\r\n"
         ],
         "correctAns": 3
     },
@@ -551,7 +551,7 @@
             " a variable that holds a reference to a value type and its content",
             " a specific value type that can be used only in callback methods",
             " a type that holds a reference to a method with a particular parameter list and return type",
-            " a custom variable type that can be used in abstract classes\r\n\r\n**Reference:** [Official documentation: Delegates](https://docs.microsoft.com/en-us/dotnet/csharp/programming-guide/delegates/)\r\n\r\n"
+            " a custom variable type that can be used in abstract classes\r\n\r\n"
         ],
         "correctAns": 3
     },
@@ -561,7 +561,7 @@
             " try, catch, valid, invalid",
             " try, valid, finally, throw",
             " try, catch, finally, throw",
-            " finally, throw, valid, invalid\r\n\r\n**Reference:** [Tutorial Point](https://www.tutorialspoint.com/csharp/csharp_exception_handling.htm#:~:text=Exceptions%20provide%20a%20way%20to,catch%2C%20finally%2C%20and%20throw.)\r\n\r\n"
+            " finally, throw, valid, invalid\r\n\r\n"
         ],
         "correctAns": 3
     },
@@ -571,7 +571,7 @@
             " The is operator checks instance types, while the as operator checks the inherited type.",
             " The is operator checks primitive data types, while the as operator checks the object type.",
             " The as operator checks object type, while the is operator attempts to cast an object to a specific type.",
-            " The is operator checks object type, while the as operator attempts to cast an object to a specific type.\r\n\r\n**Reference:** [Pluralsight guide](https://www.pluralsight.com/guides/csharp-is-as-operators-is-expressions)\r\n\r\n"
+            " The is operator checks object type, while the as operator attempts to cast an object to a specific type.\r\n\r\n"
         ],
         "correctAns": 4
     },
@@ -581,7 +581,7 @@
             " The finally block is called during the execution of a try and catch block, while the finalize method is called after garbage collection.",
             " The finally block is called after the execution of a try and catch block, while the finalize method is called just before garbage collection.",
             " The finalize block is called before the execution of a try and catch block, while the finally method is called just before garbage collection.",
-            " The finalize block is called during the execution of a try and catch block, while the finally method is called after garbage collection.\r\n\r\n**Reference:** [C-sharpcorner](https://www.c-sharpcorner.com/forums/final-finally-and-finalize)\r\n\r\n"
+            " The finalize block is called during the execution of a try and catch block, while the finally method is called after garbage collection.\r\n\r\n"
         ],
         "correctAns": 2
     },
@@ -601,7 +601,7 @@
             " struct InvalidResponse: Exception {}",
             " class InvalidResponse: Exception {}",
             " public Exception InvalidResponse = new Exception ();",
-            " public Exception InvalidResponse () -> Exception;\r\n\r\n**Reference:** [Official documentation: Exceptions](https://docs.microsoft.com/en-us/dotnet/standard/exceptions/how-to-create-user-defined-exceptions)\r\n\r\n"
+            " public Exception InvalidResponse () -> Exception;\r\n\r\n"
         ],
         "correctAns": 2
     },
@@ -611,7 +611,7 @@
             " enum AppState = [Offline, Loading, Ready]",
             " enum AppState {\"Offline\", \"Loading\", \"Ready\"}",
             " enum AppState = {Offline, Loading, Ready}",
-            " enum AppState {Offline, Loading, Ready}\r\n\r\n  **Reference:** [Official documentation: Enum](https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/enum)\r\n"
+            " enum AppState {Offline, Loading, Ready}\r\n\r\n  "
         ],
         "correctAns": 4
     }
