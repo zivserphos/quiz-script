@@ -1,0 +1,1 @@
+GET https://ghd9a3uo1i.execute-api.eu-west-1.amazonaws.com/API/?method=numberofreports HTTP/1.1
