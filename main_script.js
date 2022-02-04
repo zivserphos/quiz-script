@@ -12,7 +12,7 @@ files.map((fileName) => {
   const updatedFile = content.map((question) => {
     const newOptions = question.options.map((option, i) => {
       const numOfbr = option.split("\r\n");
-      if (option.startsWith("\r\n")) {
+      if (option.endsWith("\r\n")) {
         counter += 1;
       }
       return option;
