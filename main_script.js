@@ -13,8 +13,8 @@ files.map((fileName) => {
   const updatedFile = content.map((question) => {
     const newOptions = question.options.map((option, i) => {
       const numOfbr = option.split("\r\n");
-      if (numOfbr.length > 3) {
-        counter += 1;
+      if (option.includes("[explanation]") && option === 3) {
+        return option.split("[explanation]")[0];
       }
       return option;
     });
