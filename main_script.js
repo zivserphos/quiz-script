@@ -1,6 +1,7 @@
 const path = require("path");
 const fs = require("fs");
 
+let optionsWithCode = 0;
 let totalQuestionsInsert = 0;
 const files = fs.readdirSync("./questions");
 
@@ -12,7 +13,7 @@ files.map((fileName) => {
   const updatedFile = content.map((question) => {
     const newOptions = question.options.map((option, i) => {
       const numOfbr = option.split("\r\n");
-      if (option.endsWith("\r\n")) {
+      if (numOfbr.length > 3) {
         counter += 1;
       }
       return option;
@@ -21,8 +22,10 @@ files.map((fileName) => {
   });
   totalQuestionsInsert += updatedFile.length;
   console.log(`${fileName}: ${counter}`);
+  optionsWithCode += counter;
   fs.writeFileSync(`./questions/${fileName}`, JSON.stringify(updatedFile));
 });
+console.log(optionsWithCode);
 console.log(totalQuestionsInsert);
 // const updatedFile = content.map((question) => {
 //   const newOptions = question.options.map((option, i) => {
