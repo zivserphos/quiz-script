@@ -1,28 +1,31 @@
 const path = require("path");
 const fs = require("fs");
-const genQuery = require("./helpers/genQuery");
-const genAns = require("./helpers/genAns");
-const genCode = require("./helpers/genCode");
 
+const jsDiff = JSON.parse(
+  fs.readFileSync("./answers/js.json").toString()
+).slice(0, 25);
+
+console.log(jsDiff);
+
+let questionWithCode = 0;
 let totalQuestionsInsert = 0;
-let totalQuestionsInsert1 = 0;
-let totalQuestionsNotInserted = 0;
-// let nullQuestions;
-let totalNullQuestions = 0;
+const files = fs.readdirSync("./questions");
 
-const files = fs.readdirSync("./questionsNotFilter");
-const filterdFiles = fs.readdirSync("./questions");
 files.map((fileName) => {
-  const content = JSON.parse(
-    fs.readFileSync(`./questionsNotFilter/${fileName}`).toString()
-  );
-  totalQuestionsInsert += content.length;
-});
-filterdFiles.map((fileName) => {
+  questionWithCode = 0;
   const content = JSON.parse(
     fs.readFileSync(`./questions/${fileName}`).toString()
   );
-  totalQuestionsInsert1 += content.length;
+  if (fileName.includes("php")) console.log(content.length);
+  let counter = 0;
+  const updatedFile = content.map((question, i) => {
+    if (fileName === "javascript.json" && i > 49) {
+      if (jsDiff[i - 25])
+        question.difficulty = jsDiff[i - 25].difficulty.toLowerCase();
+    }
+    return { ...question };
+  });
+  totalQuestionsInsert += updatedFile.length;
+  // console.log(`${fileName}: ${questionWithCode} questions with code`);
+  fs.writeFileSync(`./questions/${fileName}`, JSON.stringify(updatedFile));
 });
-
-fs.writeFileSync("a.json", "SAFffffffff");
