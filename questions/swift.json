@@ -1,7 +1,7 @@
 [
     {
         "query": " Q1. What is this code an example of?",
-        "code": "swift\r\nlet val = (Double)6\r\n",
+        "code": "let val = (Double)6\r\n",
         "options": [
             "a syntax issue",
             "typecasting",
@@ -12,7 +12,7 @@
     },
     {
         "query": " Q2. What is the error in this code?",
-        "code": "swift\r\nlet x = 5\r\nguard x == 5 { return }\r\n",
+        "code": "let x = 5\r\nguard x == 5 { return }\r\n",
         "options": [
             "The guard is missing the else.",
             "Nothing is wrong.",
@@ -23,7 +23,7 @@
     },
     {
         "query": " Q3. What is the raw/underlying type of this enum?",
-        "code": "swift\r\nenum Direction {\r\n  case north, south, east, west\r\n}\r\n",
+        "code": "enum Direction {\r\n  case north, south, east, west\r\n}\r\n",
         "options": [
             "There is none.",
             "String",
@@ -44,7 +44,7 @@
     },
     {
         "query": " Q5. What is this code an example of?",
-        "code": "swift\r\nlet val = 5\r\nprint(\"value is: \\(val)\")\r\n",
+        "code": "let val = 5\r\nprint(\"value is: \\(val)\")\r\n",
         "options": [
             "string interpolation",
             "string compilation",
@@ -55,7 +55,7 @@
     },
     {
         "query": " Q6. What are the contents of `vals` after this code is executed?",
-        "code": "swift\r\nvar vals = [10, 2]\r\nvals.sort { (s1, s2) -> Bool in\r\n  s1 > s2\r\n}\r\n",
+        "code": "var vals = [10, 2]\r\nvals.sort { (s1, s2) -> Bool in\r\n  s1 > s2\r\n}\r\n",
         "options": [
             "[10, 2]",
             "[2, 10]",
@@ -66,7 +66,7 @@
     },
     {
         "query": " Q7. What does this code print?",
-        "code": "swift\r\ntypealias Thing = [String:Any]\r\nvar stuff: Thing\r\nprint(type(of: stuff))\r\n",
+        "code": "typealias Thing = [String:Any]\r\nvar stuff: Thing\r\nprint(type(of: stuff))\r\n",
         "options": [
             "Dictionary<String, Any>",
             "Dictionary",
@@ -77,7 +77,7 @@
     },
     {
         "query": " Q8. What is the value of y?",
-        "code": "swift\r\nlet x = [\"1\", \"2\"].dropFirst()\r\nlet y = x[0]\r\n",
+        "code": "let x = [\"1\", \"2\"].dropFirst()\r\nlet y = x[0]\r\n",
         "options": [
             "This code contains an error",
             "1",
@@ -88,7 +88,7 @@
     },
     {
         "query": " Q9. What is the value of test in this code?",
-        "code": "swift\r\nvar test = 1 == 1\r\n",
+        "code": "var test = 1 == 1\r\n",
         "options": [
             "TRUE",
             "YES",
@@ -99,7 +99,7 @@
     },
     {
         "query": " Q10. What is the value of y?",
-        "code": "swift\r\nvar x: Int?\r\nlet y = x ?? 5\r\n",
+        "code": "var x: Int?\r\nlet y = x ?? 5\r\n",
         "options": [
             "5",
             "0",
@@ -110,7 +110,7 @@
     },
     {
         "query": " Q11. What is the type of this function?",
-        "code": "swift\r\nfunc add(a: Int, b: Int) -> Int { return a+b }\r\n",
+        "code": "func add(a: Int, b: Int) -> Int { return a+b }\r\n",
         "options": [
             "Int",
             "(Int, Int) -> Int",
@@ -121,7 +121,7 @@
     },
     {
         "query": " Q12. What is the correct way to call this function?",
-        "code": "swift\r\nfunc myFunc(_ a: Int, b: Int) -> Int {\r\n  return a + b\r\n}\r\n",
+        "code": "func myFunc(_ a: Int, b: Int) -> Int {\r\n  return a + b\r\n}\r\n",
         "options": [
             "myFunc(5, b: 6)",
             "myFunc(5, 6)",
@@ -142,7 +142,7 @@
     },
     {
         "query": " Q14. What is the type of value1 in this code?",
-        "code": "swift\r\nlet value1 = \"\\(\"test\".count)\"\r\n",
+        "code": "let value1 = \"\\(\"test\".count)\"\r\n",
         "options": [
             "String",
             "Int",
@@ -163,7 +163,7 @@
     },
     {
         "query": " Q16. What's wrong with this code?",
-        "code": "swift\r\nclass Person {\r\n  var name: String\r\n  var address: String\r\n}\r\n",
+        "code": "class Person {\r\n  var name: String\r\n  var address: String\r\n}\r\n",
         "options": [
             "Person has no initializers.",
             "Person has no base class.",
@@ -174,7 +174,7 @@
     },
     {
         "query": " Q17. What is the value of names after this code is executed?",
-        "code": "swift\r\nlet names = [\"Bear\", \"Joe\", \"Clark\"]\r\nnames.map { (s) -> String in\r\n  return s.uppercased()\r\n}\r\n",
+        "code": "let names = [\"Bear\", \"Joe\", \"Clark\"]\r\nnames.map { (s) -> String in\r\n  return s.uppercased()\r\n}\r\n",
         "options": [
             "[\"BEAR\", \"JOE\", \"CLARK\"]",
             "[\"B\", \"J\", \"C\"]",
@@ -185,7 +185,7 @@
     },
     {
         "query": " Q18. What describes this line of code?",
-        "code": "swift\r\nlet val = 5\r\n",
+        "code": "let val = 5\r\n",
         "options": [
             "a constant named val of type Int",
             "a variable named val of type item",
@@ -196,7 +196,7 @@
     },
     {
         "query": " Q19. What is the error in this code?",
-        "code": "swift\r\nextension String {\r\n  var firstLetter: Character = \"c\" {\r\n    didSet {\r\n      print(\"new value\")\r\n    }\r\n  }\r\n}\r\n",
+        "code": "extension String {\r\n  var firstLetter: Character = \"c\" {\r\n    didSet {\r\n      print(\"new value\")\r\n    }\r\n  }\r\n}\r\n",
         "options": [
             "Extensions can't add properties. // although extensions technically can't contain stored properties",
             "Nothing is wrong with it.",
@@ -217,7 +217,7 @@
     },
     {
         "query": " Q21. What is wrong with this code?",
-        "code": "swift\r\nself.callback = {\r\n  self.attempts += 1\r\n  self.downloadFailed()\r\n}\r\n",
+        "code": "self.callback = {\r\n  self.attempts += 1\r\n  self.downloadFailed()\r\n}\r\n",
         "options": [
             "Use of self inside the closure causes retain cycle.",
             "You cannot assign a value to closure in this manner.",
@@ -228,7 +228,7 @@
     },
     {
         "query": " Q22. How many values does vals have after this code is executed?",
-        "code": "swift\r\nvar vals = Set<String> = [\"4\", \"5\", \"6\"]\r\nvals.insert(\"5\")\r\n",
+        "code": "var vals = Set<String> = [\"4\", \"5\", \"6\"]\r\nvals.insert(\"5\")\r\n",
         "options": [
             "three",
             "four",
@@ -249,7 +249,7 @@
     },
     {
         "query": " Q24. What is wrong with this code?",
-        "code": "swift\r\nif let s = String.init(\"some string\") {\r\n  print(s)\r\n}\r\n",
+        "code": "if let s = String.init(\"some string\") {\r\n  print(s)\r\n}\r\n",
         "options": [
             "This String initializer does not return an optional.",
             "String does not have an initializer that can take a String.",
@@ -290,7 +290,7 @@
     },
     {
         "query": " Q28. What is the correct way to add a value to this array?",
-        "code": "swift\r\nvar strings = [1, 2, 3]\r\n",
+        "code": "var strings = [1, 2, 3]\r\n",
         "options": [
             "all of these answers",
             "strings.append(4)",
@@ -301,7 +301,7 @@
     },
     {
         "query": " Q29. How many times will this loop be executed?",
-        "code": "swift\r\nfor i in 0...100 {\r\n  print(i)\r\n}\r\n",
+        "code": "for i in 0...100 {\r\n  print(i)\r\n}\r\n",
         "options": [
             "0",
             "101",
@@ -322,7 +322,7 @@
     },
     {
         "query": " Q31. What does this code print?",
-        "code": "swift\r\ntypealias Thing = [String:Any]\r\nvar stuff : Thing\r\nprint(type(of:stuff))\r\n",
+        "code": "typealias Thing = [String:Any]\r\nvar stuff : Thing\r\nprint(type(of:stuff))\r\n",
         "options": [
             "Dictionary",
             "ERROR",
@@ -333,7 +333,7 @@
     },
     {
         "query": " Q32. What is the value of t after this code is executed?",
-        "code": "swift\r\nlet names = [\"Larry\", \"Sven\", \"Bear\"]\r\nlet t = names.enumerated().first().offset\r\n",
+        "code": "let names = [\"Larry\", \"Sven\", \"Bear\"]\r\nlet t = names.enumerated().first().offset\r\n",
         "options": [
             "This code is invalid.",
             "This code does not compile.",
@@ -345,7 +345,7 @@
     },
     {
         "query": " Q32. What is the value of test after this code executes?",
-        "code": "swift\r\nlet vt = (name: \"ABC\", val: 5)\r\nlet test = vt.0\r\n",
+        "code": "let vt = (name: \"ABC\", val: 5)\r\nlet test = vt.0\r\n",
         "options": [
             "ABC",
             "0",
@@ -356,7 +356,7 @@
     },
     {
         "query": " Q33. What is the base class in this code?",
-        "code": "swift\r\nclass LSN : MMM {\r\n}\r\n",
+        "code": "class LSN : MMM {\r\n}\r\n",
         "options": [
             "MMM",
             "LSN",
@@ -367,7 +367,7 @@
     },
     {
         "query": " Q34. What does this code print to the console?",
-        "code": "swift\r\nvar userLocation: String = \"Home\" {\r\n  willSet(newValue) {\r\n  print(\"About to set userLocation to \\(newValue)...\")\r\n  }\r\n\r\n  didSet {\r\n  if userLocation != oldValue {\r\n  print(\"userLocation updated with new value!\")\r\n  } else {\r\n  print(\"userLocation already set to that value...\")\r\n  }\r\n  }\r\n }\r\n\r\n userLocation = \"Work\"\r\n",
+        "code": "var userLocation: String = \"Home\" {\r\n  willSet(newValue) {\r\n  print(\"About to set userLocation to \\(newValue)...\")\r\n  }\r\n\r\n  didSet {\r\n  if userLocation != oldValue {\r\n  print(\"userLocation updated with new value!\")\r\n  } else {\r\n  print(\"userLocation already set to that value...\")\r\n  }\r\n  }\r\n }\r\n\r\n userLocation = \"Work\"\r\n",
         "options": [
             "About to set userLocation to Work… userLocation updated with new value!",
             "About to set userLocation to Work… userLocation already set to that value…",
@@ -398,7 +398,7 @@
     },
     {
         "query": " Q37. What is the inferred type of x?",
-        "code": "swift\r\nlet x = [\"a\", \"b\", \"c\"]\r\n",
+        "code": "let x = [\"a\", \"b\", \"c\"]\r\n",
         "options": [
             "`String[]`",
             "`Array<String>`",
@@ -409,7 +409,7 @@
     },
     {
         "query": " Q38. What is the value of `oThings` after this code is executed?",
-        "code": "swift\r\nlet nThings: [Any] = [1, \"2\", \"three\"]\r\nlet oThings = nThings.reduce(\"\") { \"\\($0)\\($1)\" }\r\n",
+        "code": "let nThings: [Any] = [1, \"2\", \"three\"]\r\nlet oThings = nThings.reduce(\"\") { \"\\($0)\\($1)\" }\r\n",
         "options": [
             "11212three",
             "115",
@@ -430,7 +430,7 @@
     },
     {
         "query": " Q40. What is wrong with this code?",
-        "code": "swift\r\nprotocol TUI {\r\n  func add(x1 : Int, x2 : Int) -> Int {\r\n    return x1 + x2\r\n  }\r\n}\r\n",
+        "code": "protocol TUI {\r\n  func add(x1 : Int, x2 : Int) -> Int {\r\n    return x1 + x2\r\n  }\r\n}\r\n",
         "options": [
             "Protocol functions cannot have return types.",
             "Protocol functions cannot have implementations.",
@@ -441,7 +441,7 @@
     },
     {
         "query": " Q41. In this code, what are `wheels` and `doors` examples of?",
-        "code": "swift\r\nclass Car {\r\n  var wheels: Int = 4\r\n  let doors = 4\r\n}\r\n",
+        "code": "class Car {\r\n  var wheels: Int = 4\r\n  let doors = 4\r\n}\r\n",
         "options": [
             "class members",
             "This code is invalid.",
@@ -462,7 +462,7 @@
     },
     {
         "query": " Q43. What is printed when this code is executed?",
-        "code": "swift\r\nlet dbl = Double.init(\"5a\")\r\nprint(dbl ?? \".asString()\")\r\n",
+        "code": "let dbl = Double.init(\"5a\")\r\nprint(dbl ?? \".asString()\")\r\n",
         "options": [
             "five",
             "5a",
@@ -473,7 +473,7 @@
     },
     {
         "query": " Q44. In the function below, what are `this` and `toThat` examples of?",
-        "code": "swift\r\nfunc add(this x: Int, toThat y: Int)->{}\r\n",
+        "code": "func add(this x: Int, toThat y: Int)->{}\r\n",
         "options": [
             "none of these answers",
             "local terms",
@@ -484,7 +484,7 @@
     },
     {
         "query": " Q45. What is wrong with this code?",
-        "code": "swift\r\nfor (key, value) in [1: \"one\", 2: \"two\"]{\r\n  print(key, value)\r\n}\r\n",
+        "code": "for (key, value) in [1: \"one\", 2: \"two\"]{\r\n  print(key, value)\r\n}\r\n",
         "options": [
             "The interaction source is invalid",
             "The interaction variable is invalid",
@@ -505,7 +505,7 @@
     },
     {
         "query": " Q47. In the code below, what is width an example of?",
-        "code": "swift\r\nclass Square{\r\n  var height: Int = 0\r\n  var width : Int {\r\n    return height\r\n  }\r\n}\r\n",
+        "code": "class Square{\r\n  var height: Int = 0\r\n  var width : Int {\r\n    return height\r\n  }\r\n}\r\n",
         "options": [
             "This code contains error",
             "a closure",
@@ -516,7 +516,7 @@
     },
     {
         "query": " Q48. What data type is this an example of?",
-        "code": "swift\r\nlet vals = (\"val\", 1)\r\n",
+        "code": "let vals = (\"val\", 1)\r\n",
         "options": [
             "a dictionary",
             "a tuple",
@@ -527,7 +527,7 @@
     },
     {
         "query": " Q49. What is wrong with this code?",
-        "code": "swift\r\nvar x = 5\r\nx = 10.0\r\n",
+        "code": "var x = 5\r\nx = 10.0\r\n",
         "options": [
             "You cannot assign a Double to a variable of type Int",
             "x is undefined",
@@ -538,7 +538,7 @@
     },
     {
         "query": " Q50. What will this code print to the console?",
-        "code": "swift\r\nvar items = [\"a\":1, \"b\":2, \"c\":\"test\"] as [String: Any]\r\nitems[\"c\"] = nil\r\nprint(items[\"c\"] as Any)\r\n",
+        "code": "var items = [\"a\":1, \"b\":2, \"c\":\"test\"] as [String: Any]\r\nitems[\"c\"] = nil\r\nprint(items[\"c\"] as Any)\r\n",
         "options": [
             "Any",
             "test",
@@ -549,7 +549,7 @@
     },
     {
         "query": " Q51. What is wrong with this code?",
-        "code": "swift\r\nlet val = 5.0 + 10\r\n",
+        "code": "let val = 5.0 + 10\r\n",
         "options": [
             "There is nothing wrong with this code",
             "val is a constant and cannot be changed",
@@ -560,7 +560,7 @@
     },
     {
         "query": " Q52. How many parameters does the initializer for Test have?",
-        "code": "swift\r\nstruct Test{\r\n  var score: Int\r\n  var date: Date\r\n}\r\n",
+        "code": "struct Test{\r\n  var score: Int\r\n  var date: Date\r\n}\r\n",
         "options": [
             "zero",
             "This code contains an error",
@@ -571,7 +571,7 @@
     },
     {
         "query": " Q53. What prints to the console when executing this code?",
-        "code": "swift\r\nlet x = try? String.init(\"test\")\r\nprint(x)\r\n",
+        "code": "let x = try? String.init(\"test\")\r\nprint(x)\r\n",
         "options": [
             "nil",
             "Nothing - this code contains an error",
@@ -582,7 +582,7 @@
     },
     {
         "query": " Q54. How can you sort this array?",
-        "code": "swift\r\nvar vals = [1,2,3]\r\n",
+        "code": "var vals = [1,2,3]\r\n",
         "options": [
             "`vals.sort { $0 < $1 }`",
             "`vals.sort { (s1, s2) in s1 < s2 }`",
@@ -623,7 +623,7 @@
     },
     {
         "query": " Q58. How many times this code will be executed? —OR— How many times will this loop be performed?",
-        "code": "swift\r\nfor i in [\"0\", \"1\"]{\r\n  print(i)\r\n}\r\n",
+        "code": "for i in [\"0\", \"1\"]{\r\n  print(i)\r\n}\r\n",
         "options": [
             "one",
             "two",
@@ -634,7 +634,7 @@
     },
     {
         "query": " Q59. What does this code print?",
-        "code": "swift\r\nlet names = [\"Bear\", \"Tony\", \"Svante\"]\r\nprint(names[1]+\"Bear\")\r\n",
+        "code": "let names = [\"Bear\", \"Tony\", \"Svante\"]\r\nprint(names[1]+\"Bear\")\r\n",
         "options": [
             "1Bear",
             "BearBear",
@@ -645,7 +645,7 @@
     },
     {
         "query": " Q60. What is true of this code?",
-        "code": "swift\r\nlet name: String?\r\n",
+        "code": "let name: String?\r\n",
         "options": [
             "name can hold only a string value.",
             "name can hold either a string or nil value.",
@@ -656,7 +656,7 @@
     },
     {
         "query": " Q61. What is the value of `val` after this code is executed?",
-        "code": "swift\r\nlet i = 5\r\nlet val = i * 6.0\r\n",
+        "code": "let i = 5\r\nlet val = i * 6.0\r\n",
         "options": [
             "This code is invalid.",
             "6",
@@ -667,7 +667,7 @@
     },
     {
         "query": " Q62. What does this code print?",
-        "code": "swift\r\nenum Positions : Int {\r\n  case first, second, third, other\r\n}\r\nprint (Positions.other.rawValue)\r\n",
+        "code": "enum Positions : Int {\r\n  case first, second, third, other\r\n}\r\nprint (Positions.other.rawValue)\r\n",
         "options": [
             "3",
             "0",
@@ -678,7 +678,7 @@
     },
     {
         "query": " Q63. What is printed to the console when this code is executed?",
-        "code": "swift\r\n\"t\".forEach { (char) in\r\n    print(char)\r\n}\r\n",
+        "code": "\"t\".forEach { (char) in\r\n    print(char)\r\n}\r\n",
         "options": [
             "nil",
             "Nothing, since the code contains an error",
@@ -689,7 +689,7 @@
     },
     {
         "query": " Q64. What prints when this code is executed?",
-        "code": "swift\r\nlet s1 = [\"1\", \"2\", \"3\"]\r\n    .filter { $0 > \"0\" }\r\n    .sorted { $0 > $1 }\r\nprint(s1)\r\n",
+        "code": "let s1 = [\"1\", \"2\", \"3\"]\r\n    .filter { $0 > \"0\" }\r\n    .sorted { $0 > $1 }\r\nprint(s1)\r\n",
         "options": [
             "[]",
             "[\"3\", \"2\", \"1\"]",
@@ -710,7 +710,7 @@
     },
     {
         "query": " Q66. In the code below, AOM must be a(n)?",
-        "code": "swift\r\nclass AmP : MMM, AOM {\r\n  }\r\n",
+        "code": "class AmP : MMM, AOM {\r\n  }\r\n",
         "options": [
             "class",
             "protocol",
@@ -721,7 +721,7 @@
     },
     {
         "query": " Q67. What is the value of numbers in the code below?",
-        "code": "swift\r\nlet numbers = [1,2,3,4,5,6].filter{ $0 % 2 == 0}\r\n",
+        "code": "let numbers = [1,2,3,4,5,6].filter{ $0 % 2 == 0}\r\n",
         "options": [
             "[1,3,5]",
             "[]",

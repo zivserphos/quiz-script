@@ -1,42 +1,31 @@
 const path = require("path");
 const fs = require("fs");
 
-let optionsWithCode = 0;
+let questionWithCode = 0;
 let totalQuestionsInsert = 0;
 const files = fs.readdirSync("./questions");
 
 files.map((fileName) => {
+  questionWithCode = 0;
   const content = JSON.parse(
     fs.readFileSync(`./questions/${fileName}`).toString()
   );
   let counter = 0;
   const updatedFile = content.map((question) => {
-    const newOptions = question.options.map((option, i) => {
-      const numOfbr = option.split("\r\n");
-      if (option.includes("[explanation]") && option === 3) {
-        return option.split("[explanation]")[0];
-      }
-      return option;
-    });
-    return { ...question, options: newOptions };
+    // const numOfbr = question.options.split("\r\n");
+    let updatedCode = question.code;
+    if (
+      question.code &&
+      fileName.includes("swift") &&
+      question.code.startsWith("swift\r\n")
+    ) {
+      questionWithCode += 1;
+      updatedCode = question.code.slice(7);
+    }
+
+    return { ...question, code: updatedCode };
   });
   totalQuestionsInsert += updatedFile.length;
-  console.log(`${fileName}: ${counter}`);
-  optionsWithCode += counter;
+  console.log(`${fileName}: ${questionWithCode} questions with code`);
   fs.writeFileSync(`./questions/${fileName}`, JSON.stringify(updatedFile));
 });
-console.log(optionsWithCode);
-console.log(totalQuestionsInsert);
-// const updatedFile = content.map((question) => {
-//   const newOptions = question.options.map((option, i) => {
-//     const numOfbr = option.split("\r\n");
-//     if (option.split("\r\n").length !== 1) {
-//       console.log(fileName, option.split("\r\n").length);
-//       fileswithbr.find((file) => fileName === file)
-//         ? null
-//         : fileswithbr.push(fileName);
-//     }
-//   });
-//   return { ...question, options: newOptions };
-// });
-// totalQuestionsInsert += updatedFile.length;
