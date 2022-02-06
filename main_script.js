@@ -14,13 +14,9 @@ files.map((fileName) => {
   const updatedFile = content.map((question) => {
     // const numOfbr = question.options.split("\r\n");
     let updatedCode = question.code;
-    if (
-      question.code &&
-      fileName.includes("swift") &&
-      question.code.startsWith("swift\r\n")
-    ) {
+    if (question.code && question.code.endsWith("\r\n")) {
       questionWithCode += 1;
-      updatedCode = question.code.slice(7);
+      updatedCode = question.code.substr(0, question.code.length - 2);
     }
 
     return { ...question, code: updatedCode };
