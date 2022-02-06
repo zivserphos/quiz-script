@@ -14,9 +14,9 @@ files.map((fileName) => {
   const updatedFile = content.map((question) => {
     // const numOfbr = question.options.split("\r\n");
     let updatedCode = question.code;
-    if (question.code && question.code.endsWith("\r\n")) {
+    if (question.code) {
       questionWithCode += 1;
-      updatedCode = question.code.substr(0, question.code.length - 2);
+      // updatedCode = question.code.slice(4);
     }
 
     return { ...question, code: updatedCode };
