@@ -13,13 +13,17 @@ files.map((fileName) => {
   let counter = 0;
   const updatedFile = content.map((question) => {
     // const numOfbr = question.options.split("\r\n");
-    let updatedCode = question.code;
-    if (question.code) {
-      questionWithCode += 1;
-      // updatedCode = question.code.slice(4);
+    let updatedQuery = question.query;
+    if (question.query[1] === ".") {
+      // questionWithCode += 1;
+      updatedQuery = question.query.slice(2);
+    }
+    if (question.query[2] === ".") {
+      // questionWithCode += 1;
+      updatedQuery = question.query.slice(3);
     }
 
-    return { ...question, code: updatedCode };
+    return { ...question, query: updatedQuery };
   });
   totalQuestionsInsert += updatedFile.length;
   console.log(`${fileName}: ${questionWithCode} questions with code`);
