@@ -1,0 +1,634 @@
+[
+    {
+        "query": " Q26.Which of these would give a block element rounded corners?",
+        "options": [
+            " corner-curve: 10px\r\n",
+            " border-corner: 10px\r\n",
+            " border-radius: 10px\r\n",
+            " corner-radius: 10px\r\n\r\n[Official doc:](https://www.w3schools.com/css/css3_borders.asp)\r\n\r\n"
+        ],
+        "correctAns": 3,
+        "difficulty": "Easy"
+    },
+    {
+        "query": " Q27. In the following media query example, what conditions are being targeted?",
+        "code": "css\r\n@media (min-width: 1024px), screen and (orientation: landscape) { … }\r\n",
+        "options": [
+            " The rule will apply to a device that has either a width of 1024px or wider, or is a screen device in landscape mode.\r\n",
+            " The rule will apply to a device that has a width of 1024px or narrower and is a screen device in landscape mode.\r\n",
+            " The rule will apply to a device that has a width of 1024px or wider and is a screen device in landscape mode.\r\n",
+            " The rule will apply to a device that has a width of 1024px or narrower, or is a screen device in landscape mode.\r\n\r\n"
+        ],
+        "correctAns": 1,
+        "difficulty": "Easy"
+    },
+    {
+        "query": " Q28. CSS transform properties are used to change the shape and position of the selected objects. The transform-origin property specifies the location of the element's transformation origin. By default, what is the location of the origin?",
+        "options": [
+            " the top left corner of the element\r\n",
+            " the center of the element\r\n",
+            " the top right corner of the element\r\n",
+            " the bottom left of the element\r\n\r\n"
+        ],
+        "correctAns": 1,
+        "difficulty": "Medium"
+    },
+    {
+        "query": " Q29. Which of the following is not a valid color value? (_Alternative:_ Which choice is not a valid color value?)",
+        "options": [
+            " `color: #000`\r\n",
+            " `color: rgb(0,0,0)`\r\n",
+            " `color: #000000`\r\n",
+            " `color: 000000`\r\n\r\n"
+        ],
+        "correctAns": 4,
+        "difficulty": "Easy"
+    },
+    {
+        "query": " Q30. What is the vertical gap between the two elements below?",
+        "code": "html\r\n<div style=\"margin-bottom: 2rem;\">Div 1</div>\r\n<div style=\"margin-top: 2rem;\">Div 2</div>\r\n",
+        "options": [
+            " 2rem\r\n",
+            " 32px\r\n",
+            " 64px\r\n",
+            " 4rem\r\n\r\n"
+        ],
+        "correctAns": 1,
+        "difficulty": "Easy"
+    },
+    {
+        "query": " Q31. When using the Flexbox method, what property and value is used to display flex items in a column?",
+        "options": [
+            " flex-flow: column; or flex-direction: column\r\n",
+            " flex-flow: column;\r\n",
+            " flex-column: auto;\r\n",
+            " flex-direction: column;\r\n\r\n"
+        ],
+        "correctAns": 1,
+        "difficulty": "Medium"
+    },
+    {
+        "query": " Q32. Which type of declaration will take precedence?",
+        "options": [
+            " any declarations in user-agent stylesheets\r\n",
+            " important declarations in user stylesheets\r\n",
+            " normal declarations in author stylesheets\r\n",
+            " important declarations in author stylesheets\r\n\r\n"
+        ],
+        "correctAns": 2,
+        "difficulty": "Medium"
+    },
+    {
+        "query": " Q33. The flex-direction property is used to specify the direction that flex items are displayed. What are the values used to specify the direction of the items in the following examples?",
+        "options": [
+            "\r\n  - Example 1: `flex-direction: row;`\r\n  - Example 2: `flex-direction: row-reverse;`\r\n  - Example 3: `flex-direction: column;`\r\n  - Example 4: `flex-direction: column-reverse;`\r\n",
+            "\r\n  - Example 1: `flex-direction: row-reverse;`\r\n  - Example 2: `flex-direction: row;`\r\n  - Example 3: `flex-direction: column-reverse;`\r\n  - Example 4: `flex-direction: column;`\r\n",
+            "\r\n  - Example 1: `flex-direction: row;`\r\n  - Example 2: `flex-direction: row-reverse;`\r\n  - Example 3: `flex-direction: column;`\r\n  - Example 4: `flex-direction: reverse-column;`\r\n",
+            "\r\n  - Example 1: `flex-direction: column;`\r\n  - Example 2: `flex-direction: column-reverse;`\r\n  - Example 3: `flex-direction: row;`\r\n  - Example 4: `flex-direction: row-reverse;`\r\n\r\nNote: Examples seem to be missing.\r\n\r\n"
+        ],
+        "correctAns": 1,
+        "difficulty": "Medium"
+    },
+    {
+        "query": " Q34. There are two sibling combinators that can be used to select elements contained within the same parent element; the general sibling combinator (~) and the adjacent sibling combinator (+). Referring to example below, which elements will the styles be applied to?",
+        "code": "css\r\nh2 ~ p {\r\n  color: blue;\r\n}\r\nh2 + p {\r\n  background: beige;\r\n}\r\n\r\n\r\nhtml\r\n<section>\r\n  <p>paragraph 1</p>\r\n  <h2>Heading</h2>\r\n  <p>paragraph 2</p>\r\n  <p>paragraph 3</p>\r\n</section>\r\n",
+        "options": [
+            " Paragraphs 2 and 3 will be blue. The h2 and paragraph 2 will have a beige background.\r\n",
+            " Paragraphs 2, and 3 will be blue, and paragraph 2 will have a beige background.\r\n",
+            " Paragraph 2 will be blue. Paragraphs 2 and 3 will have a beige background.\r\n\r\n"
+        ],
+        "correctAns": 2,
+        "difficulty": "Medium"
+    },
+    {
+        "query": " Q35. When using flexbox, the \"justify-content\" property can be used to distribute the space between the flex items along the main axis. Which value should be used to evenly distribute the flex items within the container shown below?",
+        "options": [
+            " justify-content: space-around;\r\n",
+            " justify-content: center;\r\n",
+            " justify-content: auto;\r\n",
+            " justify-content: space-between;\r\n\r\n"
+        ],
+        "correctAns": 1,
+        "difficulty": "Easy"
+    },
+    {
+        "query": " Q36. There are many advantages to using icon fonts. What is one of those advantages?",
+        "options": [
+            " Icon fonts increase accessibility.\r\n",
+            " Icon fonts can be used to replace custom fonts.\r\n",
+            " Icon fonts can be styled with typography related properties such as font-size and color.\r\n",
+            " Icon fonts are also web safe fonts.\r\n\r\n"
+        ],
+        "correctAns": 3,
+        "difficulty": "Medium"
+    },
+    {
+        "query": " Q37. What is the difference between `display:none` and `visibility:hidden`?",
+        "options": [
+            " Both will hide the element on the page, but display:none has greater browser support. visibility:hidden is a new property and does not have the best browser support\r\n",
+            " display:none hides the elements but maintains the space it previously occupied. visibility:hidden will hide the element from view and remove it from the normal flow of the document\r\n",
+            " display:none hides the element from view and removes it from the normal flow of the document. visibility:hidden will hide the element but maintains the space it previously occupied.\r\n",
+            " There is no difference; both will hide the element on the page\r\n\r\n"
+        ],
+        "correctAns": 3,
+        "difficulty": "Easy"
+    },
+    {
+        "query": " Q38. What selector and property would you use to scale an element to be 50% smaller on hover?",
+        "options": [
+            " element:hover {scale: 0.5;}\r\n",
+            " element:hover {transform: scale(0.5);}\r\n",
+            " element:hover {scale: 50%;}\r\n",
+            " element:hover {transform: scale(50%);}\r\n\r\n"
+        ],
+        "correctAns": 2,
+        "difficulty": "Medium"
+    },
+    {
+        "query": " Q39. Which statement regarding icon fonts is true?",
+        "options": [
+            " Icon fonts can be inserted only using JavaScript.\r\n",
+            " Icon fonts are inserted as inline images.\r\n",
+            " Icon fonts require browser extensions.\r\n",
+            " Icon fonts can be styled with typography-related properties such as font-size and color.\r\n\r\n"
+        ],
+        "correctAns": 4,
+        "difficulty": "Medium"
+    },
+    {
+        "query": " Q40. The values for the font-weight property can be keywords or numbers. For each numbered value below, what is the associated keyword?",
+        "code": "css\r\nfont-weight: 400;\r\nfont-weight: 700;\r\n",
+        "options": [
+            " bold; normal\r\n",
+            " normal; bold\r\n",
+            " light; normal\r\n",
+            " normal; bolder\r\n\r\n"
+        ],
+        "correctAns": 2,
+        "difficulty": "Medium"
+    },
+    {
+        "query": " Q41. If the width of the container is 500 pixels, what would the width of the three columns be in this layout?",
+        "options": [
+            " 50px, 150px, 300px\r\n",
+            " 50px, 200px, 300px\r\n",
+            " 50px, 100px, 200px\r\n",
+            " 50px, 50px, 100px\r\n\r\nNote: an alternative for Q7.\r\n\r\n"
+        ],
+        "correctAns": 1,
+        "difficulty": "Easy"
+    },
+    {
+        "query": " Q42. Using the :nth-child pseudo class, what would be the most efficient way to style every third item in a list, no matter how many items are present, starting with item 2?",
+        "code": null,
+        "options": [
+            "\r\n  ```css\r\n  li:nth-child(3 + 2n) {\r\n    margin: 0 5 px;\r\n  }\r\n  ```\r\n",
+            "\r\n  ```css\r\n  li:nth-child(3n + 2) {\r\n    margin: 0 5 px;\r\n  }\r\n  ```\r\n",
+            "\r\n  ```css\r\n  li:nth-child(2),\r\n  li:nth-child(5),\r\n  li:nth-child(8) {\r\n    margin: 0 5 px;\r\n  }\r\n  ```\r\n",
+            "\r\n  ```css\r\n  li:nth-child(2n + 3) {\r\n    margin: 0 5 px;\r\n  }\r\n  ```\r\n\r\n"
+        ],
+        "correctAns": 2,
+        "difficulty": "Medium"
+    },
+    {
+        "query": " Q43. Which selector would select only internal links within the current page?",
+        "options": [
+            " `a[href=\"#\"] {...}`\r\n",
+            " `a[href~=\"#\"]`\r\n",
+            " `a[href^=\"#\"]`\r\n",
+            " `a[href=\"#\"]`\r\n\r\n"
+        ],
+        "correctAns": 4,
+        "difficulty": "Medium"
+    },
+    {
+        "query": " Q44. What is not true about class selectors?",
+        "options": [
+            " Only one class value can be assigned to an element.\r\n",
+            " An element can have multiple class value.\r\n",
+            " Class selectors are marked with a leading period.\r\n",
+            " More than one element can have the same class value.\r\n\r\n"
+        ],
+        "correctAns": 1,
+        "difficulty": "Easy"
+    },
+    {
+        "query": " Q45. What is the difference between the margin and padding properties?",
+        "options": [
+            " Margin adds space around and inside of an element; padding adds space only inside of an element.\r\n",
+            " Margin adds space around an element; padding adds space inside of an element.\r\n",
+            " Margin adds a line around an element, padding adds space inside of an element.\r\n",
+            " Margin adds space inside of an element, padding adds space around an element.\r\n\r\n"
+        ],
+        "correctAns": 2,
+        "difficulty": "Easy"
+    },
+    {
+        "query": " Q46. What is not a valid way of declaring a padding value of 10 pixels on the top and bottom, and 0 pixels on the left and right?",
+        "options": [
+            " padding: 10px 10px 0px 0px;\r\n",
+            " padding: 10px 0px;\r\n",
+            " padding: 10px 0;\r\n",
+            " padding: 10px 0px 10px 0px;\r\n\r\n"
+        ],
+        "correctAns": 1,
+        "difficulty": "Easy"
+    },
+    {
+        "query": " Q47. Is there an error in this code? If so, find the best description of the problem",
+        "code": "css\r\n@font-face {\r\n  font-family: 'Avenir', sans-serif;\r\n  src: url('avenir.woff2') format('woff2'), url('avenir.woff') format('woff');\r\n}\r\n",
+        "options": [
+            " The font file formats are not supported in modern browsers.\r\n",
+            " The src attribute requires a comma between the URL and format values.\r\n",
+            " There are no errors in the example.\r\n",
+            " The sans-serif inclusion is problematic.\r\n\r\n"
+        ],
+        "correctAns": 4,
+        "difficulty": "Hard"
+    },
+    {
+        "query": " Q48. Which style places an element at a fixed location within its container?",
+        "options": [
+            " position: absolute;\r\n",
+            " display: flex;\r\n",
+            " display: block;\r\n",
+            " float: left;\r\n\r\n"
+        ],
+        "correctAns": 1,
+        "difficulty": "Easy"
+    },
+    {
+        "query": " Q49. The calc() CSS function is often used for calculating relative values. In the example below, what is the specified margin-left value?",
+        "code": "css\r\n.example {\r\n  margin-left: calc(5% + 5px);\r\n}\r\n",
+        "options": [
+            " The left margin value is equal to 5% of its parents element's width plus 5px\r\n",
+            " The left margin value is equal to 5% of the viewport width plus 5px\r\n",
+            " The left margin value is equal to 5% of the closest positioned element's width plus 5px\r\n",
+            " The left margin value is equal to 5% of the selected element's width (.example) plus 5px\r\n\r\n"
+        ],
+        "correctAns": 1,
+        "difficulty": "Medium"
+    },
+    {
+        "query": " Q50. What is the CSS selector for an `<a>` tag containing the title attribute?",
+        "options": [
+            " `a[title]`\r\n",
+            " `a > title`\r\n",
+            " `a=title`\r\n",
+            " `a.title`\r\n\r\nNote: an alternative for Q2.\r\n\r\n"
+        ],
+        "correctAns": 1,
+        "difficulty": "Easy"
+    },
+    {
+        "query": " Q51. Which choice will not cause a React component to rerender?",
+        "options": [
+            " if the component calls `this.setState(...)`\r\n",
+            " the value of one of the component's props changes\r\n",
+            " if the component calls `this.forceUpdate()`\r\n",
+            " one of the component's siblings rerenders\r\n\r\n"
+        ],
+        "correctAns": 4,
+        "difficulty": "Easy"
+    },
+    {
+        "query": " Q52. You have created a new method in a class component called handleClick, but it is not working. Which code is missing?",
+        "code": "javascript\r\nclass Button extends React.Component{\r\n\r\n  constructor(props) {\r\n    super(props);\r\n    // Missing line\r\n  }\r\n\r\n  handleClick() {...}\r\n}\r\n",
+        "options": [
+            " `this.handleClick.bind(this);`\r\n",
+            " `props.bind(handleClick);`\r\n",
+            " `this.handleClick.bind();`\r\n",
+            " `this.handleClick = this.handleClick.bind(this);`\r\n\r\n"
+        ],
+        "correctAns": 4,
+        "difficulty": "Hard"
+    },
+    {
+        "query": " Q53. React does not render two sibling elements unless they are wrapped in a fragment. Below is one way to render a fragment. What is the shorthand for this?",
+        "code": "javascript\r\n<React.Fragment>\r\n  <h1>Our Staff</h1>\r\n  <p>Our staff is available 9-5 to answer your questions</p>\r\n</React.Fragment>\r\n",
+        "options": [
+            " A\r\n\r\n```javascript\r\n<...>\r\n  <h1>Our Staff</h1>\r\n  <p>Our staff is available 9-5 to answer your questions</p>\r\n</...>\r\n```\r\n\r\n",
+            " B\r\n\r\n```javascript\r\n<//>\r\n  <h1>Our Staff</h1>\r\n  <p>Our staff is available 9-5 to answer your questions</p>\r\n<///>\r\n```\r\n\r\n",
+            " C\r\n\r\n```javascript\r\n<>\r\n  <h1>Our Staff</h1>\r\n  <p>Our staff is available 9-5 to answer your questions</p>\r\n</>\r\n```\r\n\r\n",
+            " D\r\n\r\n```javascript\r\n<Frag>\r\n  <h1>Our Staff</h1>\r\n  <p>Our staff is available 9-5 to answer your questions</p>\r\n</Frag>\r\n```\r\n\r\n"
+        ],
+        "correctAns": 3,
+        "difficulty": "Medium"
+    },
+    {
+        "query": " Q54. If you wanted to display the count state value in the component, what do you need to add to the curly braces in the `h1`?",
+        "code": "javascript\r\nclass Ticker extends React.component {\r\n  constructor(props) {\r\n    super(props);\r\n    this.state = { count: 0 };\r\n  }\r\n  render() {\r\n    return <h1>{}</h1>;\r\n  }\r\n}\r\n",
+        "options": [
+            " this.state.count\r\n",
+            " count\r\n",
+            " state\r\n",
+            " state.count\r\n\r\n"
+        ],
+        "correctAns": 1,
+        "difficulty": "Easy"
+    },
+    {
+        "query": " Q55. Per the following code, when is the Hello component displayed?",
+        "code": "javascript\r\nconst greeting = isLoggedIn ? <Hello /> : null;\r\n",
+        "options": [
+            " never\r\n",
+            " when `isLoggedIn` is true\r\n",
+            " when a user logs in\r\n",
+            " when the Hello function is called\r\n\r\n"
+        ],
+        "correctAns": 2,
+        "difficulty": "Easy"
+    },
+    {
+        "query": " Q56. In the following code block, what type is orderNumber?",
+        "code": "javascript\r\nReactDOM.render(<Message orderNumber=\"16\" />, document.getElementById('root'));\r\n",
+        "options": [
+            " string\r\n",
+            " boolean\r\n",
+            " object\r\n",
+            " number\r\n\r\n"
+        ],
+        "correctAns": 1,
+        "difficulty": "Easy"
+    },
+    {
+        "query": " Q57. You have added a style property to the `h1` but there is an unexpected token error when it runs. How do you fix this?",
+        "code": "javascript\r\nconst element = <h1 style={ backgroundColor: \"blue\" }>Hi</h1>;\r\n",
+        "options": [
+            " `const element = <h1 style=\"backgroundColor: \"blue\"\"}>Hi</h1>;`\r\n",
+            " `const element = <h1 style={{backgroundColor: \"blue\"}}>Hi</h1>;`\r\n",
+            " `const element = <h1 style={blue}>Hi</h1>;`\r\n",
+            " `const element = <h1 style=\"blue\">Hi</h1>;`\r\n\r\n"
+        ],
+        "correctAns": 2,
+        "difficulty": "Easy"
+    },
+    {
+        "query": " Q58. Which function is used to update state variables in a React class component?",
+        "options": [
+            " `replaceState`\r\n",
+            " `refreshState`\r\n",
+            " `updateState`\r\n",
+            " `setState`\r\n\r\n"
+        ],
+        "correctAns": 4,
+        "difficulty": "Easy"
+    },
+    {
+        "query": " Q59. Consider the following component. What is the default color for the star?",
+        "code": "javascript\r\nconst Star = ({ selected = false }) => <Icon color={selected ? 'red' : 'grey'} />;\r\n",
+        "options": [
+            " black\r\n",
+            " red\r\n",
+            " grey\r\n",
+            " white\r\n\r\n"
+        ],
+        "correctAns": 3,
+        "difficulty": "Easy"
+    },
+    {
+        "query": " Q60. Which answer best describes a function component?(Not sure answer)",
+        "options": [
+            " `A function component is the same as a class component.`\r\n",
+            " `A function component accepts a single props object and returns a React element.`\r\n",
+            " `A function component is the only way to create a component.`\r\n",
+            " `A function component is required to create a React component.`\r\n\r\n"
+        ],
+        "correctAns": 2,
+        "difficulty": "Easy"
+    },
+    {
+        "query": " Q61.Which library does the fetch() function come from?",
+        "options": [
+            " `FetchJS`\r\n",
+            " `ReactDOM`\r\n",
+            " `No library. fetch() is supported by most browsers.`\r\n",
+            " `React`\r\n\r\n"
+        ],
+        "correctAns": 3,
+        "difficulty": "Easy"
+    },
+    {
+        "query": " Q62.What is the difference between the click behaviors of these two buttons(assuming that this.handleClick is bound correctly)",
+        "code": "javascript\r\n  A. <button onClick=this.handleClick>Click Me</button>\r\n  B. <button onClick={event => this.handleClick(event)}>Click Me</button>\r\n",
+        "options": [
+            " `Button A will not have access to the event object on click of the button`\r\n",
+            " `Button A will not fire the handler this.handleClick successfully`\r\n",
+            " `There is no difference`\r\n",
+            " `Button B will not fire the handler this.handleClick successfully`\r\n\r\n"
+        ],
+        "correctAns": 2,
+        "difficulty": "Medium"
+    },
+    {
+        "query": " Q63.What will happen when this useEffect Hook is executed, assuming name is not already equal to John?",
+        "code": "javascript\r\nuseEffect(() => {\r\n  setName('John');\r\n}, [name]);\r\n",
+        "options": [
+            " `It will cause an error immediately.`\r\n",
+            " `It will execute the code inside the function, but only after waiting to ensure that no other component is accessing the name variable.`\r\n",
+            " `It will update the value of name once and not run again until name is changed from the outside.`\r\n",
+            " `It will cause an infinite loop.`\r\n\r\n"
+        ],
+        "correctAns": 3,
+        "difficulty": "Hard"
+    },
+    {
+        "query": " Q64. How would you add to this code, from React Router, to display a component called About?",
+        "code": "javascript\r\n<Route path=\"/:id\" />\r\n",
+        "options": [
+            " A\r\n\r\n```javascript\r\n<Route path=\"/:id\">\r\n  {' '}\r\n  <About />\r\n</Route>\r\n```\r\n\r\n",
+            " B\r\n\r\n```javascript\r\n<Route path=\"/tid\" about={Component} />\r\n```\r\n\r\n",
+            " C\r\n\r\n```javascript\r\n<Route path=\"/:id\" route={About} />\r\n```\r\n\r\n",
+            " D\r\n\r\n```javascript\r\n<Route>\r\n  <About path=\"/:id\" />\r\n</Route>\r\n```\r\n\r\n"
+        ],
+        "correctAns": 1,
+        "difficulty": "Medium"
+    },
+    {
+        "query": " Q65. Which class-based component is equivalent to this function component?",
+        "code": "javascript\r\nconst Greeting ({ name }) > <h1>Hello {name}!</h1>;\r\n",
+        "options": [
+            " A\r\n\r\n```javascript\r\nclass Greeting extends React.Component {\r\n  constructor() {\r\n    return <h1>Hello {this.props.name}!</h1>;\r\n  }\r\n}\r\n```\r\n\r\n",
+            " B\r\n\r\n```javascript\r\nclass Greeting extends React.Component {\r\n  <h1>Hello {this.props.name}!</h1>;\r\n}\r\n```\r\n\r\n",
+            " C\r\n\r\n```javascript\r\nclass Greeting extends React.Component {\r\n  render() {\r\n    return <h1>Hello {this.props.name}!</h1>;\r\n  }\r\n}\r\n```\r\n\r\n",
+            " D\r\n\r\n```javascript\r\nclass Greeting extends React.Component {\r\n  render({ name }) {\r\n    return <h1>Hello {name}!</h1>;\r\n  }\r\n}\r\n```\r\n\r\n"
+        ],
+        "correctAns": 3,
+        "difficulty": "Medium"
+    },
+    {
+        "query": " Q66. Give the code below, what does the second argument that is sent to the render function describe?",
+        "code": "javascript\r\nReactDOM.render(\r\n  <h1>Hi<h1>,\r\n    document.getElementById('root')\r\n)\r\n",
+        "options": [
+            " where the React element should be added to the DOM\r\n",
+            " where to call the function\r\n",
+            " where the root component is\r\n",
+            " where to create a new JavaScript file\r\n\r\n"
+        ],
+        "correctAns": 1,
+        "difficulty": "Easy"
+    },
+    {
+        "query": " Q67. Why should you use React Router's Link component instead of a basic `<a>` tag in React?",
+        "options": [
+            " The link component allows the user to use the browser's `Back` button.\r\n",
+            " There is no difference--the `Link` component is just another name for the `<a>` tag.\r\n",
+            " The `<a>` tag will cause an error when used in React.\r\n",
+            " The `<a>` tag triggers a full page reload, while the `Link` component does not.\r\n\r\n"
+        ],
+        "correctAns": 4,
+        "difficulty": "Medium"
+    },
+    {
+        "query": " Q68. What is the first argument, `x`, that is sent to the `createElement` function?",
+        "code": "javascript\r\nReact.createElement(x, y, z);\r\n",
+        "options": [
+            " the element that should be created\r\n",
+            " the order in which this element should be placed on the page\r\n",
+            " the properties of the element\r\n",
+            " data that should be displayed in the element\r\n\r\n"
+        ],
+        "correctAns": 1,
+        "difficulty": "Easy"
+    },
+    {
+        "query": " Q69. Which class-based lifecycle method would be called at the same time as this effect Hook?",
+        "code": "javascript\r\nuseEffect(() => {\r\n  // do things\r\n}, []);\r\n",
+        "options": [
+            " componentWillUnmount\r\n",
+            " componentDidMount\r\n",
+            " render\r\n",
+            " componentDidUpdate\r\n\r\n"
+        ],
+        "correctAns": 2,
+        "difficulty": "Easy"
+    },
+    {
+        "query": " Q70. Given the code below, what does the second argument that is sent to the render function describe?",
+        "code": "javascript\r\nReactDOM.render(<h1>Hi</h1>, document.getElementById('root'));\r\n",
+        "options": [
+            " where the React element should be added to the DOM\r\n",
+            " where to call the function\r\n",
+            " where the root component is\r\n",
+            " where to create a new JavaScript file\r\n\r\n"
+        ],
+        "correctAns": 1,
+        "difficulty": "Easy"
+    },
+    {
+        "query": " Q71. What is the first argument, x, that is sent to the `createElement` function?",
+        "options": [
+            " the element that should be created\r\n",
+            " the order in which this element should be placed on the page\r\n",
+            " the properties of the element\r\n",
+            " data that should be displayed in the element.\r\n\r\n"
+        ],
+        "correctAns": 1,
+        "difficulty": "Easy"
+    },
+    {
+        "query": " Q72. What is the name of this component?",
+        "code": "javascript\r\nclass Comp extends React.Component {\r\n  render() {\r\n    return <h1>Look at the time: {time}</h1>;\r\n  }\r\n}\r\n",
+        "options": [
+            " Comp\r\n",
+            " h1\r\n",
+            " React.Component\r\n",
+            " Component\r\n\r\nThis question might be an updated version of Q37.\r\n\r\n"
+        ],
+        "correctAns": 1,
+        "difficulty": "Easy"
+    },
+    {
+        "query": " Q73. When using a portal, what is the first argument?",
+        "code": "javascript\r\nReactDOM.createPortal(x, y);\r\n",
+        "options": [
+            " the current state\r\n",
+            " the element to render\r\n",
+            " the App component\r\n",
+            " the page\r\n\r\n**Explanation:**\r\nFrom official docs: [Portals](https://reactjs.org/docs/portals.html)\r\n\r\n"
+        ],
+        "correctAns": 2,
+        "difficulty": "Hard"
+    },
+    {
+        "query": " Q74. What is `setCount`?",
+        "code": "javascript\r\nconst [count, setCount] = useState(0);\r\n",
+        "options": [
+            " the initial state value\r\n",
+            " a variable\r\n",
+            " a state object\r\n",
+            " a function to update the state\r\n\r\n**Reference:**\r\nFrom official docs: [Hooks-State](https://reactjs.org/docs/hooks-state.html#:~:text=If%20we%20want%20to%20update%20the%20current)\r\n\r\n"
+        ],
+        "correctAns": 4,
+        "difficulty": "Easy"
+    },
+    {
+        "query": " Q75. What is the use of map function below?",
+        "code": "javascript\r\nconst database = [user1:{},user2:{},user3:{}];\r\ndatabase.map((user)=><h1>user.data</h1>);\r\n",
+        "options": [
+            " gives a map of all the entries in database\r\n",
+            " returns a heading tag for every entry in the database containing it's data\r\n",
+            " returns one heading tag for all the entries in database\r\n",
+            " checks which entry in the database is suitable for heading tag\r\n\r\n"
+        ],
+        "correctAns": 2,
+        "difficulty": "Easy"
+    },
+    {
+        "difficulty": "Medium"
+    },
+    {
+        "difficulty": "Easy"
+    },
+    {
+        "difficulty": "Medium"
+    },
+    {
+        "difficulty": "Medium"
+    },
+    {
+        "difficulty": "Easy"
+    },
+    {
+        "difficulty": "Medium"
+    },
+    {
+        "difficulty": "Medium"
+    },
+    {
+        "difficulty": "Easy"
+    },
+    {
+        "difficulty": "Easy"
+    },
+    {
+        "difficulty": "Easy"
+    },
+    {
+        "difficulty": "Medium"
+    },
+    {
+        "difficulty": "Hard"
+    },
+    {
+        "difficulty": "Easy"
+    },
+    {
+        "difficulty": "Easy"
+    },
+    {
+        "difficulty": "Easy"
+    },
+    {
+        "difficulty": "Easy"
+    },
+    {
+        "difficulty": "Easy"
+    },
+    {
+        "difficulty": "Hard"
+    },
+    {
+        "difficulty": "Medium"
+    }
+]
