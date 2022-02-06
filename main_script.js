@@ -14,9 +14,9 @@ files.map((fileName) => {
   const updatedFile = content.map((question) => {
     // const numOfbr = question.options.split("\r\n");
     let updatedQuery = question.query;
-    if (question.query.startsWith(" ")) {
-      // questionWithCode += 1;
-      updatedQuery = question.query.slice(1);
+    if (question.query === "") {
+      questionWithCode += 1;
+      console.log(fileName);
     }
 
     return { ...question, query: updatedQuery };
