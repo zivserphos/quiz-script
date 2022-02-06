@@ -3,7 +3,7 @@ const fs = require("fs");
 
 const jsDiff = JSON.parse(
   fs.readFileSync("./answers/js.json").toString()
-).slice(0, 25);
+).slice(25);
 
 console.log(jsDiff);
 
@@ -20,8 +20,8 @@ files.map((fileName) => {
   let counter = 0;
   const updatedFile = content.map((question, i) => {
     if (fileName === "javascript.json" && i > 49) {
-      if (jsDiff[i - 25])
-        question.difficulty = jsDiff[i - 25].difficulty.toLowerCase();
+      if (jsDiff[i - 50])
+        question.difficulty = jsDiff[i - 50].difficulty.toLowerCase();
     }
     return { ...question };
   });

@@ -554,7 +554,8 @@
             "false",
             "0"
         ],
-        "correctAns": 1
+        "correctAns": 1,
+        "difficulty": "easy"
     },
     {
         "query": "What is the result in the console of running the code shown?",
@@ -565,7 +566,8 @@
             "",
             "undefined"
         ],
-        "correctAns": 3
+        "correctAns": 3,
+        "difficulty": "medium"
     },
     {
         "query": "What will this code log in the console?",
@@ -576,7 +578,8 @@
             "an object with a constructor property",
             "an error message"
         ],
-        "correctAns": 3
+        "correctAns": 3,
+        "difficulty": "medium"
     },
     {
         "query": "Which collection object allows unique value to be inserted only once?",
@@ -586,7 +589,8 @@
             "Array",
             "Map"
         ],
-        "correctAns": 2
+        "correctAns": 2,
+        "difficulty": "easy"
     },
     {
         "query": "What two values will this code print?",
@@ -597,7 +601,8 @@
             "`undefined` then `undefined`",
             "`undefined` then `1`"
         ],
-        "correctAns": 3
+        "correctAns": 3,
+        "difficulty": "medium"
     },
     {
         "query": "How does the `forEach()` method differ from a `for` statement?",
@@ -607,7 +612,8 @@
             "forEach can be used only with an array, whereas for can be used with additional data types.",
             "for loops can be nested; whereas forEach loops cannot."
         ],
-        "correctAns": 3
+        "correctAns": 3,
+        "difficulty": "medium"
     },
     {
         "query": "Which choice is an incorrect way to define an arrow function that returns an empty object?",
@@ -617,7 +623,8 @@
             "=> { return {};}",
             "=> (({}))"
         ],
-        "correctAns": 2
+        "correctAns": 2,
+        "difficulty": "easy"
     },
     {
         "query": "Why might you choose to make your code asynchronous?",
@@ -627,7 +634,8 @@
             "to make your code faster",
             "to ensure that the call stack maintains a LIFO (Last in, First Out) structure"
         ],
-        "correctAns": 1
+        "correctAns": 1,
+        "difficulty": "medium"
     },
     {
         "query": "Which expression evaluates to true?",
@@ -637,7 +645,8 @@
             "`3 != '3'`",
             "`3 === '3'`"
         ],
-        "correctAns": 2
+        "correctAns": 2,
+        "difficulty": "easy"
     },
     {
         "query": "Which of these is a valid variable name?",
@@ -647,7 +656,8 @@
             "grand total",
             "function"
         ],
-        "correctAns": 2
+        "correctAns": 2,
+        "difficulty": "easy"
     },
     {
         "query": "Which method cancels event default behavior?",
@@ -657,7 +667,8 @@
             "preventDefault()",
             "prevent()"
         ],
-        "correctAns": 3
+        "correctAns": 3,
+        "difficulty": "easy"
     },
     {
         "query": "Which method do you use to attach one DOM node to another?",
@@ -667,7 +678,8 @@
             "querySelector()",
             "appendChild()"
         ],
-        "correctAns": 4
+        "correctAns": 4,
+        "difficulty": "easy"
     },
     {
         "query": "Which statement is used to skip iteration of the loop?",
@@ -677,7 +689,8 @@
             "skip",
             "continue"
         ],
-        "correctAns": 4
+        "correctAns": 4,
+        "difficulty": "easy"
     },
     {
         "query": "Which choice is valid example for an arrow function?",
@@ -687,7 +700,8 @@
             "a, b => c",
             "{ a, b } => c"
         ],
-        "correctAns": 1
+        "correctAns": 1,
+        "difficulty": "easy"
     },
     {
         "query": "Which concept is defined as a template that can be used to generate different objects that share some shape and/or behavior?",
@@ -697,7 +711,8 @@
             "map",
             "proxy"
         ],
-        "correctAns": 1
+        "correctAns": 1,
+        "difficulty": "easy"
     },
     {
         "query": "How do you add a comment to JavaScript code?",
@@ -707,7 +722,8 @@
             "`\\\\ This is a comment`",
             "`// This is a comment`"
         ],
-        "correctAns": 4
+        "correctAns": 4,
+        "difficulty": "easy"
     },
     {
         "query": "If you attempt to call a value as a function but the value is not a function, what kind of error would you get?",
@@ -717,7 +733,8 @@
             "SyntaxError",
             "LogicError"
         ],
-        "correctAns": 1
+        "correctAns": 1,
+        "difficulty": "medium"
     },
     {
         "query": "Which method is called automatically when an object is initialized?",
@@ -727,7 +744,8 @@
             "constructor()",
             "init()"
         ],
-        "correctAns": 3
+        "correctAns": 3,
+        "difficulty": "medium"
     },
     {
         "query": "What is the result of running the statement shown?",
@@ -738,7 +756,8 @@
             "6",
             "5"
         ],
-        "correctAns": 3
+        "correctAns": 3,
+        "difficulty": "easy"
     },
     {
         "query": "You've written the event listener shown below for a form button, but each time you click the button, the page reloads. Which statement would stop this from happening?",
@@ -749,7 +768,8 @@
             "button.blockReload();",
             "e.preventDefault();"
         ],
-        "correctAns": 4
+        "correctAns": 4,
+        "difficulty": "medium"
     },
     {
         "query": "Which statement represents the starting code converted to an IIFE?",
@@ -758,7 +778,8 @@
             "`function() { console.log('lorem ipsum'); }();`",
             "`(function() { console.log('lorem ipsum'); })();`"
         ],
-        "correctAns": 3
+        "correctAns": 3,
+        "difficulty": "easy"
     },
     {
         "query": "Which statement selects all img elements in the DOM tree?",
@@ -768,7 +789,8 @@
             "`Document.querySelectorAll('img')`",
             "`Document.querySelector('<img>')`"
         ],
-        "correctAns": 3
+        "correctAns": 3,
+        "difficulty": "easy"
     },
     {
         "query": "Why would you choose an asynchronous structure for your code?",
@@ -778,7 +800,8 @@
             "To ensure that parsers enforce all JavaScript syntax rules when processing your code",
             "To ensure that tasks further down in your code aren't initiated until earlier tasks have completed"
         ],
-        "correctAns": 2
+        "correctAns": 2,
+        "difficulty": "medium"
     },
     {
         "query": "What is the HTTP verb to request the contents of an existing resource?",
@@ -788,7 +811,8 @@
             "PATCH",
             "POST"
         ],
-        "correctAns": 2
+        "correctAns": 2,
+        "difficulty": "easy"
     },
     {
         "query": "Which event is fired on a text field within a form when a user tabs to it, or clicks or touches it?",
@@ -798,7 +822,8 @@
             "hover",
             "enter"
         ],
-        "correctAns": 1
+        "correctAns": 1,
+        "difficulty": "easy"
     },
     {
         "query": "What is the result in the console of running this code?",
