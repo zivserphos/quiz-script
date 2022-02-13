@@ -1,0 +1,25 @@
+{
+  "name": "quiz-script",
+  "version": "1.0.0",
+  "description": "",
+  "main": "main_script.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/zivserphos/quiz-script.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/zivserphos/quiz-script/issues"
+  },
+  "homepage": "https://github.com/zivserphos/quiz-script#readme",
+  "dependencies": {
+    "axios": "^0.25.0",
+    "https-proxy-agent": "^5.0.0",
+    "socks-proxy-agent": "^6.1.1"
+  }
+}
