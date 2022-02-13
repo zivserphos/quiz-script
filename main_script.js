@@ -6,7 +6,7 @@ const jsDiff = JSON.parse(fs.readFileSync("./answers/react.json").toString());
 console.log(jsDiff);
 
 const displayAsCodeFunc = (options) => {
-  const str = false;
+  let str = false;
   options.map((option, i) => {
     if (option.split("\r\n").length > 3 && i < 3) str = true;
   });
@@ -30,6 +30,7 @@ files.map((fileName) => {
       displayAsCode: displayAsCodeFunc(question.options),
     };
     if (question.code) updatedQuestion.code = question.code;
+    return updatedQuestion;
   });
   fs.writeFileSync(`./questions/${fileName}`, JSON.stringify(updatedFile));
 });
