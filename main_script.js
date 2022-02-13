@@ -1,7 +1,7 @@
 const path = require("path");
 const fs = require("fs");
 
-const jsDiff = JSON.parse(fs.readFileSync("./answers/go.json").toString());
+const jsDiff = JSON.parse(fs.readFileSync("./answers/html.json").toString());
 
 console.log(jsDiff);
 
@@ -16,8 +16,7 @@ files.map((fileName) => {
   );
   let counter = 0;
   const updatedFile = content.map((question, i) => {
-    if (fileName === "go.json" && i < 25) {
-      // if (jsDiff[i - 50])
+    if (fileName === "html.json" && i < 50) {
       question.difficulty = jsDiff[i].difficulty.toLowerCase();
     }
     return { ...question };
@@ -26,3 +25,5 @@ files.map((fileName) => {
   // console.log(`${fileName}: ${questionWithCode} questions with code`);
   fs.writeFileSync(`./questions/${fileName}`, JSON.stringify(updatedFile));
 });
+
+console.log(totalQuestionsInsert);
