@@ -16,14 +16,24 @@ files.map((fileName) => {
   );
   let counter = 0;
   const updatedFile = content.map((question, i) => {
-    if (fileName === "react.json" && i > 24 && i < 94) {
-      question.difficulty = jsDiff[i - 25].difficulty.toLowerCase();
-    }
-    return { ...question };
+    const updatedQuestion = {
+      query: question.query,
+      options: question.options,
+      correctAns: question.correctAns,
+      difficulty: question.difficulty ? question.difficulty : null,
+      displayAsCode: displayAsCodeFunc(question.options),
+    };
+    if (question.code) updatedQuestion.code = question.code;
   });
-  totalQuestionsInsert += updatedFile.length;
-  // console.log(`${fileName}: ${questionWithCode} questions with code`);
   fs.writeFileSync(`./questions/${fileName}`, JSON.stringify(updatedFile));
 });
+
+const displayAsCodeFunc = (options) => {
+  const str = false;
+  options.map((option, i) => {
+    if (option.split("\r\n").length > 3 && i < 3) str = true;
+  });
+  return str;
+};
 
 console.log(totalQuestionsInsert);
