@@ -1,7 +1,7 @@
 const path = require("path");
 const fs = require("fs");
 
-const jsDiff = JSON.parse(fs.readFileSync("./answers/html.json").toString());
+const jsDiff = JSON.parse(fs.readFileSync("./answers/nodejs.json").toString());
 
 console.log(jsDiff);
 
@@ -16,7 +16,7 @@ files.map((fileName) => {
   );
   let counter = 0;
   const updatedFile = content.map((question, i) => {
-    if (fileName === "html.json" && i < 50) {
+    if (fileName === "nodejs.json" && i < 25) {
       question.difficulty = jsDiff[i].difficulty.toLowerCase();
     }
     return { ...question };
