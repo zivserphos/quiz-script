@@ -1,7 +1,7 @@
 const path = require("path");
 const fs = require("fs");
 
-const jsDiff = JSON.parse(fs.readFileSync("./answers/css.json").toString());
+const jsDiff = JSON.parse(fs.readFileSync("./answers/go.json").toString());
 
 console.log(jsDiff);
 
@@ -16,9 +16,9 @@ files.map((fileName) => {
   );
   let counter = 0;
   const updatedFile = content.map((question, i) => {
-    if (fileName === "css.json" && i > 24 && i < 50) {
+    if (fileName === "go.json" && i < 25) {
       // if (jsDiff[i - 50])
-      question.difficulty = jsDiff[i - 25].difficulty.toLowerCase();
+      question.difficulty = jsDiff[i].difficulty.toLowerCase();
     }
     return { ...question };
   });
