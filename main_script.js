@@ -38,7 +38,7 @@ files.map((fileName) => {
         options: question.options,
         correctAns: question.correctAns,
         difficulty: question.difficulty ? question.difficulty : null,
-        displayAsCode: displayAsCodeFunc(question.options),
+        optionsAsCode: displayAsCodeFunc(question.options),
       };
     }
     return updatedQuestion;
