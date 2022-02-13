@@ -1,9 +1,7 @@
 const path = require("path");
 const fs = require("fs");
 
-const jsDiff = JSON.parse(
-  fs.readFileSync("./answers/js.json").toString()
-).slice(25);
+const jsDiff = JSON.parse(fs.readFileSync("./answers/css.json").toString());
 
 console.log(jsDiff);
 
@@ -16,12 +14,11 @@ files.map((fileName) => {
   const content = JSON.parse(
     fs.readFileSync(`./questions/${fileName}`).toString()
   );
-  if (fileName.includes("php")) console.log(content.length);
   let counter = 0;
   const updatedFile = content.map((question, i) => {
-    if (fileName === "javascript.json" && i > 49) {
-      if (jsDiff[i - 50])
-        question.difficulty = jsDiff[i - 50].difficulty.toLowerCase();
+    if (fileName === "css.json" && i > 24 && i < 50) {
+      // if (jsDiff[i - 50])
+      question.difficulty = jsDiff[i - 25].difficulty.toLowerCase();
     }
     return { ...question };
   });
