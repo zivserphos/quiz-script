@@ -22,14 +22,25 @@ files.map((fileName) => {
   );
   const updatedFile = content.map((question, i) => {
     if (displayAsCodeFunc(question.options)) questionWithCode += 1;
-    const updatedQuestion = {
-      query: question.query,
-      options: question.options,
-      correctAns: question.correctAns,
-      difficulty: question.difficulty ? question.difficulty : null,
-      displayAsCode: displayAsCodeFunc(question.options),
-    };
-    if (question.code) updatedQuestion.code = question.code;
+    let updatedQuestion = {};
+    if (question.code) {
+      updatedQuestion = {
+        query: question.query,
+        code: question.code,
+        options: question.options,
+        correctAns: question.correctAns,
+        difficulty: question.difficulty ? question.difficulty : null,
+        optionsAsCode: displayAsCodeFunc(question.options),
+      };
+    } else {
+      updatedQuestion = {
+        query: question.query,
+        options: question.options,
+        correctAns: question.correctAns,
+        difficulty: question.difficulty ? question.difficulty : null,
+        displayAsCode: displayAsCodeFunc(question.options),
+      };
+    }
     return updatedQuestion;
   });
   fs.writeFileSync(`./questions/${fileName}`, JSON.stringify(updatedFile));
