@@ -5,17 +5,23 @@ const jsDiff = JSON.parse(fs.readFileSync("./answers/react.json").toString());
 
 console.log(jsDiff);
 
+const displayAsCodeFunc = (options) => {
+  const str = false;
+  options.map((option, i) => {
+    if (option.split("\r\n").length > 3 && i < 3) str = true;
+  });
+  return str;
+};
 let questionWithCode = 0;
 let totalQuestionsInsert = 0;
 const files = fs.readdirSync("./questions");
 
 files.map((fileName) => {
-  questionWithCode = 0;
   const content = JSON.parse(
     fs.readFileSync(`./questions/${fileName}`).toString()
   );
-  let counter = 0;
   const updatedFile = content.map((question, i) => {
+    if (displayAsCodeFunc(question.options)) questionWithCode += 1;
     const updatedQuestion = {
       query: question.query,
       options: question.options,
@@ -28,12 +34,5 @@ files.map((fileName) => {
   fs.writeFileSync(`./questions/${fileName}`, JSON.stringify(updatedFile));
 });
 
-const displayAsCodeFunc = (options) => {
-  const str = false;
-  options.map((option, i) => {
-    if (option.split("\r\n").length > 3 && i < 3) str = true;
-  });
-  return str;
-};
-
 console.log(totalQuestionsInsert);
+console.log(questionWithCode);
