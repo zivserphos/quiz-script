@@ -1,7 +1,7 @@
 const path = require("path");
 const fs = require("fs");
 
-const jsDiff = JSON.parse(fs.readFileSync("./answers/nodejs.json").toString());
+const jsDiff = JSON.parse(fs.readFileSync("./answers/react.json").toString());
 
 console.log(jsDiff);
 
@@ -16,8 +16,8 @@ files.map((fileName) => {
   );
   let counter = 0;
   const updatedFile = content.map((question, i) => {
-    if (fileName === "nodejs.json" && i < 25) {
-      question.difficulty = jsDiff[i].difficulty.toLowerCase();
+    if (fileName === "react.json" && i > 24 && i < 94) {
+      question.difficulty = jsDiff[i - 25].difficulty.toLowerCase();
     }
     return { ...question };
   });
